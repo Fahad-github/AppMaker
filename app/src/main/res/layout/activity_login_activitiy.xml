@@ -25,9 +25,9 @@
 
                 <ImageView
                     android:id="@+id/appLogo"
-                    android:layout_width="100dp"
-                    android:layout_height="88dp"
-                    android:layout_marginRight="2dp"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_centerHorizontal="true"
                     android:layout_marginBottom="6dp"
                     android:scaleType="fitXY"
                     android:src="@drawable/logoapp" />
@@ -36,12 +36,12 @@
                     android:id="@+id/textViewAppMaker"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_centerVertical="true"
                     android:layout_marginTop="4dp"
-                    android:layout_toRightOf="@id/appLogo"
+                    android:layout_below="@id/appLogo"
                     android:text="AppMaker"
+                    android:layout_centerHorizontal="true"
                     android:textColor="@color/mainBlue"
-                    android:textSize="24sp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
             </RelativeLayout>
 
@@ -50,6 +50,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+
                 android:layout_marginHorizontal="34dp"
                 android:layout_marginTop="48dp"
                 android:textColorHint="@color/grey"
@@ -100,11 +101,12 @@
             <com.google.android.material.button.MaterialButton
                 android:id="@+id/loginButton"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="54dp"
                 android:layout_marginHorizontal="32dp"
                 android:layout_marginTop="24dp"
                 android:text="Log In"
                 android:textAllCaps="false"
+                android:textSize="14sp"
                 android:textColor="@color/white"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
@@ -152,14 +154,15 @@
             </RelativeLayout>
 
             <com.google.android.material.button.MaterialButton
-                android:id="@+id/signUpButton"
+                android:id="@+id/createAccountButton"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"
                 android:layout_width="match_parent"
-                android:layout_height="50dp"
+                android:layout_height="54dp"
                 android:layout_marginHorizontal="32dp"
                 android:layout_marginTop="36dp"
                 android:text="Create a free account"
                 android:textAllCaps="false"
+                android:textSize="14sp"
                 android:textColor="@color/colorPrimary"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"

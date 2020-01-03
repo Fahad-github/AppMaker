@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "761221709794",
+    "firebase_url": "https://appmaker-84501.firebaseio.com",
+    "project_id": "appmaker-84501",
+    "storage_bucket": "appmaker-84501.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761221709794:android:625f936ac9aebbdcb843bb",
+        "android_client_info": {
+          "package_name": "com.fyp.appmaker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "761221709794-tq8s1ka44fhecq2itlnebils8b64h2h3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCwweETuoQAhgQlRZg8MDVALZk7SK3m4Mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "761221709794-tq8s1ka44fhecq2itlnebils8b64h2h3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

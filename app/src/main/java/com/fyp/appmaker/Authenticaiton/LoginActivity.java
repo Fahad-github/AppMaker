@@ -3,7 +3,9 @@ package com.fyp.appmaker.Authenticaiton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
@@ -26,6 +28,8 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     private void initListeners() {
         findViewById(R.id.loginButton).setOnClickListener(this);
+        findViewById(R.id.createAccountButton).setOnClickListener(this);
+
     }
 
 
@@ -39,6 +43,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (view.getId()){
             case R.id.loginButton:{
                 action();
+                break;
+            }
+            case R.id.createAccountButton:{
+                startActivity(new Intent(this,SignUpActivity.class));
                 break;
             }
         }
