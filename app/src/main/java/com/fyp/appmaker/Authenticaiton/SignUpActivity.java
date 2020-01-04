@@ -6,29 +6,30 @@ import androidx.databinding.DataBindingUtil;
 
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
-
 
 import com.fyp.appmaker.Models.UserModel;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.databinding.ActivitySignUpBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
+
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
 
     ActivitySignUpBinding signUpBinding;
+    Pattern pattern;
+    Matcher matcher;
+    String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
     MaterialAlertDialogBuilder alertDialogBuilder;
     UserModel userModel;
     String name, email, pass, confirmPass;
     final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReferenceFromUrl("https://appmaker-84501.firebaseio.com/");
+    DatabaseReference ref = database.getReference();
     DatabaseReference usersRef = ref.child("users");
-    String terms = "Introduction\n" +
+    String termsAndCconditions = "Introduction\n" +
             "These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.\n" +
             "\n" +
             "These Terms will be applied fully and affect to your use of this Website. By using this Website, you agreed to accept all terms and conditions written in here. You must not use this Website if you disagree with any of these Website Standard Terms and Conditions.\n" +
@@ -77,6 +78,8 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         signUpBinding = DataBindingUtil.setContentView(this, R.layout.activity_sign_up);
         initListeners();
+        pattern = Pattern.compile(regex);
+
 
 
     }
@@ -108,28 +111,15 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         pass = signUpBinding.passwordET.getText().toString();
         confirmPass = signUpBinding.confirmPassET.getText().toString();
         userModel = new UserModel(name, email, pass);
-
+        matcher = pattern.matcher(email);
 
         if (!(name.isEmpty() && email.isEmpty() && pass.isEmpty() && confirmPass.isEmpty())) {
             if (pass.equals(confirmPass)) {
-                ref.addListenerForSingleValueEvent(new ValueEventListener() {
-                    @Override
-                    public void onDataChange(final DataSnapshot dataSnapshot) {
-                        for (DataSnapshot data : dataSnapshot.getChildren()) {
-                            //If email exists then toast shows else store the data on new key
-                            if (!data.getValue(UserModel.class).getEmail().equals(email)) {
-                                ref.child(ref.push().getKey()).setValue(new UserModel(name, email,pass));
-                            } else {
-                                Toast.makeText(SignUpActivity.this, "E-mail already exists.", Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                    }
+                if(matcher.matches()){
 
-                    @Override
-                    public void onCancelled(final DatabaseError databaseError) {
-                    }
-                });
-
+                }else{
+                    signUpBinding.emailET.setError("Invalid email");
+                }
             } else {
                 signUpBinding.confirmPassET.setError("Password doesn't match");
             }
@@ -143,9 +133,10 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void openTermsAndConditions() {
+
         alertDialogBuilder = new MaterialAlertDialogBuilder(this);
         alertDialogBuilder.setTitle("Terms and Conditions")
-                .setMessage(terms)
+                .setMessage(termsAndCconditions)
                 .setPositiveButton("Agree", null)
                 .show();
     }
