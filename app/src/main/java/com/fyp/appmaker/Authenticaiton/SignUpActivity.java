@@ -118,6 +118,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         confirmPass = signUpBinding.confirmPassET.getText().toString();
         pattern = Pattern.compile(regex);
         matcher = pattern.matcher(email);
+        signUpBinding.loadingBar.setVisibility(View.VISIBLE);
 
         if (!(name.isEmpty() && email.isEmpty() && pass.isEmpty() && confirmPass.isEmpty())) {
             if (pass.equals(confirmPass)) {
@@ -131,14 +132,17 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                     }
                 } else {
                     signUpBinding.emailET.setError("Invalid email");
+                    signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
                 }
             } else {
                 signUpBinding.confirmPassET.setError("Password doesn't match");
+                signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
             }
         } else {
             signUpBinding.nameET.setError("Name required");
             signUpBinding.emailET.setError("Email required");
             signUpBinding.passwordET.setError("Password required");
+            signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
 
         }
 
@@ -153,31 +157,5 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 .show();
     }
 
-
-    private void addUserChangeListener() {
-        // User data change listener
-        mDatabase.child(userId).addValueEventListener(new ValueEventListener() {
-            @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                UserModel user = dataSnapshot.getValue(UserModel.class);
-
-                // Check for null
-                if (user == null) {
-                    Toast.makeText(SignUpActivity.this, "Null user", Toast.LENGTH_SHORT).show();
-                    return;
-                }
-
-                Toast.makeText(SignUpActivity.this, "User data is changed!" + user.name + ", " + user.email, Toast.LENGTH_SHORT).show();
-
-
-            }
-
-            @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Toast.makeText(SignUpActivity.this, "Failed", Toast.LENGTH_SHORT).show();
-            }
-        });
-    }
 
 }
