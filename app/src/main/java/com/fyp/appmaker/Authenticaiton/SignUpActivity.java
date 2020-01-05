@@ -4,15 +4,22 @@ package com.fyp.appmaker.Authenticaiton;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
+import android.widget.Toast;
 
+import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Models.UserModel;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.databinding.ActivitySignUpBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
@@ -24,11 +31,11 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     Matcher matcher;
     String regex = "^[\\w!#$%&'*+/=?`{|}~^-]+(?:\\.[\\w!#$%&'*+/=?`{|}~^-]+)*@(?:[a-zA-Z0-9-]+\\.)+[a-zA-Z]{2,6}$";
     MaterialAlertDialogBuilder alertDialogBuilder;
-    UserModel userModel;
+    String userId;
     String name, email, pass, confirmPass;
-    final FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference ref = database.getReference();
-    DatabaseReference usersRef = ref.child("users");
+    DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
+
+
     String termsAndCconditions = "Introduction\n" +
             "These Website Standard Terms and Conditions written on this webpage shall manage your use of our website, Webiste Name accessible at Website.com.\n" +
             "\n" +
@@ -80,8 +87,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         initListeners();
         pattern = Pattern.compile(regex);
 
-
-
     }
 
 
@@ -106,18 +111,25 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     }
 
     private void initSignUpProcess() {
+
+
         name = signUpBinding.nameET.getText().toString();
         email = signUpBinding.emailET.getText().toString();
         pass = signUpBinding.passwordET.getText().toString();
         confirmPass = signUpBinding.confirmPassET.getText().toString();
-        userModel = new UserModel(name, email, pass);
         matcher = pattern.matcher(email);
 
         if (!(name.isEmpty() && email.isEmpty() && pass.isEmpty() && confirmPass.isEmpty())) {
             if (pass.equals(confirmPass)) {
-                if(matcher.matches()){
-
-                }else{
+                if (matcher.matches()) {
+                    if (TextUtils.isEmpty(userId)) {
+                        FirebaseDb.addUser(new UserModel(name,email,pass),userId);
+                        signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
+                    } else {
+                        Toast.makeText(this, "User already exists", Toast.LENGTH_SHORT).show();
+                        signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
+                    }
+                } else {
                     signUpBinding.emailET.setError("Invalid email");
                 }
             } else {
@@ -140,4 +152,32 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
                 .setPositiveButton("Agree", null)
                 .show();
     }
+
+
+    private void addUserChangeListener() {
+        // User data change listener
+        mDatabase.child(userId).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+                UserModel user = dataSnapshot.getValue(UserModel.class);
+
+                // Check for null
+                if (user == null) {
+                    Toast.makeText(SignUpActivity.this, "Null user", Toast.LENGTH_SHORT).show();
+                    return;
+                }
+
+                Toast.makeText(SignUpActivity.this, "User data is changed!" + user.name + ", " + user.email, Toast.LENGTH_SHORT).show();
+
+
+            }
+
+            @Override
+            public void onCancelled(DatabaseError error) {
+                // Failed to read value
+                Toast.makeText(SignUpActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+            }
+        });
+    }
+
 }
