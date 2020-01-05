@@ -85,7 +85,6 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         super.onCreate(savedInstanceState);
         signUpBinding = DataBindingUtil.setContentView(this, R.layout.activity_sign_up);
         initListeners();
-        pattern = Pattern.compile(regex);
 
     }
 
@@ -117,6 +116,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         email = signUpBinding.emailET.getText().toString();
         pass = signUpBinding.passwordET.getText().toString();
         confirmPass = signUpBinding.confirmPassET.getText().toString();
+        pattern = Pattern.compile(regex);
         matcher = pattern.matcher(email);
 
         if (!(name.isEmpty() && email.isEmpty() && pass.isEmpty() && confirmPass.isEmpty())) {
