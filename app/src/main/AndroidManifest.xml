@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Authenticaiton.SignUpActivity"></activity>
+        <activity
+            android:name=".Functionality.Template1"
+            android:label="@string/title_activity_template1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Functionality.ChooseTemplate" />
+        <activity
+            android:name=".Functionality.UserMainScreen"
+            android:label="@string/title_activity_user_main_screen"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Authenticaiton.SignUpActivity" />
         <activity android:name=".Authenticaiton.LoginActivity" />
         <activity android:name=".Splash.SplashActivity">
             <intent-filter>

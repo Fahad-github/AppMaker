@@ -1,0 +1,4 @@
+#Sat Jan 25 22:34:38 PKT 2020
+base.0=C\:\\Users\\hibap\\AndroidStudioProjects\\AppMaker\\AppMaker\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\9
+path.0=classes.dex
+renamed.0=classes.dex

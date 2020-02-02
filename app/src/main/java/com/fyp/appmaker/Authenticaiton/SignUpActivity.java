@@ -1,9 +1,11 @@
 package com.fyp.appmaker.Authenticaiton;
 
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -13,18 +15,20 @@ import android.widget.Toast;
 import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Models.UserModel;
 import com.fyp.appmaker.R;
+import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.ActivitySignUpBinding;
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class SignUpActivity extends AppCompatActivity implements View.OnClickListener {
+public class SignUpActivity extends UtilitiesClass implements View.OnClickListener {
 
     ActivitySignUpBinding signUpBinding;
     Pattern pattern;
@@ -34,6 +38,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
     String userId;
     String name, email, pass, confirmPass;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
+    FirebaseDb db = new FirebaseDb();
 
 
     String termsAndCconditions = "Introduction\n" +
@@ -123,13 +128,7 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         if (!(name.isEmpty() && email.isEmpty() && pass.isEmpty() && confirmPass.isEmpty())) {
             if (pass.equals(confirmPass)) {
                 if (matcher.matches()) {
-                    if (TextUtils.isEmpty(userId)) {
-                        FirebaseDb.addUser(new UserModel(name,email,pass),userId);
-                        signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
-                    } else {
-                        Toast.makeText(this, "User already exists", Toast.LENGTH_SHORT).show();
-                        signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
-                    }
+                    checkIfUserExists(email);
                 } else {
                     signUpBinding.emailET.setError("Invalid email");
                     signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
@@ -147,6 +146,35 @@ public class SignUpActivity extends AppCompatActivity implements View.OnClickLis
         }
 
     }
+
+    private void checkIfUserExists(String userEmail) {
+        Query query = mDatabase.orderByChild("email").equalTo(userEmail);
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            boolean exist = false;
+
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                if (dataSnapshot.exists()) {
+                    exist = true;
+                    signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
+                    signUpBinding.emailET.setError("User with this email already exists");
+                }
+                if (!exist) {
+                    signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
+                    db.addUser(new UserModel(name, email, pass), userId);
+                    Toast.makeText(SignUpActivity.this, "Account created!", Toast.LENGTH_SHORT).show();
+                    startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Toast.makeText(SignUpActivity.this, "something went wrong!", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+    }
+
 
     private void openTermsAndConditions() {
 

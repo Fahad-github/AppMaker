@@ -1,7 +1,12 @@
 package com.fyp.appmaker.Firebase;
 
+import android.content.Context;
+import android.content.SharedPreferences;
 import android.text.TextUtils;
 import android.widget.Toast;
+
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.fyp.appmaker.Authenticaiton.SignUpActivity;
 import com.fyp.appmaker.Models.UserModel;
@@ -11,44 +16,66 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class FirebaseDb {
+public class FirebaseDb extends AppCompatActivity {
 
-
-    public static void addUser(UserModel userModel,String userId){
-        DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
+    private DatabaseReference mDatabase;
+    private boolean exists;
+    public void addUser(UserModel userModel, String userId){
+        mDatabase = FirebaseDatabase.getInstance().getReference("users");
         if (TextUtils.isEmpty(userId)) {
             userId = mDatabase.push().getKey();
         }
-
         UserModel user = userModel;
-
         mDatabase.child(userId).setValue(user);
 
-        addUserChangeListener(mDatabase,userId);
+    //    saveUserDetails(user);
+
     }
 
-    private static void addUserChangeListener(DatabaseReference mDatabase,String userId) {
-        mDatabase.child(userId).addValueEventListener(new ValueEventListener() {
+    private void saveUserDetails(UserModel user) {
+        SharedPreferences sharedPreferences=getSharedPreferences("UserDetails", Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString("Email",user.getEmail());
+        editor.putString("Password",user.getPassword());
+        editor.commit();
+    }
+
+    public boolean checkIfUserExists(final String email)
+    {
+        System.out.println("hereeeeeeeeeeeee 2");
+        exists=false;
+        mDatabase=FirebaseDatabase.getInstance().getReference("users");
+        mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                UserModel user = dataSnapshot.getValue(UserModel.class);
-
-                // Check for null
-                if (user == null) {
-
-                    return;
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren())
+                {
+                    UserModel user=dataSnapshot1.getValue(UserModel.class);
+                    System.out.println(user.getEmail());
+                    System.out.println(email);
+                    if (user.getEmail().equals(email))
+                    {
+                        exists = true;
+                    }
                 }
-
-              //  Toast.makeText(SignUpActivity.this, "User data is changed!" + user.name + ", " + user.email, Toast.LENGTH_SHORT).show();
-
-
             }
 
             @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                //Toast.makeText(SignUpActivity.this, "Failed", Toast.LENGTH_SHORT).show();
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
             }
         });
+        return exists;
     }
+
+    private void setExists() {
+        exists=true;
+    }
+
+    public boolean getExists()
+    {
+        System.out.println(exists);
+        return this.exists;
+    }
+
 }

@@ -1,5 +1,6 @@
 package com.fyp.appmaker.Authenticaiton;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
@@ -8,13 +9,25 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.fyp.appmaker.Firebase.FirebaseDb;
+import com.fyp.appmaker.Functionality.UserMainScreen;
+import com.fyp.appmaker.Models.UserModel;
 import com.fyp.appmaker.R;
+import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.ActivityLoginActivitiyBinding;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 
-public class LoginActivity extends AppCompatActivity implements View.OnClickListener{
+public class LoginActivity extends UtilitiesClass implements View.OnClickListener{
 
     ActivityLoginActivitiyBinding loginBinding;
-    String name;
+    String email ="";
+    String password="";
+    
+    private FirebaseDb db;
 
 
     @Override
@@ -23,7 +36,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         loginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login_activitiy);
         initListeners();
 
-
+        db=new FirebaseDb();
     }
 
     private void initListeners() {
@@ -34,9 +47,71 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
 
     private void action() {
-        name = loginBinding.emailEditText.getText().toString();
-        Toast.makeText(this, name, Toast.LENGTH_SHORT).show();
+        loginBinding.loadingBar.setVisibility(View.VISIBLE);
+
+        email = loginBinding.emailEditText.getText().toString();
+        password = loginBinding.passwordEditText.getText().toString();
+        
+        boolean empty=false;
+        if(email.equals("") || email.replace(" ","").equals(""))
+        {
+            empty=true;
+            loginBinding.emailEditText.setError("Email field empty");
+            loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+
+        }
+        if(password.equals("") || password.replace(" ","").equals(""))
+        {
+            empty=true;
+            loginBinding.passwordEditText.setError("Password field empty");
+            loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+        }
+        System.out.println("here");
+        System.out.println(empty);
+
+        if (!empty)
+        {
+            DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
+            mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                @Override
+                public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                    for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren())
+                    {
+                        UserModel user=dataSnapshot1.getValue(UserModel.class);
+                        System.out.println(user.getEmail());
+                        System.out.println(user.getPassword());
+                        System.out.println(email);
+                        System.out.println(password);
+                        if (user.getEmail().equals(email) && user.getPassword().equals(password))
+                        {
+                            saveToPrefs(email,password);
+                            loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+                            Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
+                            startActivity(new Intent(LoginActivity.this, UserMainScreen.class));
+                            finish();
+                        }else{
+                            loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+                            Toast.makeText(LoginActivity.this, "Invalid Email or Password", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                }
+
+                @Override
+                public void onCancelled(@NonNull DatabaseError databaseError) {
+                    loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+                    Toast.makeText(LoginActivity.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+        }
+
+//        db.checkIfUserExists(email,password,"users");
+//        if(!empty && db.getExists())
+//        {
+//            makeToast();
+//        }
     }
+
 
     @Override
     public void onClick(View view) {
