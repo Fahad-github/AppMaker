@@ -19,8 +19,8 @@ import com.google.firebase.database.ValueEventListener;
 public class FirebaseDb extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
-    private boolean exists;
-    public void addUser(UserModel userModel, String userId){
+
+    public void addUser(UserModel userModel, String userId) {
         mDatabase = FirebaseDatabase.getInstance().getReference("users");
         if (TextUtils.isEmpty(userId)) {
             userId = mDatabase.push().getKey();
@@ -29,6 +29,8 @@ public class FirebaseDb extends AppCompatActivity {
         mDatabase.child(userId).setValue(user);
 
     }
+
+
 
 
 }

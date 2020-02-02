@@ -24,6 +24,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import java.util.ArrayList;
 
@@ -66,6 +67,8 @@ public class UserMainScreen extends UtilitiesClass
                 startActivity(intent);
             }
         });
+
+
     }
 
     @Override
@@ -105,6 +108,7 @@ public class UserMainScreen extends UtilitiesClass
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
         int id = item.getItemId();
 
         if (id == R.id.yourAccount) {
