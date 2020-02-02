@@ -1,4 +1,4 @@
-#Sun Feb 02 19:12:54 PKT 2020
+#Sun Feb 02 22:18:37 PKT 2020
 base.0=C\:\\Users\\DELL\\Downloads\\AppMaker (1)-20200202T112917Z-001\\AppMaker (1)\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

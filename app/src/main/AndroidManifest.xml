@@ -12,7 +12,9 @@
         <activity
             android:name=".Functionality.Template1"
             android:label="@string/title_activity_template1"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
         <activity android:name=".Functionality.ChooseTemplate" />
         <activity
             android:name=".Functionality.UserMainScreen"

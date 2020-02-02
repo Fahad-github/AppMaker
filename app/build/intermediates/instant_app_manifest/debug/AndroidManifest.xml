@@ -27,7 +27,8 @@
         <activity
             android:name="com.fyp.appmaker.Functionality.Template1"
             android:label="@string/title_activity_template1"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" >
+        </activity>
         <activity android:name="com.fyp.appmaker.Functionality.ChooseTemplate" />
         <activity
             android:name="com.fyp.appmaker.Functionality.UserMainScreen"

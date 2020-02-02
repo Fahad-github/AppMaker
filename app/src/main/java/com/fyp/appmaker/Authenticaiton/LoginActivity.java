@@ -21,12 +21,12 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class LoginActivity extends UtilitiesClass implements View.OnClickListener{
+public class LoginActivity extends UtilitiesClass implements View.OnClickListener {
 
     ActivityLoginActivitiyBinding loginBinding;
-    String email ="";
-    String password="";
-    
+    String email = "";
+    String password = "";
+
     private FirebaseDb db;
 
 
@@ -36,7 +36,7 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
         loginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login_activitiy);
         initListeners();
 
-        db=new FirebaseDb();
+        db = new FirebaseDb();
     }
 
     private void initListeners() {
@@ -51,48 +51,46 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
 
         email = loginBinding.emailEditText.getText().toString();
         password = loginBinding.passwordEditText.getText().toString();
-        
-        boolean empty=false;
-        if(email.equals("") || email.replace(" ","").equals(""))
-        {
-            empty=true;
+
+        boolean empty = false;
+        if (email.equals("") || email.replace(" ", "").equals("")) {
+            empty = true;
             loginBinding.emailEditText.setError("Email field empty");
             loginBinding.loadingBar.setVisibility(View.INVISIBLE);
 
         }
-        if(password.equals("") || password.replace(" ","").equals(""))
-        {
-            empty=true;
+        if (password.equals("") || password.replace(" ", "").equals("")) {
+            empty = true;
             loginBinding.passwordEditText.setError("Password field empty");
             loginBinding.loadingBar.setVisibility(View.INVISIBLE);
         }
         System.out.println("here");
         System.out.println(empty);
 
-        if (!empty)
-        {
+        if (!empty) {
             DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
             mDatabase.addListenerForSingleValueEvent(new ValueEventListener() {
+                boolean loginAllowed = false;
+
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                    for (DataSnapshot dataSnapshot1:dataSnapshot.getChildren())
-                    {
-                        UserModel user=dataSnapshot1.getValue(UserModel.class);
-                        System.out.println(user.getEmail());
-                        System.out.println(user.getPassword());
-                        System.out.println(email);
-                        System.out.println(password);
-                        if (user.getEmail().equals(email) && user.getPassword().equals(password))
-                        {
-                            saveToPrefs(email,password);
+                    for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                        UserModel user = dataSnapshot1.getValue(UserModel.class);
+
+                        if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
+                            loginAllowed = true;
+                            saveToPrefs(email, password);
                             loginBinding.loadingBar.setVisibility(View.INVISIBLE);
                             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(LoginActivity.this, UserMainScreen.class));
                             finish();
-                        }else{
-                            loginBinding.loadingBar.setVisibility(View.INVISIBLE);
-                            Toast.makeText(LoginActivity.this, "Invalid Email or Password", Toast.LENGTH_SHORT).show();
                         }
+                    }
+
+                    if (!loginAllowed) {
+                        loginBinding.loadingBar.setVisibility(View.INVISIBLE);
+                        Toast.makeText(LoginActivity.this, "Invalid Email or Password", Toast.LENGTH_SHORT).show();
+
                     }
                 }
 
@@ -105,23 +103,18 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
 
         }
 
-//        db.checkIfUserExists(email,password,"users");
-//        if(!empty && db.getExists())
-//        {
-//            makeToast();
-//        }
     }
 
 
     @Override
     public void onClick(View view) {
-        switch (view.getId()){
-            case R.id.loginButton:{
+        switch (view.getId()) {
+            case R.id.loginButton: {
                 action();
                 break;
             }
-            case R.id.createAccountButton:{
-                startActivity(new Intent(this,SignUpActivity.class));
+            case R.id.createAccountButton: {
+                startActivity(new Intent(this, SignUpActivity.class));
                 break;
             }
         }

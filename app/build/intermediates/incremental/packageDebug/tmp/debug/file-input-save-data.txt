@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Feb 02 19:12:54 PKT 2020
+#Sun Feb 02 22:18:37 PKT 2020
 0.baseType=DIRECTORY
 0.base=C\:\\Users\\DELL\\Downloads\\AppMaker (1)-20200202T112917Z-001\\AppMaker (1)\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex
