@@ -1,7 +1,7 @@
 #Internal package file, do not edit.
-#Mon Feb 03 17:34:36 PKT 2020
+#Mon Feb 03 23:35:25 PKT 2020
 0.baseType=DIRECTORY
-0.base=C\:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+0.base=C\:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 0.path=classes.dex
 0.set=DEX
 count=1

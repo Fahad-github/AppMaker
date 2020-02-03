@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
+            "outputFile": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v25\\values-v25.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\Dell\\.gradle\\caches\\transforms-2\\files-2.1\\b3bf44ea116592293ec84aec9a821ada\\res\\values-v25\\values-v25.xml",
+                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\values-v25\\values-v25.xml",
                     "from": {
                         "startLines": "2,3,4,6",
                         "startColumns": "4,4,4,4",

@@ -102,10 +102,10 @@ public final class R {
         public static final int tag_transition_group = 0x7f080132;
         public static final int tag_unhandled_key_event_manager = 0x7f080133;
         public static final int tag_unhandled_key_listeners = 0x7f080134;
-        public static final int text = 0x7f080138;
-        public static final int text2 = 0x7f080139;
-        public static final int time = 0x7f080149;
-        public static final int title = 0x7f08014a;
+        public static final int text = 0x7f08013a;
+        public static final int text2 = 0x7f08013b;
+        public static final int time = 0x7f08014b;
+        public static final int title = 0x7f08014c;
     }
     public static final class integer {
         private integer() {}

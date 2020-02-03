@@ -1,14 +1,14 @@
 [
     {
-        "merged": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_activitiy.xml",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_login_activitiy.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_activitiy.xml",
-        "source": "C:\\Users\\Dell\\Downloads\\AppMaker\\AppMaker\\app\\src\\main\\res\\layout\\activity_login_activitiy.xml"
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_splash.xml"
     }
 ]
