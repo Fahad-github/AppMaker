@@ -1950,6 +1950,7 @@ layout activity_main
 layout activity_sign_up
 layout activity_splash
 layout activity_template1
+layout activity_template2
 layout activity_user_main_screen
 layout app_bar_template1
 layout app_bar_user_main_screen

@@ -23,11 +23,11 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.fyp.appmaker.Functionality.Template2" />
         <activity
             android:name="com.fyp.appmaker.Functionality.Template1"
             android:label="@string/title_activity_template1"
-            android:theme="@style/AppTheme.NoActionBar" >
-        </activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name="com.fyp.appmaker.Functionality.ChooseTemplate" />
         <activity
             android:name="com.fyp.appmaker.Functionality.UserMainScreen"

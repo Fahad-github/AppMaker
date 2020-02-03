@@ -116,6 +116,7 @@ public class UserMainScreen extends UtilitiesClass
         } else if (id == R.id.logout) {
             deleteFromPrefs();
             startActivity(new Intent(UserMainScreen.this, LoginActivity.class));
+            finish();
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
