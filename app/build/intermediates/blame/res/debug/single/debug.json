@@ -60,6 +60,10 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\drawable\\design_ic_visibility.xml"
     },
     {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-mdpi\\ic_image_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_text_input_date.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\layout\\mtrl_picker_text_input_date.xml"
     },
@@ -768,6 +772,10 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\mtrl_card_view_foreground.xml"
     },
     {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxxhdpi\\ic_image_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xhdpi-v4\\abc_ic_star_black_36dp.png"
     },
@@ -794,6 +802,10 @@
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-hdpi-v4\\abc_ic_menu_paste_mtrl_am_alpha.png"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-hdpi\\ic_image_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_error.xml.flat",
@@ -922,6 +934,10 @@
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_background_color.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\mtrl_chip_background_color.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_template1new.xml.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_template1new.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_picker_dialog.xml.flat",
@@ -1062,6 +1078,10 @@
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\layout\\select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_image_black_24dp.xml.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_image_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_send.xml.flat",
@@ -1468,6 +1488,10 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\mtrl_chip_ripple_color.xml"
     },
     {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_app_details_dialog.xml.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\add_app_details_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_month_labeled.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\layout\\mtrl_calendar_month_labeled.xml"
     },
@@ -1566,6 +1590,10 @@
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_keyboard_arrow_right_black_24dp.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\drawable\\ic_keyboard_arrow_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xxhdpi\\ic_image_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
@@ -2312,6 +2340,10 @@
         "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-xhdpi\\ic_image_black_24dp.png"
+    },
+    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\anim_design_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\anim\\design_bottom_sheet_slide_out.xml"
     },
@@ -2346,6 +2378,10 @@
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\interpolator_btn_radio_to_off_mtrl_animation_interpolator_0.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\interpolator\\btn_radio_to_off_mtrl_animation_interpolator_0.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-ldpi_ic_image_black_24dp.png.flat",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-ldpi\\ic_image_black_24dp.png"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",

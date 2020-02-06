@@ -24,6 +24,7 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/AppTheme" >
+        <activity android:name="com.fyp.appmaker.Functionality.Template1new" />
         <activity android:name="com.fyp.appmaker.Functionality.Template2" />
         <activity
             android:name="com.fyp.appmaker.Functionality.Template1"

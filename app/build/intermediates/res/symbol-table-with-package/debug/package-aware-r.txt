@@ -1481,6 +1481,7 @@ drawable ic_arrow_back_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_edit_black_24dp
+drawable ic_image_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
@@ -1590,13 +1591,17 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
+id addIconButton
+id addIconText
 id adjust_height
 id adjust_width
 id agreeTV
 id alertTitle
 id all
 id always
+id appDescEditText
 id appLogo
+id appNameEditText
 id async
 id auto
 id barrier
@@ -1630,6 +1635,7 @@ id content
 id contentPanel
 id coordinator
 id createAccountButton
+id creatorsNameEditText
 id custom
 id customPanel
 id cut
@@ -1952,8 +1958,10 @@ layout activity_main
 layout activity_sign_up
 layout activity_splash
 layout activity_template1
+layout activity_template1new
 layout activity_template2
 layout activity_user_main_screen
+layout add_app_details_dialog
 layout app_bar_template1
 layout app_bar_user_main_screen
 layout content_template1
@@ -2072,7 +2080,10 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string app_description
+string app_icon
 string app_name
+string app_name_text
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
@@ -2098,6 +2109,7 @@ string common_google_play_services_wear_update_text
 string common_open_on_phone
 string common_signin_button_text
 string common_signin_button_text_long
+string creator_s_name
 string default_web_client_id
 string error_icon_content_description
 string exposed_dropdown_menu_content_description

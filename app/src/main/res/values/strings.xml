@@ -15,4 +15,8 @@
     <string name="menu_share">Share</string>
     <string name="menu_send">Send</string>
     <string name="title_activity_template1">Template1</string>
+    <string name="app_name_text">App name</string>
+    <string name="app_description">App Description</string>
+    <string name="creator_s_name">Creator\'s Name</string>
+    <string name="app_icon">App Icon</string>
 </resources>

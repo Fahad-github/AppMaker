@@ -161,7 +161,7 @@ public class SignUpActivity extends UtilitiesClass implements View.OnClickListen
                 }
                 if (!exist) {
                     signUpBinding.loadingBar.setVisibility(View.INVISIBLE);
-                    db.addUser(new UserModel(name, email, pass), userId);
+                    db.addUser(new UserModel("",name, email, pass));
                     Toast.makeText(SignUpActivity.this, "Account created!", Toast.LENGTH_SHORT).show();
                     startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
                 }

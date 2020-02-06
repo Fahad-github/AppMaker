@@ -11,18 +11,25 @@ public class UtilitiesClass extends AppCompatActivity {
     SharedPreferences sharedPreferences;
 
 
-    public void saveToPrefs(String email,String password) {
+    public void saveToPrefs(String userId,String email,String password) {
         sharedPreferences = getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
+        editor.putString("userId", userId);
         editor.putString("email", email);
         editor.putString("password", password);
         editor.commit();
     }
 
-    public String loadFromPrefs() {
+    public String loadEmailFromPrefs() {
         sharedPreferences= getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String email = sharedPreferences.getString("email", "");
         return email;
+    }
+
+    public String loadIDFromPrefs() {
+        sharedPreferences= getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+        String userId = sharedPreferences.getString("userId", "");
+        return userId;
     }
 
     public void deleteFromPrefs(){

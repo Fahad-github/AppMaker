@@ -9,7 +9,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.fyp.appmaker.Authenticaiton.SignUpActivity;
+import com.fyp.appmaker.Functionality.TemplateRecyclerViewAdapter;
+import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.Models.UserModel;
+import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -19,18 +22,21 @@ import com.google.firebase.database.ValueEventListener;
 public class FirebaseDb extends AppCompatActivity {
 
     private DatabaseReference mDatabase;
+    private UtilitiesClass utilitiesClass;
 
-    public void addUser(UserModel userModel, String userId) {
+    public void addUser(UserModel user) {
         mDatabase = FirebaseDatabase.getInstance().getReference("users");
-        if (TextUtils.isEmpty(userId)) {
-            userId = mDatabase.push().getKey();
-        }
-        UserModel user = userModel;
+        String userId=mDatabase.push().getKey();
+        user.setId(userId);
         mDatabase.child(userId).setValue(user);
 
     }
 
-
+    public void addAppDetails(AppDetailsModel appDetailsModel)
+    {
+        mDatabase=FirebaseDatabase.getInstance().
+                getReference("appDetails").child(utilitiesClass.loadIDFromPrefs());
+    }
 
 
 }
