@@ -26,8 +26,8 @@ public class UtilitiesClass extends AppCompatActivity {
         return email;
     }
 
-    public String loadIDFromPrefs() {
-        sharedPreferences= getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+    public String loadIDFromPrefs(Context context) {
+        sharedPreferences= context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("userId", "");
         return userId;
     }

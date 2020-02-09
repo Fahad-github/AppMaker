@@ -16,12 +16,12 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-hdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_disabled.xml.flat",
-        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\material_on_primary_disabled.xml"
-    },
-    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-mdpi-v4\\abc_list_pressed_holo_dark.9.png"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_material_on_primary_disabled.xml.flat",
+        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\material_on_primary_disabled.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_content_template1.xml.flat",
@@ -904,12 +904,12 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable\\btn_checkbox_checked_to_unchecked_mtrl_animation.xml"
     },
     {
-        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_exit_anim.xml.flat",
-        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\e7db88e196512bbee43da989bee5d514\\res\\anim\\nav_default_exit_anim.xml"
-    },
-    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_abc_primary_text_disable_only_material_dark.xml.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\color\\abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\anim_nav_default_exit_anim.xml.flat",
+        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\e7db88e196512bbee43da989bee5d514\\res\\anim\\nav_default_exit_anim.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_common_google_signin_btn_text_light_normal_background.9.png.flat",
@@ -1076,12 +1076,12 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xxxhdpi-v4\\abc_ic_menu_selectall_mtrl_alpha.png"
     },
     {
-        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
-        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\layout\\select_dialog_singlechoice_material.xml"
-    },
-    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21_ic_image_black_24dp.xml.flat",
         "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_image_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_select_dialog_singlechoice_material.xml.flat",
+        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\layout\\select_dialog_singlechoice_material.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v21_ic_menu_send.xml.flat",
@@ -1484,12 +1484,12 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-hdpi-v4\\abc_ic_star_half_black_16dp.png"
     },
     {
-        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
-        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\mtrl_chip_ripple_color.xml"
-    },
-    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_add_app_details_dialog.xml.flat",
         "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\add_app_details_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\color_mtrl_chip_ripple_color.xml.flat",
+        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\2d8c647dceb29d1dd3d00e90c236fda3\\res\\color\\mtrl_chip_ripple_color.xml"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_mtrl_calendar_month_labeled.xml.flat",
@@ -2316,12 +2316,12 @@
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xxxhdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
-        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
-        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
-    },
-    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_abc_btn_check_to_on_mtrl_000.png.flat",
         "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xhdpi-v4\\abc_btn_check_to_on_mtrl_000.png"
+    },
+    {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
+        "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\drawable-xxhdpi-v4\\abc_tab_indicator_mtrl_alpha.9.png"
     },
     {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_abc_scrubber_primary_mtrl_alpha.9.png.flat",

@@ -4,6 +4,10 @@
         "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_login_activitiy.xml"
     },
     {
+        "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_app_details_dialog.xml",
+        "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\add_app_details_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
         "source": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },

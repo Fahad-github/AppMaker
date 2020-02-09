@@ -1,53 +1,62 @@
 package com.fyp.appmaker.Functionality;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.Manifest;
+import android.app.Activity;
+import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
+import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.provider.MediaStore;
+import android.util.Base64;
 
 import com.fyp.appmaker.Models.TemplateListModel;
 import com.fyp.appmaker.R;
 
+import java.io.ByteArrayOutputStream;
+import java.io.IOException;
 import java.util.ArrayList;
 
 import static androidx.core.app.ActivityCompat.requestPermissions;
+import static androidx.core.app.ActivityCompat.startActivityForResult;
 
-public class ChooseTemplate extends AppCompatActivity {
+public class ChooseTemplate extends AppCompatActivity implements TemplateRecyclerViewAdapter.CallbackInterface {
 
     ArrayList<TemplateListModel> list;
     RecyclerView recyclerView;
+    byte[] byteImage;
+    String imageFile;
+
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
-        super.onRequestPermissionsResult(requestCode, permissions, grantResults);
-
-        if (requestCode==1)
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode==1 && resultCode==RESULT_OK && data!=null)
         {
-            if (grantResults.length>0 && grantResults[0]== PackageManager.PERMISSION_GRANTED)
-            {
-                getImage();
-            }
-        }
-    }
+            System.out.println("here");
+            Uri selectedImage=data.getData();
+            try {
 
-    public boolean checkPermissions()
-    {
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
-            if (checkSelfPermission(Manifest.permission.READ_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED)
-            {
-                requestPermissions(new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},1);
-            }
-            else
-            {
-                return true;
+                //Bitmap to byte[]
+                Bitmap imagebitmap=MediaStore.Images.Media.getBitmap(this.getContentResolver(),selectedImage);
+
+                ByteArrayOutputStream byteArrayOutputStream=new ByteArrayOutputStream();
+                imagebitmap.compress(Bitmap.CompressFormat.JPEG,50,byteArrayOutputStream);
+                byteImage=byteArrayOutputStream.toByteArray();
+                imageFile = Base64.encodeToString(byteImage, Base64.DEFAULT);
+                TemplateRecyclerViewAdapter.imagefile=imageFile;
+                TemplateRecyclerViewAdapter.dialogBinding.addIconTextView.setText(imageFile);
+            } catch (IOException e) {
+                e.printStackTrace();
             }
         }
-        return false;
     }
 
     @Override
@@ -66,5 +75,11 @@ public class ChooseTemplate extends AppCompatActivity {
         TemplateRecyclerViewAdapter adapter=new TemplateRecyclerViewAdapter(this,list);
         recyclerView.setLayoutManager(linearLayoutManager);
         recyclerView.setAdapter(adapter);
+    }
+
+    @Override
+    public void handleImageInsertion() {
+        Intent intent=new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
+        startActivityForResult(intent,1);
     }
 }

@@ -18,6 +18,14 @@ public class AppDetailsModel {
         this.appDesc = appDesc;
     }
 
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setUserId(String userId) {
+        this.userId = userId;
+    }
+
     public String getId() {
         return id;
     }

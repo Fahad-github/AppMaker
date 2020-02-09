@@ -1591,16 +1591,19 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id addIconButton
-id addIconText
+id addIconRelativeLayout
+id addIconTextView
+id addIconTextViewLayout
 id adjust_height
 id adjust_width
 id agreeTV
 id alertTitle
 id all
 id always
+id appDesc
 id appDescEditText
 id appLogo
+id appName
 id appNameEditText
 id async
 id auto
@@ -1635,6 +1638,7 @@ id content
 id contentPanel
 id coordinator
 id createAccountButton
+id creatorsName
 id creatorsNameEditText
 id custom
 id customPanel
@@ -1691,6 +1695,7 @@ id ifRoom
 id image
 id imageView
 id info
+id insertIconButton
 id invisible
 id italic
 id item_touch_helper_previous_elevation
@@ -1841,6 +1846,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id templateImage
+id templateListLinearLayout
 id templateName
 id templatesRecyclerView
 id test_checkbox_android_button_tint

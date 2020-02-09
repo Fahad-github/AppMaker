@@ -70,6 +70,7 @@ public final class R {
      */
     public static final int action=0x7f030000;
     /**
+     * Custom divider drawable to use for elements in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -77,6 +78,7 @@ public final class R {
      */
     public static final int actionBarDivider=0x7f030001;
     /**
+     * Custom item state list drawable background for action bar items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -84,6 +86,8 @@ public final class R {
      */
     public static final int actionBarItemBackground=0x7f030002;
     /**
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -91,6 +95,8 @@ public final class R {
      */
     public static final int actionBarPopupTheme=0x7f030003;
     /**
+     * Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -107,6 +113,10 @@ public final class R {
      */
     public static final int actionBarSize=0x7f030004;
     /**
+     * Reference to a style for the split Action Bar. This style
+     * controls the split component that holds the menu/action
+     * buttons. actionBarStyle is still used for the primary
+     * bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -114,6 +124,7 @@ public final class R {
      */
     public static final int actionBarSplitStyle=0x7f030005;
     /**
+     * Reference to a style for the Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -128,6 +139,7 @@ public final class R {
      */
     public static final int actionBarTabBarStyle=0x7f030007;
     /**
+     * Default style for tabs within an action bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -142,6 +154,9 @@ public final class R {
      */
     public static final int actionBarTabTextStyle=0x7f030009;
     /**
+     * Reference to a theme that should be used to inflate the
+     * action bar. This will be inherited by any widget inflated
+     * into the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -149,6 +164,13 @@ public final class R {
      */
     public static final int actionBarTheme=0x7f03000a;
     /**
+     * Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar. Most of the time
+     * this will be a reference to the current theme, but when
+     * the action bar has a significantly different contrast
+     * profile than the rest of the activity the difference
+     * can become important. If this is set to @null the current
+     * theme will be used.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -156,6 +178,7 @@ public final class R {
      */
     public static final int actionBarWidgetTheme=0x7f03000b;
     /**
+     * Default action button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -163,6 +186,7 @@ public final class R {
      */
     public static final int actionButtonStyle=0x7f03000c;
     /**
+     * Default ActionBar dropdown style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -170,6 +194,9 @@ public final class R {
      */
     public static final int actionDropDownStyle=0x7f03000d;
     /**
+     * An optional layout to be used as an action view.
+     * See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -177,6 +204,8 @@ public final class R {
      */
     public static final int actionLayout=0x7f03000e;
     /**
+     * TextAppearance style that will be applied to text that
+     * appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -184,6 +213,7 @@ public final class R {
      */
     public static final int actionMenuTextAppearance=0x7f03000f;
     /**
+     * Color for text that appears within action menu items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -194,6 +224,7 @@ public final class R {
      */
     public static final int actionMenuTextColor=0x7f030010;
     /**
+     * Background drawable to use for action mode UI
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -208,6 +239,7 @@ public final class R {
      */
     public static final int actionModeCloseButtonStyle=0x7f030012;
     /**
+     * Drawable to use for the close action mode button
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -215,6 +247,7 @@ public final class R {
      */
     public static final int actionModeCloseDrawable=0x7f030013;
     /**
+     * Drawable to use for the Copy action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -222,6 +255,7 @@ public final class R {
      */
     public static final int actionModeCopyDrawable=0x7f030014;
     /**
+     * Drawable to use for the Cut action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -229,6 +263,7 @@ public final class R {
      */
     public static final int actionModeCutDrawable=0x7f030015;
     /**
+     * Drawable to use for the Find action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -236,6 +271,7 @@ public final class R {
      */
     public static final int actionModeFindDrawable=0x7f030016;
     /**
+     * Drawable to use for the Paste action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -243,6 +279,7 @@ public final class R {
      */
     public static final int actionModePasteDrawable=0x7f030017;
     /**
+     * PopupWindow style to use for action modes when showing as a window overlay.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -250,6 +287,7 @@ public final class R {
      */
     public static final int actionModePopupWindowStyle=0x7f030018;
     /**
+     * Drawable to use for the Select all action button in Contextual Action Bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -257,6 +295,7 @@ public final class R {
      */
     public static final int actionModeSelectAllDrawable=0x7f030019;
     /**
+     * Drawable to use for the Share action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -264,6 +303,7 @@ public final class R {
      */
     public static final int actionModeShareDrawable=0x7f03001a;
     /**
+     * Background drawable to use for action mode UI in the lower split bar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -278,6 +318,7 @@ public final class R {
      */
     public static final int actionModeStyle=0x7f03001c;
     /**
+     * Drawable to use for the Web Search action button in WebView selection action modes
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -299,20 +340,30 @@ public final class R {
      */
     public static final int actionOverflowMenuStyle=0x7f03001f;
     /**
+     * The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.
+     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionProviderClass=0x7f030020;
     /**
+     * Alpha level for the action button text, to allow for adjusting the lightness or darkness of
+     * the theme color used for Snackbar text buttons (e.g., colorPrimary).
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int actionTextColorAlpha=0x7f030021;
     /**
+     * The name of an optional View class to instantiate and use as an
+     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int actionViewClass=0x7f030022;
     /**
+     * Default ActivityChooserView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -339,6 +390,7 @@ public final class R {
      */
     public static final int alertDialogStyle=0x7f030026;
     /**
+     * Theme to use for alert dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -346,15 +398,20 @@ public final class R {
      */
     public static final int alertDialogTheme=0x7f030027;
     /**
+     * Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int allowStacking=0x7f030028;
     /**
+     * Alpha multiplier applied to the base color.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int alpha=0x7f030029;
     /**
+     * The alphabetic modifier key. This is the modifier when using a keyboard
+     * with alphabetic keys. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -371,14 +428,15 @@ public final class R {
      */
     public static final int alphabeticModifiers=0x7f03002a;
     /**
+     * Sets the enter and exit animations for a Snackbar.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fade</td><td>1</td><td></td></tr>
-     * <tr><td>slide</td><td>0</td><td></td></tr>
+     * <tr><td>fade</td><td>1</td><td>Mode that corresponds to the fade in and out animations.</td></tr>
+     * <tr><td>slide</td><td>0</td><td>Mode that corresponds to the slide in and out animations.</td></tr>
      * </table>
      */
     public static final int animationMode=0x7f03002b;
@@ -395,6 +453,7 @@ public final class R {
      */
     public static final int argType=0x7f03002d;
     /**
+     * The length of the arrow head when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -403,6 +462,7 @@ public final class R {
      */
     public static final int arrowHeadLength=0x7f03002e;
     /**
+     * The length of the shaft when formed to make an arrow
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -411,6 +471,7 @@ public final class R {
      */
     public static final int arrowShaftLength=0x7f03002f;
     /**
+     * Default AutoCompleteTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -418,6 +479,7 @@ public final class R {
      */
     public static final int autoCompleteTextViewStyle=0x7f030030;
     /**
+     * The maximum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -426,6 +488,7 @@ public final class R {
      */
     public static final int autoSizeMaxTextSize=0x7f030031;
     /**
+     * The minimum text size constraint to be used when auto-sizing text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -434,6 +497,9 @@ public final class R {
      */
     public static final int autoSizeMinTextSize=0x7f030032;
     /**
+     * Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
+     * <code>autoSizeStepGranularity</code> if set.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -441,6 +507,9 @@ public final class R {
      */
     public static final int autoSizePresetSizes=0x7f030033;
     /**
+     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>. The default is 1px. Overwrites
+     * <code>autoSizePresetSizes</code> if set.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -449,18 +518,22 @@ public final class R {
      */
     public static final int autoSizeStepGranularity=0x7f030034;
     /**
+     * Specify the type of auto-size. Note that this feature is not supported by EditText,
+     * works only for TextView.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>uniform</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
+     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
+     * container.</td></tr>
      * </table>
      */
     public static final int autoSizeTextType=0x7f030035;
     /**
+     * Specifies a background drawable for the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -506,10 +579,13 @@ public final class R {
      */
     public static final int backgroundInsetTop=0x7f03003b;
     /**
+     * Alpha level for the color that is overlaid on top of the background color. Ignored if
+     * backgroundTint is set.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int backgroundOverlayColorAlpha=0x7f03003c;
     /**
+     * Specifies a background drawable for the bottom component of a split action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -520,6 +596,7 @@ public final class R {
      */
     public static final int backgroundSplit=0x7f03003d;
     /**
+     * Specifies a background drawable for a second stacked row of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -530,24 +607,31 @@ public final class R {
      */
     public static final int backgroundStacked=0x7f03003e;
     /**
+     * Tint to apply to the background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int backgroundTint=0x7f03003f;
     /**
+     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int backgroundTintMode=0x7f030040;
@@ -558,10 +642,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>BOTTOM_END</td><td>800055</td><td></td></tr>
-     * <tr><td>BOTTOM_START</td><td>800053</td><td></td></tr>
-     * <tr><td>TOP_END</td><td>800035</td><td></td></tr>
-     * <tr><td>TOP_START</td><td>800033</td><td></td></tr>
+     * <tr><td>BOTTOM_END</td><td>800055</td><td>Gravity.BOTTOM | Gravity.END</td></tr>
+     * <tr><td>BOTTOM_START</td><td>800053</td><td>Gravity.BOTTOM | Gravity.START</td></tr>
+     * <tr><td>TOP_END</td><td>800035</td><td>Gravity.TOP | Gravity.END</td></tr>
+     * <tr><td>TOP_START</td><td>800033</td><td>Gravity.TOP | Gravity.START</td></tr>
      * </table>
      */
     public static final int badgeGravity=0x7f030041;
@@ -579,6 +663,7 @@ public final class R {
      */
     public static final int badgeTextColor=0x7f030043;
     /**
+     * The length of the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -608,16 +693,20 @@ public final class R {
      */
     public static final int barrierDirection=0x7f030046;
     /**
+     * Whether the FAB should automatically hide when there is no space for it.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int behavior_autoHide=0x7f030047;
     /**
+     * Whether the extended FAB should automatically shrink when there is no space for it.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int behavior_autoShrink=0x7f030048;
     /**
+     * The top offset of the BottomSheet in the expanded-state when fitsToContent is false.
+     * The default value is 0, which results in the sheet matching the parent's top.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -626,11 +715,16 @@ public final class R {
      */
     public static final int behavior_expandedOffset=0x7f030049;
     /**
+     * Whether height of expanded sheet wraps content or not
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int behavior_fitToContents=0x7f03004a;
     /**
+     * The ratio to be used to set the height of half-expanded state in proportion to parent, when
+     * fitToContents is false. Defaults to true half, 0.5, if not explicitly set. Ratio must be a
+     * float value between 0 and 1 and produce a half-expanded state height larger than the
+     * peek height for the half-expanded state to be operational
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -639,11 +733,13 @@ public final class R {
      */
     public static final int behavior_halfExpandedRatio=0x7f03004b;
     /**
+     * Whether this bottom sheet can be hidden by dragging it further downwards
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int behavior_hideable=0x7f03004c;
     /**
+     * The amount that the scrolling view should overlap the bottom of any AppBarLayout
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -652,6 +748,7 @@ public final class R {
      */
     public static final int behavior_overlapTop=0x7f03004d;
     /**
+     * The height of the bottom sheet when it is collapsed.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -663,32 +760,38 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>Peek at the 16:9 ratio keyline of its parent</td></tr>
      * </table>
      */
     public static final int behavior_peekHeight=0x7f03004e;
     /**
+     * Behavior properties will be saved and restored by evaluating each flag.
+     * usage: app:behavior_saveFlags=”hideable|skipCollapsed”
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>fitToContents</td><td>2</td><td></td></tr>
-     * <tr><td>hideable</td><td>4</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>peekHeight</td><td>1</td><td></td></tr>
-     * <tr><td>skipCollapsed</td><td>8</td><td></td></tr>
+     * <tr><td>all</td><td>ffffffff</td><td>This flag will preserve the all the aforementioned values on configuration change.</td></tr>
+     * <tr><td>fitToContents</td><td>2</td><td>This flag will preserve the fitToContents boolean value on configuration change.</td></tr>
+     * <tr><td>hideable</td><td>4</td><td>This flag will preserve the hideable boolean value on configuration change.</td></tr>
+     * <tr><td>none</td><td>0</td><td>This flag will not preserve the aforementioned values on configuration change. The only
+     * value preserved will be the positional state, e.g. collapsed, hidden, expanded, etc.
+     * This is the default behavior.</td></tr>
+     * <tr><td>peekHeight</td><td>1</td><td>This flag will preserve the peekHeight on configuration change.</td></tr>
+     * <tr><td>skipCollapsed</td><td>8</td><td>This flag will preserve the skipCollapsed boolean value on configuration change.</td></tr>
      * </table>
      */
     public static final int behavior_saveFlags=0x7f03004f;
     /**
+     * Skip the collapsed state once expanded; no effect unless it is hideable
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int behavior_skipCollapsed=0x7f030050;
     /**
+     * The width of the border around the FAB.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -697,6 +800,7 @@ public final class R {
      */
     public static final int borderWidth=0x7f030051;
     /**
+     * Style for buttons without an explicit border, often used in groups.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -732,25 +836,30 @@ public final class R {
      */
     public static final int bottomSheetStyle=0x7f030056;
     /**
+     * The color to use for the box's background color when in filled box mode.
+     * If a non-stateful color resource is specified, default colors will be used for the hover
+     * and disabled states.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int boxBackgroundColor=0x7f030057;
     /**
+     * Whether the text input area should be drawn as a filled box, an outline box, or not as a box.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>filled</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>outline</td><td>2</td><td></td></tr>
+     * <tr><td>filled</td><td>1</td><td>Filled box mode for the text input box.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Specifies that there should be no box set on the text input area.</td></tr>
+     * <tr><td>outline</td><td>2</td><td>Outline box mode for the text input box.</td></tr>
      * </table>
      */
     public static final int boxBackgroundMode=0x7f030058;
     /**
+     * Value to use for the EditText's collapsed top padding in box mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -759,6 +868,7 @@ public final class R {
      */
     public static final int boxCollapsedPaddingTop=0x7f030059;
     /**
+     * The value to use for the box's bottom end corner radius when in box mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -767,6 +877,7 @@ public final class R {
      */
     public static final int boxCornerRadiusBottomEnd=0x7f03005a;
     /**
+     * The value to use for the box's bottom start corner radius when in box mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -775,6 +886,7 @@ public final class R {
      */
     public static final int boxCornerRadiusBottomStart=0x7f03005b;
     /**
+     * The value to use for the box's top end corner radius when in box mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -783,6 +895,7 @@ public final class R {
      */
     public static final int boxCornerRadiusTopEnd=0x7f03005c;
     /**
+     * The value to use for the box's top start corner radius when in box mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -791,18 +904,24 @@ public final class R {
      */
     public static final int boxCornerRadiusTopStart=0x7f03005d;
     /**
+     * The color to use for the box's stroke when in outline box mode.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int boxStrokeColor=0x7f03005e;
     /**
+     * The color to use for the box's stroke in outline box mode when an error
+     * is being displayed. If not set, it defaults to errorTextColor if on
+     * error state, or to counterOverflowTextColor if on overflow state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int boxStrokeErrorColor=0x7f03005f;
     /**
+     * The value to use for the box's stroke when in outline box mode, or for the underline stroke
+     * in filled mode.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -811,6 +930,8 @@ public final class R {
      */
     public static final int boxStrokeWidth=0x7f030060;
     /**
+     * The value to use for the focused box's stroke when in outline box mode, or for the focused
+     * underline stroke in filled mode..
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -819,6 +940,7 @@ public final class R {
      */
     public static final int boxStrokeWidthFocused=0x7f030061;
     /**
+     * Style for buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -826,6 +948,7 @@ public final class R {
      */
     public static final int buttonBarButtonStyle=0x7f030062;
     /**
+     * Style for the "negative" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -833,6 +956,7 @@ public final class R {
      */
     public static final int buttonBarNegativeButtonStyle=0x7f030063;
     /**
+     * Style for the "neutral" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -840,6 +964,7 @@ public final class R {
      */
     public static final int buttonBarNeutralButtonStyle=0x7f030064;
     /**
+     * Style for the "positive" buttons within button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -847,6 +972,7 @@ public final class R {
      */
     public static final int buttonBarPositiveButtonStyle=0x7f030065;
     /**
+     * Style for button bars
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -854,6 +980,7 @@ public final class R {
      */
     public static final int buttonBarStyle=0x7f030066;
     /**
+     * Compat attr to load backported drawable types
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -867,9 +994,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int buttonGravity=0x7f030068;
@@ -906,6 +1033,7 @@ public final class R {
      */
     public static final int buttonSize=0x7f03006b;
     /**
+     * Normal Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -913,6 +1041,7 @@ public final class R {
      */
     public static final int buttonStyle=0x7f03006c;
     /**
+     * Small Button style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -920,34 +1049,43 @@ public final class R {
      */
     public static final int buttonStyleSmall=0x7f03006d;
     /**
+     * Tint to apply to the button drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int buttonTint=0x7f03006e;
     /**
+     * Blending mode used to apply the button tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int buttonTintMode=0x7f03006f;
     /**
+     * Background color for CardView.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int cardBackgroundColor=0x7f030070;
     /**
+     * Corner radius for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -956,6 +1094,7 @@ public final class R {
      */
     public static final int cardCornerRadius=0x7f030071;
     /**
+     * Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -964,12 +1103,14 @@ public final class R {
      */
     public static final int cardElevation=0x7f030072;
     /**
+     * Foreground color for CardView.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int cardForegroundColor=0x7f030073;
     /**
+     * Maximum Elevation for CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -978,11 +1119,13 @@ public final class R {
      */
     public static final int cardMaxElevation=0x7f030074;
     /**
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int cardPreventCornerOverlap=0x7f030075;
     /**
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -1000,6 +1143,7 @@ public final class R {
      */
     public static final int chainUseRtl=0x7f030078;
     /**
+     * Default Checkbox style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1007,6 +1151,7 @@ public final class R {
      */
     public static final int checkboxStyle=0x7f030079;
     /**
+     * The id of the child button that should be checked by default within this button group.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1014,6 +1159,7 @@ public final class R {
      */
     public static final int checkedButton=0x7f03007a;
     /**
+     * The id of the child chip that should be checked by default within this chip group.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1028,22 +1174,26 @@ public final class R {
      */
     public static final int checkedIcon=0x7f03007c;
     /**
+     * Deprecated. Use checkedIconVisible instead
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int checkedIconEnabled=0x7f03007d;
     /**
+     * Tint color for the checked icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int checkedIconTint=0x7f03007e;
     /**
+     * Whether to show the checked icon.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int checkedIconVisible=0x7f03007f;
     /**
+     * Default CheckedTextView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1051,12 +1201,14 @@ public final class R {
      */
     public static final int checkedTextViewStyle=0x7f030080;
     /**
+     * Background color to apply to the chip.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int chipBackgroundColor=0x7f030081;
     /**
+     * Corner radius to apply to the chip's shape.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1065,6 +1217,7 @@ public final class R {
      */
     public static final int chipCornerRadius=0x7f030082;
     /**
+     * Padding at the end of the chip, after the close icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1080,6 +1233,7 @@ public final class R {
      */
     public static final int chipGroupStyle=0x7f030084;
     /**
+     * Icon drawable to display at the start of the chip.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1087,11 +1241,13 @@ public final class R {
      */
     public static final int chipIcon=0x7f030085;
     /**
+     * Deprecated. Use chipIconVisible instead.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int chipIconEnabled=0x7f030086;
     /**
+     * Size of the chip's icon and checked icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1100,17 +1256,20 @@ public final class R {
      */
     public static final int chipIconSize=0x7f030087;
     /**
+     * Tint to apply to the chip icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int chipIconTint=0x7f030088;
     /**
+     * Whether to show the chip icon.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int chipIconVisible=0x7f030089;
     /**
+     * Min height to apply to the chip. Total height includes stroke width.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1119,6 +1278,7 @@ public final class R {
      */
     public static final int chipMinHeight=0x7f03008a;
     /**
+     * Minimum size of chip's touch target, by default, Android recommended 48dp.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1127,6 +1287,7 @@ public final class R {
      */
     public static final int chipMinTouchTargetSize=0x7f03008b;
     /**
+     * Horizontal and vertical spacing between chips in this group.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1135,6 +1296,7 @@ public final class R {
      */
     public static final int chipSpacing=0x7f03008c;
     /**
+     * Horizontal spacing between chips in this group.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1143,6 +1305,7 @@ public final class R {
      */
     public static final int chipSpacingHorizontal=0x7f03008d;
     /**
+     * Vertical spacing between chips in this group.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1158,6 +1321,7 @@ public final class R {
      */
     public static final int chipStandaloneStyle=0x7f03008f;
     /**
+     * Padding at the start of the chip, before the icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1166,12 +1330,14 @@ public final class R {
      */
     public static final int chipStartPadding=0x7f030090;
     /**
+     * Stroke color to apply to the chip's outline.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int chipStrokeColor=0x7f030091;
     /**
+     * Stroke width to apply to the chip's outline.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1187,6 +1353,7 @@ public final class R {
      */
     public static final int chipStyle=0x7f030093;
     /**
+     * Surface layer color to apply to the chip.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1198,6 +1365,7 @@ public final class R {
      */
     public static final int circleCrop=0x7f030095;
     /**
+     * Close button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1205,11 +1373,13 @@ public final class R {
      */
     public static final int closeIcon=0x7f030096;
     /**
+     * Deprecated. Use closeIconVisible instead.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int closeIconEnabled=0x7f030097;
     /**
+     * Padding at the end of the close icon, before the end of the chip. If close icon exists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1218,6 +1388,7 @@ public final class R {
      */
     public static final int closeIconEndPadding=0x7f030098;
     /**
+     * Size of the chip's close icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1226,6 +1397,7 @@ public final class R {
      */
     public static final int closeIconSize=0x7f030099;
     /**
+     * Padding at the start of the close icon, after the text. If close icon exists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1234,17 +1406,20 @@ public final class R {
      */
     public static final int closeIconStartPadding=0x7f03009a;
     /**
+     * Tint to apply to the chip's close icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int closeIconTint=0x7f03009b;
     /**
+     * Whether to show the close icon.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int closeIconVisible=0x7f03009c;
     /**
+     * Specifies a layout to use for the "close" item at the starting edge.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1252,11 +1427,13 @@ public final class R {
      */
     public static final int closeItemLayout=0x7f03009d;
     /**
+     * Text to set as the content description for the collapse button.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int collapseContentDescription=0x7f03009e;
     /**
+     * Icon drawable to use for the collapse button.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1264,26 +1441,29 @@ public final class R {
      */
     public static final int collapseIcon=0x7f03009f;
     /**
+     * Specifies how the title should be positioned when collapsed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push title to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the title in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place title in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place title in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push title to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the title if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push title to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push title to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push title to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int collapsedTitleGravity=0x7f0300a0;
     /**
+     * The text appearance of the CollapsingToolbarLayouts title when it is fully
+     * 'collapsed'
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1291,48 +1471,58 @@ public final class R {
      */
     public static final int collapsedTitleTextAppearance=0x7f0300a1;
     /**
+     * The drawing color for the bars
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int color=0x7f0300a2;
     /**
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorAccent=0x7f0300a3;
     /**
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorBackgroundFloating=0x7f0300a4;
     /**
+     * The color applied to framework buttons in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorButtonNormal=0x7f0300a5;
     /**
+     * The color applied to framework controls in their activated (ex. checked) state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlActivated=0x7f0300a6;
     /**
+     * The color applied to framework control highlights (ex. ripples, list selectors).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlHighlight=0x7f0300a7;
     /**
+     * The color applied to framework controls in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorControlNormal=0x7f0300a8;
     /**
+     * Color used for error states and things that need to be drawn to
+     * the user's attention.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1398,12 +1588,16 @@ public final class R {
      */
     public static final int colorOnSurface=0x7f0300af;
     /**
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorPrimary=0x7f0300b0;
     /**
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -1457,12 +1651,14 @@ public final class R {
      */
     public static final int colorSurface=0x7f0300b7;
     /**
+     * The color applied to framework switch thumbs in their normal state.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int colorSwitchThumbNormal=0x7f0300b8;
     /**
+     * Commit icon shown in the query suggestion row
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1489,11 +1685,14 @@ public final class R {
      */
     public static final int content=0x7f0300bc;
     /**
+     * The content description associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int contentDescription=0x7f0300bd;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1502,6 +1701,8 @@ public final class R {
      */
     public static final int contentInsetEnd=0x7f0300be;
     /**
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1510,6 +1711,8 @@ public final class R {
      */
     public static final int contentInsetEndWithActions=0x7f0300bf;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1518,6 +1721,8 @@ public final class R {
      */
     public static final int contentInsetLeft=0x7f0300c0;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1526,6 +1731,8 @@ public final class R {
      */
     public static final int contentInsetRight=0x7f0300c1;
     /**
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1534,6 +1741,8 @@ public final class R {
      */
     public static final int contentInsetStart=0x7f0300c2;
     /**
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1542,6 +1751,7 @@ public final class R {
      */
     public static final int contentInsetStartWithNavigation=0x7f0300c3;
     /**
+     * Inner padding between the edges of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1550,6 +1760,7 @@ public final class R {
      */
     public static final int contentPadding=0x7f0300c4;
     /**
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1558,6 +1769,7 @@ public final class R {
      */
     public static final int contentPaddingBottom=0x7f0300c5;
     /**
+     * Inner padding between the left edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1566,6 +1778,7 @@ public final class R {
      */
     public static final int contentPaddingLeft=0x7f0300c6;
     /**
+     * Inner padding between the right edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1574,6 +1787,7 @@ public final class R {
      */
     public static final int contentPaddingRight=0x7f0300c7;
     /**
+     * Inner padding between the top edge of the Card and children of the CardView.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1582,12 +1796,15 @@ public final class R {
      */
     public static final int contentPaddingTop=0x7f0300c8;
     /**
+     * The drawable to use as a scrim on top of the CollapsingToolbarLayouts content when
+     * it has been scrolled sufficiently off screen.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int contentScrim=0x7f0300c9;
     /**
+     * The background used by framework controls.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1602,6 +1819,7 @@ public final class R {
      */
     public static final int coordinatorLayoutStyle=0x7f0300cb;
     /**
+     * Corner family to be used in the ShapeAppearance. All corners default to this value
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1614,6 +1832,7 @@ public final class R {
      */
     public static final int cornerFamily=0x7f0300cc;
     /**
+     * Bottom left corner family to be used in the ShapeAppearance.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1626,6 +1845,7 @@ public final class R {
      */
     public static final int cornerFamilyBottomLeft=0x7f0300cd;
     /**
+     * Bottom right corner family to be used in the ShapeAppearance.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1638,6 +1858,7 @@ public final class R {
      */
     public static final int cornerFamilyBottomRight=0x7f0300ce;
     /**
+     * Top left corner family to be used in the ShapeAppearance.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1650,6 +1871,7 @@ public final class R {
      */
     public static final int cornerFamilyTopLeft=0x7f0300cf;
     /**
+     * Top right corner family to be used in the ShapeAppearance.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1662,6 +1884,7 @@ public final class R {
      */
     public static final int cornerFamilyTopRight=0x7f0300d0;
     /**
+     * Specifies the radius for the corners of the button. Default is 0, for non-rounded corners.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1670,6 +1893,7 @@ public final class R {
      */
     public static final int cornerRadius=0x7f0300d1;
     /**
+     * Corner size to be used in the ShapeAppearance. All corners default to this value
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1682,6 +1906,7 @@ public final class R {
      */
     public static final int cornerSize=0x7f0300d2;
     /**
+     * Bottom left corner size to be used in the ShapeAppearance.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1694,6 +1919,7 @@ public final class R {
      */
     public static final int cornerSizeBottomLeft=0x7f0300d3;
     /**
+     * Bottom right corner size to be used in the ShapeAppearance.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1706,6 +1932,7 @@ public final class R {
      */
     public static final int cornerSizeBottomRight=0x7f0300d4;
     /**
+     * Top left corner size to be used in the ShapeAppearance.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1718,6 +1945,7 @@ public final class R {
      */
     public static final int cornerSizeTopLeft=0x7f0300d5;
     /**
+     * Top right corner size to be used in the ShapeAppearance.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1730,15 +1958,18 @@ public final class R {
      */
     public static final int cornerSizeTopRight=0x7f0300d6;
     /**
+     * Whether the layout is laid out as if the character counter will be displayed.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int counterEnabled=0x7f0300d7;
     /**
+     * The max length to display in the character counter.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int counterMaxLength=0x7f0300d8;
     /**
+     * TextAppearance of the character counter when the text is longer than the max.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1746,6 +1977,8 @@ public final class R {
      */
     public static final int counterOverflowTextAppearance=0x7f0300d9;
     /**
+     * Text color of the character counter when the text is longer than the max.
+     * If set, this takes precedence over counterOverflowTextAppearance.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1753,6 +1986,7 @@ public final class R {
      */
     public static final int counterOverflowTextColor=0x7f0300da;
     /**
+     * TextAppearance of the character counter.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1760,6 +1994,8 @@ public final class R {
      */
     public static final int counterTextAppearance=0x7f0300db;
     /**
+     * Text color of the character counter.
+     * If set, this takes precedence over counterTextAppearance.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1767,6 +2003,7 @@ public final class R {
      */
     public static final int counterTextColor=0x7f0300dc;
     /**
+     * Specifies a layout for custom navigation. Overrides navigationMode.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1817,6 +2054,8 @@ public final class R {
      */
     public static final int defaultNavHost=0x7f0300e4;
     /**
+     * Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -1829,6 +2068,7 @@ public final class R {
      */
     public static final int destination=0x7f0300e6;
     /**
+     * Preferred corner radius of dialogs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1837,6 +2077,7 @@ public final class R {
      */
     public static final int dialogCornerRadius=0x7f0300e7;
     /**
+     * Preferred padding for dialog content.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1845,6 +2086,7 @@ public final class R {
      */
     public static final int dialogPreferredPadding=0x7f0300e8;
     /**
+     * Theme to use for dialogs spawned from this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1852,6 +2094,7 @@ public final class R {
      */
     public static final int dialogTheme=0x7f0300e9;
     /**
+     * Options affecting how the action bar is displayed.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -1869,6 +2112,7 @@ public final class R {
      */
     public static final int displayOptions=0x7f0300ea;
     /**
+     * Specifies the drawable used for item dividers.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1876,6 +2120,7 @@ public final class R {
      */
     public static final int divider=0x7f0300eb;
     /**
+     * A drawable that may be used as a horizontal divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1883,6 +2128,7 @@ public final class R {
      */
     public static final int dividerHorizontal=0x7f0300ec;
     /**
+     * Size of padding on either end of a divider.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1891,6 +2137,7 @@ public final class R {
      */
     public static final int dividerPadding=0x7f0300ed;
     /**
+     * A drawable that may be used as a vertical divider between visual elements.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1912,6 +2159,8 @@ public final class R {
      */
     public static final int drawableEndCompat=0x7f0300f0;
     /**
+     * Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1926,6 +2175,7 @@ public final class R {
      */
     public static final int drawableRightCompat=0x7f0300f2;
     /**
+     * The total size of the drawable
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1941,24 +2191,31 @@ public final class R {
      */
     public static final int drawableStartCompat=0x7f0300f4;
     /**
+     * Tint to apply to the compound (left, top, etc.) drawables.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int drawableTint=0x7f0300f5;
     /**
+     * Blending mode used to apply the compound (left, top, etc.) drawables tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int drawableTintMode=0x7f0300f6;
@@ -1977,6 +2234,7 @@ public final class R {
      */
     public static final int drawerArrowStyle=0x7f0300f8;
     /**
+     * ListPopupWindow compatibility
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1984,6 +2242,7 @@ public final class R {
      */
     public static final int dropDownListViewStyle=0x7f0300f9;
     /**
+     * The preferred item height for dropdown lists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -1992,6 +2251,7 @@ public final class R {
      */
     public static final int dropdownListPreferredItemHeight=0x7f0300fa;
     /**
+     * EditText background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -1999,6 +2259,7 @@ public final class R {
      */
     public static final int editTextBackground=0x7f0300fb;
     /**
+     * EditText text foreground color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2009,6 +2270,7 @@ public final class R {
      */
     public static final int editTextColor=0x7f0300fc;
     /**
+     * Default EditText style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2016,6 +2278,7 @@ public final class R {
      */
     public static final int editTextStyle=0x7f0300fd;
     /**
+     * Elevation for the action bar itself
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2047,16 +2310,19 @@ public final class R {
      */
     public static final int emptyVisibility=0x7f030101;
     /**
+     * Whether the end icon is checkable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int endIconCheckable=0x7f030102;
     /**
+     * Text to set as the content description for the end icon.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int endIconContentDescription=0x7f030103;
     /**
+     * Drawable to use for the end icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2064,47 +2330,64 @@ public final class R {
      */
     public static final int endIconDrawable=0x7f030104;
     /**
+     * The end icon mode of the TextInputLayout. It will display one of the end icons detailed
+     * below, or no end icon.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>clear_text</td><td>2</td><td></td></tr>
-     * <tr><td>custom</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>dropdown_menu</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>password_toggle</td><td>1</td><td></td></tr>
+     * <tr><td>clear_text</td><td>2</td><td>The view will display a clear text button while the EditText contains input.</td></tr>
+     * <tr><td>custom</td><td>ffffffff</td><td>The view will display a custom icon specified by the user.</td></tr>
+     * <tr><td>dropdown_menu</td><td>3</td><td>The view will display a toggle that displays/hides a dropdown menu.</td></tr>
+     * <tr><td>none</td><td>0</td><td>No end icon.</td></tr>
+     * <tr><td>password_toggle</td><td>1</td><td>The view will display a toggle when the EditText has a password.</td></tr>
      * </table>
      */
     public static final int endIconMode=0x7f030105;
     /**
+     * Tint color to use for the end icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int endIconTint=0x7f030106;
     /**
+     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int endIconTintMode=0x7f030107;
     /**
+     * Internal flag used to denote that a style uses new attributes defined by
+     * Theme.MaterialComponents, and that the component should check via ThemeEnforcement that the
+     * client's app theme inherits from Theme.MaterialComponents.
+     * Not all usages of new attributes are problematic in the context of a legacy app theme. You
+     * should only use this flag if a particular usage is known to cause a visual glitch or crash.
+     * For example, tinting a vector drawable with a non-existent theme attribute is known to
+     * crash on pre-21 devices.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int enforceMaterialTheme=0x7f030108;
     /**
+     * Internal flag used to denote that a style requires that the textAppearance attribute is
+     * specified and evaluates to a valid text appearance.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2122,16 +2405,21 @@ public final class R {
      */
     public static final int enterAnim=0x7f03010b;
     /**
+     * Text to set as the content description for the error view.
+     * Should be set when the error message has special characters that a
+     * screen reader is not able to announce properly.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int errorContentDescription=0x7f03010c;
     /**
+     * Whether the layout is laid out as if an error will be displayed.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int errorEnabled=0x7f03010d;
     /**
+     * End icon to be shown when an error is displayed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2139,6 +2427,7 @@ public final class R {
      */
     public static final int errorIconDrawable=0x7f03010e;
     /**
+     * Tint color to use for the error icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2146,21 +2435,27 @@ public final class R {
      */
     public static final int errorIconTint=0x7f03010f;
     /**
+     * Blending mode used to apply the error icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int errorIconTintMode=0x7f030110;
     /**
+     * TextAppearance of any error message displayed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2168,6 +2463,8 @@ public final class R {
      */
     public static final int errorTextAppearance=0x7f030111;
     /**
+     * Text color for any error message displayed.
+     * If set, this takes precedence over errorTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2181,6 +2478,11 @@ public final class R {
      */
     public static final int exitAnim=0x7f030113;
     /**
+     * The drawable to show in the button for expanding the activities overflow popup.
+     * <strong>Note:</strong> Clients would like to set this drawable
+     * as a clue about the action the chosen activity will perform. For
+     * example, if share activity is to be chosen the drawable should
+     * give a clue that sharing is to be performed.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2188,31 +2490,36 @@ public final class R {
      */
     public static final int expandActivityOverflowButtonDrawable=0x7f030114;
     /**
+     * The initial expanded state for the AppBarLayout. This only takes effect when this
+     * view is a direct child of a CoordinatorLayout.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int expanded=0x7f030115;
     /**
+     * Specifies how the title should be positioned when expanded.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push title to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the title in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place title in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place title in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push title to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the title if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push title to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push title to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push title to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int expandedTitleGravity=0x7f030116;
     /**
+     * Specifies extra space on the start, top, end and bottom
+     * sides of the the expanded title text. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2221,6 +2528,8 @@ public final class R {
      */
     public static final int expandedTitleMargin=0x7f030117;
     /**
+     * Specifies extra space on the bottom side of the the expanded title text.
+     * Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2229,6 +2538,8 @@ public final class R {
      */
     public static final int expandedTitleMarginBottom=0x7f030118;
     /**
+     * Specifies extra space on the end side of the the expanded title text.
+     * Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2237,6 +2548,8 @@ public final class R {
      */
     public static final int expandedTitleMarginEnd=0x7f030119;
     /**
+     * Specifies extra space on the start side of the the expanded title text.
+     * Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2245,6 +2558,8 @@ public final class R {
      */
     public static final int expandedTitleMarginStart=0x7f03011a;
     /**
+     * Specifies extra space on the top side of the the expanded title text.
+     * Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2253,6 +2568,8 @@ public final class R {
      */
     public static final int expandedTitleMarginTop=0x7f03011b;
     /**
+     * The text appearance of the CollapsingToolbarLayout's title when it is fully
+     * 'expanded'
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2260,6 +2577,7 @@ public final class R {
      */
     public static final int expandedTitleTextAppearance=0x7f03011c;
     /**
+     * Motion spec for extend animation. This should be a MotionSpec resource.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2292,30 +2610,33 @@ public final class R {
      */
     public static final int extendedFloatingActionButtonStyle=0x7f03011e;
     /**
+     * The alignment of the fab relative to the BottomAppBar.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>center</td><td>0</td><td></td></tr>
-     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>0</td><td>Mode that aligns the fab to the center.</td></tr>
+     * <tr><td>end</td><td>1</td><td>Mode that aligns the fab to the end.</td></tr>
      * </table>
      */
     public static final int fabAlignmentMode=0x7f03011f;
     /**
+     * The animation mode that should be used when the fab animates between alignment modes.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>scale</td><td>0</td><td></td></tr>
-     * <tr><td>slide</td><td>1</td><td></td></tr>
+     * <tr><td>scale</td><td>0</td><td>Mode that scales the fab down to a point, moves it, then scales the fab back to its normal size.</td></tr>
+     * <tr><td>slide</td><td>1</td><td>Mode that slides the fab from one alignment mode to the next.</td></tr>
      * </table>
      */
     public static final int fabAnimationMode=0x7f030120;
     /**
+     * The margin between the semi-circular cradle for the fab and the fab.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2324,6 +2645,7 @@ public final class R {
      */
     public static final int fabCradleMargin=0x7f030121;
     /**
+     * The radius of the rounded corners on each side of the cradle.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2332,6 +2654,7 @@ public final class R {
      */
     public static final int fabCradleRoundedCornerRadius=0x7f030122;
     /**
+     * The vertical offset between the fab from the cradle.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2340,6 +2663,7 @@ public final class R {
      */
     public static final int fabCradleVerticalOffset=0x7f030123;
     /**
+     * Custom size for the FAB. If this is set, fabSize will be ignored.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2348,15 +2672,16 @@ public final class R {
      */
     public static final int fabCustomSize=0x7f030124;
     /**
+     * Size for the FAB. If fabCustomSize is set, this will be ignored.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>mini</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>A size which will change based on the window size.</td></tr>
+     * <tr><td>mini</td><td>1</td><td>The mini sized button.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>The normal sized button.</td></tr>
      * </table>
      */
     public static final int fabSize=0x7f030125;
@@ -2394,6 +2719,8 @@ public final class R {
      */
     public static final int fastScrollVerticalTrackDrawable=0x7f03012a;
     /**
+     * Distance from the top of the TextView to the first text baseline. If set, this
+     * overrides the value set for paddingTop.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2427,11 +2754,14 @@ public final class R {
      */
     public static final int floatingActionButtonStyle=0x7f03012c;
     /**
+     * Determines if Slider should increase its default height to include space for the label.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int floatingLabel=0x7f03012d;
     /**
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2439,16 +2769,23 @@ public final class R {
      */
     public static final int font=0x7f03012e;
     /**
+     * The attribute for the font family.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontFamily=0x7f03012f;
     /**
+     * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderAuthority=0x7f030130;
     /**
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2456,18 +2793,34 @@ public final class R {
      */
     public static final int fontProviderCerts=0x7f030131;
     /**
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchStrategy=0x7f030132;
     /**
+     * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -2475,21 +2828,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
     public static final int fontProviderFetchTimeout=0x7f030133;
     /**
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderPackage=0x7f030134;
     /**
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontProviderQuery=0x7f030135;
     /**
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -2502,11 +2863,20 @@ public final class R {
      */
     public static final int fontStyle=0x7f030136;
     /**
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int fontVariationSettings=0x7f030137;
     /**
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int fontWeight=0x7f030138;
@@ -2516,6 +2886,7 @@ public final class R {
      */
     public static final int foregroundInsidePadding=0x7f030139;
     /**
+     * The max gap between the bars when they are parallel to each other
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2524,6 +2895,7 @@ public final class R {
      */
     public static final int gapBetweenBars=0x7f03013a;
     /**
+     * Go button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2538,12 +2910,14 @@ public final class R {
      */
     public static final int graph=0x7f03013c;
     /**
+     * The color of the slider's halo.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int haloColor=0x7f03013d;
     /**
+     * The radius of the halo.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2552,6 +2926,7 @@ public final class R {
      */
     public static final int haloRadius=0x7f03013e;
     /**
+     * Layout resource to inflate as the header
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2567,16 +2942,19 @@ public final class R {
      */
     public static final int height=0x7f030140;
     /**
+     * The text to display as helper text underneath the text input area.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int helperText=0x7f030141;
     /**
+     * Whether the layout's helper text functionality is enabled.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int helperTextEnabled=0x7f030142;
     /**
+     * TextAppearance of the helper text displayed underneath the text input area.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2584,6 +2962,8 @@ public final class R {
      */
     public static final int helperTextTextAppearance=0x7f030143;
     /**
+     * Text color of the helper text displayed underneath the text input area.
+     * If set, this takes precedence over helperTextTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2597,26 +2977,31 @@ public final class R {
      */
     public static final int hideMotionSpec=0x7f030145;
     /**
+     * Set true to hide the action bar on a vertical nested scroll of content.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int hideOnContentScroll=0x7f030146;
     /**
+     * Whether the BottomAppBar should hide when a NestedScrollView is scrolled.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int hideOnScroll=0x7f030147;
     /**
+     * Whether to animate hint state changes.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int hintAnimationEnabled=0x7f030148;
     /**
+     * Whether the layout's floating label functionality is enabled.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int hintEnabled=0x7f030149;
     /**
+     * TextAppearance of the hint in the collapsed floating label.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2624,12 +3009,15 @@ public final class R {
      */
     public static final int hintTextAppearance=0x7f03014a;
     /**
+     * Text color of the hint in the collapsed floating label.
+     * If set, this takes precedence over hintTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int hintTextColor=0x7f03014b;
     /**
+     * Specifies a drawable to use for the 'home as up' indicator.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2637,6 +3025,7 @@ public final class R {
      */
     public static final int homeAsUpIndicator=0x7f03014c;
     /**
+     * Specifies a layout to use for the "home" section of the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2644,6 +3033,7 @@ public final class R {
      */
     public static final int homeLayout=0x7f03014d;
     /**
+     * Offset moves the badge towards the center of its anchor.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2652,6 +3042,7 @@ public final class R {
      */
     public static final int horizontalOffset=0x7f03014e;
     /**
+     * TranslationZ value for the FAB when hovered, focused, or hovered and focused.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2660,6 +3051,7 @@ public final class R {
      */
     public static final int hoveredFocusedTranslationZ=0x7f03014f;
     /**
+     * Icon drawable to display at the start of this view.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2667,6 +3059,7 @@ public final class R {
      */
     public static final int icon=0x7f030150;
     /**
+     * Padding at the end of the icon, before the text. If icon exists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2675,20 +3068,24 @@ public final class R {
      */
     public static final int iconEndPadding=0x7f030151;
     /**
+     * Specifies how the icon should be positioned on the X axis.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>end</td><td>3</td><td></td></tr>
-     * <tr><td>start</td><td>1</td><td></td></tr>
-     * <tr><td>textEnd</td><td>4</td><td></td></tr>
-     * <tr><td>textStart</td><td>2</td><td></td></tr>
+     * <tr><td>end</td><td>3</td><td>Push icon to the end of the button.</td></tr>
+     * <tr><td>start</td><td>1</td><td>Push icon to the start of the button.</td></tr>
+     * <tr><td>textEnd</td><td>4</td><td>Push the icon to the end of the text keeping a distance equal to
+     * {@link R.attr#iconPadding} from the text.</td></tr>
+     * <tr><td>textStart</td><td>2</td><td>Push the icon to the start of the text keeping a distance equal to
+     * {@link R.attr#iconPadding} from the text.</td></tr>
      * </table>
      */
     public static final int iconGravity=0x7f030152;
     /**
+     * Padding between icon and button text.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2697,6 +3094,7 @@ public final class R {
      */
     public static final int iconPadding=0x7f030153;
     /**
+     * Specifies the width and height to use for the icon drawable.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2705,6 +3103,7 @@ public final class R {
      */
     public static final int iconSize=0x7f030154;
     /**
+     * Padding at the start of the icon, after the start of the chip. If icon exists.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2713,28 +3112,37 @@ public final class R {
      */
     public static final int iconStartPadding=0x7f030155;
     /**
+     * Tint to apply to the icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int iconTint=0x7f030156;
     /**
+     * Blending mode used to apply the icon tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int iconTintMode=0x7f030157;
     /**
+     * The default state of the SearchView. If true, it will be iconified when not in
+     * use and expanded when clicked.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -2757,6 +3165,7 @@ public final class R {
      */
     public static final int imageAspectRatioAdjust=0x7f03015a;
     /**
+     * ImageButton background drawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2764,6 +3173,7 @@ public final class R {
      */
     public static final int imageButtonStyle=0x7f03015b;
     /**
+     * Specifies a style resource to use for an indeterminate progress spinner.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2771,6 +3181,7 @@ public final class R {
      */
     public static final int indeterminateProgressStyle=0x7f03015c;
     /**
+     * The maximal number of items initially shown in the activity list.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -2796,6 +3207,8 @@ public final class R {
      */
     public static final int isMaterialTheme=0x7f030160;
     /**
+     * A background drawable to use for navigation items. If this is set, this overrides the
+     * default background drawable for items and the itemShape* attributes will be ignored
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2809,6 +3222,7 @@ public final class R {
      */
     public static final int itemFillColor=0x7f030162;
     /**
+     * Horizontal padding (left and right) of navigation items, around the icon & text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2817,11 +3231,13 @@ public final class R {
      */
     public static final int itemHorizontalPadding=0x7f030163;
     /**
+     * Whether the items translate horizontally when in "selected" label visibility mode.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int itemHorizontalTranslationEnabled=0x7f030164;
     /**
+     * Padding between the icon and the text for navigation items that display an icon
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2830,6 +3246,7 @@ public final class R {
      */
     public static final int itemIconPadding=0x7f030165;
     /**
+     * The size of the icon navigation items that display an icon
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2844,10 +3261,13 @@ public final class R {
      */
     public static final int itemIconTint=0x7f030167;
     /**
+     * Makes the TextView of the item text be at most this many lines tall.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int itemMaxLines=0x7f030168;
     /**
+     * Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2856,6 +3276,9 @@ public final class R {
      */
     public static final int itemPadding=0x7f030169;
     /**
+     * The ColorStateList to use for a ripple background. This only exists because creating
+     * ripples in drawable xml based on theme colors is not supported pre-23. This will be ignored
+     * if itemBackground is set.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -2876,12 +3299,16 @@ public final class R {
      */
     public static final int itemShapeAppearanceOverlay=0x7f03016c;
     /**
+     * Fill color for the item background shape. Used if itemBackground isn't set and there is an
+     * itemShapeAppearance or itemShapeAppearanceOverlay.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int itemShapeFillColor=0x7f03016d;
     /**
+     * Inset bottom margin for the item background shape. Used if itemBackground isn't set and
+     * there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2890,6 +3317,8 @@ public final class R {
      */
     public static final int itemShapeInsetBottom=0x7f03016e;
     /**
+     * Inset end margin for the item background shape. Used if itemBackground isn't set and there
+     * and there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2898,6 +3327,8 @@ public final class R {
      */
     public static final int itemShapeInsetEnd=0x7f03016f;
     /**
+     * Inset start margin for the item background shape. Used if itemBackground isn't set and
+     * there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2906,6 +3337,8 @@ public final class R {
      */
     public static final int itemShapeInsetStart=0x7f030170;
     /**
+     * Inset top margin for the item background shape. Used if itemBackground isn't set and there
+     * is an itemShapeAppearance or itemShapeAppearanceOverlay.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2914,6 +3347,7 @@ public final class R {
      */
     public static final int itemShapeInsetTop=0x7f030171;
     /**
+     * Horizontal spacing between two items being laid out.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -2943,6 +3377,9 @@ public final class R {
      */
     public static final int itemTextAppearance=0x7f030175;
     /**
+     * The text appearance to apply to the active navigation item label. You should not set
+     * android:textColor in itemTextAppearanceActive. Instead, set itemTextColor to a
+     * ColorStateList to make the text color stateful.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2950,6 +3387,10 @@ public final class R {
      */
     public static final int itemTextAppearanceActive=0x7f030176;
     /**
+     * The text appearance to apply to the inactive navigation item labels. Setting
+     * android:textColor in itemTextAppearanceInactive will take precedence over android:textColor
+     * in itemTextAppearanceActive. Instead, set itemTextColor with a ColorStateList to make
+     * the text color stateful.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2963,6 +3404,11 @@ public final class R {
      */
     public static final int itemTextColor=0x7f030178;
     /**
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2970,6 +3416,7 @@ public final class R {
      */
     public static final int keylines=0x7f030179;
     /**
+     * The style used for the label TooltipDrawable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -2977,20 +3424,26 @@ public final class R {
      */
     public static final int labelStyle=0x7f03017a;
     /**
+     * Whether navigation items display with a label, without a label, or with a label during
+     * selected state. Can also be "auto", which uses the item count to determine whether to show
+     * or hide the label.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>labeled</td><td>1</td><td></td></tr>
-     * <tr><td>selected</td><td>0</td><td></td></tr>
-     * <tr><td>unlabeled</td><td>2</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>Label behaves as "labeled" when there are 3 items or less, or "selected" when there are
+     * 4 items or more.</td></tr>
+     * <tr><td>labeled</td><td>1</td><td>Label is shown on all navigation items.</td></tr>
+     * <tr><td>selected</td><td>0</td><td>Label is shown on the selected navigation item.</td></tr>
+     * <tr><td>unlabeled</td><td>2</td><td>Label is not shown on any navigation items.</td></tr>
      * </table>
      */
     public static final int labelVisibilityMode=0x7f03017b;
     /**
+     * Distance from the bottom of the TextView to the last text baseline. If set, this
+     * overrides the value set for paddingBottom.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3004,6 +3457,7 @@ public final class R {
      */
     public static final int launchSingleTop=0x7f03017d;
     /**
+     * The layout to use for the search view.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3011,11 +3465,21 @@ public final class R {
      */
     public static final int layout=0x7f03017e;
     /**
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must ext androidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int layoutManager=0x7f03017f;
     /**
+     * The id of an anchor view that this view should position relative to.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3023,30 +3487,40 @@ public final class R {
      */
     public static final int layout_anchor=0x7f030180;
     /**
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      */
     public static final int layout_anchorGravity=0x7f030181;
     /**
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3058,13 +3532,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>parallax</td><td>2</td><td></td></tr>
-     * <tr><td>pin</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>The view will act as normal with no collapsing behavior.</td></tr>
+     * <tr><td>parallax</td><td>2</td><td>The view will scroll in a parallax fashion. See the
+     * layout_collapseParallaxMultiplier attribute to change the multiplier.</td></tr>
+     * <tr><td>pin</td><td>1</td><td>The view will pin in place.</td></tr>
      * </table>
      */
     public static final int layout_collapseMode=0x7f030183;
     /**
+     * The multiplier used when layout_collapseMode is set to 'parallax'. The value should
+     * be between 0.0 and 1.0.
      * <p>May be a floating point value, such as "<code>1.2</code>".
      */
     public static final int layout_collapseParallaxMultiplier=0x7f030184;
@@ -3478,20 +3955,21 @@ public final class R {
      */
     public static final int layout_constraintWidth_percent=0x7f0301ad;
     /**
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      */
     public static final int layout_dodgeInsetEdges=0x7f0301ae;
@@ -3560,23 +4038,28 @@ public final class R {
      */
     public static final int layout_goneMarginTop=0x7f0301b6;
     /**
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      */
     public static final int layout_insetEdge=0x7f0301b7;
     /**
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int layout_keyline=0x7f0301b8;
@@ -3590,7 +4073,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -3604,17 +4087,30 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>enterAlways</td><td>4</td><td></td></tr>
-     * <tr><td>enterAlwaysCollapsed</td><td>8</td><td></td></tr>
-     * <tr><td>exitUntilCollapsed</td><td>2</td><td></td></tr>
-     * <tr><td>noScroll</td><td>0</td><td></td></tr>
-     * <tr><td>scroll</td><td>1</td><td></td></tr>
-     * <tr><td>snap</td><td>10</td><td></td></tr>
-     * <tr><td>snapMargins</td><td>20</td><td></td></tr>
+     * <tr><td>enterAlways</td><td>4</td><td>When entering (scrolling on screen) the view will scroll on any downwards
+     * scroll event, regardless of whether the scrolling view is also scrolling. This
+     * is commonly referred to as the 'quick return' pattern.</td></tr>
+     * <tr><td>enterAlwaysCollapsed</td><td>8</td><td>An additional flag for 'enterAlways' which modifies the returning view to
+     * only initially scroll back to it's collapsed height. Once the scrolling view has
+     * reached the end of it's scroll range, the remainder of this view will be scrolled
+     * into view.</td></tr>
+     * <tr><td>exitUntilCollapsed</td><td>2</td><td>When exiting (scrolling off screen) the view will be scrolled until it is
+     * 'collapsed'. The collapsed height is defined by the view's minimum height.</td></tr>
+     * <tr><td>noScroll</td><td>0</td><td>Disable scrolling on the view. This flag should not be combined with any of the other
+     * scroll flags.</td></tr>
+     * <tr><td>scroll</td><td>1</td><td>The view will be scroll in direct relation to scroll events. This flag needs to be
+     * set for any of the other flags to take effect. If any sibling views
+     * before this one do not have this flag, then this value has no effect.</td></tr>
+     * <tr><td>snap</td><td>10</td><td>Upon a scroll ending, if the view is only partially visible then it will be
+     * snapped and scrolled to it's closest edge.</td></tr>
+     * <tr><td>snapMargins</td><td>20</td><td>An additional flag to be used with 'snap'. If set, the view will be snapped to its
+     * top and bottom margins, as opposed to the edges of the view itself.</td></tr>
      * </table>
      */
     public static final int layout_scrollFlags=0x7f0301ba;
     /**
+     * An interpolator to use when scrolling this View. Only takes effect when View
+     * is scrollable.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3622,11 +4118,21 @@ public final class R {
      */
     public static final int layout_scrollInterpolator=0x7f0301bb;
     /**
+     * Whether the {@link AppBarLayout} should lift on scroll. If set to
+     * true, the {@link AppBarLayout} will animate to the lifted, or
+     * elevated, state when content is scrolled beneath it. Requires
+     * `app:layout_behavior="@string/appbar_scrolling_view_behavior` to be
+     * set on the scrolling sibling (e.g., `NestedScrollView`,
+     * `RecyclerView`, etc.). Default is false.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int liftOnScroll=0x7f0301bc;
     /**
+     * The id of the view that the {@link AppBarLayout} should use to determine whether
+     * it should be lifted (i.e., only if {@link R.attr#liftOnScroll} is set to true).
+     * If this id is not set, the {@link AppBarLayout} will use the target view provided
+     * by nested scrolling to determine whether it should be lifted.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3634,6 +4140,8 @@ public final class R {
      */
     public static final int liftOnScrollTargetViewId=0x7f0301bd;
     /**
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3642,6 +4150,7 @@ public final class R {
      */
     public static final int lineHeight=0x7f0301be;
     /**
+     * Vertical Spacing between two lines of items being laid out.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3650,6 +4159,7 @@ public final class R {
      */
     public static final int lineSpacing=0x7f0301bf;
     /**
+     * Drawable used as a background for selected list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3657,6 +4167,7 @@ public final class R {
      */
     public static final int listChoiceBackgroundIndicator=0x7f0301c0;
     /**
+     * Animated Drawable to use for single choice indicators.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3664,6 +4175,7 @@ public final class R {
      */
     public static final int listChoiceIndicatorMultipleAnimated=0x7f0301c1;
     /**
+     * Animated Drawable to use for multiple choice indicators.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3671,6 +4183,7 @@ public final class R {
      */
     public static final int listChoiceIndicatorSingleAnimated=0x7f0301c2;
     /**
+     * The list divider used in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3692,6 +4205,7 @@ public final class R {
      */
     public static final int listLayout=0x7f0301c5;
     /**
+     * Default menu-style ListView style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3706,6 +4220,7 @@ public final class R {
      */
     public static final int listPopupWindowStyle=0x7f0301c7;
     /**
+     * The preferred list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3714,6 +4229,7 @@ public final class R {
      */
     public static final int listPreferredItemHeight=0x7f0301c8;
     /**
+     * A larger, more robust list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3722,6 +4238,7 @@ public final class R {
      */
     public static final int listPreferredItemHeightLarge=0x7f0301c9;
     /**
+     * A smaller, sleeker list item height.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3730,6 +4247,7 @@ public final class R {
      */
     public static final int listPreferredItemHeightSmall=0x7f0301ca;
     /**
+     * The preferred padding along the end edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3738,6 +4256,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingEnd=0x7f0301cb;
     /**
+     * The preferred padding along the left edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3746,6 +4265,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingLeft=0x7f0301cc;
     /**
+     * The preferred padding along the right edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3754,6 +4274,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingRight=0x7f0301cd;
     /**
+     * The preferred padding along the start edge of list items.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3762,6 +4283,7 @@ public final class R {
      */
     public static final int listPreferredItemPaddingStart=0x7f0301ce;
     /**
+     * Specifies the drawable used for the application logo.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3769,6 +4291,8 @@ public final class R {
      */
     public static final int logo=0x7f0301cf;
     /**
+     * A content description string to describe the appearance of the
+     * associated logo image.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -3934,6 +4458,7 @@ public final class R {
      */
     public static final int maxCharacterCount=0x7f0301e7;
     /**
+     * Maximum icon image size.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -3942,11 +4467,15 @@ public final class R {
      */
     public static final int maxImageSize=0x7f0301e8;
     /**
+     * When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child. If false, all children are
+     * measured normally.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int measureWithLargestChild=0x7f0301e9;
     /**
+     * Menu resource to inflate to be shown in the toolbar
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3976,11 +4505,15 @@ public final class R {
      */
     public static final int navGraph=0x7f0301ed;
     /**
+     * Text to set as the content description for the navigation button
+     * located at the start of the toolbar.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int navigationContentDescription=0x7f0301ee;
     /**
+     * Icon drawable to use for the navigation button located at
+     * the start of the toolbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -3988,15 +4521,16 @@ public final class R {
      */
     public static final int navigationIcon=0x7f0301ef;
     /**
+     * The type of navigation to use.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
-     * <tr><td>tabMode</td><td>2</td><td></td></tr>
+     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
+     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      */
     public static final int navigationMode=0x7f0301f0;
@@ -4017,6 +4551,8 @@ public final class R {
      */
     public static final int number=0x7f0301f3;
     /**
+     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
+     * keyboard. The values should be kept in sync with KeyEvent
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4033,11 +4569,13 @@ public final class R {
      */
     public static final int numericModifiers=0x7f0301f4;
     /**
+     * Whether the popup window should overlap its anchor view.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int overlapAnchor=0x7f0301f5;
     /**
+     * Bottom padding to use when no buttons are present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4046,11 +4584,14 @@ public final class R {
      */
     public static final int paddingBottomNoButtons=0x7f0301f6;
     /**
+     * Just adding the parameters that we need for now. We can add others if we need them, but
+     * ideally we'll be able to use https://github.com/chrisbanes/insetter once it's ready.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int paddingBottomSystemWindowInsets=0x7f0301f7;
     /**
+     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4069,6 +4610,7 @@ public final class R {
      */
     public static final int paddingRightSystemWindowInsets=0x7f0301fa;
     /**
+     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4077,6 +4619,7 @@ public final class R {
      */
     public static final int paddingStart=0x7f0301fb;
     /**
+     * Top padding to use when no title is present.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4085,6 +4628,7 @@ public final class R {
      */
     public static final int paddingTopNoTitle=0x7f0301fc;
     /**
+     * The background of a panel when it is inset from the left and right edges of the screen.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4092,6 +4636,7 @@ public final class R {
      */
     public static final int panelBackground=0x7f0301fd;
     /**
+     * Default Panel Menu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4099,6 +4644,7 @@ public final class R {
      */
     public static final int panelMenuListTheme=0x7f0301fe;
     /**
+     * Default Panel Menu width.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4107,11 +4653,15 @@ public final class R {
      */
     public static final int panelMenuListWidth=0x7f0301ff;
     /**
+     * Text to set as the content description for the password input visibility toggle.
+     * Deprecated. Use endIconContentDescription instead.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int passwordToggleContentDescription=0x7f030200;
     /**
+     * Drawable to use as the password input visibility toggle icon.
+     * Deprecated. Use endIconDrawable instead.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4119,37 +4669,49 @@ public final class R {
      */
     public static final int passwordToggleDrawable=0x7f030201;
     /**
+     * Whether the view will display a toggle when the EditText has a password.
+     * Deprecated. The view's end icon should be specified via endIconMode instead.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int passwordToggleEnabled=0x7f030202;
     /**
+     * Icon to use for the password input visibility toggle
+     * Deprecated. Use endIconTint instead.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int passwordToggleTint=0x7f030203;
     /**
+     * Blending mode used to apply the background tint.
+     * Deprecated. Use endIconTintMode instead.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int passwordToggleTintMode=0x7f030204;
     /**
+     * The text to display as placeholder text in the text input area.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int placeholderText=0x7f030205;
     /**
+     * TextAppearance of the placeholder text displayed in the text input area.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4157,6 +4719,8 @@ public final class R {
      */
     public static final int placeholderTextAppearance=0x7f030206;
     /**
+     * Text color of the placeholder text displayed in the text input area.
+     * If set, this takes precedence over placeholderTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -4196,6 +4760,7 @@ public final class R {
      */
     public static final int popupMenuBackground=0x7f03020c;
     /**
+     * Default PopupMenu style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4203,6 +4768,8 @@ public final class R {
      */
     public static final int popupMenuStyle=0x7f03020d;
     /**
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4210,6 +4777,7 @@ public final class R {
      */
     public static final int popupTheme=0x7f03020e;
     /**
+     * Default PopupWindow style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4217,11 +4785,13 @@ public final class R {
      */
     public static final int popupWindowStyle=0x7f03020f;
     /**
+     * The text to display as prefix text in the text input area.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int prefixText=0x7f030210;
     /**
+     * TextAppearance of the prefix text displayed in the text input area.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4229,17 +4799,21 @@ public final class R {
      */
     public static final int prefixTextAppearance=0x7f030211;
     /**
+     * Text color of the prefix text displayed in the text input area.
+     * If set, this takes precedence over prefixTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int prefixTextColor=0x7f030212;
     /**
+     * Whether space should be reserved in layout when an icon is missing.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int preserveIconSpacing=0x7f030213;
     /**
+     * TranslationZ value for the FAB when pressed
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4248,6 +4822,7 @@ public final class R {
      */
     public static final int pressedTranslationZ=0x7f030214;
     /**
+     * Specifies the horizontal padding on either end for an embedded progress bar.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4256,6 +4831,7 @@ public final class R {
      */
     public static final int progressBarPadding=0x7f030215;
     /**
+     * Specifies a style resource to use for an embedded progress bar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4263,6 +4839,7 @@ public final class R {
      */
     public static final int progressBarStyle=0x7f030216;
     /**
+     * Background for the section containing the search query
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4270,11 +4847,13 @@ public final class R {
      */
     public static final int queryBackground=0x7f030217;
     /**
+     * An optional user-defined query hint string to be displayed in the empty query field.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int queryHint=0x7f030218;
     /**
+     * Default RadioButton style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4288,6 +4867,7 @@ public final class R {
      */
     public static final int rangeFillColor=0x7f03021a;
     /**
+     * Default RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4295,6 +4875,7 @@ public final class R {
      */
     public static final int ratingBarStyle=0x7f03021b;
     /**
+     * Indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4302,6 +4883,7 @@ public final class R {
      */
     public static final int ratingBarStyleIndicator=0x7f03021c;
     /**
+     * Small indicator RatingBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4336,6 +4918,7 @@ public final class R {
      */
     public static final int scopeUris=0x7f030221;
     /**
+     * Specifies the duration used for scrim visibility animations.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int scrimAnimationDuration=0x7f030222;
@@ -4350,6 +4933,8 @@ public final class R {
      */
     public static final int scrimBackground=0x7f030223;
     /**
+     * Specifies the amount of visible height in pixels used to define when to trigger a
+     * scrim visibility change.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4358,6 +4943,7 @@ public final class R {
      */
     public static final int scrimVisibleHeightTrigger=0x7f030224;
     /**
+     * Search icon displayed as a text field hint
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4365,6 +4951,7 @@ public final class R {
      */
     public static final int searchHintIcon=0x7f030225;
     /**
+     * Search icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4372,6 +4959,7 @@ public final class R {
      */
     public static final int searchIcon=0x7f030226;
     /**
+     * Style for the search query widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4379,6 +4967,7 @@ public final class R {
      */
     public static final int searchViewStyle=0x7f030227;
     /**
+     * Default SeekBar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4386,6 +4975,9 @@ public final class R {
      */
     public static final int seekBarStyle=0x7f030228;
     /**
+     * A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4393,6 +4985,7 @@ public final class R {
      */
     public static final int selectableItemBackground=0x7f030229;
     /**
+     * Background drawable for borderless standalone items that need focus/pressed states.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4405,6 +4998,7 @@ public final class R {
      */
     public static final int selectionRequired=0x7f03022b;
     /**
+     * Shape appearance style reference to be used to construct a ShapeAppearanceModel.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4426,6 +5020,7 @@ public final class R {
      */
     public static final int shapeAppearanceMediumComponent=0x7f03022e;
     /**
+     * Shape appearance overlay style reference to be used to modify the shapeAppearance.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4440,21 +5035,32 @@ public final class R {
      */
     public static final int shapeAppearanceSmallComponent=0x7f030230;
     /**
+     * How this item should display in the Action Bar, if present.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td></td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
-     * <tr><td>never</td><td>0</td><td></td></tr>
-     * <tr><td>withText</td><td>4</td><td></td></tr>
+     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
+     * the system's limits of how much stuff to put there. This may make
+     * your action bar look bad on some screens. In most cases you should
+     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
+     * item. When expanded, the action view takes over a
+     * larger segment of its container.</td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
+     * by the system. Favor this option over "always" where possible.
+     * Mutually exclusive with "never" and "always".</td></tr>
+     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
+     * Mutually exclusive with "ifRoom" and "always".</td></tr>
+     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
+     * label with it even if it has an icon representation.</td></tr>
      * </table>
      */
     public static final int showAsAction=0x7f030231;
     /**
+     * Setting for which dividers to show.
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4476,6 +5082,7 @@ public final class R {
      */
     public static final int showMotionSpec=0x7f030233;
     /**
+     * Whether to draw on/off text.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4486,6 +5093,7 @@ public final class R {
      */
     public static final int showTitle=0x7f030235;
     /**
+     * Motion spec for shrink animation. This should be a MotionSpec resource.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4500,6 +5108,10 @@ public final class R {
      */
     public static final int singleChoiceItemLayout=0x7f030237;
     /**
+     * Constrains the chips in this group to a single horizontal line. By default, this is false
+     * and the chips in this group will reflow to multiple lines.
+     * If you set this to true, you'll usually want to wrap this ChipGroup in a
+     * HorizontalScrollView.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -4517,6 +5129,7 @@ public final class R {
      */
     public static final int sliderStyle=0x7f03023a;
     /**
+     * Style to use for action button within a Snackbar in this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4524,6 +5137,7 @@ public final class R {
      */
     public static final int snackbarButtonStyle=0x7f03023b;
     /**
+     * Style to use for Snackbars in this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4531,6 +5145,7 @@ public final class R {
      */
     public static final int snackbarStyle=0x7f03023c;
     /**
+     * Style to use for message text within a Snackbar in this theme.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4542,11 +5157,13 @@ public final class R {
      */
     public static final int spanCount=0x7f03023e;
     /**
+     * Whether bars should rotate or not during transition
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int spinBars=0x7f03023f;
     /**
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4554,6 +5171,7 @@ public final class R {
      */
     public static final int spinnerDropDownItemStyle=0x7f030240;
     /**
+     * Default Spinner style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4561,11 +5179,14 @@ public final class R {
      */
     public static final int spinnerStyle=0x7f030241;
     /**
+     * Whether to split the track and leave a gap for the thumb drawable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int splitTrack=0x7f030242;
     /**
+     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+     * when running on older versions of the platform.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4585,16 +5206,19 @@ public final class R {
      */
     public static final int startDestination=0x7f030245;
     /**
+     * Whether the start icon is checkable.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int startIconCheckable=0x7f030246;
     /**
+     * Text to set as the content description for the start icon.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int startIconContentDescription=0x7f030247;
     /**
+     * Drawable to use for the start icon.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4602,57 +5226,74 @@ public final class R {
      */
     public static final int startIconDrawable=0x7f030248;
     /**
+     * Tint color to use for the start icon.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int startIconTint=0x7f030249;
     /**
+     * Blending mode used to apply the background tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int startIconTintMode=0x7f03024a;
     /**
+     * State identifier indicating the popup will be above the anchor.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int state_above_anchor=0x7f03024b;
     /**
+     * @deprecated in favor of {@link R.attr#state_lifted}.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
+    @Deprecated
     public static final int state_collapsed=0x7f03024c;
     /**
+     * @deprecated in favor of {@link R.attr#state_liftable}.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
+    @Deprecated
     public static final int state_collapsible=0x7f03024d;
     /**
+     * State when a Card is being dragged.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int state_dragged=0x7f03024e;
     /**
+     * State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is liftable (e.g., elevates on collapse or scroll).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int state_liftable=0x7f03024f;
     /**
+     * State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is lifted (elevated).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int state_lifted=0x7f030250;
     /**
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4663,12 +5304,17 @@ public final class R {
      */
     public static final int statusBarBackground=0x7f030251;
     /**
+     * The drawable to display in front of the layout's content, but behind the status bar.
+     * Only works on Lollipop when used together with android:fitSystemWindows="true".
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int statusBarForeground=0x7f030252;
     /**
+     * The drawable to use as a scrim for the status bar content when the
+     * CollapsingToolbarLayout has been scrolled sufficiently off screen. Only works on
+     * Lollipop when used together with android:fitSystemWindows="true".
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
@@ -4689,6 +5335,7 @@ public final class R {
      */
     public static final int strokeWidth=0x7f030255;
     /**
+     * Drawable for the arrow icon indicating a particular item is a submenu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4696,6 +5343,7 @@ public final class R {
      */
     public static final int subMenuArrow=0x7f030256;
     /**
+     * Background for the section containing the action (e.g. voice search)
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4703,6 +5351,7 @@ public final class R {
      */
     public static final int submitBackground=0x7f030257;
     /**
+     * Specifies subtitle text used for navigationMode="normal"
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
@@ -4715,12 +5364,14 @@ public final class R {
      */
     public static final int subtitleTextAppearance=0x7f030259;
     /**
+     * A color to apply to the subtitle string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int subtitleTextColor=0x7f03025a;
     /**
+     * Specifies a style to use for subtitle text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4728,11 +5379,13 @@ public final class R {
      */
     public static final int subtitleTextStyle=0x7f03025b;
     /**
+     * The text to display as suffix text in the text input area.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int suffixText=0x7f03025c;
     /**
+     * TextAppearance of the suffix text displayed in the text input area.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4740,12 +5393,15 @@ public final class R {
      */
     public static final int suffixTextAppearance=0x7f03025d;
     /**
+     * Text color of the suffix text displayed in the text input area.
+     * If set, this takes precedence over suffixTextAppearance.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int suffixTextColor=0x7f03025e;
     /**
+     * Layout for query suggestion rows
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4753,6 +5409,7 @@ public final class R {
      */
     public static final int suggestionRowLayout=0x7f03025f;
     /**
+     * Minimum width for the switch component
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4761,6 +5418,7 @@ public final class R {
      */
     public static final int switchMinWidth=0x7f030260;
     /**
+     * Minimum space between the switch and caption text
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4769,6 +5427,7 @@ public final class R {
      */
     public static final int switchPadding=0x7f030261;
     /**
+     * Default style for the Switch widget.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4776,6 +5435,7 @@ public final class R {
      */
     public static final int switchStyle=0x7f030262;
     /**
+     * TextAppearance style for text displayed on the switch thumb.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4783,6 +5443,7 @@ public final class R {
      */
     public static final int switchTextAppearance=0x7f030263;
     /**
+     * Reference to a background to be applied to tabs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4790,6 +5451,7 @@ public final class R {
      */
     public static final int tabBackground=0x7f030264;
     /**
+     * Position in the Y axis from the starting edge that tabs should be positioned from.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4798,6 +5460,7 @@ public final class R {
      */
     public static final int tabContentStart=0x7f030265;
     /**
+     * Gravity constant for tabs.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4810,12 +5473,14 @@ public final class R {
      */
     public static final int tabGravity=0x7f030266;
     /**
+     * Tint to apply to tab icons, if present. This can be a color state list or a color.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tabIconTint=0x7f030267;
     /**
+     * Blending mode to apply to tab icons.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4832,6 +5497,8 @@ public final class R {
      */
     public static final int tabIconTintMode=0x7f030268;
     /**
+     * Reference to a drawable to use as selection indicator for tabs. If this attribute is not
+     * specified, indicator defaults to a line along the bottom of the tab.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4839,48 +5506,61 @@ public final class R {
      */
     public static final int tabIndicator=0x7f030269;
     /**
+     * Duration in milliseconds for the animation of the selection indicator from one tab item
+     * to another.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int tabIndicatorAnimationDuration=0x7f03026a;
     /**
+     * Color of the indicator used to show the currently selected tab.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tabIndicatorColor=0x7f03026b;
     /**
+     * Whether the selection indicator width should fill the full width of the tab item,
+     * or if it should be fitted to the content of the tab text label. If no text label is
+     * present, it will be set to the width of the icon or to a minimum width of 24dp.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int tabIndicatorFullWidth=0x7f03026c;
     /**
+     * Gravity constant for tab selection indicator.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>0</td><td></td></tr>
-     * <tr><td>center</td><td>1</td><td></td></tr>
-     * <tr><td>stretch</td><td>3</td><td></td></tr>
-     * <tr><td>top</td><td>2</td><td></td></tr>
+     * <tr><td>bottom</td><td>0</td><td>Align indicator to the bottom of this tab layout.</td></tr>
+     * <tr><td>center</td><td>1</td><td>Align indicator along the center of this tab layout.</td></tr>
+     * <tr><td>stretch</td><td>3</td><td>Stretch indicator to match the height and width of a tab item in this layout.</td></tr>
+     * <tr><td>top</td><td>2</td><td>Align indicator to the top of this tab layout.</td></tr>
      * </table>
      */
     public static final int tabIndicatorGravity=0x7f03026d;
     /**
+     * {@deprecated Instead, set the intrinsic size of the custom drawable provided to the
+     * tabIndicator attribute in order to change the indicator height. For example, this can be
+     * done by setting the <size> property in a <shape> resource.}
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
+    @Deprecated
     public static final int tabIndicatorHeight=0x7f03026e;
     /**
+     * Whether to display tab labels horizontally inline with icons, or underneath icons.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int tabInlineLabel=0x7f03026f;
     /**
+     * The maximum width for tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4889,6 +5569,7 @@ public final class R {
      */
     public static final int tabMaxWidth=0x7f030270;
     /**
+     * The minimum width for tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4897,6 +5578,7 @@ public final class R {
      */
     public static final int tabMinWidth=0x7f030271;
     /**
+     * The behavior mode for the Tabs in this layout
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
@@ -4910,6 +5592,7 @@ public final class R {
      */
     public static final int tabMode=0x7f030272;
     /**
+     * The preferred padding along all edges of tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4918,6 +5601,7 @@ public final class R {
      */
     public static final int tabPadding=0x7f030273;
     /**
+     * The preferred padding along the bottom edge of tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4926,6 +5610,7 @@ public final class R {
      */
     public static final int tabPaddingBottom=0x7f030274;
     /**
+     * The preferred padding along the end edge of tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4934,6 +5619,7 @@ public final class R {
      */
     public static final int tabPaddingEnd=0x7f030275;
     /**
+     * The preferred padding along the start edge of tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4942,6 +5628,7 @@ public final class R {
      */
     public static final int tabPaddingStart=0x7f030276;
     /**
+     * The preferred padding along the top edge of tabs.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -4950,16 +5637,21 @@ public final class R {
      */
     public static final int tabPaddingTop=0x7f030277;
     /**
+     * Ripple color for the tabs. This may be a color state list, if the desired ripple color
+     * should be stateful.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tabRippleColor=0x7f030278;
     /**
+     * {@deprecated Instead, provide a ColorStateList to the tabTextColor attribute with a
+     * selected color set.}
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
+    @Deprecated
     public static final int tabSelectedTextColor=0x7f030279;
     /**
      * <p>May be a reference to another resource, in the form
@@ -4969,6 +5661,7 @@ public final class R {
      */
     public static final int tabStyle=0x7f03027a;
     /**
+     * A reference to a TextAppearance style to be applied to tabs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -4976,17 +5669,21 @@ public final class R {
      */
     public static final int tabTextAppearance=0x7f03027b;
     /**
+     * The default text color to be applied to tabs.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tabTextColor=0x7f03027c;
     /**
+     * Whether to use unbounded ripple effect for tabs, or if ripple should instead be bound to
+     * tab item bounds.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int tabUnboundedRipple=0x7f03027d;
     /**
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5066,6 +5763,7 @@ public final class R {
      */
     public static final int textAppearanceHeadline6=0x7f030288;
     /**
+     * Text color, typeface, size, and style for the text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5078,6 +5776,7 @@ public final class R {
      */
     public static final int textAppearanceLineHeightEnabled=0x7f03028a;
     /**
+     * The preferred TextAppearance for the primary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5085,6 +5784,7 @@ public final class R {
      */
     public static final int textAppearanceListItem=0x7f03028b;
     /**
+     * The preferred TextAppearance for the secondary text of list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5092,6 +5792,7 @@ public final class R {
      */
     public static final int textAppearanceListItemSecondary=0x7f03028c;
     /**
+     * The preferred TextAppearance for the primary text of small list items.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5106,6 +5807,7 @@ public final class R {
      */
     public static final int textAppearanceOverline=0x7f03028e;
     /**
+     * Text color, typeface, size, and style for header text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5113,6 +5815,7 @@ public final class R {
      */
     public static final int textAppearancePopupMenuHeader=0x7f03028f;
     /**
+     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5120,6 +5823,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultSubtitle=0x7f030290;
     /**
+     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5127,6 +5831,7 @@ public final class R {
      */
     public static final int textAppearanceSearchResultTitle=0x7f030291;
     /**
+     * Text color, typeface, size, and style for small text inside of a popup menu.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5148,6 +5853,7 @@ public final class R {
      */
     public static final int textAppearanceSubtitle2=0x7f030294;
     /**
+     * Color of list item text in alert dialogs.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5158,6 +5864,7 @@ public final class R {
      */
     public static final int textColorAlertDialogListItem=0x7f030295;
     /**
+     * Text color for urls in search suggestions, used by things like global search
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5168,6 +5875,7 @@ public final class R {
      */
     public static final int textColorSearchUrl=0x7f030296;
     /**
+     * Padding at the end of the text, before the close icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5183,11 +5891,17 @@ public final class R {
      */
     public static final int textInputStyle=0x7f030298;
     /**
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int textLocale=0x7f030299;
     /**
+     * Padding at the start of the text, after the icon.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5196,6 +5910,7 @@ public final class R {
      */
     public static final int textStartPadding=0x7f03029a;
     /**
+     * Deprecated.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5211,6 +5926,7 @@ public final class R {
      */
     public static final int themeLineHeight=0x7f03029c;
     /**
+     * The thickness (stroke size) for the bar paint
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5219,12 +5935,14 @@ public final class R {
      */
     public static final int thickness=0x7f03029d;
     /**
+     * The color of the slider's thumb.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int thumbColor=0x7f03029e;
     /**
+     * The elevation of the thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5233,6 +5951,7 @@ public final class R {
      */
     public static final int thumbElevation=0x7f03029f;
     /**
+     * The radius of the thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5241,6 +5960,7 @@ public final class R {
      */
     public static final int thumbRadius=0x7f0302a0;
     /**
+     * Amount of padding on either side of text within the switch thumb.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5249,46 +5969,59 @@ public final class R {
      */
     public static final int thumbTextPadding=0x7f0302a1;
     /**
+     * Tint to apply to the thumb drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int thumbTint=0x7f0302a2;
     /**
+     * Blending mode used to apply the thumb tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int thumbTintMode=0x7f0302a3;
     /**
+     * The color of the slider's tick marks. Only used when the slider is in discrete mode.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickColor=0x7f0302a4;
     /**
+     * The color of the slider's tick marks for the active portion of the track. Only used when
+     * the slider is in discrete mode.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickColorActive=0x7f0302a5;
     /**
+     * The color of the slider's tick marks for the inactive portion of the track. Only used when
+     * the slider is in discrete mode.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickColorInactive=0x7f0302a6;
     /**
+     * Drawable displayed at each progress position on a seekbar.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5296,46 +6029,60 @@ public final class R {
      */
     public static final int tickMark=0x7f0302a7;
     /**
+     * Tint to apply to the tick mark drawable.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tickMarkTint=0x7f0302a8;
     /**
+     * Blending mode used to apply the tick mark tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int tickMarkTintMode=0x7f0302a9;
     /**
+     * Tint to apply to the image source.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int tint=0x7f0302aa;
     /**
+     * Blending mode used to apply the image source tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int tintMode=0x7f0302ab;
@@ -5345,11 +6092,14 @@ public final class R {
      */
     public static final int title=0x7f0302ac;
     /**
+     * Whether the CollapsingToolbarLayout should draw its own shrinking/growing title.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int titleEnabled=0x7f0302ad;
     /**
+     * Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5358,6 +6108,9 @@ public final class R {
      */
     public static final int titleMargin=0x7f0302ae;
     /**
+     * Specifies extra space on the bottom side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5366,6 +6119,9 @@ public final class R {
      */
     public static final int titleMarginBottom=0x7f0302af;
     /**
+     * Specifies extra space on the end side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5374,6 +6130,9 @@ public final class R {
      */
     public static final int titleMarginEnd=0x7f0302b0;
     /**
+     * Specifies extra space on the start side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5382,6 +6141,9 @@ public final class R {
      */
     public static final int titleMarginStart=0x7f0302b1;
     /**
+     * Specifies extra space on the top side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5390,12 +6152,14 @@ public final class R {
      */
     public static final int titleMarginTop=0x7f0302b2;
     /**
+     * {@deprecated Use titleMargin}
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
      * sp (scaled pixels based on preferred font size), in (inches), and
      * mm (millimeters).
      */
+    @Deprecated
     public static final int titleMargins=0x7f0302b3;
     /**
      * <p>May be a reference to another resource, in the form
@@ -5405,12 +6169,14 @@ public final class R {
      */
     public static final int titleTextAppearance=0x7f0302b4;
     /**
+     * A color to apply to the title string.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int titleTextColor=0x7f0302b5;
     /**
+     * Specifies a style to use for title text.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5418,6 +6184,9 @@ public final class R {
      */
     public static final int titleTextStyle=0x7f0302b6;
     /**
+     * The id of the primary Toolbar child that you wish to use for the purpose of collapsing.
+     * This Toolbar descendant view does not need to be a direct child of the layout.
+     * If you do not set this, the first direct Toolbar child found will be used.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5425,6 +6194,7 @@ public final class R {
      */
     public static final int toolbarId=0x7f0302b7;
     /**
+     * Default Toolar NavigationButtonStyle
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5432,6 +6202,7 @@ public final class R {
      */
     public static final int toolbarNavigationButtonStyle=0x7f0302b8;
     /**
+     * Default Toolbar style.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5439,6 +6210,7 @@ public final class R {
      */
     public static final int toolbarStyle=0x7f0302b9;
     /**
+     * Foreground color to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5449,6 +6221,7 @@ public final class R {
      */
     public static final int tooltipForegroundColor=0x7f0302ba;
     /**
+     * Background to use for tooltips
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5463,11 +6236,13 @@ public final class R {
      */
     public static final int tooltipStyle=0x7f0302bc;
     /**
+     * The tooltip text associated with the item.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
     public static final int tooltipText=0x7f0302bd;
     /**
+     * Drawable to use as the "track" that the switch thumb slides within.
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5475,24 +6250,28 @@ public final class R {
      */
     public static final int track=0x7f0302be;
     /**
+     * The color of the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackColor=0x7f0302bf;
     /**
+     * The color of active portion of the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackColorActive=0x7f0302c0;
     /**
+     * The color of inactive portion of the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackColorInactive=0x7f0302c1;
     /**
+     * The height of the track.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5501,28 +6280,37 @@ public final class R {
      */
     public static final int trackHeight=0x7f0302c2;
     /**
+     * Tint to apply to the track.
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int trackTint=0x7f0302c3;
     /**
+     * Blending mode used to apply the track tint.
      * <p>Must be one of the following constant values.</p>
      * <table>
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      */
     public static final int trackTintMode=0x7f0302c4;
     /**
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
     public static final int ttcIndex=0x7f0302c5;
@@ -5532,6 +6320,7 @@ public final class R {
      */
     public static final int uri=0x7f0302c6;
     /**
+     * Enable compat padding.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -5555,6 +6344,7 @@ public final class R {
      */
     public static final int viewInflaterClass=0x7f0302ca;
     /**
+     * Voice button icon
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -5562,21 +6352,31 @@ public final class R {
      */
     public static final int voiceIcon=0x7f0302cb;
     /**
+     * Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBar=0x7f0302cc;
     /**
+     * Flag indicating whether this window's Action Bar should overlay
+     * application content. Does nothing if the window would not
+     * have an Action Bar.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionBarOverlay=0x7f0302cd;
     /**
+     * Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
     public static final int windowActionModeOverlay=0x7f0302ce;
     /**
+     * A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5589,6 +6389,9 @@ public final class R {
      */
     public static final int windowFixedHeightMajor=0x7f0302cf;
     /**
+     * A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5601,6 +6404,9 @@ public final class R {
      */
     public static final int windowFixedHeightMinor=0x7f0302d0;
     /**
+     * A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5613,6 +6419,9 @@ public final class R {
      */
     public static final int windowFixedWidthMajor=0x7f0302d1;
     /**
+     * A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5625,6 +6434,10 @@ public final class R {
      */
     public static final int windowFixedWidthMinor=0x7f0302d2;
     /**
+     * The minimum width the window is allowed to be, along the major
+     * axis of the screen.  That is, when in landscape.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5637,6 +6450,10 @@ public final class R {
      */
     public static final int windowMinWidthMajor=0x7f0302d3;
     /**
+     * The minimum width the window is allowed to be, along the minor
+     * axis of the screen.  That is, when in portrait.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
      * Available units are: px (pixels), dp (density-independent pixels),
@@ -5649,6 +6466,7 @@ public final class R {
      */
     public static final int windowMinWidthMinor=0x7f0302d4;
     /**
+     * Flag indicating whether there should be no title on this window.
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      */
@@ -6496,306 +7314,312 @@ public final class R {
     public static final int actions=0x7f08003e;
     public static final int activity_chooser_view_content=0x7f08003f;
     public static final int add=0x7f080040;
-    public static final int addIconButton=0x7f080041;
-    public static final int addIconText=0x7f080042;
-    public static final int adjust_height=0x7f080043;
-    public static final int adjust_width=0x7f080044;
-    public static final int agreeTV=0x7f080045;
-    public static final int alertTitle=0x7f080046;
-    public static final int all=0x7f080047;
-    public static final int always=0x7f080048;
-    public static final int appDescEditText=0x7f080049;
-    public static final int appLogo=0x7f08004a;
-    public static final int appNameEditText=0x7f08004b;
-    public static final int async=0x7f08004c;
-    public static final int auto=0x7f08004d;
-    public static final int barrier=0x7f08004e;
-    public static final int beginning=0x7f08004f;
-    public static final int blocking=0x7f080050;
-    public static final int bottom=0x7f080051;
-    public static final int buttonPanel=0x7f080052;
-    public static final int cancel_action=0x7f080053;
-    public static final int cancel_button=0x7f080054;
-    public static final int center=0x7f080055;
-    public static final int center_horizontal=0x7f080056;
-    public static final int center_vertical=0x7f080057;
-    public static final int chains=0x7f080058;
-    public static final int checkbox=0x7f080059;
-    public static final int checked=0x7f08005a;
-    public static final int chip=0x7f08005b;
-    public static final int chip1=0x7f08005c;
-    public static final int chip2=0x7f08005d;
-    public static final int chip3=0x7f08005e;
-    public static final int chip_group=0x7f08005f;
-    public static final int chronometer=0x7f080060;
-    public static final int clear_text=0x7f080061;
-    public static final int clip_horizontal=0x7f080062;
-    public static final int clip_vertical=0x7f080063;
-    public static final int collapseActionView=0x7f080064;
-    public static final int confirmPassET=0x7f080065;
-    public static final int confirmPassLayout=0x7f080066;
-    public static final int confirm_button=0x7f080067;
-    public static final int container=0x7f080068;
-    public static final int content=0x7f080069;
-    public static final int contentPanel=0x7f08006a;
-    public static final int coordinator=0x7f08006b;
-    public static final int createAccountButton=0x7f08006c;
-    public static final int creatorsNameEditText=0x7f08006d;
-    public static final int custom=0x7f08006e;
-    public static final int customPanel=0x7f08006f;
-    public static final int cut=0x7f080070;
-    public static final int dark=0x7f080071;
-    public static final int dataBinding=0x7f080072;
-    public static final int date_picker_actions=0x7f080073;
-    public static final int decor_content_parent=0x7f080074;
-    public static final int default_activity_button=0x7f080075;
-    public static final int design_bottom_sheet=0x7f080076;
-    public static final int design_menu_item_action_area=0x7f080077;
-    public static final int design_menu_item_action_area_stub=0x7f080078;
-    public static final int design_menu_item_text=0x7f080079;
-    public static final int design_navigation_view=0x7f08007a;
-    public static final int dialog_button=0x7f08007b;
-    public static final int dimensions=0x7f08007c;
-    public static final int direct=0x7f08007d;
-    public static final int disableHome=0x7f08007e;
-    public static final int domainsListView=0x7f08007f;
-    public static final int drawer_layout=0x7f080080;
-    public static final int dropdown_menu=0x7f080081;
-    public static final int edit_query=0x7f080082;
-    public static final int emailET=0x7f080083;
-    public static final int emailEditText=0x7f080084;
-    public static final int emailLayout=0x7f080085;
-    public static final int end=0x7f080086;
-    public static final int end_padder=0x7f080087;
-    public static final int enterAlways=0x7f080088;
-    public static final int enterAlwaysCollapsed=0x7f080089;
-    public static final int exitUntilCollapsed=0x7f08008a;
-    public static final int expand_activities_button=0x7f08008b;
-    public static final int expanded_menu=0x7f08008c;
-    public static final int fab=0x7f08008d;
-    public static final int fade=0x7f08008e;
-    public static final int fill=0x7f08008f;
-    public static final int fill_horizontal=0x7f080090;
-    public static final int fill_vertical=0x7f080091;
-    public static final int filled=0x7f080092;
-    public static final int fitToContents=0x7f080093;
-    public static final int fixed=0x7f080094;
-    public static final int forever=0x7f080095;
-    public static final int ghost_view=0x7f080096;
-    public static final int ghost_view_holder=0x7f080097;
-    public static final int gone=0x7f080098;
-    public static final int group_divider=0x7f080099;
-    public static final int groups=0x7f08009a;
-    public static final int hideable=0x7f08009b;
-    public static final int home=0x7f08009c;
-    public static final int homeAsUp=0x7f08009d;
-    public static final int icon=0x7f08009e;
-    public static final int icon_group=0x7f08009f;
-    public static final int icon_only=0x7f0800a0;
-    public static final int ifRoom=0x7f0800a1;
-    public static final int image=0x7f0800a2;
-    public static final int imageView=0x7f0800a3;
-    public static final int info=0x7f0800a4;
-    public static final int invisible=0x7f0800a5;
-    public static final int italic=0x7f0800a6;
-    public static final int item_touch_helper_previous_elevation=0x7f0800a7;
-    public static final int labeled=0x7f0800a8;
-    public static final int largeLabel=0x7f0800a9;
-    public static final int left=0x7f0800aa;
-    public static final int light=0x7f0800ab;
-    public static final int line1=0x7f0800ac;
-    public static final int line3=0x7f0800ad;
-    public static final int listMode=0x7f0800ae;
-    public static final int list_item=0x7f0800af;
-    public static final int loadingBar=0x7f0800b0;
-    public static final int loginButton=0x7f0800b1;
-    public static final int logout=0x7f0800b2;
-    public static final int mainLogo=0x7f0800b3;
-    public static final int mainRelative=0x7f0800b4;
-    public static final int masked=0x7f0800b5;
-    public static final int media_actions=0x7f0800b6;
-    public static final int message=0x7f0800b7;
-    public static final int middle=0x7f0800b8;
-    public static final int mini=0x7f0800b9;
-    public static final int mobile_navigation=0x7f0800ba;
-    public static final int month_grid=0x7f0800bb;
-    public static final int month_navigation_bar=0x7f0800bc;
-    public static final int month_navigation_fragment_toggle=0x7f0800bd;
-    public static final int month_navigation_next=0x7f0800be;
-    public static final int month_navigation_previous=0x7f0800bf;
-    public static final int month_title=0x7f0800c0;
-    public static final int mtrl_calendar_day_selector_frame=0x7f0800c1;
-    public static final int mtrl_calendar_days_of_week=0x7f0800c2;
-    public static final int mtrl_calendar_frame=0x7f0800c3;
-    public static final int mtrl_calendar_main_pane=0x7f0800c4;
-    public static final int mtrl_calendar_months=0x7f0800c5;
-    public static final int mtrl_calendar_selection_frame=0x7f0800c6;
-    public static final int mtrl_calendar_text_input_frame=0x7f0800c7;
-    public static final int mtrl_calendar_year_selector_frame=0x7f0800c8;
-    public static final int mtrl_card_checked_layer_id=0x7f0800c9;
-    public static final int mtrl_child_content_container=0x7f0800ca;
-    public static final int mtrl_internal_children_alpha_tag=0x7f0800cb;
-    public static final int mtrl_picker_fullscreen=0x7f0800cc;
-    public static final int mtrl_picker_header=0x7f0800cd;
-    public static final int mtrl_picker_header_selection_text=0x7f0800ce;
-    public static final int mtrl_picker_header_title_and_selection=0x7f0800cf;
-    public static final int mtrl_picker_header_toggle=0x7f0800d0;
-    public static final int mtrl_picker_text_input_date=0x7f0800d1;
-    public static final int mtrl_picker_text_input_range_end=0x7f0800d2;
-    public static final int mtrl_picker_text_input_range_start=0x7f0800d3;
-    public static final int mtrl_picker_title_text=0x7f0800d4;
-    public static final int multiply=0x7f0800d5;
-    public static final int nameET=0x7f0800d6;
-    public static final int nameLayout=0x7f0800d7;
-    public static final int nav_controller_view_tag=0x7f0800d8;
-    public static final int nav_gallery=0x7f0800d9;
-    public static final int nav_home=0x7f0800da;
-    public static final int nav_host_fragment=0x7f0800db;
-    public static final int nav_send=0x7f0800dc;
-    public static final int nav_share=0x7f0800dd;
-    public static final int nav_slideshow=0x7f0800de;
-    public static final int nav_tools=0x7f0800df;
-    public static final int nav_view=0x7f0800e0;
-    public static final int navigation_header_container=0x7f0800e1;
-    public static final int never=0x7f0800e2;
-    public static final int noScroll=0x7f0800e3;
-    public static final int none=0x7f0800e4;
-    public static final int normal=0x7f0800e5;
-    public static final int notification_background=0x7f0800e6;
-    public static final int notification_main_column=0x7f0800e7;
-    public static final int notification_main_column_container=0x7f0800e8;
-    public static final int off=0x7f0800e9;
-    public static final int on=0x7f0800ea;
-    public static final int onAttachStateChangeListener=0x7f0800eb;
-    public static final int onDateChanged=0x7f0800ec;
-    public static final int orTextView=0x7f0800ed;
-    public static final int outline=0x7f0800ee;
-    public static final int packed=0x7f0800ef;
-    public static final int parallax=0x7f0800f0;
-    public static final int parent=0x7f0800f1;
-    public static final int parentPanel=0x7f0800f2;
-    public static final int parent_matrix=0x7f0800f3;
-    public static final int passLayout=0x7f0800f4;
-    public static final int passwordET=0x7f0800f5;
-    public static final int passwordEditText=0x7f0800f6;
-    public static final int passwordLayout=0x7f0800f7;
-    public static final int password_toggle=0x7f0800f8;
-    public static final int peekHeight=0x7f0800f9;
-    public static final int percent=0x7f0800fa;
-    public static final int pin=0x7f0800fb;
-    public static final int progress_circular=0x7f0800fc;
-    public static final int progress_horizontal=0x7f0800fd;
-    public static final int radio=0x7f0800fe;
-    public static final int right=0x7f0800ff;
-    public static final int right_icon=0x7f080100;
-    public static final int right_side=0x7f080101;
-    public static final int rounded=0x7f080102;
-    public static final int save_non_transition_alpha=0x7f080103;
-    public static final int save_overlay_view=0x7f080104;
-    public static final int scale=0x7f080105;
-    public static final int screen=0x7f080106;
-    public static final int scroll=0x7f080107;
-    public static final int scrollIndicatorDown=0x7f080108;
-    public static final int scrollIndicatorUp=0x7f080109;
-    public static final int scrollView=0x7f08010a;
-    public static final int scrollable=0x7f08010b;
-    public static final int search_badge=0x7f08010c;
-    public static final int search_bar=0x7f08010d;
-    public static final int search_button=0x7f08010e;
-    public static final int search_close_btn=0x7f08010f;
-    public static final int search_edit_frame=0x7f080110;
-    public static final int search_go_btn=0x7f080111;
-    public static final int search_mag_icon=0x7f080112;
-    public static final int search_plate=0x7f080113;
-    public static final int search_src_text=0x7f080114;
-    public static final int search_voice_btn=0x7f080115;
-    public static final int select_dialog_listview=0x7f080116;
-    public static final int selected=0x7f080117;
-    public static final int shortcut=0x7f080118;
-    public static final int showCustom=0x7f080119;
-    public static final int showHome=0x7f08011a;
-    public static final int showTitle=0x7f08011b;
-    public static final int signUpButton=0x7f08011c;
-    public static final int skipCollapsed=0x7f08011d;
-    public static final int slide=0x7f08011e;
-    public static final int smallLabel=0x7f08011f;
-    public static final int snackbar_action=0x7f080120;
-    public static final int snackbar_text=0x7f080121;
-    public static final int snap=0x7f080122;
-    public static final int snapMargins=0x7f080123;
-    public static final int spacer=0x7f080124;
-    public static final int split_action_bar=0x7f080125;
-    public static final int spread=0x7f080126;
-    public static final int spread_inside=0x7f080127;
-    public static final int src_atop=0x7f080128;
-    public static final int src_in=0x7f080129;
-    public static final int src_over=0x7f08012a;
-    public static final int standard=0x7f08012b;
-    public static final int start=0x7f08012c;
-    public static final int status_bar_latest_event_content=0x7f08012d;
-    public static final int stretch=0x7f08012e;
-    public static final int submenuarrow=0x7f08012f;
-    public static final int submit_area=0x7f080130;
-    public static final int tabMode=0x7f080131;
-    public static final int tag_accessibility_actions=0x7f080132;
-    public static final int tag_accessibility_clickable_spans=0x7f080133;
-    public static final int tag_accessibility_heading=0x7f080134;
-    public static final int tag_accessibility_pane_title=0x7f080135;
-    public static final int tag_screen_reader_focusable=0x7f080136;
-    public static final int tag_transition_group=0x7f080137;
-    public static final int tag_unhandled_key_event_manager=0x7f080138;
-    public static final int tag_unhandled_key_listeners=0x7f080139;
-    public static final int templateImage=0x7f08013a;
-    public static final int templateName=0x7f08013b;
-    public static final int templatesRecyclerView=0x7f08013c;
-    public static final int test_checkbox_android_button_tint=0x7f08013d;
-    public static final int test_checkbox_app_button_tint=0x7f08013e;
-    public static final int text=0x7f08013f;
-    public static final int text2=0x7f080140;
-    public static final int textEnd=0x7f080141;
-    public static final int textSpacerNoButtons=0x7f080142;
-    public static final int textSpacerNoTitle=0x7f080143;
-    public static final int textStart=0x7f080144;
-    public static final int textViewAppMaker=0x7f080145;
-    public static final int textViewHeader=0x7f080146;
-    public static final int textWatcher=0x7f080147;
-    public static final int text_input_end_icon=0x7f080148;
-    public static final int text_input_start_icon=0x7f080149;
-    public static final int textinput_counter=0x7f08014a;
-    public static final int textinput_error=0x7f08014b;
-    public static final int textinput_helper_text=0x7f08014c;
-    public static final int textinput_placeholder=0x7f08014d;
-    public static final int textinput_prefix_text=0x7f08014e;
-    public static final int textinput_suffix_text=0x7f08014f;
-    public static final int time=0x7f080150;
-    public static final int title=0x7f080151;
-    public static final int titleDividerNoCustom=0x7f080152;
-    public static final int title_template=0x7f080153;
-    public static final int tncTV=0x7f080154;
-    public static final int toolbar=0x7f080155;
-    public static final int top=0x7f080156;
-    public static final int topPanel=0x7f080157;
-    public static final int touch_outside=0x7f080158;
-    public static final int transition_current_scene=0x7f080159;
-    public static final int transition_layout_save=0x7f08015a;
-    public static final int transition_position=0x7f08015b;
-    public static final int transition_scene_layoutid_cache=0x7f08015c;
-    public static final int transition_transform=0x7f08015d;
-    public static final int unchecked=0x7f08015e;
-    public static final int uniform=0x7f08015f;
-    public static final int unlabeled=0x7f080160;
-    public static final int up=0x7f080161;
-    public static final int useLogo=0x7f080162;
-    public static final int view1=0x7f080163;
-    public static final int view2=0x7f080164;
-    public static final int viewRelative=0x7f080165;
-    public static final int view_offset_helper=0x7f080166;
-    public static final int visible=0x7f080167;
-    public static final int wide=0x7f080168;
-    public static final int withText=0x7f080169;
-    public static final int wrap=0x7f08016a;
-    public static final int wrap_content=0x7f08016b;
-    public static final int yourAccount=0x7f08016c;
+    public static final int addIconRelativeLayout=0x7f080041;
+    public static final int addIconTextView=0x7f080042;
+    public static final int addIconTextViewLayout=0x7f080043;
+    public static final int adjust_height=0x7f080044;
+    public static final int adjust_width=0x7f080045;
+    public static final int agreeTV=0x7f080046;
+    public static final int alertTitle=0x7f080047;
+    public static final int all=0x7f080048;
+    public static final int always=0x7f080049;
+    public static final int appDesc=0x7f08004a;
+    public static final int appDescEditText=0x7f08004b;
+    public static final int appLogo=0x7f08004c;
+    public static final int appName=0x7f08004d;
+    public static final int appNameEditText=0x7f08004e;
+    public static final int async=0x7f08004f;
+    public static final int auto=0x7f080050;
+    public static final int barrier=0x7f080051;
+    public static final int beginning=0x7f080052;
+    public static final int blocking=0x7f080053;
+    public static final int bottom=0x7f080054;
+    public static final int buttonPanel=0x7f080055;
+    public static final int cancel_action=0x7f080056;
+    public static final int cancel_button=0x7f080057;
+    public static final int center=0x7f080058;
+    public static final int center_horizontal=0x7f080059;
+    public static final int center_vertical=0x7f08005a;
+    public static final int chains=0x7f08005b;
+    public static final int checkbox=0x7f08005c;
+    public static final int checked=0x7f08005d;
+    public static final int chip=0x7f08005e;
+    public static final int chip1=0x7f08005f;
+    public static final int chip2=0x7f080060;
+    public static final int chip3=0x7f080061;
+    public static final int chip_group=0x7f080062;
+    public static final int chronometer=0x7f080063;
+    public static final int clear_text=0x7f080064;
+    public static final int clip_horizontal=0x7f080065;
+    public static final int clip_vertical=0x7f080066;
+    public static final int collapseActionView=0x7f080067;
+    public static final int confirmPassET=0x7f080068;
+    public static final int confirmPassLayout=0x7f080069;
+    public static final int confirm_button=0x7f08006a;
+    public static final int container=0x7f08006b;
+    public static final int content=0x7f08006c;
+    public static final int contentPanel=0x7f08006d;
+    public static final int coordinator=0x7f08006e;
+    public static final int createAccountButton=0x7f08006f;
+    public static final int creatorsName=0x7f080070;
+    public static final int creatorsNameEditText=0x7f080071;
+    public static final int custom=0x7f080072;
+    public static final int customPanel=0x7f080073;
+    public static final int cut=0x7f080074;
+    public static final int dark=0x7f080075;
+    public static final int dataBinding=0x7f080076;
+    public static final int date_picker_actions=0x7f080077;
+    public static final int decor_content_parent=0x7f080078;
+    public static final int default_activity_button=0x7f080079;
+    public static final int design_bottom_sheet=0x7f08007a;
+    public static final int design_menu_item_action_area=0x7f08007b;
+    public static final int design_menu_item_action_area_stub=0x7f08007c;
+    public static final int design_menu_item_text=0x7f08007d;
+    public static final int design_navigation_view=0x7f08007e;
+    public static final int dialog_button=0x7f08007f;
+    public static final int dimensions=0x7f080080;
+    public static final int direct=0x7f080081;
+    public static final int disableHome=0x7f080082;
+    public static final int domainsListView=0x7f080083;
+    public static final int drawer_layout=0x7f080084;
+    public static final int dropdown_menu=0x7f080085;
+    public static final int edit_query=0x7f080086;
+    public static final int emailET=0x7f080087;
+    public static final int emailEditText=0x7f080088;
+    public static final int emailLayout=0x7f080089;
+    public static final int end=0x7f08008a;
+    public static final int end_padder=0x7f08008b;
+    public static final int enterAlways=0x7f08008c;
+    public static final int enterAlwaysCollapsed=0x7f08008d;
+    public static final int exitUntilCollapsed=0x7f08008e;
+    public static final int expand_activities_button=0x7f08008f;
+    public static final int expanded_menu=0x7f080090;
+    public static final int fab=0x7f080091;
+    public static final int fade=0x7f080092;
+    public static final int fill=0x7f080093;
+    public static final int fill_horizontal=0x7f080094;
+    public static final int fill_vertical=0x7f080095;
+    public static final int filled=0x7f080096;
+    public static final int fitToContents=0x7f080097;
+    public static final int fixed=0x7f080098;
+    public static final int forever=0x7f080099;
+    public static final int ghost_view=0x7f08009a;
+    public static final int ghost_view_holder=0x7f08009b;
+    public static final int gone=0x7f08009c;
+    public static final int group_divider=0x7f08009d;
+    public static final int groups=0x7f08009e;
+    public static final int hideable=0x7f08009f;
+    public static final int home=0x7f0800a0;
+    public static final int homeAsUp=0x7f0800a1;
+    public static final int icon=0x7f0800a2;
+    public static final int icon_group=0x7f0800a3;
+    public static final int icon_only=0x7f0800a4;
+    public static final int ifRoom=0x7f0800a5;
+    public static final int image=0x7f0800a6;
+    public static final int imageView=0x7f0800a7;
+    public static final int info=0x7f0800a8;
+    public static final int insertIconButton=0x7f0800a9;
+    public static final int invisible=0x7f0800aa;
+    public static final int italic=0x7f0800ab;
+    public static final int item_touch_helper_previous_elevation=0x7f0800ac;
+    public static final int labeled=0x7f0800ad;
+    public static final int largeLabel=0x7f0800ae;
+    public static final int left=0x7f0800af;
+    public static final int light=0x7f0800b0;
+    public static final int line1=0x7f0800b1;
+    public static final int line3=0x7f0800b2;
+    public static final int listMode=0x7f0800b3;
+    public static final int list_item=0x7f0800b4;
+    public static final int loadingBar=0x7f0800b5;
+    public static final int loginButton=0x7f0800b6;
+    public static final int logout=0x7f0800b7;
+    public static final int mainLogo=0x7f0800b8;
+    public static final int mainRelative=0x7f0800b9;
+    public static final int masked=0x7f0800ba;
+    public static final int media_actions=0x7f0800bb;
+    public static final int message=0x7f0800bc;
+    public static final int middle=0x7f0800bd;
+    public static final int mini=0x7f0800be;
+    public static final int mobile_navigation=0x7f0800bf;
+    public static final int month_grid=0x7f0800c0;
+    public static final int month_navigation_bar=0x7f0800c1;
+    public static final int month_navigation_fragment_toggle=0x7f0800c2;
+    public static final int month_navigation_next=0x7f0800c3;
+    public static final int month_navigation_previous=0x7f0800c4;
+    public static final int month_title=0x7f0800c5;
+    public static final int mtrl_calendar_day_selector_frame=0x7f0800c6;
+    public static final int mtrl_calendar_days_of_week=0x7f0800c7;
+    public static final int mtrl_calendar_frame=0x7f0800c8;
+    public static final int mtrl_calendar_main_pane=0x7f0800c9;
+    public static final int mtrl_calendar_months=0x7f0800ca;
+    public static final int mtrl_calendar_selection_frame=0x7f0800cb;
+    public static final int mtrl_calendar_text_input_frame=0x7f0800cc;
+    public static final int mtrl_calendar_year_selector_frame=0x7f0800cd;
+    public static final int mtrl_card_checked_layer_id=0x7f0800ce;
+    public static final int mtrl_child_content_container=0x7f0800cf;
+    public static final int mtrl_internal_children_alpha_tag=0x7f0800d0;
+    public static final int mtrl_picker_fullscreen=0x7f0800d1;
+    public static final int mtrl_picker_header=0x7f0800d2;
+    public static final int mtrl_picker_header_selection_text=0x7f0800d3;
+    public static final int mtrl_picker_header_title_and_selection=0x7f0800d4;
+    public static final int mtrl_picker_header_toggle=0x7f0800d5;
+    public static final int mtrl_picker_text_input_date=0x7f0800d6;
+    public static final int mtrl_picker_text_input_range_end=0x7f0800d7;
+    public static final int mtrl_picker_text_input_range_start=0x7f0800d8;
+    public static final int mtrl_picker_title_text=0x7f0800d9;
+    public static final int multiply=0x7f0800da;
+    public static final int nameET=0x7f0800db;
+    public static final int nameLayout=0x7f0800dc;
+    public static final int nav_controller_view_tag=0x7f0800dd;
+    public static final int nav_gallery=0x7f0800de;
+    public static final int nav_home=0x7f0800df;
+    public static final int nav_host_fragment=0x7f0800e0;
+    public static final int nav_send=0x7f0800e1;
+    public static final int nav_share=0x7f0800e2;
+    public static final int nav_slideshow=0x7f0800e3;
+    public static final int nav_tools=0x7f0800e4;
+    public static final int nav_view=0x7f0800e5;
+    public static final int navigation_header_container=0x7f0800e6;
+    public static final int never=0x7f0800e7;
+    public static final int noScroll=0x7f0800e8;
+    public static final int none=0x7f0800e9;
+    public static final int normal=0x7f0800ea;
+    public static final int notification_background=0x7f0800eb;
+    public static final int notification_main_column=0x7f0800ec;
+    public static final int notification_main_column_container=0x7f0800ed;
+    public static final int off=0x7f0800ee;
+    public static final int on=0x7f0800ef;
+    public static final int onAttachStateChangeListener=0x7f0800f0;
+    public static final int onDateChanged=0x7f0800f1;
+    public static final int orTextView=0x7f0800f2;
+    public static final int outline=0x7f0800f3;
+    public static final int packed=0x7f0800f4;
+    public static final int parallax=0x7f0800f5;
+    public static final int parent=0x7f0800f6;
+    public static final int parentPanel=0x7f0800f7;
+    public static final int parent_matrix=0x7f0800f8;
+    public static final int passLayout=0x7f0800f9;
+    public static final int passwordET=0x7f0800fa;
+    public static final int passwordEditText=0x7f0800fb;
+    public static final int passwordLayout=0x7f0800fc;
+    public static final int password_toggle=0x7f0800fd;
+    public static final int peekHeight=0x7f0800fe;
+    public static final int percent=0x7f0800ff;
+    public static final int pin=0x7f080100;
+    public static final int progress_circular=0x7f080101;
+    public static final int progress_horizontal=0x7f080102;
+    public static final int radio=0x7f080103;
+    public static final int right=0x7f080104;
+    public static final int right_icon=0x7f080105;
+    public static final int right_side=0x7f080106;
+    public static final int rounded=0x7f080107;
+    public static final int save_non_transition_alpha=0x7f080108;
+    public static final int save_overlay_view=0x7f080109;
+    public static final int scale=0x7f08010a;
+    public static final int screen=0x7f08010b;
+    public static final int scroll=0x7f08010c;
+    public static final int scrollIndicatorDown=0x7f08010d;
+    public static final int scrollIndicatorUp=0x7f08010e;
+    public static final int scrollView=0x7f08010f;
+    public static final int scrollable=0x7f080110;
+    public static final int search_badge=0x7f080111;
+    public static final int search_bar=0x7f080112;
+    public static final int search_button=0x7f080113;
+    public static final int search_close_btn=0x7f080114;
+    public static final int search_edit_frame=0x7f080115;
+    public static final int search_go_btn=0x7f080116;
+    public static final int search_mag_icon=0x7f080117;
+    public static final int search_plate=0x7f080118;
+    public static final int search_src_text=0x7f080119;
+    public static final int search_voice_btn=0x7f08011a;
+    public static final int select_dialog_listview=0x7f08011b;
+    public static final int selected=0x7f08011c;
+    public static final int shortcut=0x7f08011d;
+    public static final int showCustom=0x7f08011e;
+    public static final int showHome=0x7f08011f;
+    public static final int showTitle=0x7f080120;
+    public static final int signUpButton=0x7f080121;
+    public static final int skipCollapsed=0x7f080122;
+    public static final int slide=0x7f080123;
+    public static final int smallLabel=0x7f080124;
+    public static final int snackbar_action=0x7f080125;
+    public static final int snackbar_text=0x7f080126;
+    public static final int snap=0x7f080127;
+    public static final int snapMargins=0x7f080128;
+    public static final int spacer=0x7f080129;
+    public static final int split_action_bar=0x7f08012a;
+    public static final int spread=0x7f08012b;
+    public static final int spread_inside=0x7f08012c;
+    public static final int src_atop=0x7f08012d;
+    public static final int src_in=0x7f08012e;
+    public static final int src_over=0x7f08012f;
+    public static final int standard=0x7f080130;
+    public static final int start=0x7f080131;
+    public static final int status_bar_latest_event_content=0x7f080132;
+    public static final int stretch=0x7f080133;
+    public static final int submenuarrow=0x7f080134;
+    public static final int submit_area=0x7f080135;
+    public static final int tabMode=0x7f080136;
+    public static final int tag_accessibility_actions=0x7f080137;
+    public static final int tag_accessibility_clickable_spans=0x7f080138;
+    public static final int tag_accessibility_heading=0x7f080139;
+    public static final int tag_accessibility_pane_title=0x7f08013a;
+    public static final int tag_screen_reader_focusable=0x7f08013b;
+    public static final int tag_transition_group=0x7f08013c;
+    public static final int tag_unhandled_key_event_manager=0x7f08013d;
+    public static final int tag_unhandled_key_listeners=0x7f08013e;
+    public static final int templateImage=0x7f08013f;
+    public static final int templateListLinearLayout=0x7f080140;
+    public static final int templateName=0x7f080141;
+    public static final int templatesRecyclerView=0x7f080142;
+    public static final int test_checkbox_android_button_tint=0x7f080143;
+    public static final int test_checkbox_app_button_tint=0x7f080144;
+    public static final int text=0x7f080145;
+    public static final int text2=0x7f080146;
+    public static final int textEnd=0x7f080147;
+    public static final int textSpacerNoButtons=0x7f080148;
+    public static final int textSpacerNoTitle=0x7f080149;
+    public static final int textStart=0x7f08014a;
+    public static final int textViewAppMaker=0x7f08014b;
+    public static final int textViewHeader=0x7f08014c;
+    public static final int textWatcher=0x7f08014d;
+    public static final int text_input_end_icon=0x7f08014e;
+    public static final int text_input_start_icon=0x7f08014f;
+    public static final int textinput_counter=0x7f080150;
+    public static final int textinput_error=0x7f080151;
+    public static final int textinput_helper_text=0x7f080152;
+    public static final int textinput_placeholder=0x7f080153;
+    public static final int textinput_prefix_text=0x7f080154;
+    public static final int textinput_suffix_text=0x7f080155;
+    public static final int time=0x7f080156;
+    public static final int title=0x7f080157;
+    public static final int titleDividerNoCustom=0x7f080158;
+    public static final int title_template=0x7f080159;
+    public static final int tncTV=0x7f08015a;
+    public static final int toolbar=0x7f08015b;
+    public static final int top=0x7f08015c;
+    public static final int topPanel=0x7f08015d;
+    public static final int touch_outside=0x7f08015e;
+    public static final int transition_current_scene=0x7f08015f;
+    public static final int transition_layout_save=0x7f080160;
+    public static final int transition_position=0x7f080161;
+    public static final int transition_scene_layoutid_cache=0x7f080162;
+    public static final int transition_transform=0x7f080163;
+    public static final int unchecked=0x7f080164;
+    public static final int uniform=0x7f080165;
+    public static final int unlabeled=0x7f080166;
+    public static final int up=0x7f080167;
+    public static final int useLogo=0x7f080168;
+    public static final int view1=0x7f080169;
+    public static final int view2=0x7f08016a;
+    public static final int viewRelative=0x7f08016b;
+    public static final int view_offset_helper=0x7f08016c;
+    public static final int visible=0x7f08016d;
+    public static final int wide=0x7f08016e;
+    public static final int withText=0x7f08016f;
+    public static final int wrap=0x7f080170;
+    public static final int wrap_content=0x7f080171;
+    public static final int yourAccount=0x7f080172;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f090000;
@@ -7803,35 +8627,39 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionBar_background com.fyp.appmaker:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundSplit com.fyp.appmaker:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_backgroundStacked com.fyp.appmaker:backgroundStacked}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.fyp.appmaker:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.fyp.appmaker:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.fyp.appmaker:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetRight com.fyp.appmaker:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStart com.fyp.appmaker:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.fyp.appmaker:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.fyp.appmaker:customNavigationLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_displayOptions com.fyp.appmaker:displayOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_divider com.fyp.appmaker:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_background com.fyp.appmaker:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundSplit com.fyp.appmaker:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_backgroundStacked com.fyp.appmaker:backgroundStacked}</code></td><td>Specifies a background drawable for a second stacked row of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEnd com.fyp.appmaker:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetEndWithActions com.fyp.appmaker:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * are present.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetLeft com.fyp.appmaker:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetRight com.fyp.appmaker:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStart com.fyp.appmaker:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_contentInsetStartWithNavigation com.fyp.appmaker:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button.</td></tr>
+     * <tr><td><code>{@link #ActionBar_customNavigationLayout com.fyp.appmaker:customNavigationLayout}</code></td><td>Specifies a layout for custom navigation.</td></tr>
+     * <tr><td><code>{@link #ActionBar_displayOptions com.fyp.appmaker:displayOptions}</code></td><td>Options affecting how the action bar is displayed.</td></tr>
+     * <tr><td><code>{@link #ActionBar_divider com.fyp.appmaker:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #ActionBar_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #ActionBar_height com.fyp.appmaker:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.fyp.appmaker:hideOnContentScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.fyp.appmaker:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_homeLayout com.fyp.appmaker:homeLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_icon com.fyp.appmaker:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.fyp.appmaker:indeterminateProgressStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_itemPadding com.fyp.appmaker:itemPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_logo com.fyp.appmaker:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_navigationMode com.fyp.appmaker:navigationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_popupTheme com.fyp.appmaker:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarPadding com.fyp.appmaker:progressBarPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_progressBarStyle com.fyp.appmaker:progressBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitle com.fyp.appmaker:subtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.fyp.appmaker:subtitleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_hideOnContentScroll com.fyp.appmaker:hideOnContentScroll}</code></td><td>Set true to hide the action bar on a vertical nested scroll of content.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeAsUpIndicator com.fyp.appmaker:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #ActionBar_homeLayout com.fyp.appmaker:homeLayout}</code></td><td>Specifies a layout to use for the "home" section of the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_icon com.fyp.appmaker:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
+     * <tr><td><code>{@link #ActionBar_indeterminateProgressStyle com.fyp.appmaker:indeterminateProgressStyle}</code></td><td>Specifies a style resource to use for an indeterminate progress spinner.</td></tr>
+     * <tr><td><code>{@link #ActionBar_itemPadding com.fyp.appmaker:itemPadding}</code></td><td>Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_logo com.fyp.appmaker:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #ActionBar_navigationMode com.fyp.appmaker:navigationMode}</code></td><td>The type of navigation to use.</td></tr>
+     * <tr><td><code>{@link #ActionBar_popupTheme com.fyp.appmaker:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarPadding com.fyp.appmaker:progressBarPadding}</code></td><td>Specifies the horizontal padding on either end for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_progressBarStyle com.fyp.appmaker:progressBarStyle}</code></td><td>Specifies a style resource to use for an embedded progress bar.</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitle com.fyp.appmaker:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
+     * <tr><td><code>{@link #ActionBar_subtitleTextStyle com.fyp.appmaker:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
      * <tr><td><code>{@link #ActionBar_title com.fyp.appmaker:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionBar_titleTextStyle com.fyp.appmaker:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionBar_titleTextStyle com.fyp.appmaker:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionBar_background
      * @see #ActionBar_backgroundSplit
@@ -7874,8 +8702,9 @@ public final class R {
       0x7f0302b6
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#background}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7886,8 +8715,9 @@ public final class R {
      */
     public static final int ActionBar_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundSplit}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for the bottom component of a split action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7901,8 +8731,9 @@ public final class R {
      */
     public static final int ActionBar_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundStacked}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a background drawable for a second stacked row of the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -7916,8 +8747,10 @@ public final class R {
      */
     public static final int ActionBar_backgroundStacked=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetEnd}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7929,8 +8762,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEnd=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetEndWithActions}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7942,8 +8777,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetEndWithActions=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetLeft}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7955,8 +8792,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetLeft=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetRight}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7968,8 +8807,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetRight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetStart}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7981,8 +8822,10 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetStartWithNavigation}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -7994,8 +8837,9 @@ public final class R {
      */
     public static final int ActionBar_contentInsetStartWithNavigation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#customNavigationLayout}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a layout for custom navigation. Overrides navigationMode.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8006,8 +8850,9 @@ public final class R {
      */
     public static final int ActionBar_customNavigationLayout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#displayOptions}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Options affecting how the action bar is displayed.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -8028,8 +8873,9 @@ public final class R {
      */
     public static final int ActionBar_displayOptions=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#divider}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for item dividers.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8040,8 +8886,9 @@ public final class R {
      */
     public static final int ActionBar_divider=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8053,8 +8900,9 @@ public final class R {
      */
     public static final int ActionBar_elevation=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#height}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a fixed height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8066,8 +8914,9 @@ public final class R {
      */
     public static final int ActionBar_height=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hideOnContentScroll}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Set true to hide the action bar on a vertical nested scroll of content.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8076,8 +8925,9 @@ public final class R {
      */
     public static final int ActionBar_hideOnContentScroll=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#homeAsUpIndicator}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Up navigation glyph
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8088,8 +8938,9 @@ public final class R {
      */
     public static final int ActionBar_homeAsUpIndicator=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#homeLayout}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a layout to use for the "home" section of the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8100,8 +8951,9 @@ public final class R {
      */
     public static final int ActionBar_homeLayout=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#icon}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8112,8 +8964,9 @@ public final class R {
      */
     public static final int ActionBar_icon=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#indeterminateProgressStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style resource to use for an indeterminate progress spinner.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8124,8 +8977,10 @@ public final class R {
      */
     public static final int ActionBar_indeterminateProgressStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemPadding}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies padding that should be applied to the left and right sides of
+     * system-provided items in the bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8137,8 +8992,9 @@ public final class R {
      */
     public static final int ActionBar_itemPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#logo}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the drawable used for the application logo.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8149,8 +9005,9 @@ public final class R {
      */
     public static final int ActionBar_logo=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#navigationMode}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * The type of navigation to use.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -8158,17 +9015,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>listMode</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
-     * <tr><td>tabMode</td><td>2</td><td></td></tr>
+     * <tr><td>listMode</td><td>1</td><td>The action bar will use a selection list for navigation.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>Normal static title text</td></tr>
+     * <tr><td>tabMode</td><td>2</td><td>The action bar will use a series of horizontal tabs for navigation.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:navigationMode
      */
     public static final int ActionBar_navigationMode=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8179,8 +9038,9 @@ public final class R {
      */
     public static final int ActionBar_popupTheme=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#progressBarPadding}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies the horizontal padding on either end for an embedded progress bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8192,8 +9052,9 @@ public final class R {
      */
     public static final int ActionBar_progressBarPadding=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#progressBarStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style resource to use for an embedded progress bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8204,8 +9065,9 @@ public final class R {
      */
     public static final int ActionBar_progressBarStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subtitle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies subtitle text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -8214,8 +9076,9 @@ public final class R {
      */
     public static final int ActionBar_subtitle=25;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subtitleTextStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for subtitle text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8226,8 +9089,9 @@ public final class R {
      */
     public static final int ActionBar_subtitleTextStyle=26;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#title}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies title text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -8236,8 +9100,9 @@ public final class R {
      */
     public static final int ActionBar_title=27;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleTextStyle}
-     * attribute's value can be found in the {@link #ActionBar} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for title text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8326,12 +9191,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActionMode_background com.fyp.appmaker:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_backgroundSplit com.fyp.appmaker:backgroundSplit}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_closeItemLayout com.fyp.appmaker:closeItemLayout}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_background com.fyp.appmaker:background}</code></td><td>Specifies a background drawable for the action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_backgroundSplit com.fyp.appmaker:backgroundSplit}</code></td><td>Specifies a background drawable for the bottom component of a split action bar.</td></tr>
+     * <tr><td><code>{@link #ActionMode_closeItemLayout com.fyp.appmaker:closeItemLayout}</code></td><td>Specifies a layout to use for the "close" item at the starting edge.</td></tr>
      * <tr><td><code>{@link #ActionMode_height com.fyp.appmaker:height}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.fyp.appmaker:subtitleTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActionMode_titleTextStyle com.fyp.appmaker:titleTextStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActionMode_subtitleTextStyle com.fyp.appmaker:subtitleTextStyle}</code></td><td>Specifies a style to use for subtitle text.</td></tr>
+     * <tr><td><code>{@link #ActionMode_titleTextStyle com.fyp.appmaker:titleTextStyle}</code></td><td>Specifies a style to use for title text.</td></tr>
      * </table>
      * @see #ActionMode_background
      * @see #ActionMode_backgroundSplit
@@ -8345,8 +9210,9 @@ public final class R {
       0x7f03025b, 0x7f0302b6
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#background}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a background for the action mode bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8357,8 +9223,9 @@ public final class R {
      */
     public static final int ActionMode_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundSplit}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a background for the split action mode bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8372,8 +9239,9 @@ public final class R {
      */
     public static final int ActionMode_backgroundSplit=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeItemLayout}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a layout to use for the "close" item at the starting edge.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8384,8 +9252,9 @@ public final class R {
      */
     public static final int ActionMode_closeItemLayout=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#height}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a fixed height for the action mode bar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8397,8 +9266,9 @@ public final class R {
      */
     public static final int ActionMode_height=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subtitleTextStyle}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for subtitle text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8409,8 +9279,9 @@ public final class R {
      */
     public static final int ActionMode_subtitleTextStyle=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleTextStyle}
-     * attribute's value can be found in the {@link #ActionMode} array.
+     * <p>
+     * @attr description
+     * Specifies a style to use for title text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8427,8 +9298,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.fyp.appmaker:expandActivityOverflowButtonDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.fyp.appmaker:initialActivityCount}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_expandActivityOverflowButtonDrawable com.fyp.appmaker:expandActivityOverflowButtonDrawable}</code></td><td>The drawable to show in the button for expanding the activities overflow popup.</td></tr>
+     * <tr><td><code>{@link #ActivityChooserView_initialActivityCount com.fyp.appmaker:initialActivityCount}</code></td><td>The maximal number of items initially shown in the activity list.</td></tr>
      * </table>
      * @see #ActivityChooserView_expandActivityOverflowButtonDrawable
      * @see #ActivityChooserView_initialActivityCount
@@ -8437,8 +9308,13 @@ public final class R {
       0x7f030114, 0x7f03015d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandActivityOverflowButtonDrawable}
-     * attribute's value can be found in the {@link #ActivityChooserView} array.
+     * <p>
+     * @attr description
+     * The drawable to show in the button for expanding the activities overflow popup.
+     * <strong>Note:</strong> Clients would like to set this drawable
+     * as a clue about the action the chosen activity will perform. For
+     * example, if share activity is to be chosen the drawable should
+     * give a clue that sharing is to be performed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8449,8 +9325,9 @@ public final class R {
      */
     public static final int ActivityChooserView_expandActivityOverflowButtonDrawable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#initialActivityCount}
-     * attribute's value can be found in the {@link #ActivityChooserView} array.
+     * <p>
+     * @attr description
+     * The maximal number of items initially shown in the activity list.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -8668,8 +9545,11 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dither}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Enables or disables dithering of the bitmap if the bitmap does not have the
+     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
+     * an RGB 565 screen).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8678,8 +9558,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_dither=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Indicates whether the drawable should be initially visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8688,8 +9569,14 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_visible=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * If true, allows the drawable's padding to change based on the
+     * current state that is selected.  If false, the padding will
+     * stay the same (based on the maximum padding of all the states).
+     * Enabling this feature requires that the owner of the drawable
+     * deal with performing layout when the state changes, which is
+     * often not supported.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8698,8 +9585,12 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_variablePadding=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * If true, the drawable's reported internal size will remain
+     * constant as the state changes; the size is the maximum of all
+     * of the states.  If false, the size will vary based on the
+     * current state.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8708,8 +9599,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_constantSize=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade in a new state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8717,8 +9609,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableCompat_android_enterFadeDuration=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableCompat} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade out an old state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -8742,8 +9635,9 @@ public final class R {
       0x010100d0, 0x01010199
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for use in specifying transitions.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8754,8 +9648,10 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableItem_android_id=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Reference to a drawable resource to use for the frame.  If not
+     * given, the drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8786,8 +9682,10 @@ public final class R {
       0x01010199, 0x01010449, 0x0101044a, 0x0101044b
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Reference to a animation drawable resource to use for the frame.  If not
+     * given, the animation drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8798,8 +9696,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_drawable=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#toId}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for the ending state.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8810,8 +9709,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_toId=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fromId}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Keyframe identifier for the starting state.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8822,8 +9722,9 @@ public final class R {
      */
     public static final int AnimatedStateListDrawableTransition_android_fromId=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#reversible}
-     * attribute's value can be found in the {@link #AnimatedStateListDrawableTransition} array.
+     * <p>
+     * @attr description
+     * Whether this transition is reversible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8841,11 +9742,12 @@ public final class R {
      * <tr><td><code>{@link #AppBarLayout_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_touchscreenBlocksFocus android:touchscreenBlocksFocus}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppBarLayout_android_keyboardNavigationCluster android:keyboardNavigationCluster}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_expanded com.fyp.appmaker:expanded}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.fyp.appmaker:liftOnScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_liftOnScrollTargetViewId com.fyp.appmaker:liftOnScrollTargetViewId}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_statusBarForeground com.fyp.appmaker:statusBarForeground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_expanded com.fyp.appmaker:expanded}</code></td><td>The initial expanded state for the AppBarLayout.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScroll com.fyp.appmaker:liftOnScroll}</code></td><td>Whether the {@link AppBarLayout} should lift on scroll.</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_liftOnScrollTargetViewId com.fyp.appmaker:liftOnScrollTargetViewId}</code></td><td>The id of the view that the {@link AppBarLayout} should use to determine whether
+     * it should be lifted (i.e., only if {@link R.attr#liftOnScroll} is set to true).</td></tr>
+     * <tr><td><code>{@link #AppBarLayout_statusBarForeground com.fyp.appmaker:statusBarForeground}</code></td><td>The drawable to display in front of the layout's content, but behind the status bar.</td></tr>
      * </table>
      * @see #AppBarLayout_android_background
      * @see #AppBarLayout_android_touchscreenBlocksFocus
@@ -8896,8 +9798,9 @@ public final class R {
      */
     public static final int AppBarLayout_android_keyboardNavigationCluster=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * Deprecated. Elevation is now controlled via a state list animator.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -8909,8 +9812,10 @@ public final class R {
      */
     public static final int AppBarLayout_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expanded}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * The initial expanded state for the AppBarLayout. This only takes effect when this
+     * view is a direct child of a CoordinatorLayout.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8919,8 +9824,14 @@ public final class R {
      */
     public static final int AppBarLayout_expanded=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#liftOnScroll}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * Whether the {@link AppBarLayout} should lift on scroll. If set to
+     * true, the {@link AppBarLayout} will animate to the lifted, or
+     * elevated, state when content is scrolled beneath it. Requires
+     * `app:layout_behavior="@string/appbar_scrolling_view_behavior` to be
+     * set on the scrolling sibling (e.g., `NestedScrollView`,
+     * `RecyclerView`, etc.). Default is false.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -8929,8 +9840,12 @@ public final class R {
      */
     public static final int AppBarLayout_liftOnScroll=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#liftOnScrollTargetViewId}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * The id of the view that the {@link AppBarLayout} should use to determine whether
+     * it should be lifted (i.e., only if {@link R.attr#liftOnScroll} is set to true).
+     * If this id is not set, the {@link AppBarLayout} will use the target view provided
+     * by nested scrolling to determine whether it should be lifted.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -8941,8 +9856,10 @@ public final class R {
      */
     public static final int AppBarLayout_liftOnScrollTargetViewId=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#statusBarForeground}
-     * attribute's value can be found in the {@link #AppBarLayout} array.
+     * <p>
+     * @attr description
+     * The drawable to display in front of the layout's content, but behind the status bar.
+     * Only works on Lollipop when used together with android:fitSystemWindows="true".
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -8958,42 +9875,51 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.fyp.appmaker:state_collapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.fyp.appmaker:state_collapsible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.fyp.appmaker:state_liftable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.fyp.appmaker:state_lifted}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsed com.fyp.appmaker:state_collapsed}</code></td><td>@deprecated in favor of {@link R.attr#state_lifted}.</td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_collapsible com.fyp.appmaker:state_collapsible}</code></td><td>@deprecated in favor of {@link R.attr#state_liftable}.</td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_liftable com.fyp.appmaker:state_liftable}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is liftable (e.g., elevates on collapse or scroll).</td></tr>
+     * <tr><td><code>{@link #AppBarLayoutStates_state_lifted com.fyp.appmaker:state_lifted}</code></td><td>State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is lifted (elevated).</td></tr>
      * </table>
      * @see #AppBarLayoutStates_state_collapsed
      * @see #AppBarLayoutStates_state_collapsible
      * @see #AppBarLayoutStates_state_liftable
      * @see #AppBarLayoutStates_state_lifted
      */
+    @Deprecated
     public static final int[] AppBarLayoutStates={
       0x7f03024c, 0x7f03024d, 0x7f03024f, 0x7f030250
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_collapsed}
-     * attribute's value can be found in the {@link #AppBarLayoutStates} array.
+     * <p>
+     * @attr description
+     * @deprecated in favor of {@link R.attr#state_lifted}.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
      * @attr name com.fyp.appmaker:state_collapsed
      */
+    @Deprecated
     public static final int AppBarLayoutStates_state_collapsed=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_collapsible}
-     * attribute's value can be found in the {@link #AppBarLayoutStates} array.
+     * <p>
+     * @attr description
+     * @deprecated in favor of {@link R.attr#state_liftable}.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
      *
      * @attr name com.fyp.appmaker:state_collapsible
      */
+    @Deprecated
     public static final int AppBarLayoutStates_state_collapsible=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_liftable}
-     * attribute's value can be found in the {@link #AppBarLayoutStates} array.
+     * <p>
+     * @attr description
+     * State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is liftable (e.g., elevates on collapse or scroll).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -9002,8 +9928,10 @@ public final class R {
      */
     public static final int AppBarLayoutStates_state_liftable=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_lifted}
-     * attribute's value can be found in the {@link #AppBarLayoutStates} array.
+     * <p>
+     * @attr description
+     * State value for {@link com.google.android.material.appbar.AppBarLayout} set when the view
+     * is lifted (elevated).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -9019,7 +9947,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollFlags com.fyp.appmaker:layout_scrollFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.fyp.appmaker:layout_scrollInterpolator}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppBarLayout_Layout_layout_scrollInterpolator com.fyp.appmaker:layout_scrollInterpolator}</code></td><td>An interpolator to use when scrolling this View.</td></tr>
      * </table>
      * @see #AppBarLayout_Layout_layout_scrollFlags
      * @see #AppBarLayout_Layout_layout_scrollInterpolator
@@ -9037,21 +9965,34 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>enterAlways</td><td>4</td><td></td></tr>
-     * <tr><td>enterAlwaysCollapsed</td><td>8</td><td></td></tr>
-     * <tr><td>exitUntilCollapsed</td><td>2</td><td></td></tr>
-     * <tr><td>noScroll</td><td>0</td><td></td></tr>
-     * <tr><td>scroll</td><td>1</td><td></td></tr>
-     * <tr><td>snap</td><td>10</td><td></td></tr>
-     * <tr><td>snapMargins</td><td>20</td><td></td></tr>
+     * <tr><td>enterAlways</td><td>4</td><td>When entering (scrolling on screen) the view will scroll on any downwards
+     * scroll event, regardless of whether the scrolling view is also scrolling. This
+     * is commonly referred to as the 'quick return' pattern.</td></tr>
+     * <tr><td>enterAlwaysCollapsed</td><td>8</td><td>An additional flag for 'enterAlways' which modifies the returning view to
+     * only initially scroll back to it's collapsed height. Once the scrolling view has
+     * reached the end of it's scroll range, the remainder of this view will be scrolled
+     * into view.</td></tr>
+     * <tr><td>exitUntilCollapsed</td><td>2</td><td>When exiting (scrolling off screen) the view will be scrolled until it is
+     * 'collapsed'. The collapsed height is defined by the view's minimum height.</td></tr>
+     * <tr><td>noScroll</td><td>0</td><td>Disable scrolling on the view. This flag should not be combined with any of the other
+     * scroll flags.</td></tr>
+     * <tr><td>scroll</td><td>1</td><td>The view will be scroll in direct relation to scroll events. This flag needs to be
+     * set for any of the other flags to take effect. If any sibling views
+     * before this one do not have this flag, then this value has no effect.</td></tr>
+     * <tr><td>snap</td><td>10</td><td>Upon a scroll ending, if the view is only partially visible then it will be
+     * snapped and scrolled to it's closest edge.</td></tr>
+     * <tr><td>snapMargins</td><td>20</td><td>An additional flag to be used with 'snap'. If set, the view will be snapped to its
+     * top and bottom margins, as opposed to the edges of the view itself.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:layout_scrollFlags
      */
     public static final int AppBarLayout_Layout_layout_scrollFlags=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_scrollInterpolator}
-     * attribute's value can be found in the {@link #AppBarLayout_Layout} array.
+     * <p>
+     * @attr description
+     * An interpolator to use when scrolling this View. Only takes effect when View
+     * is scrollable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9069,9 +10010,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatImageView_android_src android:src}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.fyp.appmaker:srcCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tint com.fyp.appmaker:tint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatImageView_tintMode com.fyp.appmaker:tintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_srcCompat com.fyp.appmaker:srcCompat}</code></td><td>Sets a drawable as the content of this ImageView.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tint com.fyp.appmaker:tint}</code></td><td>Tint to apply to the image source.</td></tr>
+     * <tr><td><code>{@link #AppCompatImageView_tintMode com.fyp.appmaker:tintMode}</code></td><td>Blending mode used to apply the image source tint.</td></tr>
      * </table>
      * @see #AppCompatImageView_android_src
      * @see #AppCompatImageView_srcCompat
@@ -9097,8 +10038,10 @@ public final class R {
      */
     public static final int AppCompatImageView_android_src=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#srcCompat}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Sets a drawable as the content of this ImageView. Allows the use of vector drawable
+     * when running on older versions of the platform.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9109,8 +10052,9 @@ public final class R {
      */
     public static final int AppCompatImageView_srcCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tint}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the image source.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9120,8 +10064,9 @@ public final class R {
      */
     public static final int AppCompatImageView_tint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tintMode}
-     * attribute's value can be found in the {@link #AppCompatImageView} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the image source tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9129,12 +10074,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:tintMode
@@ -9148,9 +10098,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatSeekBar_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.fyp.appmaker:tickMark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.fyp.appmaker:tickMarkTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.fyp.appmaker:tickMarkTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMark com.fyp.appmaker:tickMark}</code></td><td>Drawable displayed at each progress position on a seekbar.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTint com.fyp.appmaker:tickMarkTint}</code></td><td>Tint to apply to the tick mark drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatSeekBar_tickMarkTintMode com.fyp.appmaker:tickMarkTintMode}</code></td><td>Blending mode used to apply the tick mark tint.</td></tr>
      * </table>
      * @see #AppCompatSeekBar_android_thumb
      * @see #AppCompatSeekBar_tickMark
@@ -9173,8 +10123,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_android_thumb=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickMark}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Drawable displayed at each progress position on a seekbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9185,8 +10136,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMark=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickMarkTint}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the tick mark drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9196,8 +10148,9 @@ public final class R {
      */
     public static final int AppCompatSeekBar_tickMarkTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickMarkTintMode}
-     * attribute's value can be found in the {@link #AppCompatSeekBar} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the tick mark tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9205,12 +10158,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:tickMarkTintMode
@@ -9353,26 +10311,30 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.fyp.appmaker:autoSizeMaxTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.fyp.appmaker:autoSizeMinTextSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.fyp.appmaker:autoSizePresetSizes}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.fyp.appmaker:autoSizeStepGranularity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.fyp.appmaker:autoSizeTextType}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMaxTextSize com.fyp.appmaker:autoSizeMaxTextSize}</code></td><td>The maximum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeMinTextSize com.fyp.appmaker:autoSizeMinTextSize}</code></td><td>The minimum text size constraint to be used when auto-sizing text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizePresetSizes com.fyp.appmaker:autoSizePresetSizes}</code></td><td>Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeStepGranularity com.fyp.appmaker:autoSizeStepGranularity}</code></td><td>Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_autoSizeTextType com.fyp.appmaker:autoSizeTextType}</code></td><td>Specify the type of auto-size.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_drawableBottomCompat com.fyp.appmaker:drawableBottomCompat}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTextView_drawableEndCompat com.fyp.appmaker:drawableEndCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat com.fyp.appmaker:drawableLeftCompat}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableLeftCompat com.fyp.appmaker:drawableLeftCompat}</code></td><td>Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_drawableRightCompat com.fyp.appmaker:drawableRightCompat}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTextView_drawableStartCompat com.fyp.appmaker:drawableStartCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTint com.fyp.appmaker:drawableTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode com.fyp.appmaker:drawableTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTint com.fyp.appmaker:drawableTint}</code></td><td>Tint to apply to the compound (left, top, etc.) drawables.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_drawableTintMode com.fyp.appmaker:drawableTintMode}</code></td><td>Blending mode used to apply the compound (left, top, etc.) drawables tint.</td></tr>
      * <tr><td><code>{@link #AppCompatTextView_drawableTopCompat com.fyp.appmaker:drawableTopCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.fyp.appmaker:firstBaselineToTopHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.fyp.appmaker:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.fyp.appmaker:lastBaselineToBottomHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.fyp.appmaker:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.fyp.appmaker:textAllCaps}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTextView_textLocale com.fyp.appmaker:textLocale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_firstBaselineToTopHeight com.fyp.appmaker:firstBaselineToTopHeight}</code></td><td>Distance from the top of the TextView to the first text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontFamily com.fyp.appmaker:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lastBaselineToBottomHeight com.fyp.appmaker:lastBaselineToBottomHeight}</code></td><td>Distance from the bottom of the TextView to the last text baseline.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_lineHeight com.fyp.appmaker:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textAllCaps com.fyp.appmaker:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #AppCompatTextView_textLocale com.fyp.appmaker:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #AppCompatTextView_android_textAppearance
      * @see #AppCompatTextView_autoSizeMaxTextSize
@@ -9417,8 +10379,9 @@ public final class R {
      */
     public static final int AppCompatTextView_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoSizeMaxTextSize}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The maximum text size constraint to be used when auto-sizing text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9430,8 +10393,9 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMaxTextSize=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoSizeMinTextSize}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The minimum text size constraint to be used when auto-sizing text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9443,8 +10407,11 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeMinTextSize=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoSizePresetSizes}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Resource array of dimensions to be used in conjunction with
+     * <code>autoSizeTextType</code> set to <code>uniform</code>. Overrides
+     * <code>autoSizeStepGranularity</code> if set.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9455,8 +10422,11 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizePresetSizes=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoSizeStepGranularity}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Specify the auto-size step size if <code>autoSizeTextType</code> is set to
+     * <code>uniform</code>. The default is 1px. Overwrites
+     * <code>autoSizePresetSizes</code> if set.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9468,8 +10438,10 @@ public final class R {
      */
     public static final int AppCompatTextView_autoSizeStepGranularity=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoSizeTextType}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Specify the type of auto-size. Note that this feature is not supported by EditText,
+     * works only for TextView.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9477,8 +10449,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>uniform</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>No auto-sizing (default).</td></tr>
+     * <tr><td>uniform</td><td>1</td><td>Uniform horizontal and vertical text size scaling to fit within the
+     * container.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:autoSizeTextType
@@ -9509,8 +10482,10 @@ public final class R {
      */
     public static final int AppCompatTextView_drawableEndCompat=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#drawableLeftCompat}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Compound drawables allowing the use of vector drawable when running on older versions
+     * of the platform.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9545,8 +10520,9 @@ public final class R {
      */
     public static final int AppCompatTextView_drawableStartCompat=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#drawableTint}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the compound (left, top, etc.) drawables.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -9556,8 +10532,9 @@ public final class R {
      */
     public static final int AppCompatTextView_drawableTint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#drawableTintMode}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the compound (left, top, etc.) drawables tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -9565,12 +10542,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:drawableTintMode
@@ -9589,8 +10571,10 @@ public final class R {
      */
     public static final int AppCompatTextView_drawableTopCompat=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#firstBaselineToTopHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Distance from the top of the TextView to the first text baseline. If set, this
+     * overrides the value set for paddingTop.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9602,8 +10586,9 @@ public final class R {
      */
     public static final int AppCompatTextView_firstBaselineToTopHeight=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontFamily}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * The attribute for the font family.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -9612,8 +10597,9 @@ public final class R {
      */
     public static final int AppCompatTextView_fontFamily=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontVariationSettings}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * OpenType font variation settings, available after api 26.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -9622,8 +10608,10 @@ public final class R {
      */
     public static final int AppCompatTextView_fontVariationSettings=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#lastBaselineToBottomHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Distance from the bottom of the TextView to the last text baseline. If set, this
+     * overrides the value set for paddingBottom.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9635,8 +10623,10 @@ public final class R {
      */
     public static final int AppCompatTextView_lastBaselineToBottomHeight=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#lineHeight}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -9648,8 +10638,9 @@ public final class R {
      */
     public static final int AppCompatTextView_lineHeight=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAllCaps}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9662,8 +10653,13 @@ public final class R {
      */
     public static final int AppCompatTextView_textAllCaps=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textLocale}
-     * attribute's value can be found in the {@link #AppCompatTextView} array.
+     * <p>
+     * @attr description
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -9680,129 +10676,146 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowIsFloating android:windowIsFloating}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_android_windowAnimationStyle android:windowAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.fyp.appmaker:actionBarDivider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.fyp.appmaker:actionBarItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.fyp.appmaker:actionBarPopupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.fyp.appmaker:actionBarSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.fyp.appmaker:actionBarSplitStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.fyp.appmaker:actionBarStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarDivider com.fyp.appmaker:actionBarDivider}</code></td><td>Custom divider drawable to use for elements in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarItemBackground com.fyp.appmaker:actionBarItemBackground}</code></td><td>Custom item state list drawable background for action bar items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarPopupTheme com.fyp.appmaker:actionBarPopupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSize com.fyp.appmaker:actionBarSize}</code></td><td>Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarSplitStyle com.fyp.appmaker:actionBarSplitStyle}</code></td><td>Reference to a style for the split Action Bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarStyle com.fyp.appmaker:actionBarStyle}</code></td><td>Reference to a style for the Action Bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabBarStyle com.fyp.appmaker:actionBarTabBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.fyp.appmaker:actionBarTabStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTabStyle com.fyp.appmaker:actionBarTabStyle}</code></td><td>Default style for tabs within an action bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionBarTabTextStyle com.fyp.appmaker:actionBarTabTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.fyp.appmaker:actionBarTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.fyp.appmaker:actionBarWidgetTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.fyp.appmaker:actionButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.fyp.appmaker:actionDropDownStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.fyp.appmaker:actionMenuTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.fyp.appmaker:actionMenuTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.fyp.appmaker:actionModeBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarTheme com.fyp.appmaker:actionBarTheme}</code></td><td>Reference to a theme that should be used to inflate the
+     * action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionBarWidgetTheme com.fyp.appmaker:actionBarWidgetTheme}</code></td><td>Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionButtonStyle com.fyp.appmaker:actionButtonStyle}</code></td><td>Default action button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionDropDownStyle com.fyp.appmaker:actionDropDownStyle}</code></td><td>Default ActionBar dropdown style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextAppearance com.fyp.appmaker:actionMenuTextAppearance}</code></td><td>TextAppearance style that will be applied to text that
+     * appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionMenuTextColor com.fyp.appmaker:actionMenuTextColor}</code></td><td>Color for text that appears within action menu items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeBackground com.fyp.appmaker:actionModeBackground}</code></td><td>Background drawable to use for action mode UI</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeCloseButtonStyle com.fyp.appmaker:actionModeCloseButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.fyp.appmaker:actionModeCloseDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.fyp.appmaker:actionModeCopyDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.fyp.appmaker:actionModeCutDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.fyp.appmaker:actionModeFindDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.fyp.appmaker:actionModePasteDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.fyp.appmaker:actionModePopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.fyp.appmaker:actionModeSelectAllDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.fyp.appmaker:actionModeShareDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.fyp.appmaker:actionModeSplitBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCloseDrawable com.fyp.appmaker:actionModeCloseDrawable}</code></td><td>Drawable to use for the close action mode button</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCopyDrawable com.fyp.appmaker:actionModeCopyDrawable}</code></td><td>Drawable to use for the Copy action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeCutDrawable com.fyp.appmaker:actionModeCutDrawable}</code></td><td>Drawable to use for the Cut action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeFindDrawable com.fyp.appmaker:actionModeFindDrawable}</code></td><td>Drawable to use for the Find action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePasteDrawable com.fyp.appmaker:actionModePasteDrawable}</code></td><td>Drawable to use for the Paste action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModePopupWindowStyle com.fyp.appmaker:actionModePopupWindowStyle}</code></td><td>PopupWindow style to use for action modes when showing as a window overlay.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSelectAllDrawable com.fyp.appmaker:actionModeSelectAllDrawable}</code></td><td>Drawable to use for the Select all action button in Contextual Action Bar</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeShareDrawable com.fyp.appmaker:actionModeShareDrawable}</code></td><td>Drawable to use for the Share action button in WebView selection action modes</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeSplitBackground com.fyp.appmaker:actionModeSplitBackground}</code></td><td>Background drawable to use for action mode UI in the lower split bar</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionModeStyle com.fyp.appmaker:actionModeStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.fyp.appmaker:actionModeWebSearchDrawable}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_actionModeWebSearchDrawable com.fyp.appmaker:actionModeWebSearchDrawable}</code></td><td>Drawable to use for the Web Search action button in WebView selection action modes</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowButtonStyle com.fyp.appmaker:actionOverflowButtonStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_actionOverflowMenuStyle com.fyp.appmaker:actionOverflowMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.fyp.appmaker:activityChooserViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_activityChooserViewStyle com.fyp.appmaker:activityChooserViewStyle}</code></td><td>Default ActivityChooserView style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogButtonGroupStyle com.fyp.appmaker:alertDialogButtonGroupStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogCenterButtons com.fyp.appmaker:alertDialogCenterButtons}</code></td><td></td></tr>
      * <tr><td><code>{@link #AppCompatTheme_alertDialogStyle com.fyp.appmaker:alertDialogStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.fyp.appmaker:alertDialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.fyp.appmaker:autoCompleteTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.fyp.appmaker:borderlessButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.fyp.appmaker:buttonBarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.fyp.appmaker:buttonBarNegativeButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.fyp.appmaker:buttonBarNeutralButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.fyp.appmaker:buttonBarPositiveButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.fyp.appmaker:buttonBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.fyp.appmaker:buttonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.fyp.appmaker:buttonStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.fyp.appmaker:checkboxStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.fyp.appmaker:checkedTextViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.fyp.appmaker:colorAccent}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.fyp.appmaker:colorBackgroundFloating}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.fyp.appmaker:colorButtonNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.fyp.appmaker:colorControlActivated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.fyp.appmaker:colorControlHighlight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.fyp.appmaker:colorControlNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorError com.fyp.appmaker:colorError}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.fyp.appmaker:colorPrimary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.fyp.appmaker:colorPrimaryDark}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.fyp.appmaker:colorSwitchThumbNormal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.fyp.appmaker:controlBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.fyp.appmaker:dialogCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.fyp.appmaker:dialogPreferredPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.fyp.appmaker:dialogTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.fyp.appmaker:dividerHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.fyp.appmaker:dividerVertical}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.fyp.appmaker:dropDownListViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.fyp.appmaker:dropdownListPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.fyp.appmaker:editTextBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.fyp.appmaker:editTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.fyp.appmaker:editTextStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.fyp.appmaker:homeAsUpIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.fyp.appmaker:imageButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.fyp.appmaker:listChoiceBackgroundIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated com.fyp.appmaker:listChoiceIndicatorMultipleAnimated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated com.fyp.appmaker:listChoiceIndicatorSingleAnimated}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.fyp.appmaker:listDividerAlertDialog}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.fyp.appmaker:listMenuViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_alertDialogTheme com.fyp.appmaker:alertDialogTheme}</code></td><td>Theme to use for alert dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_autoCompleteTextViewStyle com.fyp.appmaker:autoCompleteTextViewStyle}</code></td><td>Default AutoCompleteTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_borderlessButtonStyle com.fyp.appmaker:borderlessButtonStyle}</code></td><td>Style for buttons without an explicit border, often used in groups.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarButtonStyle com.fyp.appmaker:buttonBarButtonStyle}</code></td><td>Style for buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNegativeButtonStyle com.fyp.appmaker:buttonBarNegativeButtonStyle}</code></td><td>Style for the "negative" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarNeutralButtonStyle com.fyp.appmaker:buttonBarNeutralButtonStyle}</code></td><td>Style for the "neutral" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarPositiveButtonStyle com.fyp.appmaker:buttonBarPositiveButtonStyle}</code></td><td>Style for the "positive" buttons within button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonBarStyle com.fyp.appmaker:buttonBarStyle}</code></td><td>Style for button bars</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyle com.fyp.appmaker:buttonStyle}</code></td><td>Normal Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_buttonStyleSmall com.fyp.appmaker:buttonStyleSmall}</code></td><td>Small Button style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkboxStyle com.fyp.appmaker:checkboxStyle}</code></td><td>Default Checkbox style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_checkedTextViewStyle com.fyp.appmaker:checkedTextViewStyle}</code></td><td>Default CheckedTextView style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorAccent com.fyp.appmaker:colorAccent}</code></td><td>Bright complement to the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorBackgroundFloating com.fyp.appmaker:colorBackgroundFloating}</code></td><td>Default color of background imagery for floating components, ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorButtonNormal com.fyp.appmaker:colorButtonNormal}</code></td><td>The color applied to framework buttons in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlActivated com.fyp.appmaker:colorControlActivated}</code></td><td>The color applied to framework controls in their activated (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlHighlight com.fyp.appmaker:colorControlHighlight}</code></td><td>The color applied to framework control highlights (ex.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorControlNormal com.fyp.appmaker:colorControlNormal}</code></td><td>The color applied to framework controls in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorError com.fyp.appmaker:colorError}</code></td><td>Color used for error states and things that need to be drawn to
+     * the user's attention.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimary com.fyp.appmaker:colorPrimary}</code></td><td>The primary branding color for the app.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorPrimaryDark com.fyp.appmaker:colorPrimaryDark}</code></td><td>Dark variant of the primary branding color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_colorSwitchThumbNormal com.fyp.appmaker:colorSwitchThumbNormal}</code></td><td>The color applied to framework switch thumbs in their normal state.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_controlBackground com.fyp.appmaker:controlBackground}</code></td><td>The background used by framework controls.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogCornerRadius com.fyp.appmaker:dialogCornerRadius}</code></td><td>Preferred corner radius of dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogPreferredPadding com.fyp.appmaker:dialogPreferredPadding}</code></td><td>Preferred padding for dialog content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dialogTheme com.fyp.appmaker:dialogTheme}</code></td><td>Theme to use for dialogs spawned from this theme.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerHorizontal com.fyp.appmaker:dividerHorizontal}</code></td><td>A drawable that may be used as a horizontal divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dividerVertical com.fyp.appmaker:dividerVertical}</code></td><td>A drawable that may be used as a vertical divider between visual elements.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropDownListViewStyle com.fyp.appmaker:dropDownListViewStyle}</code></td><td>ListPopupWindow compatibility</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_dropdownListPreferredItemHeight com.fyp.appmaker:dropdownListPreferredItemHeight}</code></td><td>The preferred item height for dropdown lists.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextBackground com.fyp.appmaker:editTextBackground}</code></td><td>EditText background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextColor com.fyp.appmaker:editTextColor}</code></td><td>EditText text foreground color.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_editTextStyle com.fyp.appmaker:editTextStyle}</code></td><td>Default EditText style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_homeAsUpIndicator com.fyp.appmaker:homeAsUpIndicator}</code></td><td>Specifies a drawable to use for the 'home as up' indicator.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_imageButtonStyle com.fyp.appmaker:imageButtonStyle}</code></td><td>ImageButton background drawable.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceBackgroundIndicator com.fyp.appmaker:listChoiceBackgroundIndicator}</code></td><td>Drawable used as a background for selected list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorMultipleAnimated com.fyp.appmaker:listChoiceIndicatorMultipleAnimated}</code></td><td>Animated Drawable to use for single choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listChoiceIndicatorSingleAnimated com.fyp.appmaker:listChoiceIndicatorSingleAnimated}</code></td><td>Animated Drawable to use for multiple choice indicators.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listDividerAlertDialog com.fyp.appmaker:listDividerAlertDialog}</code></td><td>The list divider used in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listMenuViewStyle com.fyp.appmaker:listMenuViewStyle}</code></td><td>Default menu-style ListView style.</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_listPopupWindowStyle com.fyp.appmaker:listPopupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.fyp.appmaker:listPreferredItemHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.fyp.appmaker:listPreferredItemHeightLarge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.fyp.appmaker:listPreferredItemHeightSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd com.fyp.appmaker:listPreferredItemPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.fyp.appmaker:listPreferredItemPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.fyp.appmaker:listPreferredItemPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart com.fyp.appmaker:listPreferredItemPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.fyp.appmaker:panelBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.fyp.appmaker:panelMenuListTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.fyp.appmaker:panelMenuListWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.fyp.appmaker:popupMenuStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.fyp.appmaker:popupWindowStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.fyp.appmaker:radioButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.fyp.appmaker:ratingBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.fyp.appmaker:ratingBarStyleIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.fyp.appmaker:ratingBarStyleSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.fyp.appmaker:searchViewStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.fyp.appmaker:seekBarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.fyp.appmaker:selectableItemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.fyp.appmaker:selectableItemBackgroundBorderless}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.fyp.appmaker:spinnerDropDownItemStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.fyp.appmaker:spinnerStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.fyp.appmaker:switchStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.fyp.appmaker:textAppearanceLargePopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.fyp.appmaker:textAppearanceListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.fyp.appmaker:textAppearanceListItemSecondary}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.fyp.appmaker:textAppearanceListItemSmall}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.fyp.appmaker:textAppearancePopupMenuHeader}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.fyp.appmaker:textAppearanceSearchResultSubtitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.fyp.appmaker:textAppearanceSearchResultTitle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.fyp.appmaker:textAppearanceSmallPopupMenu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.fyp.appmaker:textColorAlertDialogListItem}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.fyp.appmaker:textColorSearchUrl}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.fyp.appmaker:toolbarNavigationButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.fyp.appmaker:toolbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.fyp.appmaker:tooltipForegroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.fyp.appmaker:tooltipFrameBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeight com.fyp.appmaker:listPreferredItemHeight}</code></td><td>The preferred list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightLarge com.fyp.appmaker:listPreferredItemHeightLarge}</code></td><td>A larger, more robust list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemHeightSmall com.fyp.appmaker:listPreferredItemHeightSmall}</code></td><td>A smaller, sleeker list item height.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingEnd com.fyp.appmaker:listPreferredItemPaddingEnd}</code></td><td>The preferred padding along the end edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingLeft com.fyp.appmaker:listPreferredItemPaddingLeft}</code></td><td>The preferred padding along the left edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingRight com.fyp.appmaker:listPreferredItemPaddingRight}</code></td><td>The preferred padding along the right edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_listPreferredItemPaddingStart com.fyp.appmaker:listPreferredItemPaddingStart}</code></td><td>The preferred padding along the start edge of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelBackground com.fyp.appmaker:panelBackground}</code></td><td>The background of a panel when it is inset from the left and right edges of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListTheme com.fyp.appmaker:panelMenuListTheme}</code></td><td>Default Panel Menu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_panelMenuListWidth com.fyp.appmaker:panelMenuListWidth}</code></td><td>Default Panel Menu width.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupMenuStyle com.fyp.appmaker:popupMenuStyle}</code></td><td>Default PopupMenu style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_popupWindowStyle com.fyp.appmaker:popupWindowStyle}</code></td><td>Default PopupWindow style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_radioButtonStyle com.fyp.appmaker:radioButtonStyle}</code></td><td>Default RadioButton style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyle com.fyp.appmaker:ratingBarStyle}</code></td><td>Default RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleIndicator com.fyp.appmaker:ratingBarStyleIndicator}</code></td><td>Indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_ratingBarStyleSmall com.fyp.appmaker:ratingBarStyleSmall}</code></td><td>Small indicator RatingBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_searchViewStyle com.fyp.appmaker:searchViewStyle}</code></td><td>Style for the search query widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_seekBarStyle com.fyp.appmaker:seekBarStyle}</code></td><td>Default SeekBar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackground com.fyp.appmaker:selectableItemBackground}</code></td><td>A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_selectableItemBackgroundBorderless com.fyp.appmaker:selectableItemBackgroundBorderless}</code></td><td>Background drawable for borderless standalone items that need focus/pressed states.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerDropDownItemStyle com.fyp.appmaker:spinnerDropDownItemStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_spinnerStyle com.fyp.appmaker:spinnerStyle}</code></td><td>Default Spinner style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_switchStyle com.fyp.appmaker:switchStyle}</code></td><td>Default style for the Switch widget.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceLargePopupMenu com.fyp.appmaker:textAppearanceLargePopupMenu}</code></td><td>Text color, typeface, size, and style for the text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItem com.fyp.appmaker:textAppearanceListItem}</code></td><td>The preferred TextAppearance for the primary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSecondary com.fyp.appmaker:textAppearanceListItemSecondary}</code></td><td>The preferred TextAppearance for the secondary text of list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceListItemSmall com.fyp.appmaker:textAppearanceListItemSmall}</code></td><td>The preferred TextAppearance for the primary text of small list items.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearancePopupMenuHeader com.fyp.appmaker:textAppearancePopupMenuHeader}</code></td><td>Text color, typeface, size, and style for header text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultSubtitle com.fyp.appmaker:textAppearanceSearchResultSubtitle}</code></td><td>Text color, typeface, size, and style for system search result subtitle.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSearchResultTitle com.fyp.appmaker:textAppearanceSearchResultTitle}</code></td><td>Text color, typeface, size, and style for system search result title.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textAppearanceSmallPopupMenu com.fyp.appmaker:textAppearanceSmallPopupMenu}</code></td><td>Text color, typeface, size, and style for small text inside of a popup menu.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorAlertDialogListItem com.fyp.appmaker:textColorAlertDialogListItem}</code></td><td>Color of list item text in alert dialogs.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_textColorSearchUrl com.fyp.appmaker:textColorSearchUrl}</code></td><td>Text color for urls in search suggestions, used by things like global search</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarNavigationButtonStyle com.fyp.appmaker:toolbarNavigationButtonStyle}</code></td><td>Default Toolar NavigationButtonStyle</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_toolbarStyle com.fyp.appmaker:toolbarStyle}</code></td><td>Default Toolbar style.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipForegroundColor com.fyp.appmaker:tooltipForegroundColor}</code></td><td>Foreground color to use for tooltips</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_tooltipFrameBackground com.fyp.appmaker:tooltipFrameBackground}</code></td><td>Background to use for tooltips</td></tr>
      * <tr><td><code>{@link #AppCompatTheme_viewInflaterClass com.fyp.appmaker:viewInflaterClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.fyp.appmaker:windowActionBar}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.fyp.appmaker:windowActionBarOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.fyp.appmaker:windowActionModeOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.fyp.appmaker:windowFixedHeightMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.fyp.appmaker:windowFixedHeightMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.fyp.appmaker:windowFixedWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.fyp.appmaker:windowFixedWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.fyp.appmaker:windowMinWidthMajor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.fyp.appmaker:windowMinWidthMinor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.fyp.appmaker:windowNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBar com.fyp.appmaker:windowActionBar}</code></td><td>Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionBarOverlay com.fyp.appmaker:windowActionBarOverlay}</code></td><td>Flag indicating whether this window's Action Bar should overlay
+     * application content.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowActionModeOverlay com.fyp.appmaker:windowActionModeOverlay}</code></td><td>Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMajor com.fyp.appmaker:windowFixedHeightMajor}</code></td><td>A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedHeightMinor com.fyp.appmaker:windowFixedHeightMinor}</code></td><td>A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMajor com.fyp.appmaker:windowFixedWidthMajor}</code></td><td>A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowFixedWidthMinor com.fyp.appmaker:windowFixedWidthMinor}</code></td><td>A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMajor com.fyp.appmaker:windowMinWidthMajor}</code></td><td>The minimum width the window is allowed to be, along the major
+     * axis of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowMinWidthMinor com.fyp.appmaker:windowMinWidthMinor}</code></td><td>The minimum width the window is allowed to be, along the minor
+     * axis of the screen.</td></tr>
+     * <tr><td><code>{@link #AppCompatTheme_windowNoTitle com.fyp.appmaker:windowNoTitle}</code></td><td>Flag indicating whether there should be no title on this window.</td></tr>
      * </table>
      * @see #AppCompatTheme_android_windowIsFloating
      * @see #AppCompatTheme_android_windowAnimationStyle
@@ -9987,8 +11000,9 @@ public final class R {
      */
     public static final int AppCompatTheme_android_windowAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarDivider}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Custom divider drawable to use for elements in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -9999,8 +11013,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarItemBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Custom item state list drawable background for action bar items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10011,8 +11026,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarItemBackground=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarPopupTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10023,8 +11040,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarPopupTheme=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarSize}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Size of the Action Bar, including the contextual
+     * bar used to present Action Modes.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10044,8 +11063,12 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarSplitStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a style for the split Action Bar. This style
+     * controls the split component that holds the menu/action
+     * buttons. actionBarStyle is still used for the primary
+     * bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10056,8 +11079,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarSplitStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a style for the Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10080,8 +11104,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabBarStyle=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarTabStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default style for tabs within an action bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10104,8 +11129,11 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTabTextStyle=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate the
+     * action bar. This will be inherited by any widget inflated
+     * into the action bar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10116,8 +11144,15 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarTheme=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionBarWidgetTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate widgets
+     * and layouts destined for the action bar. Most of the time
+     * this will be a reference to the current theme, but when
+     * the action bar has a significantly different contrast
+     * profile than the rest of the activity the difference
+     * can become important. If this is set to @null the current
+     * theme will be used.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10128,8 +11163,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionBarWidgetTheme=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default action button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10140,8 +11176,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionButtonStyle=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionDropDownStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default ActionBar dropdown style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10152,8 +11189,10 @@ public final class R {
      */
     public static final int AppCompatTheme_actionDropDownStyle=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionMenuTextAppearance}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * TextAppearance style that will be applied to text that
+     * appears within action menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10164,8 +11203,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextAppearance=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionMenuTextColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color for text that appears within action menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10179,8 +11219,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionMenuTextColor=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for action mode UI
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10203,8 +11244,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseButtonStyle=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeCloseDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the close action mode button
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10215,8 +11257,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCloseDrawable=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeCopyDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Copy action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10227,8 +11270,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCopyDrawable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeCutDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Cut action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10239,8 +11283,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeCutDrawable=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeFindDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Find action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10251,8 +11296,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeFindDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModePasteDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Paste action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10263,8 +11309,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePasteDrawable=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModePopupWindowStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * PopupWindow style to use for action modes when showing as a window overlay.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10275,8 +11322,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModePopupWindowStyle=24;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeSelectAllDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Select all action button in Contextual Action Bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10287,8 +11335,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeSelectAllDrawable=25;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeShareDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Share action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10299,8 +11348,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeShareDrawable=26;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeSplitBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for action mode UI in the lower split bar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10323,8 +11373,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionModeStyle=28;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionModeWebSearchDrawable}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the Web Search action button in WebView selection action modes
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10359,8 +11410,9 @@ public final class R {
      */
     public static final int AppCompatTheme_actionOverflowMenuStyle=31;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#activityChooserViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default ActivityChooserView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10405,8 +11457,9 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogStyle=35;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#alertDialogTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Theme to use for alert dialogs spawned from this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10417,8 +11470,9 @@ public final class R {
      */
     public static final int AppCompatTheme_alertDialogTheme=36;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#autoCompleteTextViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default AutoCompleteTextView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10429,8 +11483,9 @@ public final class R {
      */
     public static final int AppCompatTheme_autoCompleteTextViewStyle=37;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#borderlessButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for buttons without an explicit border, often used in groups.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10441,8 +11496,9 @@ public final class R {
      */
     public static final int AppCompatTheme_borderlessButtonStyle=38;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonBarButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10453,8 +11509,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarButtonStyle=39;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonBarNegativeButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "negative" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10465,8 +11522,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNegativeButtonStyle=40;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonBarNeutralButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "neutral" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10477,8 +11535,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarNeutralButtonStyle=41;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonBarPositiveButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the "positive" buttons within button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10489,8 +11548,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarPositiveButtonStyle=42;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for button bars
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10501,8 +11561,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonBarStyle=43;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Normal Button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10513,8 +11574,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyle=44;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonStyleSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Small Button style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10525,8 +11587,9 @@ public final class R {
      */
     public static final int AppCompatTheme_buttonStyleSmall=45;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkboxStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Checkbox style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10537,8 +11600,9 @@ public final class R {
      */
     public static final int AppCompatTheme_checkboxStyle=46;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedTextViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default CheckedTextView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10549,8 +11613,10 @@ public final class R {
      */
     public static final int AppCompatTheme_checkedTextViewStyle=47;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorAccent}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Bright complement to the primary branding color. By default, this is the color applied
+     * to framework controls (via colorControlActivated).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10560,8 +11626,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorAccent=48;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorBackgroundFloating}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default color of background imagery for floating components, ex. dialogs, popups, and cards.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10571,8 +11638,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorBackgroundFloating=49;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorButtonNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework buttons in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10582,8 +11650,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorButtonNormal=50;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorControlActivated}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework controls in their activated (ex. checked) state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10593,8 +11662,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlActivated=51;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorControlHighlight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework control highlights (ex. ripples, list selectors).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10604,8 +11674,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlHighlight=52;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorControlNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework controls in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10615,8 +11686,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorControlNormal=53;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorError}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color used for error states and things that need to be drawn to
+     * the user's attention.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10630,8 +11703,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorError=54;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorPrimary}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The primary branding color for the app. By default, this is the color applied to the
+     * action bar background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10641,8 +11716,10 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimary=55;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorPrimaryDark}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Dark variant of the primary branding color. By default, this is the color applied to
+     * the status bar (via statusBarColor) and navigation bar (via navigationBarColor).
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10652,8 +11729,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorPrimaryDark=56;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#colorSwitchThumbNormal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The color applied to framework switch thumbs in their normal state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -10663,8 +11741,9 @@ public final class R {
      */
     public static final int AppCompatTheme_colorSwitchThumbNormal=57;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#controlBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The background used by framework controls.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10675,8 +11754,9 @@ public final class R {
      */
     public static final int AppCompatTheme_controlBackground=58;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dialogCornerRadius}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Preferred corner radius of dialogs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10688,8 +11768,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogCornerRadius=59;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dialogPreferredPadding}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Preferred padding for dialog content.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10701,8 +11782,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogPreferredPadding=60;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dialogTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Theme to use for dialogs spawned from this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10713,8 +11795,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dialogTheme=61;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dividerHorizontal}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A drawable that may be used as a horizontal divider between visual elements.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10725,8 +11808,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerHorizontal=62;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dividerVertical}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A drawable that may be used as a vertical divider between visual elements.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10737,8 +11821,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dividerVertical=63;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dropDownListViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * ListPopupWindow compatibility
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10749,8 +11834,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dropDownListViewStyle=64;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dropdownListPreferredItemHeight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred item height for dropdown lists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10762,8 +11848,9 @@ public final class R {
      */
     public static final int AppCompatTheme_dropdownListPreferredItemHeight=65;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#editTextBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * EditText background drawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10774,8 +11861,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextBackground=66;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#editTextColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * EditText text foreground color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10789,8 +11877,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextColor=67;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#editTextStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default EditText style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10801,8 +11890,9 @@ public final class R {
      */
     public static final int AppCompatTheme_editTextStyle=68;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#homeAsUpIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Specifies a drawable to use for the 'home as up' indicator.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10813,8 +11903,9 @@ public final class R {
      */
     public static final int AppCompatTheme_homeAsUpIndicator=69;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#imageButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * ImageButton background drawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10825,8 +11916,9 @@ public final class R {
      */
     public static final int AppCompatTheme_imageButtonStyle=70;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listChoiceBackgroundIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Drawable used as a background for selected list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10837,8 +11929,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceBackgroundIndicator=71;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listChoiceIndicatorMultipleAnimated}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Animated Drawable to use for single choice indicators.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10849,8 +11942,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceIndicatorMultipleAnimated=72;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listChoiceIndicatorSingleAnimated}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Animated Drawable to use for multiple choice indicators.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10861,8 +11955,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listChoiceIndicatorSingleAnimated=73;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listDividerAlertDialog}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The list divider used in alert dialogs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10873,8 +11968,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listDividerAlertDialog=74;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listMenuViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default menu-style ListView style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -10897,8 +11993,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPopupWindowStyle=76;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemHeight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10910,8 +12007,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeight=77;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemHeightLarge}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A larger, more robust list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10923,8 +12021,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightLarge=78;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemHeightSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A smaller, sleeker list item height.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10936,8 +12035,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemHeightSmall=79;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemPaddingEnd}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the end edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10949,8 +12049,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingEnd=80;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemPaddingLeft}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the left edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10962,8 +12063,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingLeft=81;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemPaddingRight}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the right edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10975,8 +12077,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingRight=82;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#listPreferredItemPaddingStart}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the start edge of list items.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -10988,8 +12091,9 @@ public final class R {
      */
     public static final int AppCompatTheme_listPreferredItemPaddingStart=83;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#panelBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The background of a panel when it is inset from the left and right edges of the screen.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11000,8 +12104,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelBackground=84;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#panelMenuListTheme}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Panel Menu style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11012,8 +12117,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListTheme=85;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#panelMenuListWidth}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Panel Menu width.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11025,8 +12131,9 @@ public final class R {
      */
     public static final int AppCompatTheme_panelMenuListWidth=86;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#popupMenuStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default PopupMenu style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11037,8 +12144,9 @@ public final class R {
      */
     public static final int AppCompatTheme_popupMenuStyle=87;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#popupWindowStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default PopupWindow style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11049,8 +12157,9 @@ public final class R {
      */
     public static final int AppCompatTheme_popupWindowStyle=88;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#radioButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default RadioButton style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11061,8 +12170,9 @@ public final class R {
      */
     public static final int AppCompatTheme_radioButtonStyle=89;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ratingBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11073,8 +12183,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyle=90;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ratingBarStyleIndicator}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Indicator RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11085,8 +12196,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleIndicator=91;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ratingBarStyleSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Small indicator RatingBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11097,8 +12209,9 @@ public final class R {
      */
     public static final int AppCompatTheme_ratingBarStyleSmall=92;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#searchViewStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Style for the search query widget.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11109,8 +12222,9 @@ public final class R {
      */
     public static final int AppCompatTheme_searchViewStyle=93;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#seekBarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default SeekBar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11121,8 +12235,11 @@ public final class R {
      */
     public static final int AppCompatTheme_seekBarStyle=94;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#selectableItemBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A style that may be applied to buttons or other selectable items
+     * that should react to pressed and focus states, but that do not
+     * have a clear visual border along the edges.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11133,8 +12250,9 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackground=95;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#selectableItemBackgroundBorderless}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background drawable for borderless standalone items that need focus/pressed states.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11145,8 +12263,9 @@ public final class R {
      */
     public static final int AppCompatTheme_selectableItemBackgroundBorderless=96;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#spinnerDropDownItemStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Spinner style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11157,8 +12276,9 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerDropDownItemStyle=97;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#spinnerStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Spinner style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11169,8 +12289,9 @@ public final class R {
      */
     public static final int AppCompatTheme_spinnerStyle=98;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#switchStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default style for the Switch widget.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11181,8 +12302,9 @@ public final class R {
      */
     public static final int AppCompatTheme_switchStyle=99;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceLargePopupMenu}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for the text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11193,8 +12315,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceLargePopupMenu=100;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceListItem}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the primary text of list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11205,8 +12328,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItem=101;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceListItemSecondary}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the secondary text of list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11217,8 +12341,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSecondary=102;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceListItemSmall}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The preferred TextAppearance for the primary text of small list items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11229,8 +12354,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceListItemSmall=103;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearancePopupMenuHeader}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for header text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11241,8 +12367,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearancePopupMenuHeader=104;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceSearchResultSubtitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for system search result subtitle. Defaults to primary inverse text color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11253,8 +12380,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultSubtitle=105;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceSearchResultTitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for system search result title. Defaults to primary inverse text color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11265,8 +12393,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSearchResultTitle=106;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAppearanceSmallPopupMenu}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color, typeface, size, and style for small text inside of a popup menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11277,8 +12406,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textAppearanceSmallPopupMenu=107;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textColorAlertDialogListItem}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Color of list item text in alert dialogs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11292,8 +12422,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorAlertDialogListItem=108;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textColorSearchUrl}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Text color for urls in search suggestions, used by things like global search
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11307,8 +12438,9 @@ public final class R {
      */
     public static final int AppCompatTheme_textColorSearchUrl=109;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#toolbarNavigationButtonStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Toolar NavigationButtonStyle
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11319,8 +12451,9 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarNavigationButtonStyle=110;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#toolbarStyle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Default Toolbar style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11331,8 +12464,9 @@ public final class R {
      */
     public static final int AppCompatTheme_toolbarStyle=111;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tooltipForegroundColor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Foreground color to use for tooltips
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11346,8 +12480,9 @@ public final class R {
      */
     public static final int AppCompatTheme_tooltipForegroundColor=112;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tooltipFrameBackground}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Background to use for tooltips
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11368,8 +12503,10 @@ public final class R {
      */
     public static final int AppCompatTheme_viewInflaterClass=114;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowActionBar}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether this window should have an Action Bar
+     * in place of the usual title bar.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11378,8 +12515,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBar=115;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowActionBarOverlay}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether this window's Action Bar should overlay
+     * application content. Does nothing if the window would not
+     * have an Action Bar.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11388,8 +12528,10 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionBarOverlay=116;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowActionModeOverlay}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether action modes should overlay window content
+     * when there is not reserved space for their UI (such as an Action Bar).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11398,8 +12540,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowActionModeOverlay=117;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowFixedHeightMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed height for the window along the major axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11415,8 +12560,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMajor=118;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowFixedHeightMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed height for the window along the minor axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11432,8 +12580,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedHeightMinor=119;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowFixedWidthMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed width for the window along the major axis of the screen,
+     * that is, when in landscape. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11449,8 +12600,11 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMajor=120;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowFixedWidthMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * A fixed width for the window along the minor axis of the screen,
+     * that is, when in portrait. Can be either an absolute dimension
+     * or a fraction of the screen size in that dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11466,8 +12620,12 @@ public final class R {
      */
     public static final int AppCompatTheme_windowFixedWidthMinor=121;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowMinWidthMajor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The minimum width the window is allowed to be, along the major
+     * axis of the screen.  That is, when in landscape.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11483,8 +12641,12 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMajor=122;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowMinWidthMinor}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * The minimum width the window is allowed to be, along the minor
+     * axis of the screen.  That is, when in portrait.  Can be either
+     * an absolute dimension or a fraction of the screen size in that
+     * dimension.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11500,8 +12662,9 @@ public final class R {
      */
     public static final int AppCompatTheme_windowMinWidthMinor=123;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#windowNoTitle}
-     * attribute's value can be found in the {@link #AppCompatTheme} array.
+     * <p>
+     * @attr description
+     * Flag indicating whether there should be no title on this window.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11519,7 +12682,7 @@ public final class R {
      * <tr><td><code>{@link #Badge_backgroundColor com.fyp.appmaker:backgroundColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #Badge_badgeGravity com.fyp.appmaker:badgeGravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Badge_badgeTextColor com.fyp.appmaker:badgeTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Badge_horizontalOffset com.fyp.appmaker:horizontalOffset}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Badge_horizontalOffset com.fyp.appmaker:horizontalOffset}</code></td><td>Offset moves the badge towards the center of its anchor.</td></tr>
      * <tr><td><code>{@link #Badge_maxCharacterCount com.fyp.appmaker:maxCharacterCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #Badge_number com.fyp.appmaker:number}</code></td><td></td></tr>
      * <tr><td><code>{@link #Badge_verticalOffset com.fyp.appmaker:verticalOffset}</code></td><td></td></tr>
@@ -11557,10 +12720,10 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>BOTTOM_END</td><td>800055</td><td></td></tr>
-     * <tr><td>BOTTOM_START</td><td>800053</td><td></td></tr>
-     * <tr><td>TOP_END</td><td>800035</td><td></td></tr>
-     * <tr><td>TOP_START</td><td>800033</td><td></td></tr>
+     * <tr><td>BOTTOM_END</td><td>800055</td><td>Gravity.BOTTOM | Gravity.END</td></tr>
+     * <tr><td>BOTTOM_START</td><td>800053</td><td>Gravity.BOTTOM | Gravity.START</td></tr>
+     * <tr><td>TOP_END</td><td>800035</td><td>Gravity.TOP | Gravity.END</td></tr>
+     * <tr><td>TOP_START</td><td>800033</td><td>Gravity.TOP | Gravity.START</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:badgeGravity
@@ -11578,8 +12741,9 @@ public final class R {
      */
     public static final int Badge_badgeTextColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#horizontalOffset}
-     * attribute's value can be found in the {@link #Badge} array.
+     * <p>
+     * @attr description
+     * Offset moves the badge towards the center of its anchor.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11628,15 +12792,15 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.fyp.appmaker:fabAlignmentMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabAnimationMode com.fyp.appmaker:fabAnimationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.fyp.appmaker:fabCradleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.fyp.appmaker:fabCradleRoundedCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.fyp.appmaker:fabCradleVerticalOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.fyp.appmaker:hideOnScroll}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomAppBar_paddingBottomSystemWindowInsets com.fyp.appmaker:paddingBottomSystemWindowInsets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomAppBar_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAlignmentMode com.fyp.appmaker:fabAlignmentMode}</code></td><td>The alignment of the fab relative to the BottomAppBar.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabAnimationMode com.fyp.appmaker:fabAnimationMode}</code></td><td>The animation mode that should be used when the fab animates between alignment modes.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleMargin com.fyp.appmaker:fabCradleMargin}</code></td><td>The margin between the semi-circular cradle for the fab and the fab.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleRoundedCornerRadius com.fyp.appmaker:fabCradleRoundedCornerRadius}</code></td><td>The radius of the rounded corners on each side of the cradle.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_fabCradleVerticalOffset com.fyp.appmaker:fabCradleVerticalOffset}</code></td><td>The vertical offset between the fab from the cradle.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_hideOnScroll com.fyp.appmaker:hideOnScroll}</code></td><td>Whether the BottomAppBar should hide when a NestedScrollView is scrolled.</td></tr>
+     * <tr><td><code>{@link #BottomAppBar_paddingBottomSystemWindowInsets com.fyp.appmaker:paddingBottomSystemWindowInsets}</code></td><td>Just adding the parameters that we need for now.</td></tr>
      * <tr><td><code>{@link #BottomAppBar_paddingLeftSystemWindowInsets com.fyp.appmaker:paddingLeftSystemWindowInsets}</code></td><td></td></tr>
      * <tr><td><code>{@link #BottomAppBar_paddingRightSystemWindowInsets com.fyp.appmaker:paddingRightSystemWindowInsets}</code></td><td></td></tr>
      * </table>
@@ -11658,8 +12822,9 @@ public final class R {
       0x7f0301f7, 0x7f0301f9, 0x7f0301fa
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Background for the BottomAppBar.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11669,8 +12834,9 @@ public final class R {
      */
     public static final int BottomAppBar_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Elevation for the BottomAppBar.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11682,8 +12848,9 @@ public final class R {
      */
     public static final int BottomAppBar_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabAlignmentMode}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * The alignment of the fab relative to the BottomAppBar.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11691,16 +12858,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>center</td><td>0</td><td></td></tr>
-     * <tr><td>end</td><td>1</td><td></td></tr>
+     * <tr><td>center</td><td>0</td><td>Mode that aligns the fab to the center.</td></tr>
+     * <tr><td>end</td><td>1</td><td>Mode that aligns the fab to the end.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:fabAlignmentMode
      */
     public static final int BottomAppBar_fabAlignmentMode=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabAnimationMode}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * The animation mode that should be used when the fab animates between alignment modes.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11708,16 +12876,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>scale</td><td>0</td><td></td></tr>
-     * <tr><td>slide</td><td>1</td><td></td></tr>
+     * <tr><td>scale</td><td>0</td><td>Mode that scales the fab down to a point, moves it, then scales the fab back to its normal size.</td></tr>
+     * <tr><td>slide</td><td>1</td><td>Mode that slides the fab from one alignment mode to the next.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:fabAnimationMode
      */
     public static final int BottomAppBar_fabAnimationMode=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabCradleMargin}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * The margin between the semi-circular cradle for the fab and the fab.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11729,8 +12898,9 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabCradleRoundedCornerRadius}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * The radius of the rounded corners on each side of the cradle.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11742,8 +12912,9 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleRoundedCornerRadius=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabCradleVerticalOffset}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * The vertical offset between the fab from the cradle.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11755,8 +12926,9 @@ public final class R {
      */
     public static final int BottomAppBar_fabCradleVerticalOffset=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hideOnScroll}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Whether the BottomAppBar should hide when a NestedScrollView is scrolled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11765,8 +12937,9 @@ public final class R {
      */
     public static final int BottomAppBar_hideOnScroll=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingBottomSystemWindowInsets}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Whether the BottomAppBar should apply padding to be above the bottom window insets.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11775,8 +12948,9 @@ public final class R {
      */
     public static final int BottomAppBar_paddingBottomSystemWindowInsets=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingLeftSystemWindowInsets}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Whether the BottomAppBar should apply padding to be to the right of the left window insets.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11785,8 +12959,9 @@ public final class R {
      */
     public static final int BottomAppBar_paddingLeftSystemWindowInsets=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingRightSystemWindowInsets}
-     * attribute's value can be found in the {@link #BottomAppBar} array.
+     * <p>
+     * @attr description
+     * Whether the BottomAppBar should apply padding to be to the left of the right window insets.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11801,18 +12976,19 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #BottomNavigationView_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.fyp.appmaker:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.fyp.appmaker:itemHorizontalTranslationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.fyp.appmaker:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemBackground com.fyp.appmaker:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemHorizontalTranslationEnabled com.fyp.appmaker:itemHorizontalTranslationEnabled}</code></td><td>Whether the items translate horizontally when in "selected" label visibility mode.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemIconSize com.fyp.appmaker:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemIconTint com.fyp.appmaker:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemRippleColor com.fyp.appmaker:itemRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.fyp.appmaker:itemTextAppearanceActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.fyp.appmaker:itemTextAppearanceInactive}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemRippleColor com.fyp.appmaker:itemRippleColor}</code></td><td>The ColorStateList to use for a ripple background.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceActive com.fyp.appmaker:itemTextAppearanceActive}</code></td><td>The text appearance to apply to the active navigation item label.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_itemTextAppearanceInactive com.fyp.appmaker:itemTextAppearanceInactive}</code></td><td>The text appearance to apply to the inactive navigation item labels.</td></tr>
      * <tr><td><code>{@link #BottomNavigationView_itemTextColor com.fyp.appmaker:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.fyp.appmaker:labelVisibilityMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomNavigationView_menu com.fyp.appmaker:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_labelVisibilityMode com.fyp.appmaker:labelVisibilityMode}</code></td><td>Whether navigation items display with a label, without a label, or with a label during
+     * selected state.</td></tr>
+     * <tr><td><code>{@link #BottomNavigationView_menu com.fyp.appmaker:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #BottomNavigationView_backgroundTint
      * @see #BottomNavigationView_elevation
@@ -11833,8 +13009,9 @@ public final class R {
       0x7f030177, 0x7f030178, 0x7f03017b, 0x7f0301ea
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Background tint for the BottomNavigationView.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11844,8 +13021,9 @@ public final class R {
      */
     public static final int BottomNavigationView_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11857,8 +13035,10 @@ public final class R {
      */
     public static final int BottomNavigationView_elevation=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemBackground}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The background for the navigation items. Attribute type definition is in navigation
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11869,8 +13049,9 @@ public final class R {
      */
     public static final int BottomNavigationView_itemBackground=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemHorizontalTranslationEnabled}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Whether the items translate horizontally when in "selected" label visibility mode.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -11879,8 +13060,9 @@ public final class R {
      */
     public static final int BottomNavigationView_itemHorizontalTranslationEnabled=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemIconSize}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The size to provide for the navigation item icons.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -11892,8 +13074,10 @@ public final class R {
      */
     public static final int BottomNavigationView_itemIconSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemIconTint}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The tint to apply to the navigation item icons. Attribute type definition is in navigation
+     * package.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11903,8 +13087,11 @@ public final class R {
      */
     public static final int BottomNavigationView_itemIconTint=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemRippleColor}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The ColorStateList to use for a ripple background. This only exists because creating
+     * ripples in drawable xml based on theme colors is not supported pre-23. This will be ignored
+     * if itemBackground is set.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11914,8 +13101,11 @@ public final class R {
      */
     public static final int BottomNavigationView_itemRippleColor=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemTextAppearanceActive}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The text appearance to apply to the active navigation item label. You should not set
+     * android:textColor in itemTextAppearanceActive. Instead, set itemTextColor to a
+     * ColorStateList to make the text color stateful.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11926,8 +13116,12 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextAppearanceActive=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemTextAppearanceInactive}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The text appearance to apply to the inactive navigation item labels. Setting
+     * android:textColor in itemTextAppearanceInactive will take precedence over android:textColor
+     * in itemTextAppearanceActive. Instead, set itemTextColor with a ColorStateList to make
+     * the text color stateful.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11938,8 +13132,11 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextAppearanceInactive=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemTextColor}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The color to apply to the navigation items' text. Setting itemTextColor will take
+     * precedence over android:textColor in itemTextAppearanceInactive or
+     * itemTextAppearanceActive. Attribute type definition is in navigation package.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -11949,8 +13146,11 @@ public final class R {
      */
     public static final int BottomNavigationView_itemTextColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#labelVisibilityMode}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * Whether navigation items display with a label, without a label, or with a label during
+     * selected state. Can also be "auto", which uses the item count to determine whether to show
+     * or hide the label.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -11958,18 +13158,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>labeled</td><td>1</td><td></td></tr>
-     * <tr><td>selected</td><td>0</td><td></td></tr>
-     * <tr><td>unlabeled</td><td>2</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>Label behaves as "labeled" when there are 3 items or less, or "selected" when there are
+     * 4 items or more.</td></tr>
+     * <tr><td>labeled</td><td>1</td><td>Label is shown on all navigation items.</td></tr>
+     * <tr><td>selected</td><td>0</td><td>Label is shown on the selected navigation item.</td></tr>
+     * <tr><td>unlabeled</td><td>2</td><td>Label is not shown on any navigation items.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:labelVisibilityMode
      */
     public static final int BottomNavigationView_labelVisibilityMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#menu}
-     * attribute's value can be found in the {@link #BottomNavigationView} array.
+     * <p>
+     * @attr description
+     * The menu resource to inflate and populate items from. Attribute type definition is in
+     * navigation package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -11987,16 +13190,17 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #BottomSheetBehavior_Layout_android_elevation android:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_expandedOffset com.fyp.appmaker:behavior_expandedOffset}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.fyp.appmaker:behavior_fitToContents}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_halfExpandedRatio com.fyp.appmaker:behavior_halfExpandedRatio}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.fyp.appmaker:behavior_hideable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.fyp.appmaker:behavior_peekHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_saveFlags com.fyp.appmaker:behavior_saveFlags}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.fyp.appmaker:behavior_skipCollapsed}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_expandedOffset com.fyp.appmaker:behavior_expandedOffset}</code></td><td>The top offset of the BottomSheet in the expanded-state when fitsToContent is false.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_fitToContents com.fyp.appmaker:behavior_fitToContents}</code></td><td>Whether height of expanded sheet wraps content or not</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_halfExpandedRatio com.fyp.appmaker:behavior_halfExpandedRatio}</code></td><td>The ratio to be used to set the height of half-expanded state in proportion to parent, when
+     * fitToContents is false.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_hideable com.fyp.appmaker:behavior_hideable}</code></td><td>Whether this bottom sheet can be hidden by dragging it further downwards</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_peekHeight com.fyp.appmaker:behavior_peekHeight}</code></td><td>The height of the bottom sheet when it is collapsed.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_saveFlags com.fyp.appmaker:behavior_saveFlags}</code></td><td>Behavior properties will be saved and restored by evaluating each flag.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_behavior_skipCollapsed com.fyp.appmaker:behavior_skipCollapsed}</code></td><td>Skip the collapsed state once expanded; no effect unless it is hideable</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #BottomSheetBehavior_Layout_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * </table>
      * @see #BottomSheetBehavior_Layout_android_elevation
      * @see #BottomSheetBehavior_Layout_backgroundTint
@@ -12029,8 +13233,11 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_android_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Background color used by the BottomSheetBehavior background drawable when shape theming is
+     * enabled. Accepts a ColorStateList or ColorInt. If shape theming is not enabled,
+     * android:background should instead be utilized to set the background resource.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12040,8 +13247,10 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_expandedOffset}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * The top offset of the BottomSheet in the expanded-state when fitsToContent is false.
+     * The default value is 0, which results in the sheet matching the parent's top.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12053,8 +13262,9 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_expandedOffset=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_fitToContents}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Whether height of expanded sheet wraps content or not
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12063,8 +13273,12 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_fitToContents=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_halfExpandedRatio}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * The ratio to be used to set the height of half-expanded state in proportion to parent, when
+     * fitToContents is false. Defaults to true half, 0.5, if not explicitly set. Ratio must be a
+     * float value between 0 and 1 and produce a half-expanded state height larger than the
+     * peek height for the half-expanded state to be operational
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12076,8 +13290,9 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_halfExpandedRatio=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_hideable}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Whether this bottom sheet can be hidden by dragging it further downwards
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12086,8 +13301,9 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_hideable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_peekHeight}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * The height of the bottom sheet when it is collapsed.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12100,15 +13316,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>Peek at the 16:9 ratio keyline of its parent</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:behavior_peekHeight
      */
     public static final int BottomSheetBehavior_Layout_behavior_peekHeight=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_saveFlags}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Behavior properties will be saved and restored by evaluating each flag.
+     * usage: app:behavior_saveFlags=”hideable|skipCollapsed”
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -12116,20 +13334,23 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>fitToContents</td><td>2</td><td></td></tr>
-     * <tr><td>hideable</td><td>4</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>peekHeight</td><td>1</td><td></td></tr>
-     * <tr><td>skipCollapsed</td><td>8</td><td></td></tr>
+     * <tr><td>all</td><td>ffffffff</td><td>This flag will preserve the all the aforementioned values on configuration change.</td></tr>
+     * <tr><td>fitToContents</td><td>2</td><td>This flag will preserve the fitToContents boolean value on configuration change.</td></tr>
+     * <tr><td>hideable</td><td>4</td><td>This flag will preserve the hideable boolean value on configuration change.</td></tr>
+     * <tr><td>none</td><td>0</td><td>This flag will not preserve the aforementioned values on configuration change. The only
+     * value preserved will be the positional state, e.g. collapsed, hidden, expanded, etc.
+     * This is the default behavior.</td></tr>
+     * <tr><td>peekHeight</td><td>1</td><td>This flag will preserve the peekHeight on configuration change.</td></tr>
+     * <tr><td>skipCollapsed</td><td>8</td><td>This flag will preserve the skipCollapsed boolean value on configuration change.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:behavior_saveFlags
      */
     public static final int BottomSheetBehavior_Layout_behavior_saveFlags=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_skipCollapsed}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Skip the collapsed state once expanded; no effect unless it is hideable
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12138,8 +13359,10 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_behavior_skipCollapsed=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for BottomSheet. Attribute declaration is in the shape
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12150,8 +13373,10 @@ public final class R {
      */
     public static final int BottomSheetBehavior_Layout_shapeAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #BottomSheetBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for BottomSheet. To be used to augment attributes
+     * declared in the shapeAppearance. Attribute declaration is in the shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12168,7 +13393,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.fyp.appmaker:allowStacking}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ButtonBarLayout_allowStacking com.fyp.appmaker:allowStacking}</code></td><td>Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.</td></tr>
      * </table>
      * @see #ButtonBarLayout_allowStacking
      */
@@ -12176,8 +13402,10 @@ public final class R {
       0x7f030028
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#allowStacking}
-     * attribute's value can be found in the {@link #ButtonBarLayout} array.
+     * <p>
+     * @attr description
+     * Whether to automatically stack the buttons when there is not
+     * enough space to lay them out side-by-side.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12194,17 +13422,17 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CardView_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #CardView_android_minHeight android:minHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardBackgroundColor com.fyp.appmaker:cardBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardCornerRadius com.fyp.appmaker:cardCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardElevation com.fyp.appmaker:cardElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardMaxElevation com.fyp.appmaker:cardMaxElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.fyp.appmaker:cardPreventCornerOverlap}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.fyp.appmaker:cardUseCompatPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPadding com.fyp.appmaker:contentPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingBottom com.fyp.appmaker:contentPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingLeft com.fyp.appmaker:contentPaddingLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingRight com.fyp.appmaker:contentPaddingRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CardView_contentPaddingTop com.fyp.appmaker:contentPaddingTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CardView_cardBackgroundColor com.fyp.appmaker:cardBackgroundColor}</code></td><td>Background color for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardCornerRadius com.fyp.appmaker:cardCornerRadius}</code></td><td>Corner radius for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardElevation com.fyp.appmaker:cardElevation}</code></td><td>Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardMaxElevation com.fyp.appmaker:cardMaxElevation}</code></td><td>Maximum Elevation for CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_cardPreventCornerOverlap com.fyp.appmaker:cardPreventCornerOverlap}</code></td><td>Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.</td></tr>
+     * <tr><td><code>{@link #CardView_cardUseCompatPadding com.fyp.appmaker:cardUseCompatPadding}</code></td><td>Add padding in API v21+ as well to have the same measurements with previous versions.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPadding com.fyp.appmaker:contentPadding}</code></td><td>Inner padding between the edges of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingBottom com.fyp.appmaker:contentPaddingBottom}</code></td><td>Inner padding between the bottom edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingLeft com.fyp.appmaker:contentPaddingLeft}</code></td><td>Inner padding between the left edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingRight com.fyp.appmaker:contentPaddingRight}</code></td><td>Inner padding between the right edge of the Card and children of the CardView.</td></tr>
+     * <tr><td><code>{@link #CardView_contentPaddingTop com.fyp.appmaker:contentPaddingTop}</code></td><td>Inner padding between the top edge of the Card and children of the CardView.</td></tr>
      * </table>
      * @see #CardView_android_minWidth
      * @see #CardView_android_minHeight
@@ -12227,8 +13455,9 @@ public final class R {
       0x7f0300c8
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minWidth}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum width
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12240,8 +13469,9 @@ public final class R {
      */
     public static final int CardView_android_minWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#minHeight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Workaround to read user defined minimum height
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12253,8 +13483,9 @@ public final class R {
      */
     public static final int CardView_android_minHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardBackgroundColor}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Background color for CardView.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12264,8 +13495,9 @@ public final class R {
      */
     public static final int CardView_cardBackgroundColor=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardCornerRadius}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Corner radius for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12277,8 +13509,9 @@ public final class R {
      */
     public static final int CardView_cardCornerRadius=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12290,8 +13523,9 @@ public final class R {
      */
     public static final int CardView_cardElevation=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardMaxElevation}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Maximum Elevation for CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12303,8 +13537,9 @@ public final class R {
      */
     public static final int CardView_cardMaxElevation=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardPreventCornerOverlap}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding to CardView on v20 and before to prevent intersections between the Card content and rounded corners.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12313,8 +13548,9 @@ public final class R {
      */
     public static final int CardView_cardPreventCornerOverlap=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardUseCompatPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Add padding in API v21+ as well to have the same measurements with previous versions.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12323,8 +13559,9 @@ public final class R {
      */
     public static final int CardView_cardUseCompatPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentPadding}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the edges of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12336,8 +13573,9 @@ public final class R {
      */
     public static final int CardView_contentPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentPaddingBottom}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the bottom edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12349,8 +13587,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingBottom=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentPaddingLeft}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the left edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12362,8 +13601,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingLeft=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentPaddingRight}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the right edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12375,8 +13615,9 @@ public final class R {
      */
     public static final int CardView_contentPaddingRight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentPaddingTop}
-     * attribute's value can be found in the {@link #CardView} array.
+     * <p>
+     * @attr description
+     * Inner padding between the top edge of the Card and children of the CardView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12401,39 +13642,39 @@ public final class R {
      * <tr><td><code>{@link #Chip_android_text android:text}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_checkedIcon com.fyp.appmaker:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconEnabled com.fyp.appmaker:checkedIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_checkedIconVisible com.fyp.appmaker:checkedIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipBackgroundColor com.fyp.appmaker:chipBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipCornerRadius com.fyp.appmaker:chipCornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipEndPadding com.fyp.appmaker:chipEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIcon com.fyp.appmaker:chipIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconEnabled com.fyp.appmaker:chipIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconSize com.fyp.appmaker:chipIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconTint com.fyp.appmaker:chipIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipIconVisible com.fyp.appmaker:chipIconVisible}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinHeight com.fyp.appmaker:chipMinHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipMinTouchTargetSize com.fyp.appmaker:chipMinTouchTargetSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStartPadding com.fyp.appmaker:chipStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeColor com.fyp.appmaker:chipStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipStrokeWidth com.fyp.appmaker:chipStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_chipSurfaceColor com.fyp.appmaker:chipSurfaceColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIcon com.fyp.appmaker:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEnabled com.fyp.appmaker:closeIconEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconEndPadding com.fyp.appmaker:closeIconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconSize com.fyp.appmaker:closeIconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconStartPadding com.fyp.appmaker:closeIconStartPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconTint com.fyp.appmaker:closeIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_closeIconVisible com.fyp.appmaker:closeIconVisible}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconEnabled com.fyp.appmaker:checkedIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_checkedIconVisible com.fyp.appmaker:checkedIconVisible}</code></td><td>Whether to show the checked icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipBackgroundColor com.fyp.appmaker:chipBackgroundColor}</code></td><td>Background color to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipCornerRadius com.fyp.appmaker:chipCornerRadius}</code></td><td>Corner radius to apply to the chip's shape.</td></tr>
+     * <tr><td><code>{@link #Chip_chipEndPadding com.fyp.appmaker:chipEndPadding}</code></td><td>Padding at the end of the chip, after the close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIcon com.fyp.appmaker:chipIcon}</code></td><td>Icon drawable to display at the start of the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconEnabled com.fyp.appmaker:chipIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconSize com.fyp.appmaker:chipIconSize}</code></td><td>Size of the chip's icon and checked icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconTint com.fyp.appmaker:chipIconTint}</code></td><td>Tint to apply to the chip icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipIconVisible com.fyp.appmaker:chipIconVisible}</code></td><td>Whether to show the chip icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipMinHeight com.fyp.appmaker:chipMinHeight}</code></td><td>Min height to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_chipMinTouchTargetSize com.fyp.appmaker:chipMinTouchTargetSize}</code></td><td>Minimum size of chip's touch target, by default, Android recommended 48dp.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStartPadding com.fyp.appmaker:chipStartPadding}</code></td><td>Padding at the start of the chip, before the icon.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeColor com.fyp.appmaker:chipStrokeColor}</code></td><td>Stroke color to apply to the chip's outline.</td></tr>
+     * <tr><td><code>{@link #Chip_chipStrokeWidth com.fyp.appmaker:chipStrokeWidth}</code></td><td>Stroke width to apply to the chip's outline.</td></tr>
+     * <tr><td><code>{@link #Chip_chipSurfaceColor com.fyp.appmaker:chipSurfaceColor}</code></td><td>Surface layer color to apply to the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIcon com.fyp.appmaker:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEnabled com.fyp.appmaker:closeIconEnabled}</code></td><td>Deprecated.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconEndPadding com.fyp.appmaker:closeIconEndPadding}</code></td><td>Padding at the end of the close icon, before the end of the chip.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconSize com.fyp.appmaker:closeIconSize}</code></td><td>Size of the chip's close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconStartPadding com.fyp.appmaker:closeIconStartPadding}</code></td><td>Padding at the start of the close icon, after the text.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconTint com.fyp.appmaker:closeIconTint}</code></td><td>Tint to apply to the chip's close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_closeIconVisible com.fyp.appmaker:closeIconVisible}</code></td><td>Whether to show the close icon.</td></tr>
      * <tr><td><code>{@link #Chip_ensureMinTouchTargetSize com.fyp.appmaker:ensureMinTouchTargetSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #Chip_hideMotionSpec com.fyp.appmaker:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconEndPadding com.fyp.appmaker:iconEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_iconStartPadding com.fyp.appmaker:iconStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_iconEndPadding com.fyp.appmaker:iconEndPadding}</code></td><td>Padding at the end of the icon, before the text.</td></tr>
+     * <tr><td><code>{@link #Chip_iconStartPadding com.fyp.appmaker:iconStartPadding}</code></td><td>Padding at the start of the icon, after the start of the chip.</td></tr>
      * <tr><td><code>{@link #Chip_rippleColor com.fyp.appmaker:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #Chip_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * <tr><td><code>{@link #Chip_showMotionSpec com.fyp.appmaker:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textEndPadding com.fyp.appmaker:textEndPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Chip_textStartPadding com.fyp.appmaker:textStartPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Chip_textEndPadding com.fyp.appmaker:textEndPadding}</code></td><td>Padding at the end of the text, before the close icon.</td></tr>
+     * <tr><td><code>{@link #Chip_textStartPadding com.fyp.appmaker:textStartPadding}</code></td><td>Padding at the start of the text, after the icon.</td></tr>
      * </table>
      * @see #Chip_android_textAppearance
      * @see #Chip_android_textColor
@@ -12489,8 +13730,9 @@ public final class R {
       0x7f03022f, 0x7f030233, 0x7f030297, 0x7f03029a
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Default appearance of text: color, typeface, size, and style.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12501,8 +13743,9 @@ public final class R {
      */
     public static final int Chip_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textColor}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Text color.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12516,8 +13759,10 @@ public final class R {
      */
     public static final int Chip_android_textColor=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#ellipsize}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * If set, causes words that are longer than the view is wide to be ellipsized instead of
+     * truncated at the end.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -12536,8 +13781,9 @@ public final class R {
      */
     public static final int Chip_android_ellipsize=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Make the Chip to be at most this many pixels wide.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12549,8 +13795,9 @@ public final class R {
      */
     public static final int Chip_android_maxWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#text}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Text to display on the chip.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -12559,8 +13806,9 @@ public final class R {
      */
     public static final int Chip_android_text=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Whether the chip can be checked. If false, the chip will act as a button.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12569,8 +13817,9 @@ public final class R {
      */
     public static final int Chip_android_checkable=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Check icon drawable to overlay the chip's icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12581,8 +13830,9 @@ public final class R {
      */
     public static final int Chip_checkedIcon=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedIconEnabled}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Deprecated. Use checkedIconVisible instead
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12591,8 +13841,9 @@ public final class R {
      */
     public static final int Chip_checkedIconEnabled=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedIconVisible}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Whether to show the checked icon.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12601,8 +13852,9 @@ public final class R {
      */
     public static final int Chip_checkedIconVisible=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipBackgroundColor}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Background color to apply to the chip.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12612,8 +13864,9 @@ public final class R {
      */
     public static final int Chip_chipBackgroundColor=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipCornerRadius}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Corner radius to apply to the chip's shape.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12625,8 +13878,9 @@ public final class R {
      */
     public static final int Chip_chipCornerRadius=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipEndPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the end of the chip, after the close icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12638,8 +13892,9 @@ public final class R {
      */
     public static final int Chip_chipEndPadding=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Icon drawable to display at the start of the chip.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12650,8 +13905,9 @@ public final class R {
      */
     public static final int Chip_chipIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipIconEnabled}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Deprecated. Use chipIconVisible instead.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12660,8 +13916,9 @@ public final class R {
      */
     public static final int Chip_chipIconEnabled=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipIconSize}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Size of the chip's icon and checked icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12673,8 +13930,9 @@ public final class R {
      */
     public static final int Chip_chipIconSize=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipIconTint}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the chip icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12684,8 +13942,9 @@ public final class R {
      */
     public static final int Chip_chipIconTint=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipIconVisible}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Whether to show the chip icon.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12694,8 +13953,9 @@ public final class R {
      */
     public static final int Chip_chipIconVisible=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipMinHeight}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Min height to apply to the chip. Total height includes stroke width.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12707,8 +13967,9 @@ public final class R {
      */
     public static final int Chip_chipMinHeight=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipMinTouchTargetSize}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Minimum size of chip's touch target, by default, Android recommended 48dp.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12720,8 +13981,9 @@ public final class R {
      */
     public static final int Chip_chipMinTouchTargetSize=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipStartPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the start of the chip, before the icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12733,8 +13995,9 @@ public final class R {
      */
     public static final int Chip_chipStartPadding=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipStrokeColor}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Stroke color to apply to the chip's outline.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12744,8 +14007,9 @@ public final class R {
      */
     public static final int Chip_chipStrokeColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipStrokeWidth}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Stroke width to apply to the chip's outline.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12757,8 +14021,9 @@ public final class R {
      */
     public static final int Chip_chipStrokeWidth=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipSurfaceColor}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Surface layer color to apply to the chip.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12768,8 +14033,9 @@ public final class R {
      */
     public static final int Chip_chipSurfaceColor=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Close icon drawable to display at the end of the chip.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12780,8 +14046,9 @@ public final class R {
      */
     public static final int Chip_closeIcon=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconEnabled}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Deprecated. Use closeIconVisible instead.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12790,8 +14057,9 @@ public final class R {
      */
     public static final int Chip_closeIconEnabled=24;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconEndPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the end of the close icon, before the end of the chip. If close icon exists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12803,8 +14071,9 @@ public final class R {
      */
     public static final int Chip_closeIconEndPadding=25;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconSize}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Size of the chip's close icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12816,8 +14085,9 @@ public final class R {
      */
     public static final int Chip_closeIconSize=26;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconStartPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the start of the close icon, after the text. If close icon exists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12829,8 +14099,9 @@ public final class R {
      */
     public static final int Chip_closeIconStartPadding=27;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconTint}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the chip's close icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12840,8 +14111,9 @@ public final class R {
      */
     public static final int Chip_closeIconTint=28;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIconVisible}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Whether to show the close icon.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12850,8 +14122,9 @@ public final class R {
      */
     public static final int Chip_closeIconVisible=29;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ensureMinTouchTargetSize}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Whether to extend the bounds of chip to meet chipMinTouchTargetSize.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -12860,8 +14133,9 @@ public final class R {
      */
     public static final int Chip_ensureMinTouchTargetSize=30;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hideMotionSpec}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Motion spec for hide animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12872,8 +14146,9 @@ public final class R {
      */
     public static final int Chip_hideMotionSpec=31;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconEndPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the end of the icon, before the text. If icon exists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12885,8 +14160,9 @@ public final class R {
      */
     public static final int Chip_iconEndPadding=32;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconStartPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the start of the icon, after the start of the chip. If icon exists.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12898,8 +14174,9 @@ public final class R {
      */
     public static final int Chip_iconStartPadding=33;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#rippleColor}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Ripple color to apply to the chip.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -12909,8 +14186,10 @@ public final class R {
      */
     public static final int Chip_rippleColor=34;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for Chip. Attribute declaration is in the Shape
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12921,8 +14200,10 @@ public final class R {
      */
     public static final int Chip_shapeAppearance=35;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for Chip. To be used to augment attributes
+     * declared in the shapeAppearance. Attribute declaration is in the Shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12933,8 +14214,9 @@ public final class R {
      */
     public static final int Chip_shapeAppearanceOverlay=36;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showMotionSpec}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Motion spec for show animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -12945,8 +14227,9 @@ public final class R {
      */
     public static final int Chip_showMotionSpec=37;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textEndPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the end of the text, before the close icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12958,8 +14241,9 @@ public final class R {
      */
     public static final int Chip_textEndPadding=38;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textStartPadding}
-     * attribute's value can be found in the {@link #Chip} array.
+     * <p>
+     * @attr description
+     * Padding at the start of the text, after the icon.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -12977,12 +14261,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ChipGroup_checkedChip com.fyp.appmaker:checkedChip}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacing com.fyp.appmaker:chipSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.fyp.appmaker:chipSpacingHorizontal}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.fyp.appmaker:chipSpacingVertical}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_checkedChip com.fyp.appmaker:checkedChip}</code></td><td>The id of the child chip that should be checked by default within this chip group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacing com.fyp.appmaker:chipSpacing}</code></td><td>Horizontal and vertical spacing between chips in this group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingHorizontal com.fyp.appmaker:chipSpacingHorizontal}</code></td><td>Horizontal spacing between chips in this group.</td></tr>
+     * <tr><td><code>{@link #ChipGroup_chipSpacingVertical com.fyp.appmaker:chipSpacingVertical}</code></td><td>Vertical spacing between chips in this group.</td></tr>
      * <tr><td><code>{@link #ChipGroup_selectionRequired com.fyp.appmaker:selectionRequired}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ChipGroup_singleLine com.fyp.appmaker:singleLine}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ChipGroup_singleLine com.fyp.appmaker:singleLine}</code></td><td>Constrains the chips in this group to a single horizontal line.</td></tr>
      * <tr><td><code>{@link #ChipGroup_singleSelection com.fyp.appmaker:singleSelection}</code></td><td></td></tr>
      * </table>
      * @see #ChipGroup_checkedChip
@@ -12998,8 +14282,9 @@ public final class R {
       0x7f03022b, 0x7f030238, 0x7f030239
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedChip}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * The id of the child chip that should be checked by default within this chip group.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13010,8 +14295,9 @@ public final class R {
      */
     public static final int ChipGroup_checkedChip=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipSpacing}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Horizontal and vertical spacing between chips in this group.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13023,8 +14309,9 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacing=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipSpacingHorizontal}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Horizontal spacing between chips in this group.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13036,8 +14323,9 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacingHorizontal=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#chipSpacingVertical}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Vertical spacing between chips in this group.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13049,8 +14337,10 @@ public final class R {
      */
     public static final int ChipGroup_chipSpacingVertical=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#selectionRequired}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Whether we prevent all child chips from being deselected.
+     * It's false by default.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13059,8 +14349,12 @@ public final class R {
      */
     public static final int ChipGroup_selectionRequired=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#singleLine}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Constrains the chips in this group to a single horizontal line. By default, this is false
+     * and the chips in this group will reflow to multiple lines.
+     * If you set this to true, you'll usually want to wrap this ChipGroup in a
+     * HorizontalScrollView.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13069,8 +14363,10 @@ public final class R {
      */
     public static final int ChipGroup_singleLine=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#singleSelection}
-     * attribute's value can be found in the {@link #ChipGroup} array.
+     * <p>
+     * @attr description
+     * Whether only a single chip in this group is allowed to be checked at any time. By default,
+     * this is false and multiple chips in this group are allowed to be checked at once.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13085,22 +14381,28 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.fyp.appmaker:collapsedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.fyp.appmaker:collapsedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.fyp.appmaker:contentScrim}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.fyp.appmaker:expandedTitleGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.fyp.appmaker:expandedTitleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.fyp.appmaker:expandedTitleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.fyp.appmaker:expandedTitleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.fyp.appmaker:expandedTitleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.fyp.appmaker:expandedTitleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.fyp.appmaker:expandedTitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.fyp.appmaker:scrimAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.fyp.appmaker:scrimVisibleHeightTrigger}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.fyp.appmaker:statusBarScrim}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleGravity com.fyp.appmaker:collapsedTitleGravity}</code></td><td>Specifies how the title should be positioned when collapsed.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_collapsedTitleTextAppearance com.fyp.appmaker:collapsedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayouts title when it is fully
+     * 'collapsed'</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_contentScrim com.fyp.appmaker:contentScrim}</code></td><td>The drawable to use as a scrim on top of the CollapsingToolbarLayouts content when
+     * it has been scrolled sufficiently off screen.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleGravity com.fyp.appmaker:expandedTitleGravity}</code></td><td>Specifies how the title should be positioned when expanded.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMargin com.fyp.appmaker:expandedTitleMargin}</code></td><td>Specifies extra space on the start, top, end and bottom
+     * sides of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginBottom com.fyp.appmaker:expandedTitleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginEnd com.fyp.appmaker:expandedTitleMarginEnd}</code></td><td>Specifies extra space on the end side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginStart com.fyp.appmaker:expandedTitleMarginStart}</code></td><td>Specifies extra space on the start side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleMarginTop com.fyp.appmaker:expandedTitleMarginTop}</code></td><td>Specifies extra space on the top side of the the expanded title text.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_expandedTitleTextAppearance com.fyp.appmaker:expandedTitleTextAppearance}</code></td><td>The text appearance of the CollapsingToolbarLayout's title when it is fully
+     * 'expanded'</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimAnimationDuration com.fyp.appmaker:scrimAnimationDuration}</code></td><td>Specifies the duration used for scrim visibility animations.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_scrimVisibleHeightTrigger com.fyp.appmaker:scrimVisibleHeightTrigger}</code></td><td>Specifies the amount of visible height in pixels used to define when to trigger a
+     * scrim visibility change.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_statusBarScrim com.fyp.appmaker:statusBarScrim}</code></td><td>The drawable to use as a scrim for the status bar content when the
+     * CollapsingToolbarLayout has been scrolled sufficiently off screen.</td></tr>
      * <tr><td><code>{@link #CollapsingToolbarLayout_title com.fyp.appmaker:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.fyp.appmaker:titleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.fyp.appmaker:toolbarId}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_titleEnabled com.fyp.appmaker:titleEnabled}</code></td><td>Whether the CollapsingToolbarLayout should draw its own shrinking/growing title.</td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_toolbarId com.fyp.appmaker:toolbarId}</code></td><td>The id of the primary Toolbar child that you wish to use for the purpose of collapsing.</td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_collapsedTitleGravity
      * @see #CollapsingToolbarLayout_collapsedTitleTextAppearance
@@ -13126,8 +14428,9 @@ public final class R {
       0x7f030253, 0x7f0302ac, 0x7f0302ad, 0x7f0302b7
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#collapsedTitleGravity}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies how the title should be positioned when collapsed.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -13135,24 +14438,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push title to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the title in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place title in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place title in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push title to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the title if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push title to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push title to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push title to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:collapsedTitleGravity
      */
     public static final int CollapsingToolbarLayout_collapsedTitleGravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#collapsedTitleTextAppearance}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The text appearance of the CollapsingToolbarLayouts title when it is fully
+     * 'collapsed'
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13163,8 +14468,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_collapsedTitleTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentScrim}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The drawable to use as a scrim on top of the CollapsingToolbarLayouts content when
+     * it has been scrolled sufficiently off screen.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13174,8 +14481,9 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_contentScrim=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleGravity}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies how the title should be positioned when expanded.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -13183,24 +14491,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push title to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the title in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place title in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place title in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push title to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the title if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push title to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push title to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push title to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push title to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:expandedTitleGravity
      */
     public static final int CollapsingToolbarLayout_expandedTitleGravity=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleMargin}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the start, top, end and bottom
+     * sides of the the expanded title text. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13212,8 +14522,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMargin=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleMarginBottom}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the bottom side of the the expanded title text.
+     * Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13225,8 +14537,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginBottom=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleMarginEnd}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the end side of the the expanded title text.
+     * Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13238,8 +14552,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleMarginStart}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the start side of the the expanded title text.
+     * Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13251,8 +14567,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleMarginTop}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the top side of the the expanded title text.
+     * Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13264,8 +14582,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleMarginTop=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#expandedTitleTextAppearance}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The text appearance of the CollapsingToolbarLayout's title when it is fully
+     * 'expanded'
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13276,8 +14596,9 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_expandedTitleTextAppearance=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#scrimAnimationDuration}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies the duration used for scrim visibility animations.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -13285,8 +14606,10 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_scrimAnimationDuration=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#scrimVisibleHeightTrigger}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Specifies the amount of visible height in pixels used to define when to trigger a
+     * scrim visibility change.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -13298,8 +14621,11 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_scrimVisibleHeightTrigger=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#statusBarScrim}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The drawable to use as a scrim for the status bar content when the
+     * CollapsingToolbarLayout has been scrolled sufficiently off screen. Only works on
+     * Lollipop when used together with android:fitSystemWindows="true".
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13309,8 +14635,9 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_statusBarScrim=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#title}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The title to show when titleEnabled is set to true.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -13319,8 +14646,9 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_title=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleEnabled}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * Whether the CollapsingToolbarLayout should draw its own shrinking/growing title.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -13329,8 +14657,11 @@ public final class R {
      */
     public static final int CollapsingToolbarLayout_titleEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#toolbarId}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout} array.
+     * <p>
+     * @attr description
+     * The id of the primary Toolbar child that you wish to use for the purpose of collapsing.
+     * This Toolbar descendant view does not need to be a direct child of the layout.
+     * If you do not set this, the first direct Toolbar child found will be used.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13348,7 +14679,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseMode com.fyp.appmaker:layout_collapseMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.fyp.appmaker:layout_collapseParallaxMultiplier}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier com.fyp.appmaker:layout_collapseParallaxMultiplier}</code></td><td>The multiplier used when layout_collapseMode is set to 'parallax'.</td></tr>
      * </table>
      * @see #CollapsingToolbarLayout_Layout_layout_collapseMode
      * @see #CollapsingToolbarLayout_Layout_layout_collapseParallaxMultiplier
@@ -13366,17 +14697,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>parallax</td><td>2</td><td></td></tr>
-     * <tr><td>pin</td><td>1</td><td></td></tr>
+     * <tr><td>none</td><td>0</td><td>The view will act as normal with no collapsing behavior.</td></tr>
+     * <tr><td>parallax</td><td>2</td><td>The view will scroll in a parallax fashion. See the
+     * layout_collapseParallaxMultiplier attribute to change the multiplier.</td></tr>
+     * <tr><td>pin</td><td>1</td><td>The view will pin in place.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:layout_collapseMode
      */
     public static final int CollapsingToolbarLayout_Layout_layout_collapseMode=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_collapseParallaxMultiplier}
-     * attribute's value can be found in the {@link #CollapsingToolbarLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The multiplier used when layout_collapseMode is set to 'parallax'. The value should
+     * be between 0.0 and 1.0.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -13392,7 +14726,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_color android:color}</code></td><td></td></tr>
      * <tr><td><code>{@link #ColorStateListItem_android_alpha android:alpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ColorStateListItem_alpha com.fyp.appmaker:alpha}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ColorStateListItem_alpha com.fyp.appmaker:alpha}</code></td><td>Alpha multiplier applied to the base color.</td></tr>
      * </table>
      * @see #ColorStateListItem_android_color
      * @see #ColorStateListItem_android_alpha
@@ -13402,8 +14736,9 @@ public final class R {
       0x010101a5, 0x0101031f, 0x7f030029
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#color}
-     * attribute's value can be found in the {@link #ColorStateListItem} array.
+     * <p>
+     * @attr description
+     * Base color for this state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13422,8 +14757,9 @@ public final class R {
      */
     public static final int ColorStateListItem_android_alpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#alpha}
-     * attribute's value can be found in the {@link #ColorStateListItem} array.
+     * <p>
+     * @attr description
+     * Alpha multiplier applied to the base color.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -13438,9 +14774,9 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CompoundButton_android_button android:button}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonCompat com.fyp.appmaker:buttonCompat}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTint com.fyp.appmaker:buttonTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.fyp.appmaker:buttonTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonCompat com.fyp.appmaker:buttonCompat}</code></td><td>Compat attr to load backported drawable types</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTint com.fyp.appmaker:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
+     * <tr><td><code>{@link #CompoundButton_buttonTintMode com.fyp.appmaker:buttonTintMode}</code></td><td>Blending mode used to apply the button tint.</td></tr>
      * </table>
      * @see #CompoundButton_android_button
      * @see #CompoundButton_buttonCompat
@@ -13463,8 +14799,9 @@ public final class R {
      */
     public static final int CompoundButton_android_button=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonCompat}
-     * attribute's value can be found in the {@link #CompoundButton} array.
+     * <p>
+     * @attr description
+     * Compat attr to load backported drawable types
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -13475,8 +14812,9 @@ public final class R {
      */
     public static final int CompoundButton_buttonCompat=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonTint}
-     * attribute's value can be found in the {@link #CompoundButton} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the button drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -13486,8 +14824,9 @@ public final class R {
      */
     public static final int CompoundButton_buttonTint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonTintMode}
-     * attribute's value can be found in the {@link #CompoundButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the button tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -13495,12 +14834,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:buttonTintMode
@@ -14515,7 +15859,7 @@ public final class R {
      * <tr><td>barrier</td><td>2</td><td></td></tr>
      * <tr><td>chains</td><td>4</td><td></td></tr>
      * <tr><td>dimensions</td><td>8</td><td></td></tr>
-     * <tr><td>direct</td><td>1</td><td></td></tr>
+     * <tr><td>direct</td><td>1</td><td>direct, barriers, chains</td></tr>
      * <tr><td>groups</td><td>20</td><td></td></tr>
      * <tr><td>none</td><td>0</td><td></td></tr>
      * <tr><td>standard</td><td>7</td><td></td></tr>
@@ -15891,8 +17235,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_keylines com.fyp.appmaker:keylines}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.fyp.appmaker:statusBarBackground}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_keylines com.fyp.appmaker:keylines}</code></td><td>A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_statusBarBackground com.fyp.appmaker:statusBarBackground}</code></td><td>Drawable to display behind the status bar when the view is set to draw behind it.</td></tr>
      * </table>
      * @see #CoordinatorLayout_keylines
      * @see #CoordinatorLayout_statusBarBackground
@@ -15901,8 +17246,13 @@ public final class R {
       0x7f030179, 0x7f030251
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#keylines}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * A reference to an array of integers representing the
+     * locations of horizontal keylines in dp from the starting edge.
+     * Child views can refer to these keylines for alignment using
+     * layout_keyline="index" where index is a 0-based index into
+     * this array.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15913,8 +17263,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_keylines=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#statusBarBackground}
-     * attribute's value can be found in the {@link #CoordinatorLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to display behind the status bar when the view is set to draw behind it.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15935,12 +17286,15 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #CoordinatorLayout_Layout_android_layout_gravity android:layout_gravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.fyp.appmaker:layout_anchor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.fyp.appmaker:layout_anchorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.fyp.appmaker:layout_behavior}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.fyp.appmaker:layout_dodgeInsetEdges}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.fyp.appmaker:layout_insetEdge}</code></td><td></td></tr>
-     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.fyp.appmaker:layout_keyline}</code></td><td></td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchor com.fyp.appmaker:layout_anchor}</code></td><td>The id of an anchor view that this view should position relative to.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_anchorGravity com.fyp.appmaker:layout_anchorGravity}</code></td><td>Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_behavior com.fyp.appmaker:layout_behavior}</code></td><td>The class name of a Behavior class defining special runtime behavior
+     * for this child view.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_dodgeInsetEdges com.fyp.appmaker:layout_dodgeInsetEdges}</code></td><td>Specifies how this view dodges the inset edges of the CoordinatorLayout.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_insetEdge com.fyp.appmaker:layout_insetEdge}</code></td><td>Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.</td></tr>
+     * <tr><td><code>{@link #CoordinatorLayout_Layout_layout_keyline com.fyp.appmaker:layout_keyline}</code></td><td>The index of a keyline this view should position relative to.</td></tr>
      * </table>
      * @see #CoordinatorLayout_Layout_android_layout_gravity
      * @see #CoordinatorLayout_Layout_layout_anchor
@@ -15984,8 +17338,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_android_layout_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_anchor}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The id of an anchor view that this view should position relative to.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -15996,8 +17351,10 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_anchor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_anchorGravity}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how an object should position relative to an anchor, on both the X and Y axes,
+     * within its parent's bounds.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16005,28 +17362,36 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center</td><td>11</td><td></td></tr>
-     * <tr><td>center_horizontal</td><td>1</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>clip_horizontal</td><td>8</td><td></td></tr>
-     * <tr><td>clip_vertical</td><td>80</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>fill</td><td>77</td><td></td></tr>
-     * <tr><td>fill_horizontal</td><td>7</td><td></td></tr>
-     * <tr><td>fill_vertical</td><td>70</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center</td><td>11</td><td>Place the object in the center of its container in both the vertical and horizontal axis, not changing its size.</td></tr>
+     * <tr><td>center_horizontal</td><td>1</td><td>Place object in the horizontal center of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>clip_horizontal</td><td>8</td><td>Additional option that can be set to have the left and/or right edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the horizontal gravity: a left gravity will clip the right
+     * edge, a right gravity will clip the left edge, and neither will clip both edges.</td></tr>
+     * <tr><td>clip_vertical</td><td>80</td><td>Additional option that can be set to have the top and/or bottom edges of
+     * the child clipped to its container's bounds.
+     * The clip will be based on the vertical gravity: a top gravity will clip the bottom
+     * edge, a bottom gravity will clip the top edge, and neither will clip both edges.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Push object to the end of its container, not changing its size.</td></tr>
+     * <tr><td>fill</td><td>77</td><td>Grow the horizontal and vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_horizontal</td><td>7</td><td>Grow the horizontal size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>fill_vertical</td><td>70</td><td>Grow the vertical size of the object if needed so it completely fills its container.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Push object to the left of its container, not changing its size.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Push object to the right of its container, not changing its size.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Push object to the beginning of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:layout_anchorGravity
      */
     public static final int CoordinatorLayout_Layout_layout_anchorGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_behavior}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The class name of a Behavior class defining special runtime behavior
+     * for this child view.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16035,8 +17400,9 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_behavior=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_dodgeInsetEdges}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view dodges the inset edges of the CoordinatorLayout.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -16044,22 +17410,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>all</td><td>77</td><td></td></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>all</td><td>77</td><td>Dodge all the inset edges.</td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Dodge the bottom inset edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Dodge the end inset edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Dodge the left inset edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't dodge any edges</td></tr>
+     * <tr><td>right</td><td>5</td><td>Dodge the right inset edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Dodge the start inset edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Dodge the top inset edge.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:layout_dodgeInsetEdges
      */
     public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_insetEdge}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * Specifies how this view insets the CoordinatorLayout and make some other views
+     * dodge it.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16067,21 +17435,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>end</td><td>800005</td><td></td></tr>
-     * <tr><td>left</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>right</td><td>5</td><td></td></tr>
-     * <tr><td>start</td><td>800003</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Inset the bottom edge.</td></tr>
+     * <tr><td>end</td><td>800005</td><td>Inset the end edge.</td></tr>
+     * <tr><td>left</td><td>3</td><td>Inset the left edge.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Don't inset.</td></tr>
+     * <tr><td>right</td><td>5</td><td>Inset the right edge.</td></tr>
+     * <tr><td>start</td><td>800003</td><td>Inset the start edge.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Inset the top edge.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:layout_insetEdge
      */
     public static final int CoordinatorLayout_Layout_layout_insetEdge=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout_keyline}
-     * attribute's value can be found in the {@link #CoordinatorLayout_Layout} array.
+     * <p>
+     * @attr description
+     * The index of a keyline this view should position relative to.
+     * android:layout_gravity will affect how the view aligns to the
+     * specified keyline.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -16095,14 +17466,14 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.fyp.appmaker:arrowHeadLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.fyp.appmaker:arrowShaftLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.fyp.appmaker:barLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_color com.fyp.appmaker:color}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.fyp.appmaker:drawableSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.fyp.appmaker:gapBetweenBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.fyp.appmaker:spinBars}</code></td><td></td></tr>
-     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.fyp.appmaker:thickness}</code></td><td></td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowHeadLength com.fyp.appmaker:arrowHeadLength}</code></td><td>The length of the arrow head when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_arrowShaftLength com.fyp.appmaker:arrowShaftLength}</code></td><td>The length of the shaft when formed to make an arrow</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_barLength com.fyp.appmaker:barLength}</code></td><td>The length of the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_color com.fyp.appmaker:color}</code></td><td>The drawing color for the bars</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_drawableSize com.fyp.appmaker:drawableSize}</code></td><td>The total size of the drawable</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_gapBetweenBars com.fyp.appmaker:gapBetweenBars}</code></td><td>The max gap between the bars when they are parallel to each other</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_spinBars com.fyp.appmaker:spinBars}</code></td><td>Whether bars should rotate or not during transition</td></tr>
+     * <tr><td><code>{@link #DrawerArrowToggle_thickness com.fyp.appmaker:thickness}</code></td><td>The thickness (stroke size) for the bar paint</td></tr>
      * </table>
      * @see #DrawerArrowToggle_arrowHeadLength
      * @see #DrawerArrowToggle_arrowShaftLength
@@ -16118,8 +17489,9 @@ public final class R {
       0x7f0300f3, 0x7f03013a, 0x7f03023f, 0x7f03029d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#arrowHeadLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the arrow head when formed to make an arrow
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16131,8 +17503,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowHeadLength=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#arrowShaftLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the shaft when formed to make an arrow
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16144,8 +17517,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_arrowShaftLength=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#barLength}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The length of the bars when they are parallel to each other
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16157,8 +17531,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_barLength=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#color}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The drawing color for the bars
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -16168,8 +17543,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_color=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#drawableSize}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The total size of the drawable
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16181,8 +17557,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_drawableSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#gapBetweenBars}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The max gap between the bars when they are parallel to each other
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16194,8 +17571,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_gapBetweenBars=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#spinBars}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * Whether bars should rotate or not during transition
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16204,8 +17582,9 @@ public final class R {
      */
     public static final int DrawerArrowToggle_spinBars=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thickness}
-     * attribute's value can be found in the {@link #DrawerArrowToggle} array.
+     * <p>
+     * @attr description
+     * The thickness (stroke size) for the bar paint
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16223,11 +17602,11 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_extendMotionSpec com.fyp.appmaker:extendMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_extendMotionSpec com.fyp.appmaker:extendMotionSpec}</code></td><td>Motion spec for extend animation.</td></tr>
      * <tr><td><code>{@link #ExtendedFloatingActionButton_hideMotionSpec com.fyp.appmaker:hideMotionSpec}</code></td><td></td></tr>
      * <tr><td><code>{@link #ExtendedFloatingActionButton_showMotionSpec com.fyp.appmaker:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_shrinkMotionSpec com.fyp.appmaker:shrinkMotionSpec}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_shrinkMotionSpec com.fyp.appmaker:shrinkMotionSpec}</code></td><td>Motion spec for shrink animation.</td></tr>
      * </table>
      * @see #ExtendedFloatingActionButton_elevation
      * @see #ExtendedFloatingActionButton_extendMotionSpec
@@ -16240,8 +17619,9 @@ public final class R {
       0x7f030236
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Elevation for the ExtendedFloatingActionButton.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16253,8 +17633,9 @@ public final class R {
      */
     public static final int ExtendedFloatingActionButton_elevation=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#extendMotionSpec}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for extend animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16265,8 +17646,9 @@ public final class R {
      */
     public static final int ExtendedFloatingActionButton_extendMotionSpec=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hideMotionSpec}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for hide animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16277,8 +17659,9 @@ public final class R {
      */
     public static final int ExtendedFloatingActionButton_hideMotionSpec=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showMotionSpec}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for show animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16289,8 +17672,9 @@ public final class R {
      */
     public static final int ExtendedFloatingActionButton_showMotionSpec=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shrinkMotionSpec}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for shrink animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16307,8 +17691,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide com.fyp.appmaker:behavior_autoHide}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink com.fyp.appmaker:behavior_autoShrink}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide com.fyp.appmaker:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
+     * <tr><td><code>{@link #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink com.fyp.appmaker:behavior_autoShrink}</code></td><td>Whether the extended FAB should automatically shrink when there is no space for it.</td></tr>
      * </table>
      * @see #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide
      * @see #ExtendedFloatingActionButton_Behavior_Layout_behavior_autoShrink
@@ -16317,8 +17701,9 @@ public final class R {
       0x7f030047, 0x7f030048
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_autoHide}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton_Behavior_Layout} array.
+     * <p>
+     * @attr description
+     * Whether the extended FAB should automatically hide when there is no space for it.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16327,8 +17712,9 @@ public final class R {
      */
     public static final int ExtendedFloatingActionButton_Behavior_Layout_behavior_autoHide=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_autoShrink}
-     * attribute's value can be found in the {@link #ExtendedFloatingActionButton_Behavior_Layout} array.
+     * <p>
+     * @attr description
+     * Whether the extended FAB should automatically shrink when there is no space for it.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16343,22 +17729,22 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.fyp.appmaker:borderWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_borderWidth com.fyp.appmaker:borderWidth}</code></td><td>The width of the border around the FAB.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_ensureMinTouchTargetSize com.fyp.appmaker:ensureMinTouchTargetSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.fyp.appmaker:fabCustomSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_fabSize com.fyp.appmaker:fabSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabCustomSize com.fyp.appmaker:fabCustomSize}</code></td><td>Custom size for the FAB.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_fabSize com.fyp.appmaker:fabSize}</code></td><td>Size for the FAB.</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_hideMotionSpec com.fyp.appmaker:hideMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.fyp.appmaker:hoveredFocusedTranslationZ}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.fyp.appmaker:maxImageSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.fyp.appmaker:pressedTranslationZ}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_hoveredFocusedTranslationZ com.fyp.appmaker:hoveredFocusedTranslationZ}</code></td><td>TranslationZ value for the FAB when hovered, focused, or hovered and focused.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_maxImageSize com.fyp.appmaker:maxImageSize}</code></td><td>Maximum icon image size.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_pressedTranslationZ com.fyp.appmaker:pressedTranslationZ}</code></td><td>TranslationZ value for the FAB when pressed</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_rippleColor com.fyp.appmaker:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * <tr><td><code>{@link #FloatingActionButton_showMotionSpec com.fyp.appmaker:showMotionSpec}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.fyp.appmaker:useCompatPadding}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_useCompatPadding com.fyp.appmaker:useCompatPadding}</code></td><td>Enable compat padding.</td></tr>
      * </table>
      * @see #FloatingActionButton_backgroundTint
      * @see #FloatingActionButton_backgroundTintMode
@@ -16384,8 +17770,9 @@ public final class R {
       0x7f03022c, 0x7f03022f, 0x7f030233, 0x7f0302c7
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Background for the FloatingActionButton
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -16395,8 +17782,9 @@ public final class R {
      */
     public static final int FloatingActionButton_backgroundTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16404,20 +17792,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:backgroundTintMode
      */
     public static final int FloatingActionButton_backgroundTintMode=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#borderWidth}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * The width of the border around the FAB.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16429,8 +17823,9 @@ public final class R {
      */
     public static final int FloatingActionButton_borderWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Elevation value for the FAB
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16442,8 +17837,10 @@ public final class R {
      */
     public static final int FloatingActionButton_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ensureMinTouchTargetSize}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Whether to extend the bounds of the FloatingActionButton to meet
+     * @dimen/mtrl_fab_min_touch_target.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16452,8 +17849,9 @@ public final class R {
      */
     public static final int FloatingActionButton_ensureMinTouchTargetSize=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabCustomSize}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Custom size for the FAB. If this is set, fabSize will be ignored.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16465,8 +17863,9 @@ public final class R {
      */
     public static final int FloatingActionButton_fabCustomSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fabSize}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Size for the FAB. If fabCustomSize is set, this will be ignored.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16474,17 +17873,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>auto</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>mini</td><td>1</td><td></td></tr>
-     * <tr><td>normal</td><td>0</td><td></td></tr>
+     * <tr><td>auto</td><td>ffffffff</td><td>A size which will change based on the window size.</td></tr>
+     * <tr><td>mini</td><td>1</td><td>The mini sized button.</td></tr>
+     * <tr><td>normal</td><td>0</td><td>The normal sized button.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:fabSize
      */
     public static final int FloatingActionButton_fabSize=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hideMotionSpec}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for hide animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16495,8 +17895,9 @@ public final class R {
      */
     public static final int FloatingActionButton_hideMotionSpec=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hoveredFocusedTranslationZ}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * TranslationZ value for the FAB when hovered, focused, or hovered and focused.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16508,8 +17909,9 @@ public final class R {
      */
     public static final int FloatingActionButton_hoveredFocusedTranslationZ=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#maxImageSize}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Maximum icon image size.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16521,8 +17923,9 @@ public final class R {
      */
     public static final int FloatingActionButton_maxImageSize=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#pressedTranslationZ}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * TranslationZ value for the FAB when pressed
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16534,8 +17937,9 @@ public final class R {
      */
     public static final int FloatingActionButton_pressedTranslationZ=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#rippleColor}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Ripple color for the FAB.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -16545,8 +17949,10 @@ public final class R {
      */
     public static final int FloatingActionButton_rippleColor=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for FloatingActionButton. Attribute declaration
+     * is in the shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16557,8 +17963,9 @@ public final class R {
      */
     public static final int FloatingActionButton_shapeAppearance=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for FloatingActionButton.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16569,8 +17976,9 @@ public final class R {
      */
     public static final int FloatingActionButton_shapeAppearanceOverlay=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showMotionSpec}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Motion spec for show animation. This should be a MotionSpec resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16581,8 +17989,9 @@ public final class R {
      */
     public static final int FloatingActionButton_showMotionSpec=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#useCompatPadding}
-     * attribute's value can be found in the {@link #FloatingActionButton} array.
+     * <p>
+     * @attr description
+     * Enable compat padding.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16597,7 +18006,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.fyp.appmaker:behavior_autoHide}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FloatingActionButton_Behavior_Layout_behavior_autoHide com.fyp.appmaker:behavior_autoHide}</code></td><td>Whether the FAB should automatically hide when there is no space for it.</td></tr>
      * </table>
      * @see #FloatingActionButton_Behavior_Layout_behavior_autoHide
      */
@@ -16605,8 +18014,9 @@ public final class R {
       0x7f030047
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_autoHide}
-     * attribute's value can be found in the {@link #FloatingActionButton_Behavior_Layout} array.
+     * <p>
+     * @attr description
+     * Whether the FAB should automatically hide when there is no space for it.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -16621,8 +18031,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FlowLayout_itemSpacing com.fyp.appmaker:itemSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FlowLayout_lineSpacing com.fyp.appmaker:lineSpacing}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FlowLayout_itemSpacing com.fyp.appmaker:itemSpacing}</code></td><td>Horizontal spacing between two items being laid out.</td></tr>
+     * <tr><td><code>{@link #FlowLayout_lineSpacing com.fyp.appmaker:lineSpacing}</code></td><td>Vertical Spacing between two lines of items being laid out.</td></tr>
      * </table>
      * @see #FlowLayout_itemSpacing
      * @see #FlowLayout_lineSpacing
@@ -16631,8 +18041,9 @@ public final class R {
       0x7f030172, 0x7f0301bf
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemSpacing}
-     * attribute's value can be found in the {@link #FlowLayout} array.
+     * <p>
+     * @attr description
+     * Horizontal spacing between two items being laid out.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16644,8 +18055,9 @@ public final class R {
      */
     public static final int FlowLayout_itemSpacing=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#lineSpacing}
-     * attribute's value can be found in the {@link #FlowLayout} array.
+     * <p>
+     * @attr description
+     * Vertical Spacing between two lines of items being laid out.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -16663,12 +18075,12 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.fyp.appmaker:fontProviderAuthority}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.fyp.appmaker:fontProviderCerts}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.fyp.appmaker:fontProviderFetchStrategy}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.fyp.appmaker:fontProviderFetchTimeout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.fyp.appmaker:fontProviderPackage}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.fyp.appmaker:fontProviderQuery}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderAuthority com.fyp.appmaker:fontProviderAuthority}</code></td><td>The authority of the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderCerts com.fyp.appmaker:fontProviderCerts}</code></td><td>The sets of hashes for the certificates the provider should be signed with.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchStrategy com.fyp.appmaker:fontProviderFetchStrategy}</code></td><td>The strategy to be used when fetching font data from a font provider in XML layouts.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderFetchTimeout com.fyp.appmaker:fontProviderFetchTimeout}</code></td><td>The length of the timeout during fetching.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderPackage com.fyp.appmaker:fontProviderPackage}</code></td><td>The package for the Font Provider to be used for the request.</td></tr>
+     * <tr><td><code>{@link #FontFamily_fontProviderQuery com.fyp.appmaker:fontProviderQuery}</code></td><td>The query to be sent over to the provider.</td></tr>
      * </table>
      * @see #FontFamily_fontProviderAuthority
      * @see #FontFamily_fontProviderCerts
@@ -16682,8 +18094,9 @@ public final class R {
       0x7f030134, 0x7f030135
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderAuthority}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The authority of the Font Provider to be used for the request.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16692,8 +18105,13 @@ public final class R {
      */
     public static final int FontFamily_fontProviderAuthority=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderCerts}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The sets of hashes for the certificates the provider should be signed with. This is
+     * used to verify the identity of the provider, and is only required if the provider is not
+     * part of the system image. This value may point to one list or a list of lists, where each
+     * individual list represents one collection of signature hashes. Refer to your font provider's
+     * documentation for these values.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16704,8 +18122,15 @@ public final class R {
      */
     public static final int FontFamily_fontProviderCerts=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderFetchStrategy}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The strategy to be used when fetching font data from a font provider in XML layouts.
+     * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
+     * choice of API between {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int)} (blocking) and
+     * {@link
+     * androidx.core.content.res.ResourcesCompat#getFont(Context, int, FontCallback, Handler)}
+     * (async).
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16713,16 +18138,25 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>async</td><td>1</td><td></td></tr>
-     * <tr><td>blocking</td><td>0</td><td></td></tr>
+     * <tr><td>async</td><td>1</td><td>The async font fetch works as follows.
+     * First, check the local cache, then if the requeted font is not cached, trigger a
+     * request the font and continue with layout inflation. Once the font fetch succeeds, the
+     * target text view will be refreshed with the downloaded font data. The
+     * fontProviderFetchTimeout will be ignored if async loading is specified.</td></tr>
+     * <tr><td>blocking</td><td>0</td><td>The blocking font fetch works as follows.
+     * First, check the local cache, then if the requested font is not cached, request the
+     * font from the provider and wait until it is finished.  You can change the length of
+     * the timeout by modifying fontProviderFetchTimeout.  If the timeout happens, the
+     * default typeface will be used instead.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:fontProviderFetchStrategy
      */
     public static final int FontFamily_fontProviderFetchStrategy=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderFetchTimeout}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The length of the timeout during fetching.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      * <p>Must be one of the following constant values.</p>
@@ -16731,15 +18165,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>forever</td><td>ffffffff</td><td></td></tr>
+     * <tr><td>forever</td><td>ffffffff</td><td>A special value for the timeout. In this case, the blocking font fetching will not
+     * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:fontProviderFetchTimeout
      */
     public static final int FontFamily_fontProviderFetchTimeout=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderPackage}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The package for the Font Provider to be used for the request. This is used to verify
+     * the identity of the provider.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16748,8 +18185,10 @@ public final class R {
      */
     public static final int FontFamily_fontProviderPackage=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontProviderQuery}
-     * attribute's value can be found in the {@link #FontFamily} array.
+     * <p>
+     * @attr description
+     * The query to be sent over to the provider. Refer to your font provider's documentation
+     * on the format of this string.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16769,11 +18208,11 @@ public final class R {
      * <tr><td><code>{@link #FontFamilyFont_android_fontStyle android:fontStyle}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_ttcIndex android:ttcIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #FontFamilyFont_android_fontVariationSettings android:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_font com.fyp.appmaker:font}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.fyp.appmaker:fontStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.fyp.appmaker:fontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.fyp.appmaker:ttcIndex}</code></td><td></td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_font com.fyp.appmaker:font}</code></td><td>The reference to the font file to be used.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontStyle com.fyp.appmaker:fontStyle}</code></td><td>The style of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_fontWeight com.fyp.appmaker:fontWeight}</code></td><td>The weight of the given font file.</td></tr>
+     * <tr><td><code>{@link #FontFamilyFont_ttcIndex com.fyp.appmaker:ttcIndex}</code></td><td>The index of the font in the tcc font file.</td></tr>
      * </table>
      * @see #FontFamilyFont_android_font
      * @see #FontFamilyFont_android_fontWeight
@@ -16813,8 +18252,9 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontWeight=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * References to the framework attrs
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16849,8 +18289,10 @@ public final class R {
      */
     public static final int FontFamilyFont_android_fontVariationSettings=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#font}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The reference to the font file to be used. This should be a file in the res/font folder
+     * and should therefore have an R reference value. E.g. @font/myfont
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -16861,8 +18303,11 @@ public final class R {
      */
     public static final int FontFamilyFont_font=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontStyle}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The style of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any style information in the font's header tables. If
+     * unspecified, the value in the font's header tables will be used.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -16878,8 +18323,12 @@ public final class R {
      */
     public static final int FontFamilyFont_fontStyle=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontVariationSettings}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The variation settings to be applied to the font. The string should be in the following
+     * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
+     * used, or the font used does not support variation settings, this attribute needs not be
+     * specified.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -16888,8 +18337,13 @@ public final class R {
      */
     public static final int FontFamilyFont_fontVariationSettings=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontWeight}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The weight of the given font file. This will be used when the font is being loaded into
+     * the font stack and will override any weight information in the font's header tables. Must
+     * be a positive number, a multiple of 100, and between 100 and 900, inclusive. The most
+     * common values are 400 for regular weight and 700 for bold weight. If unspecified, the value
+     * in the font's header tables will be used.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -16897,8 +18351,10 @@ public final class R {
      */
     public static final int FontFamilyFont_fontWeight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#ttcIndex}
-     * attribute's value can be found in the {@link #FontFamilyFont} array.
+     * <p>
+     * @attr description
+     * The index of the font in the tcc font file. If the font file referenced is not in the
+     * tcc format, this attribute needs not be specified.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17038,8 +18494,9 @@ public final class R {
       0x01010510, 0x01010511, 0x01010512, 0x01010513
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Start color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17049,8 +18506,9 @@ public final class R {
      */
     public static final int GradientColor_android_startColor=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * End color of the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17060,8 +18518,9 @@ public final class R {
      */
     public static final int GradientColor_android_endColor=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#type}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Type of gradient. The default type is linear.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17078,8 +18537,9 @@ public final class R {
      */
     public static final int GradientColor_android_type=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -17091,8 +18551,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerX=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the center of the gradient within the path.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a fractional value, which is a floating point number appended with
@@ -17104,8 +18565,9 @@ public final class R {
      */
     public static final int GradientColor_android_centerY=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#gradientRadius}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Radius of the gradient, used only with radial gradient.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      * <p>May be a dimension value, which is a floating point number appended with a
@@ -17122,8 +18584,9 @@ public final class R {
      */
     public static final int GradientColor_android_gradientRadius=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#tileMode}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Defines the tile mode of the gradient. SweepGradient doesn't support tiling.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17141,8 +18604,9 @@ public final class R {
      */
     public static final int GradientColor_android_tileMode=6;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#centerColor}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Optional center color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17152,8 +18616,10 @@ public final class R {
      */
     public static final int GradientColor_android_centerColor=7;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the start point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17161,8 +18627,10 @@ public final class R {
      */
     public static final int GradientColor_android_startX=8;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#startY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the start point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17170,8 +18638,10 @@ public final class R {
      */
     public static final int GradientColor_android_startY=9;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endX}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * X coordinate of the end point origin of the gradient.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17179,8 +18649,10 @@ public final class R {
      */
     public static final int GradientColor_android_endX=10;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#endY}
-     * attribute's value can be found in the {@link #GradientColor} array.
+     * <p>
+     * @attr description
+     * Y coordinate of the end point of the gradient within the shape.
+     * Defined in same coordinates as the path itself
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17204,8 +18676,9 @@ public final class R {
       0x010101a5, 0x01010514
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#color}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The current color for the offset inside the gradient.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17215,8 +18688,10 @@ public final class R {
      */
     public static final int GradientColorItem_android_color=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#offset}
-     * attribute's value can be found in the {@link #GradientColorItem} array.
+     * <p>
+     * @attr description
+     * The offset (or ratio) of this current color item inside the gradient.
+     * The value is only meaningful when it is between 0 and 1.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17230,7 +18705,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Insets_paddingBottomSystemWindowInsets com.fyp.appmaker:paddingBottomSystemWindowInsets}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Insets_paddingBottomSystemWindowInsets com.fyp.appmaker:paddingBottomSystemWindowInsets}</code></td><td>Just adding the parameters that we need for now.</td></tr>
      * <tr><td><code>{@link #Insets_paddingLeftSystemWindowInsets com.fyp.appmaker:paddingLeftSystemWindowInsets}</code></td><td></td></tr>
      * <tr><td><code>{@link #Insets_paddingRightSystemWindowInsets com.fyp.appmaker:paddingRightSystemWindowInsets}</code></td><td></td></tr>
      * </table>
@@ -17242,8 +18717,10 @@ public final class R {
       0x7f0301f7, 0x7f0301f9, 0x7f0301fa
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingBottomSystemWindowInsets}
-     * attribute's value can be found in the {@link #Insets} array.
+     * <p>
+     * @attr description
+     * Just adding the parameters that we need for now. We can add others if we need them, but
+     * ideally we'll be able to use https://github.com/chrisbanes/insetter once it's ready.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17314,10 +18791,11 @@ public final class R {
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAligned android:baselineAligned}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_baselineAlignedChildIndex android:baselineAlignedChildIndex}</code></td><td></td></tr>
      * <tr><td><code>{@link #LinearLayoutCompat_android_weightSum android:weightSum}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_divider com.fyp.appmaker:divider}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.fyp.appmaker:dividerPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.fyp.appmaker:measureWithLargestChild}</code></td><td></td></tr>
-     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.fyp.appmaker:showDividers}</code></td><td></td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_divider com.fyp.appmaker:divider}</code></td><td>Specifies the drawable used for item dividers.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_dividerPadding com.fyp.appmaker:dividerPadding}</code></td><td>Size of padding on either end of a divider.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_measureWithLargestChild com.fyp.appmaker:measureWithLargestChild}</code></td><td>When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child.</td></tr>
+     * <tr><td><code>{@link #LinearLayoutCompat_showDividers com.fyp.appmaker:showDividers}</code></td><td>Setting for which dividers to show.</td></tr>
      * </table>
      * @see #LinearLayoutCompat_android_gravity
      * @see #LinearLayoutCompat_android_orientation
@@ -17364,8 +18842,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_gravity=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orientation}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Should the layout be a column or a row?  Use "horizontal"
+     * for a row, "vertical" for a column.  The default is
+     * horizontal.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17381,8 +18862,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_orientation=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#baselineAligned}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When set to false, prevents the layout from aligning its children's
+     * baselines. This attribute is particularly useful when the children
+     * use different values for gravity. The default value is true.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17391,8 +18875,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAligned=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#baselineAlignedChildIndex}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When a linear layout is part of another layout that is baseline
+     * aligned, it can specify which of its children to baseline align to
+     * (that is, which child TextView).
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -17400,8 +18887,13 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_baselineAlignedChildIndex=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#weightSum}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Defines the maximum weight sum. If unspecified, the sum is computed
+     * by adding the layout_weight of all of the children. This can be
+     * used for instance to give a single child 50% of the total available
+     * space by giving it a layout_weight of 0.5 and setting the weightSum
+     * to 1.0.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -17409,8 +18901,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_android_weightSum=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#divider}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as a vertical divider between buttons.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -17421,8 +18914,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_divider=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#dividerPadding}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Size of padding on either end of a divider.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17434,8 +18928,11 @@ public final class R {
      */
     public static final int LinearLayoutCompat_dividerPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#measureWithLargestChild}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * When set to true, all children with a weight will be considered having
+     * the minimum size of the largest child. If false, all children are
+     * measured normally.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17444,8 +18941,9 @@ public final class R {
      */
     public static final int LinearLayoutCompat_measureWithLargestChild=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showDividers}
-     * attribute's value can be found in the {@link #LinearLayoutCompat} array.
+     * <p>
+     * @attr description
+     * Setting for which dividers to show.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -17583,8 +19081,9 @@ public final class R {
       0x010102ac, 0x010102ad
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownHorizontalOffset}
-     * attribute's value can be found in the {@link #ListPopupWindow} array.
+     * <p>
+     * @attr description
+     * Amount of pixels by which the drop down should be offset horizontally.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17596,8 +19095,9 @@ public final class R {
      */
     public static final int ListPopupWindow_android_dropDownHorizontalOffset=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownVerticalOffset}
-     * attribute's value can be found in the {@link #ListPopupWindow} array.
+     * <p>
+     * @attr description
+     * Amount of pixels by which the drop down should be offset vertically.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17830,19 +19330,19 @@ public final class R {
      * <tr><td><code>{@link #MaterialButton_android_insetTop android:insetTop}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_insetBottom android:insetBottom}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_cornerRadius com.fyp.appmaker:cornerRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_icon com.fyp.appmaker:icon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconGravity com.fyp.appmaker:iconGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconPadding com.fyp.appmaker:iconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconSize com.fyp.appmaker:iconSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTint com.fyp.appmaker:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_iconTintMode com.fyp.appmaker:iconTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_cornerRadius com.fyp.appmaker:cornerRadius}</code></td><td>Specifies the radius for the corners of the button.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #MaterialButton_icon com.fyp.appmaker:icon}</code></td><td>Icon drawable to display at the start of this view.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconGravity com.fyp.appmaker:iconGravity}</code></td><td>Specifies how the icon should be positioned on the X axis.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconPadding com.fyp.appmaker:iconPadding}</code></td><td>Padding between icon and button text.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconSize com.fyp.appmaker:iconSize}</code></td><td>Specifies the width and height to use for the icon drawable.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTint com.fyp.appmaker:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_iconTintMode com.fyp.appmaker:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
      * <tr><td><code>{@link #MaterialButton_rippleColor com.fyp.appmaker:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialButton_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButton_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialButton_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeColor com.fyp.appmaker:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButton_strokeWidth com.fyp.appmaker:strokeWidth}</code></td><td></td></tr>
      * </table>
@@ -17943,8 +19443,9 @@ public final class R {
      */
     public static final int MaterialButton_android_insetBottom=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Whether the button can be checked.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -17953,8 +19454,9 @@ public final class R {
      */
     public static final int MaterialButton_android_checkable=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Background for the MaterialButton
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -17964,8 +19466,9 @@ public final class R {
      */
     public static final int MaterialButton_backgroundTint=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -17973,20 +19476,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:backgroundTintMode
      */
     public static final int MaterialButton_backgroundTintMode=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerRadius}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies the radius for the corners of the button. Default is 0, for non-rounded corners.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -17998,8 +19507,9 @@ public final class R {
      */
     public static final int MaterialButton_cornerRadius=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Elevation for the MaterialButton.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18011,8 +19521,9 @@ public final class R {
      */
     public static final int MaterialButton_elevation=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#icon}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Icon drawable to display at the start of this view.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18023,8 +19534,9 @@ public final class R {
      */
     public static final int MaterialButton_icon=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconGravity}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies how the icon should be positioned on the X axis.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -18032,18 +19544,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>end</td><td>3</td><td></td></tr>
-     * <tr><td>start</td><td>1</td><td></td></tr>
-     * <tr><td>textEnd</td><td>4</td><td></td></tr>
-     * <tr><td>textStart</td><td>2</td><td></td></tr>
+     * <tr><td>end</td><td>3</td><td>Push icon to the end of the button.</td></tr>
+     * <tr><td>start</td><td>1</td><td>Push icon to the start of the button.</td></tr>
+     * <tr><td>textEnd</td><td>4</td><td>Push the icon to the end of the text keeping a distance equal to
+     * {@link R.attr#iconPadding} from the text.</td></tr>
+     * <tr><td>textStart</td><td>2</td><td>Push the icon to the start of the text keeping a distance equal to
+     * {@link R.attr#iconPadding} from the text.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:iconGravity
      */
     public static final int MaterialButton_iconGravity=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconPadding}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Padding between icon and button text.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18055,8 +19570,9 @@ public final class R {
      */
     public static final int MaterialButton_iconPadding=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconSize}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies the width and height to use for the icon drawable.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18068,8 +19584,9 @@ public final class R {
      */
     public static final int MaterialButton_iconSize=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint for icon drawable to display.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18079,8 +19596,9 @@ public final class R {
      */
     public static final int MaterialButton_iconTint=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconTintMode}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Tint mode for icon drawable to display.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18088,20 +19606,27 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:iconTintMode
      */
     public static final int MaterialButton_iconTintMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#rippleColor}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Ripple color for the button. This may be a color state list, if the desired ripple color
+     * should be stateful. Attribute type definition is in resources package.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18111,8 +19636,10 @@ public final class R {
      */
     public static final int MaterialButton_rippleColor=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for MaterialButton. Attribute declaration is in the Shape
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18123,8 +19650,10 @@ public final class R {
      */
     public static final int MaterialButton_shapeAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for MaterialButton. To be used to augment
+     * attributes declared in the shapeAppearance. Attribute declaration is in the Shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18135,8 +19664,10 @@ public final class R {
      */
     public static final int MaterialButton_shapeAppearanceOverlay=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#strokeColor}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Specifies the color used to draw the path outline of the button. Attribute type definition
+     * is in resources package.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18146,8 +19677,10 @@ public final class R {
      */
     public static final int MaterialButton_strokeColor=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#strokeWidth}
-     * attribute's value can be found in the {@link #MaterialButton} array.
+     * <p>
+     * @attr description
+     * Width of the stroke path of the button. Default is 0. Attribute type definition is in
+     * resources package.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18165,7 +19698,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialButtonToggleGroup_checkedButton com.fyp.appmaker:checkedButton}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialButtonToggleGroup_checkedButton com.fyp.appmaker:checkedButton}</code></td><td>The id of the child button that should be checked by default within this button group.</td></tr>
      * <tr><td><code>{@link #MaterialButtonToggleGroup_selectionRequired com.fyp.appmaker:selectionRequired}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialButtonToggleGroup_singleSelection com.fyp.appmaker:singleSelection}</code></td><td></td></tr>
      * </table>
@@ -18177,8 +19710,9 @@ public final class R {
       0x7f03007a, 0x7f03022b, 0x7f030239
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedButton}
-     * attribute's value can be found in the {@link #MaterialButtonToggleGroup} array.
+     * <p>
+     * @attr description
+     * The id of the child button that should be checked by default within this button group.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18189,8 +19723,10 @@ public final class R {
      */
     public static final int MaterialButtonToggleGroup_checkedButton=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#selectionRequired}
-     * attribute's value can be found in the {@link #MaterialButtonToggleGroup} array.
+     * <p>
+     * @attr description
+     * Whether we prevent all child buttons from being deselected.
+     * It's false by default.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18199,8 +19735,11 @@ public final class R {
      */
     public static final int MaterialButtonToggleGroup_selectionRequired=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#singleSelection}
-     * attribute's value can be found in the {@link #MaterialButtonToggleGroup} array.
+     * <p>
+     * @attr description
+     * Whether only a single button in this group is allowed to be checked at any time. By
+     * default, this is false and multiple buttons in this group are allowed to be checked at
+     * once.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18525,13 +20064,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialCardView_android_checkable android:checkable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_cardForegroundColor com.fyp.appmaker:cardForegroundColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_cardForegroundColor com.fyp.appmaker:cardForegroundColor}</code></td><td>Foreground color for CardView.</td></tr>
      * <tr><td><code>{@link #MaterialCardView_checkedIcon com.fyp.appmaker:checkedIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_checkedIconTint com.fyp.appmaker:checkedIconTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_checkedIconTint com.fyp.appmaker:checkedIconTint}</code></td><td>Tint color for the checked icon.</td></tr>
      * <tr><td><code>{@link #MaterialCardView_rippleColor com.fyp.appmaker:rippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialCardView_state_dragged com.fyp.appmaker:state_dragged}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCardView_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #MaterialCardView_state_dragged com.fyp.appmaker:state_dragged}</code></td><td>State when a Card is being dragged.</td></tr>
      * <tr><td><code>{@link #MaterialCardView_strokeColor com.fyp.appmaker:strokeColor}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialCardView_strokeWidth com.fyp.appmaker:strokeWidth}</code></td><td></td></tr>
      * </table>
@@ -18552,8 +20091,9 @@ public final class R {
       0x7f030254, 0x7f030255
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Whether the card can be checked.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18562,8 +20102,9 @@ public final class R {
      */
     public static final int MaterialCardView_android_checkable=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cardForegroundColor}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Foreground color for CardView.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18573,8 +20114,9 @@ public final class R {
      */
     public static final int MaterialCardView_cardForegroundColor=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedIcon}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Check icon drawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18585,8 +20127,9 @@ public final class R {
      */
     public static final int MaterialCardView_checkedIcon=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#checkedIconTint}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Tint color for the checked icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18596,8 +20139,9 @@ public final class R {
      */
     public static final int MaterialCardView_checkedIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#rippleColor}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Ripple color for the Card.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18607,8 +20151,10 @@ public final class R {
      */
     public static final int MaterialCardView_rippleColor=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for MaterialCardView. Attribute declaration is in the
+     * shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18619,8 +20165,10 @@ public final class R {
      */
     public static final int MaterialCardView_shapeAppearance=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for MaterialCardView. To be used to augment
+     * attributes declared in the shapeAppearance. Attribute declaration is in the shape package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18631,8 +20179,9 @@ public final class R {
      */
     public static final int MaterialCardView_shapeAppearanceOverlay=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_dragged}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * State when a Card is being dragged.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18641,8 +20190,10 @@ public final class R {
      */
     public static final int MaterialCardView_state_dragged=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#strokeColor}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Specifies the color used to draw the path outline of the card. Attribute type definition is
+     * in resources package.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18652,8 +20203,10 @@ public final class R {
      */
     public static final int MaterialCardView_strokeColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#strokeWidth}
-     * attribute's value can be found in the {@link #MaterialCardView} array.
+     * <p>
+     * @attr description
+     * Width of the stroke path of the card. Default is 0. Attribute type definition is in
+     * resources package.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18671,7 +20224,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialCheckBox_buttonTint com.fyp.appmaker:buttonTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialCheckBox_buttonTint com.fyp.appmaker:buttonTint}</code></td><td>Tint to apply to the button drawable.</td></tr>
      * <tr><td><code>{@link #MaterialCheckBox_useMaterialThemeColors com.fyp.appmaker:useMaterialThemeColors}</code></td><td></td></tr>
      * </table>
      * @see #MaterialCheckBox_buttonTint
@@ -18681,8 +20234,9 @@ public final class R {
       0x7f03006e, 0x7f0302c8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#buttonTint}
-     * attribute's value can be found in the {@link #MaterialCheckBox} array.
+     * <p>
+     * @attr description
+     * Tint for the checkbox.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -18692,8 +20246,12 @@ public final class R {
      */
     public static final int MaterialCheckBox_buttonTint=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#useMaterialThemeColors}
-     * attribute's value can be found in the {@link #MaterialCheckBox} array.
+     * <p>
+     * @attr description
+     * When set to true, MaterialCheckBox will tint itself according to
+     * Material Theme colors. When set to false, Material Theme colors will
+     * be ignored. This value should be set to false when using custom drawables
+     * that should not be tinted. This value is ignored if a buttonTint is set.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18716,8 +20274,12 @@ public final class R {
       0x7f0302c8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#useMaterialThemeColors}
-     * attribute's value can be found in the {@link #MaterialRadioButton} array.
+     * <p>
+     * @attr description
+     * When set to true, MaterialRadioButton will tint itself according to
+     * Material Theme colors. When set to false, Material Theme colors will
+     * be ignored. This value should be set to false when using custom drawables
+     * that should not be tinted. This value is ignored if a buttonTint is set.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18732,8 +20294,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #MaterialShape_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialShape_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialShape_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #MaterialShape_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
      * </table>
      * @see #MaterialShape_shapeAppearance
      * @see #MaterialShape_shapeAppearanceOverlay
@@ -18742,8 +20304,9 @@ public final class R {
       0x7f03022c, 0x7f03022f
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #MaterialShape} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference to be used to construct a ShapeAppearanceModel.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18754,8 +20317,9 @@ public final class R {
      */
     public static final int MaterialShape_shapeAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #MaterialShape} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference to be used to modify the shapeAppearance.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18773,7 +20337,7 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialTextAppearance_android_lineHeight android:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialTextAppearance_lineHeight com.fyp.appmaker:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialTextAppearance_lineHeight com.fyp.appmaker:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
      * </table>
      * @see #MaterialTextAppearance_android_lineHeight
      * @see #MaterialTextAppearance_lineHeight
@@ -18782,8 +20346,10 @@ public final class R {
       0x0101057f, 0x7f0301be
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#lineHeight}
-     * attribute's value can be found in the {@link #MaterialTextAppearance} array.
+     * <p>
+     * @attr description
+     * Specifies explicit line height for this TextView. This is equivalent to the vertical
+     * distance between subsequent baselines in the TextView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18795,8 +20361,10 @@ public final class R {
      */
     public static final int MaterialTextAppearance_android_lineHeight=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#lineHeight}
-     * attribute's value can be found in the {@link #MaterialTextAppearance} array.
+     * <p>
+     * @attr description
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18816,7 +20384,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #MaterialTextView_android_textAppearance android:textAppearance}</code></td><td></td></tr>
      * <tr><td><code>{@link #MaterialTextView_android_lineHeight android:lineHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MaterialTextView_lineHeight com.fyp.appmaker:lineHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MaterialTextView_lineHeight com.fyp.appmaker:lineHeight}</code></td><td>Explicit height between lines of text.</td></tr>
      * </table>
      * @see #MaterialTextView_android_textAppearance
      * @see #MaterialTextView_android_lineHeight
@@ -18851,8 +20419,10 @@ public final class R {
      */
     public static final int MaterialTextView_android_lineHeight=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#lineHeight}
-     * attribute's value can be found in the {@link #MaterialTextView} array.
+     * <p>
+     * @attr description
+     * Explicit height between lines of text. If set, this will override the values set
+     * for lineSpacingExtra and lineSpacingMultiplier.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -18889,8 +20459,9 @@ public final class R {
       0x010101df, 0x010101e0
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18899,8 +20470,9 @@ public final class R {
      */
     public static final int MenuGroup_android_enabled=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The ID of the group.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -18911,8 +20483,9 @@ public final class R {
      */
     public static final int MenuGroup_android_id=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are shown/visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -18921,8 +20494,10 @@ public final class R {
      */
     public static final int MenuGroup_android_visible=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The category applied to all items within this group.
+     * (This will be or'ed with the orderInCategory attribute.)
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18940,8 +20515,10 @@ public final class R {
      */
     public static final int MenuGroup_android_menuCategory=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * The order within the category applied to all items within this group.
+     * (This will be or'ed with the category attribute.)
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -18949,8 +20526,9 @@ public final class R {
      */
     public static final int MenuGroup_android_orderInCategory=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkableBehavior}
-     * attribute's value can be found in the {@link #MenuGroup} array.
+     * <p>
+     * @attr description
+     * Whether the items are capable of displaying a check mark.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -18986,16 +20564,18 @@ public final class R {
      * <tr><td><code>{@link #MenuItem_android_numericShortcut android:numericShortcut}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_checkable android:checkable}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuItem_android_onClick android:onClick}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionLayout com.fyp.appmaker:actionLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionProviderClass com.fyp.appmaker:actionProviderClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_actionViewClass com.fyp.appmaker:actionViewClass}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.fyp.appmaker:alphabeticModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_contentDescription com.fyp.appmaker:contentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTint com.fyp.appmaker:iconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_iconTintMode com.fyp.appmaker:iconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_numericModifiers com.fyp.appmaker:numericModifiers}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_showAsAction com.fyp.appmaker:showAsAction}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuItem_tooltipText com.fyp.appmaker:tooltipText}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuItem_actionLayout com.fyp.appmaker:actionLayout}</code></td><td>An optional layout to be used as an action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionProviderClass com.fyp.appmaker:actionProviderClass}</code></td><td>The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_actionViewClass com.fyp.appmaker:actionViewClass}</code></td><td>The name of an optional View class to instantiate and use as an
+     * action view.</td></tr>
+     * <tr><td><code>{@link #MenuItem_alphabeticModifiers com.fyp.appmaker:alphabeticModifiers}</code></td><td>The alphabetic modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_contentDescription com.fyp.appmaker:contentDescription}</code></td><td>The content description associated with the item.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTint com.fyp.appmaker:iconTint}</code></td><td>Tint to apply to the icon.</td></tr>
+     * <tr><td><code>{@link #MenuItem_iconTintMode com.fyp.appmaker:iconTintMode}</code></td><td>Blending mode used to apply the icon tint.</td></tr>
+     * <tr><td><code>{@link #MenuItem_numericModifiers com.fyp.appmaker:numericModifiers}</code></td><td>The numeric modifier key.</td></tr>
+     * <tr><td><code>{@link #MenuItem_showAsAction com.fyp.appmaker:showAsAction}</code></td><td>How this item should display in the Action Bar, if present.</td></tr>
+     * <tr><td><code>{@link #MenuItem_tooltipText com.fyp.appmaker:tooltipText}</code></td><td>The tooltip text associated with the item.</td></tr>
      * </table>
      * @see #MenuItem_android_icon
      * @see #MenuItem_android_enabled
@@ -19030,8 +20610,10 @@ public final class R {
       0x7f0301f4, 0x7f030231, 0x7f0302bd
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#icon}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The icon associated with this item.  This icon will not always be shown, so
+     * the title should be sufficient in describing this item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19042,8 +20624,9 @@ public final class R {
      */
     public static final int MenuItem_android_icon=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19052,8 +20635,9 @@ public final class R {
      */
     public static final int MenuItem_android_enabled=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#id}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The ID of the item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19064,8 +20648,10 @@ public final class R {
      */
     public static final int MenuItem_android_id=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checked}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is checked.  Note that you must first have enabled checking with
+     * the checkable attribute or else the check mark will not appear.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19074,8 +20660,9 @@ public final class R {
      */
     public static final int MenuItem_android_checked=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is shown/visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19084,8 +20671,10 @@ public final class R {
      */
     public static final int MenuItem_android_visible=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#menuCategory}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The category applied to the item.
+     * (This will be or'ed with the orderInCategory attribute.)
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19103,8 +20692,10 @@ public final class R {
      */
     public static final int MenuItem_android_menuCategory=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#orderInCategory}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The order within the category applied to the item.
+     * (This will be or'ed with the category attribute.)
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -19112,8 +20703,9 @@ public final class R {
      */
     public static final int MenuItem_android_orderInCategory=6;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#title}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The title associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19122,8 +20714,10 @@ public final class R {
      */
     public static final int MenuItem_android_title=7;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#titleCondensed}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The condensed title associated with the item.  This is used in situations where the
+     * normal title may be too long to be displayed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19132,8 +20726,10 @@ public final class R {
      */
     public static final int MenuItem_android_titleCondensed=8;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#alphabeticShortcut}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The alphabetic shortcut key.  This is the shortcut when using a keyboard
+     * with alphabetic keys.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19142,8 +20738,10 @@ public final class R {
      */
     public static final int MenuItem_android_alphabeticShortcut=9;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#numericShortcut}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The numeric shortcut key.  This is the shortcut when using a numeric (e.g., 12-key)
+     * keyboard.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19152,8 +20750,9 @@ public final class R {
      */
     public static final int MenuItem_android_numericShortcut=10;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#checkable}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Whether the item is capable of displaying a check mark.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19162,8 +20761,10 @@ public final class R {
      */
     public static final int MenuItem_android_checkable=11;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#onClick}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Name of a method on the Context used to inflate the menu that will be
+     * called when the item is clicked.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19172,8 +20773,11 @@ public final class R {
      */
     public static final int MenuItem_android_onClick=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionLayout}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * An optional layout to be used as an action view.
+     * See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19184,8 +20788,12 @@ public final class R {
      */
     public static final int MenuItem_actionLayout=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionProviderClass}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The name of an optional ActionProvider class to instantiate an action view
+     * and perform operations such as default action for that menu item.
+     * See {@link android.view.MenuItem#setActionProvider(android.view.ActionProvider)}
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19194,8 +20802,11 @@ public final class R {
      */
     public static final int MenuItem_actionProviderClass=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionViewClass}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The name of an optional View class to instantiate and use as an
+     * action view. See {@link android.view.MenuItem#setActionView(android.view.View)}
+     * for more info.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19204,8 +20815,10 @@ public final class R {
      */
     public static final int MenuItem_actionViewClass=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#alphabeticModifiers}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The alphabetic modifier key. This is the modifier when using a keyboard
+     * with alphabetic keys. The values should be kept in sync with KeyEvent
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19225,8 +20838,9 @@ public final class R {
      */
     public static final int MenuItem_alphabeticModifiers=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentDescription}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The content description associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19235,8 +20849,9 @@ public final class R {
      */
     public static final int MenuItem_contentDescription=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconTint}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -19246,8 +20861,9 @@ public final class R {
      */
     public static final int MenuItem_iconTint=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconTintMode}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the icon tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -19255,20 +20871,27 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the icon with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the icon, but with the icon’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the icon. The icon’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the icon.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:iconTintMode
      */
     public static final int MenuItem_iconTintMode=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#numericModifiers}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The numeric modifier key. This is the modifier when using a numeric (e.g., 12-key)
+     * keyboard. The values should be kept in sync with KeyEvent
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19288,8 +20911,9 @@ public final class R {
      */
     public static final int MenuItem_numericModifiers=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showAsAction}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * How this item should display in the Action Bar, if present.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -19297,19 +20921,29 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>always</td><td>2</td><td></td></tr>
-     * <tr><td>collapseActionView</td><td>8</td><td></td></tr>
-     * <tr><td>ifRoom</td><td>1</td><td></td></tr>
-     * <tr><td>never</td><td>0</td><td></td></tr>
-     * <tr><td>withText</td><td>4</td><td></td></tr>
+     * <tr><td>always</td><td>2</td><td>Always show this item in an actionbar, even if it would override
+     * the system's limits of how much stuff to put there. This may make
+     * your action bar look bad on some screens. In most cases you should
+     * use "ifRoom" instead. Mutually exclusive with "ifRoom" and "never".</td></tr>
+     * <tr><td>collapseActionView</td><td>8</td><td>This item's action view collapses to a normal menu
+     * item. When expanded, the action view takes over a
+     * larger segment of its container.</td></tr>
+     * <tr><td>ifRoom</td><td>1</td><td>Show this item in an action bar if there is room for it as determined
+     * by the system. Favor this option over "always" where possible.
+     * Mutually exclusive with "never" and "always".</td></tr>
+     * <tr><td>never</td><td>0</td><td>Never show this item in an action bar, show it in the overflow menu instead.
+     * Mutually exclusive with "ifRoom" and "always".</td></tr>
+     * <tr><td>withText</td><td>4</td><td>When this item is shown as an action in the action bar, show a text
+     * label with it even if it has an icon representation.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:showAsAction
      */
     public static final int MenuItem_showAsAction=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tooltipText}
-     * attribute's value can be found in the {@link #MenuItem} array.
+     * <p>
+     * @attr description
+     * The tooltip text associated with the item.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -19331,8 +20965,8 @@ public final class R {
      * <tr><td><code>{@link #MenuView_android_headerBackground android:headerBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemBackground android:itemBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #MenuView_android_itemIconDisabledAlpha android:itemIconDisabledAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.fyp.appmaker:preserveIconSpacing}</code></td><td></td></tr>
-     * <tr><td><code>{@link #MenuView_subMenuArrow com.fyp.appmaker:subMenuArrow}</code></td><td></td></tr>
+     * <tr><td><code>{@link #MenuView_preserveIconSpacing com.fyp.appmaker:preserveIconSpacing}</code></td><td>Whether space should be reserved in layout when an icon is missing.</td></tr>
+     * <tr><td><code>{@link #MenuView_subMenuArrow com.fyp.appmaker:subMenuArrow}</code></td><td>Drawable for the arrow icon indicating a particular item is a submenu.</td></tr>
      * </table>
      * @see #MenuView_android_windowAnimationStyle
      * @see #MenuView_android_itemTextAppearance
@@ -19350,8 +20984,9 @@ public final class R {
       0x7f030256
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#windowAnimationStyle}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default animations for the menu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19362,8 +20997,9 @@ public final class R {
      */
     public static final int MenuView_android_windowAnimationStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemTextAppearance}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default appearance of menu item text.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19374,8 +21010,9 @@ public final class R {
      */
     public static final int MenuView_android_itemTextAppearance=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#horizontalDivider}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default horizontal divider between rows of menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19386,8 +21023,9 @@ public final class R {
      */
     public static final int MenuView_android_horizontalDivider=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#verticalDivider}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default vertical divider between menu items.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19398,8 +21036,9 @@ public final class R {
      */
     public static final int MenuView_android_verticalDivider=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#headerBackground}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default background for the menu header.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19413,8 +21052,9 @@ public final class R {
      */
     public static final int MenuView_android_headerBackground=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemBackground}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default background for each menu item.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19428,8 +21068,9 @@ public final class R {
      */
     public static final int MenuView_android_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#itemIconDisabledAlpha}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Default disabled icon alpha for each menu item that shows an icon.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -19437,8 +21078,9 @@ public final class R {
      */
     public static final int MenuView_android_itemIconDisabledAlpha=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#preserveIconSpacing}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Whether space should be reserved in layout when an icon is missing.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -19447,8 +21089,9 @@ public final class R {
      */
     public static final int MenuView_preserveIconSpacing=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subMenuArrow}
-     * attribute's value can be found in the {@link #MenuView} array.
+     * <p>
+     * @attr description
+     * Drawable for the arrow icon indicating a particular item is a submenu.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19798,24 +21441,24 @@ public final class R {
      * <tr><td><code>{@link #NavigationView_android_background android:background}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_fitsSystemWindows android:fitsSystemWindows}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_headerLayout com.fyp.appmaker:headerLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemBackground com.fyp.appmaker:itemBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.fyp.appmaker:itemHorizontalPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconPadding com.fyp.appmaker:itemIconPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemIconSize com.fyp.appmaker:itemIconSize}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
+     * <tr><td><code>{@link #NavigationView_headerLayout com.fyp.appmaker:headerLayout}</code></td><td>Layout resource to inflate as the header</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemBackground com.fyp.appmaker:itemBackground}</code></td><td>A background drawable to use for navigation items.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemHorizontalPadding com.fyp.appmaker:itemHorizontalPadding}</code></td><td>Horizontal padding (left and right) of navigation items, around the icon & text</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconPadding com.fyp.appmaker:itemIconPadding}</code></td><td>Padding between the icon and the text for navigation items that display an icon</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemIconSize com.fyp.appmaker:itemIconSize}</code></td><td>The size of the icon navigation items that display an icon</td></tr>
      * <tr><td><code>{@link #NavigationView_itemIconTint com.fyp.appmaker:itemIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemMaxLines com.fyp.appmaker:itemMaxLines}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemMaxLines com.fyp.appmaker:itemMaxLines}</code></td><td>Makes the TextView of the item text be at most this many lines tall.</td></tr>
      * <tr><td><code>{@link #NavigationView_itemShapeAppearance com.fyp.appmaker:itemShapeAppearance}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemShapeAppearanceOverlay com.fyp.appmaker:itemShapeAppearanceOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeFillColor com.fyp.appmaker:itemShapeFillColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetBottom com.fyp.appmaker:itemShapeInsetBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetEnd com.fyp.appmaker:itemShapeInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetStart com.fyp.appmaker:itemShapeInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_itemShapeInsetTop com.fyp.appmaker:itemShapeInsetTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeFillColor com.fyp.appmaker:itemShapeFillColor}</code></td><td>Fill color for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetBottom com.fyp.appmaker:itemShapeInsetBottom}</code></td><td>Inset bottom margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetEnd com.fyp.appmaker:itemShapeInsetEnd}</code></td><td>Inset end margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetStart com.fyp.appmaker:itemShapeInsetStart}</code></td><td>Inset start margin for the item background shape.</td></tr>
+     * <tr><td><code>{@link #NavigationView_itemShapeInsetTop com.fyp.appmaker:itemShapeInsetTop}</code></td><td>Inset top margin for the item background shape.</td></tr>
      * <tr><td><code>{@link #NavigationView_itemTextAppearance com.fyp.appmaker:itemTextAppearance}</code></td><td></td></tr>
      * <tr><td><code>{@link #NavigationView_itemTextColor com.fyp.appmaker:itemTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #NavigationView_menu com.fyp.appmaker:menu}</code></td><td></td></tr>
+     * <tr><td><code>{@link #NavigationView_menu com.fyp.appmaker:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
      * </table>
      * @see #NavigationView_android_background
      * @see #NavigationView_android_fitsSystemWindows
@@ -19886,8 +21529,9 @@ public final class R {
      */
     public static final int NavigationView_android_maxWidth=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19899,8 +21543,9 @@ public final class R {
      */
     public static final int NavigationView_elevation=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#headerLayout}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Layout resource to inflate as the header
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19911,8 +21556,10 @@ public final class R {
      */
     public static final int NavigationView_headerLayout=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemBackground}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * A background drawable to use for navigation items. If this is set, this overrides the
+     * default background drawable for items and the itemShape* attributes will be ignored
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19923,8 +21570,9 @@ public final class R {
      */
     public static final int NavigationView_itemBackground=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemHorizontalPadding}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Horizontal padding (left and right) of navigation items, around the icon & text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19936,8 +21584,9 @@ public final class R {
      */
     public static final int NavigationView_itemHorizontalPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemIconPadding}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Padding between the icon and the text for navigation items that display an icon
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19949,8 +21598,9 @@ public final class R {
      */
     public static final int NavigationView_itemIconPadding=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemIconSize}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * The size of the icon navigation items that display an icon
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -19973,8 +21623,9 @@ public final class R {
      */
     public static final int NavigationView_itemIconTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemMaxLines}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Makes the TextView of the item text be at most this many lines tall.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -19982,8 +21633,11 @@ public final class R {
      */
     public static final int NavigationView_itemMaxLines=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeAppearance}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for the shaped item background. To use the shaped
+     * item background, either itemShapeAppearance or itemShapeAppearanceOverlay must be set and
+     * itemBackground must be null so that it can be set programmatically.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -19994,8 +21648,12 @@ public final class R {
      */
     public static final int NavigationView_itemShapeAppearance=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for item background. To be used to augment
+     * attributes declared in itemShapeAppearance. To use the shaped item background, either
+     * itemShapeAppearance or itemShapeAppearanceOverlay must be set and itemBackground must be
+     * null so that it can be set programmatically.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20006,8 +21664,10 @@ public final class R {
      */
     public static final int NavigationView_itemShapeAppearanceOverlay=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeFillColor}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Fill color for the item background shape. Used if itemBackground isn't set and there is an
+     * itemShapeAppearance or itemShapeAppearanceOverlay.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -20017,8 +21677,10 @@ public final class R {
      */
     public static final int NavigationView_itemShapeFillColor=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeInsetBottom}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Inset bottom margin for the item background shape. Used if itemBackground isn't set and
+     * there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20030,8 +21692,10 @@ public final class R {
      */
     public static final int NavigationView_itemShapeInsetBottom=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeInsetEnd}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Inset end margin for the item background shape. Used if itemBackground isn't set and there
+     * and there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20043,8 +21707,10 @@ public final class R {
      */
     public static final int NavigationView_itemShapeInsetEnd=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeInsetStart}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Inset start margin for the item background shape. Used if itemBackground isn't set and
+     * there is an itemShapeAppearance or itemShapeAppearanceOverlay.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20056,8 +21722,10 @@ public final class R {
      */
     public static final int NavigationView_itemShapeInsetStart=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#itemShapeInsetTop}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * Inset top margin for the item background shape. Used if itemBackground isn't set and there
+     * is an itemShapeAppearance or itemShapeAppearanceOverlay.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20092,8 +21760,9 @@ public final class R {
      */
     public static final int NavigationView_itemTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#menu}
-     * attribute's value can be found in the {@link #NavigationView} array.
+     * <p>
+     * @attr description
+     * The menu resource to inflate and populate items from.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20154,7 +21823,7 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #PopupWindow_android_popupAnimationStyle android:popupAnimationStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.fyp.appmaker:overlapAnchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindow_overlapAnchor com.fyp.appmaker:overlapAnchor}</code></td><td>Whether the popup window should overlap its anchor view.</td></tr>
      * </table>
      * @see #PopupWindow_android_popupBackground
      * @see #PopupWindow_android_popupAnimationStyle
@@ -20191,8 +21860,9 @@ public final class R {
      */
     public static final int PopupWindow_android_popupAnimationStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#overlapAnchor}
-     * attribute's value can be found in the {@link #PopupWindow} array.
+     * <p>
+     * @attr description
+     * Whether the popup window should overlap its anchor view.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -20207,7 +21877,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.fyp.appmaker:state_above_anchor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #PopupWindowBackgroundState_state_above_anchor com.fyp.appmaker:state_above_anchor}</code></td><td>State identifier indicating the popup will be above the anchor.</td></tr>
      * </table>
      * @see #PopupWindowBackgroundState_state_above_anchor
      */
@@ -20215,8 +21885,9 @@ public final class R {
       0x7f03024b
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#state_above_anchor}
-     * attribute's value can be found in the {@link #PopupWindowBackgroundState} array.
+     * <p>
+     * @attr description
+     * State identifier indicating the popup will be above the anchor.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -20231,8 +21902,8 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.fyp.appmaker:paddingBottomNoButtons}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.fyp.appmaker:paddingTopNoTitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingBottomNoButtons com.fyp.appmaker:paddingBottomNoButtons}</code></td><td>Bottom padding to use when no buttons are present.</td></tr>
+     * <tr><td><code>{@link #RecycleListView_paddingTopNoTitle com.fyp.appmaker:paddingTopNoTitle}</code></td><td>Top padding to use when no title is present.</td></tr>
      * </table>
      * @see #RecycleListView_paddingBottomNoButtons
      * @see #RecycleListView_paddingTopNoTitle
@@ -20241,8 +21912,9 @@ public final class R {
       0x7f0301f6, 0x7f0301fc
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingBottomNoButtons}
-     * attribute's value can be found in the {@link #RecycleListView} array.
+     * <p>
+     * @attr description
+     * Bottom padding to use when no buttons are present.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20254,8 +21926,9 @@ public final class R {
      */
     public static final int RecycleListView_paddingBottomNoButtons=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingTopNoTitle}
-     * attribute's value can be found in the {@link #RecycleListView} array.
+     * <p>
+     * @attr description
+     * Top padding to use when no title is present.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20281,7 +21954,7 @@ public final class R {
      * <tr><td><code>{@link #RecyclerView_fastScrollHorizontalTrackDrawable com.fyp.appmaker:fastScrollHorizontalTrackDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalThumbDrawable com.fyp.appmaker:fastScrollVerticalThumbDrawable}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_fastScrollVerticalTrackDrawable com.fyp.appmaker:fastScrollVerticalTrackDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #RecyclerView_layoutManager com.fyp.appmaker:layoutManager}</code></td><td></td></tr>
+     * <tr><td><code>{@link #RecyclerView_layoutManager com.fyp.appmaker:layoutManager}</code></td><td>Class name of the Layout Manager to be used.</td></tr>
      * <tr><td><code>{@link #RecyclerView_reverseLayout com.fyp.appmaker:reverseLayout}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_spanCount com.fyp.appmaker:spanCount}</code></td><td></td></tr>
      * <tr><td><code>{@link #RecyclerView_stackFromEnd com.fyp.appmaker:stackFromEnd}</code></td><td></td></tr>
@@ -20408,8 +22081,17 @@ public final class R {
      */
     public static final int RecyclerView_fastScrollVerticalTrackDrawable=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layoutManager}
-     * attribute's value can be found in the {@link #RecyclerView} array.
+     * <p>
+     * @attr description
+     * Class name of the Layout Manager to be used.
+     * <p/>
+     * The class must ext androidx.recyclerview.widget.RecyclerViewView$LayoutManager
+     * and have either a default constructor or constructor with the signature
+     * (android.content.Context, android.util.AttributeSet, int, int).
+     * <p/>
+     * If the name starts with a '.', application package is prefixed.
+     * Else, if the name contains a '.', the classname is assumed to be a full class name.
+     * Else, the recycler view package naandroidx.appcompat.widgetdget) is prefixed.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -20482,7 +22164,7 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.fyp.appmaker:behavior_overlapTop}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ScrollingViewBehavior_Layout_behavior_overlapTop com.fyp.appmaker:behavior_overlapTop}</code></td><td>The amount that the scrolling view should overlap the bottom of any AppBarLayout</td></tr>
      * </table>
      * @see #ScrollingViewBehavior_Layout_behavior_overlapTop
      */
@@ -20490,8 +22172,9 @@ public final class R {
       0x7f03004d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#behavior_overlapTop}
-     * attribute's value can be found in the {@link #ScrollingViewBehavior_Layout} array.
+     * <p>
+     * @attr description
+     * The amount that the scrolling view should overlap the bottom of any AppBarLayout
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20513,19 +22196,20 @@ public final class R {
      * <tr><td><code>{@link #SearchView_android_maxWidth android:maxWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_inputType android:inputType}</code></td><td></td></tr>
      * <tr><td><code>{@link #SearchView_android_imeOptions android:imeOptions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_closeIcon com.fyp.appmaker:closeIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_commitIcon com.fyp.appmaker:commitIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_defaultQueryHint com.fyp.appmaker:defaultQueryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_goIcon com.fyp.appmaker:goIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.fyp.appmaker:iconifiedByDefault}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_layout com.fyp.appmaker:layout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryBackground com.fyp.appmaker:queryBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_queryHint com.fyp.appmaker:queryHint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchHintIcon com.fyp.appmaker:searchHintIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_searchIcon com.fyp.appmaker:searchIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_submitBackground com.fyp.appmaker:submitBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.fyp.appmaker:suggestionRowLayout}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SearchView_voiceIcon com.fyp.appmaker:voiceIcon}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SearchView_closeIcon com.fyp.appmaker:closeIcon}</code></td><td>Close button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_commitIcon com.fyp.appmaker:commitIcon}</code></td><td>Commit icon shown in the query suggestion row</td></tr>
+     * <tr><td><code>{@link #SearchView_defaultQueryHint com.fyp.appmaker:defaultQueryHint}</code></td><td>Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.</td></tr>
+     * <tr><td><code>{@link #SearchView_goIcon com.fyp.appmaker:goIcon}</code></td><td>Go button icon</td></tr>
+     * <tr><td><code>{@link #SearchView_iconifiedByDefault com.fyp.appmaker:iconifiedByDefault}</code></td><td>The default state of the SearchView.</td></tr>
+     * <tr><td><code>{@link #SearchView_layout com.fyp.appmaker:layout}</code></td><td>The layout to use for the search view.</td></tr>
+     * <tr><td><code>{@link #SearchView_queryBackground com.fyp.appmaker:queryBackground}</code></td><td>Background for the section containing the search query</td></tr>
+     * <tr><td><code>{@link #SearchView_queryHint com.fyp.appmaker:queryHint}</code></td><td>An optional user-defined query hint string to be displayed in the empty query field.</td></tr>
+     * <tr><td><code>{@link #SearchView_searchHintIcon com.fyp.appmaker:searchHintIcon}</code></td><td>Search icon displayed as a text field hint</td></tr>
+     * <tr><td><code>{@link #SearchView_searchIcon com.fyp.appmaker:searchIcon}</code></td><td>Search icon</td></tr>
+     * <tr><td><code>{@link #SearchView_submitBackground com.fyp.appmaker:submitBackground}</code></td><td>Background for the section containing the action (e.g.</td></tr>
+     * <tr><td><code>{@link #SearchView_suggestionRowLayout com.fyp.appmaker:suggestionRowLayout}</code></td><td>Layout for query suggestion rows</td></tr>
+     * <tr><td><code>{@link #SearchView_voiceIcon com.fyp.appmaker:voiceIcon}</code></td><td>Voice button icon</td></tr>
      * </table>
      * @see #SearchView_android_focusable
      * @see #SearchView_android_maxWidth
@@ -20571,8 +22255,9 @@ public final class R {
      */
     public static final int SearchView_android_focusable=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#maxWidth}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * An optional maximum width of the SearchView.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20584,8 +22269,9 @@ public final class R {
      */
     public static final int SearchView_android_maxWidth=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#inputType}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The input type to set on the query text field.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -20631,8 +22317,9 @@ public final class R {
      */
     public static final int SearchView_android_inputType=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#imeOptions}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The IME options to set on the query text field.
      *
      * <p>Must be one or more (separated by '|') of the following constant values.</p>
      * <table>
@@ -20663,8 +22350,9 @@ public final class R {
      */
     public static final int SearchView_android_imeOptions=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#closeIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Close button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20675,8 +22363,9 @@ public final class R {
      */
     public static final int SearchView_closeIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#commitIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Commit icon shown in the query suggestion row
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20687,8 +22376,10 @@ public final class R {
      */
     public static final int SearchView_commitIcon=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#defaultQueryHint}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Default query hint used when {@code queryHint} is undefined and
+     * the search view's {@code SearchableInfo} does not provide a hint.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -20697,8 +22388,9 @@ public final class R {
      */
     public static final int SearchView_defaultQueryHint=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#goIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Go button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20709,8 +22401,10 @@ public final class R {
      */
     public static final int SearchView_goIcon=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#iconifiedByDefault}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The default state of the SearchView. If true, it will be iconified when not in
+     * use and expanded when clicked.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -20719,8 +22413,9 @@ public final class R {
      */
     public static final int SearchView_iconifiedByDefault=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#layout}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * The layout to use for the search view.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20731,8 +22426,9 @@ public final class R {
      */
     public static final int SearchView_layout=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#queryBackground}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Background for the section containing the search query
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20743,8 +22439,9 @@ public final class R {
      */
     public static final int SearchView_queryBackground=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#queryHint}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * An optional user-defined query hint string to be displayed in the empty query field.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -20753,8 +22450,9 @@ public final class R {
      */
     public static final int SearchView_queryHint=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#searchHintIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Search icon displayed as a text field hint
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20765,8 +22463,9 @@ public final class R {
      */
     public static final int SearchView_searchHintIcon=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#searchIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Search icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20777,8 +22476,9 @@ public final class R {
      */
     public static final int SearchView_searchIcon=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#submitBackground}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Background for the section containing the action (e.g. voice search)
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20789,8 +22489,9 @@ public final class R {
      */
     public static final int SearchView_submitBackground=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#suggestionRowLayout}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Layout for query suggestion rows
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20801,8 +22502,9 @@ public final class R {
      */
     public static final int SearchView_suggestionRowLayout=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#voiceIcon}
-     * attribute's value can be found in the {@link #SearchView} array.
+     * <p>
+     * @attr description
+     * Voice button icon
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -20819,16 +22521,16 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamily com.fyp.appmaker:cornerFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomLeft com.fyp.appmaker:cornerFamilyBottomLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomRight com.fyp.appmaker:cornerFamilyBottomRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopLeft com.fyp.appmaker:cornerFamilyTopLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopRight com.fyp.appmaker:cornerFamilyTopRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSize com.fyp.appmaker:cornerSize}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomLeft com.fyp.appmaker:cornerSizeBottomLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomRight com.fyp.appmaker:cornerSizeBottomRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopLeft com.fyp.appmaker:cornerSizeTopLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopRight com.fyp.appmaker:cornerSizeTopRight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamily com.fyp.appmaker:cornerFamily}</code></td><td>Corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomLeft com.fyp.appmaker:cornerFamilyBottomLeft}</code></td><td>Bottom left corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyBottomRight com.fyp.appmaker:cornerFamilyBottomRight}</code></td><td>Bottom right corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopLeft com.fyp.appmaker:cornerFamilyTopLeft}</code></td><td>Top left corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerFamilyTopRight com.fyp.appmaker:cornerFamilyTopRight}</code></td><td>Top right corner family to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSize com.fyp.appmaker:cornerSize}</code></td><td>Corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomLeft com.fyp.appmaker:cornerSizeBottomLeft}</code></td><td>Bottom left corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeBottomRight com.fyp.appmaker:cornerSizeBottomRight}</code></td><td>Bottom right corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopLeft com.fyp.appmaker:cornerSizeTopLeft}</code></td><td>Top left corner size to be used in the ShapeAppearance.</td></tr>
+     * <tr><td><code>{@link #ShapeAppearance_cornerSizeTopRight com.fyp.appmaker:cornerSizeTopRight}</code></td><td>Top right corner size to be used in the ShapeAppearance.</td></tr>
      * </table>
      * @see #ShapeAppearance_cornerFamily
      * @see #ShapeAppearance_cornerFamilyBottomLeft
@@ -20847,8 +22549,9 @@ public final class R {
       0x7f0300d5, 0x7f0300d6
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerFamily}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Corner family to be used in the ShapeAppearance. All corners default to this value
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -20864,8 +22567,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerFamily=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerFamilyBottomLeft}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Bottom left corner family to be used in the ShapeAppearance.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -20881,8 +22585,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerFamilyBottomLeft=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerFamilyBottomRight}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Bottom right corner family to be used in the ShapeAppearance.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -20898,8 +22603,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerFamilyBottomRight=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerFamilyTopLeft}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Top left corner family to be used in the ShapeAppearance.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -20915,8 +22621,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerFamilyTopLeft=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerFamilyTopRight}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Top right corner family to be used in the ShapeAppearance.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -20932,8 +22639,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerFamilyTopRight=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerSize}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Corner size to be used in the ShapeAppearance. All corners default to this value
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20949,8 +22657,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerSize=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerSizeBottomLeft}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Bottom left corner size to be used in the ShapeAppearance.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20966,8 +22675,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerSizeBottomLeft=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerSizeBottomRight}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Bottom right corner size to be used in the ShapeAppearance.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -20983,8 +22693,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerSizeBottomRight=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerSizeTopLeft}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Top left corner size to be used in the ShapeAppearance.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21000,8 +22711,9 @@ public final class R {
      */
     public static final int ShapeAppearance_cornerSizeTopLeft=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#cornerSizeTopRight}
-     * attribute's value can be found in the {@link #ShapeAppearance} array.
+     * <p>
+     * @attr description
+     * Top right corner size to be used in the ShapeAppearance.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21143,20 +22855,20 @@ public final class R {
      * <tr><td><code>{@link #Slider_android_stepSize android:stepSize}</code></td><td></td></tr>
      * <tr><td><code>{@link #Slider_android_valueFrom android:valueFrom}</code></td><td></td></tr>
      * <tr><td><code>{@link #Slider_android_valueTo android:valueTo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_floatingLabel com.fyp.appmaker:floatingLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_haloColor com.fyp.appmaker:haloColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_haloRadius com.fyp.appmaker:haloRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_labelStyle com.fyp.appmaker:labelStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_thumbColor com.fyp.appmaker:thumbColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_thumbElevation com.fyp.appmaker:thumbElevation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_thumbRadius com.fyp.appmaker:thumbRadius}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_tickColor com.fyp.appmaker:tickColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_tickColorActive com.fyp.appmaker:tickColorActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_tickColorInactive com.fyp.appmaker:tickColorInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_trackColor com.fyp.appmaker:trackColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_trackColorActive com.fyp.appmaker:trackColorActive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_trackColorInactive com.fyp.appmaker:trackColorInactive}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Slider_trackHeight com.fyp.appmaker:trackHeight}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Slider_floatingLabel com.fyp.appmaker:floatingLabel}</code></td><td>Determines if Slider should increase its default height to include space for the label.</td></tr>
+     * <tr><td><code>{@link #Slider_haloColor com.fyp.appmaker:haloColor}</code></td><td>The color of the slider's halo.</td></tr>
+     * <tr><td><code>{@link #Slider_haloRadius com.fyp.appmaker:haloRadius}</code></td><td>The radius of the halo.</td></tr>
+     * <tr><td><code>{@link #Slider_labelStyle com.fyp.appmaker:labelStyle}</code></td><td>The style used for the label TooltipDrawable.</td></tr>
+     * <tr><td><code>{@link #Slider_thumbColor com.fyp.appmaker:thumbColor}</code></td><td>The color of the slider's thumb.</td></tr>
+     * <tr><td><code>{@link #Slider_thumbElevation com.fyp.appmaker:thumbElevation}</code></td><td>The elevation of the thumb.</td></tr>
+     * <tr><td><code>{@link #Slider_thumbRadius com.fyp.appmaker:thumbRadius}</code></td><td>The radius of the thumb.</td></tr>
+     * <tr><td><code>{@link #Slider_tickColor com.fyp.appmaker:tickColor}</code></td><td>The color of the slider's tick marks.</td></tr>
+     * <tr><td><code>{@link #Slider_tickColorActive com.fyp.appmaker:tickColorActive}</code></td><td>The color of the slider's tick marks for the active portion of the track.</td></tr>
+     * <tr><td><code>{@link #Slider_tickColorInactive com.fyp.appmaker:tickColorInactive}</code></td><td>The color of the slider's tick marks for the inactive portion of the track.</td></tr>
+     * <tr><td><code>{@link #Slider_trackColor com.fyp.appmaker:trackColor}</code></td><td>The color of the track.</td></tr>
+     * <tr><td><code>{@link #Slider_trackColorActive com.fyp.appmaker:trackColorActive}</code></td><td>The color of active portion of the track.</td></tr>
+     * <tr><td><code>{@link #Slider_trackColorInactive com.fyp.appmaker:trackColorInactive}</code></td><td>The color of inactive portion of the track.</td></tr>
+     * <tr><td><code>{@link #Slider_trackHeight com.fyp.appmaker:trackHeight}</code></td><td>The height of the track.</td></tr>
      * </table>
      * @see #Slider_android_value
      * @see #Slider_android_stepSize
@@ -21251,8 +22963,9 @@ public final class R {
      */
     public static final int Slider_android_valueTo=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#floatingLabel}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * Determines if Slider should increase its default height to include space for the label.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21261,8 +22974,9 @@ public final class R {
      */
     public static final int Slider_floatingLabel=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#haloColor}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the slider's halo.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21272,8 +22986,9 @@ public final class R {
      */
     public static final int Slider_haloColor=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#haloRadius}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The radius of the halo.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21285,8 +23000,9 @@ public final class R {
      */
     public static final int Slider_haloRadius=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#labelStyle}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The style used for the label TooltipDrawable.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21297,8 +23013,9 @@ public final class R {
      */
     public static final int Slider_labelStyle=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbColor}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the slider's thumb.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21308,8 +23025,9 @@ public final class R {
      */
     public static final int Slider_thumbColor=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbElevation}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The elevation of the thumb.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21321,8 +23039,9 @@ public final class R {
      */
     public static final int Slider_thumbElevation=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbRadius}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The radius of the thumb.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21334,8 +23053,9 @@ public final class R {
      */
     public static final int Slider_thumbRadius=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickColor}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the slider's tick marks. Only used when the slider is in discrete mode.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21345,8 +23065,10 @@ public final class R {
      */
     public static final int Slider_tickColor=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickColorActive}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the slider's tick marks for the active portion of the track. Only used when
+     * the slider is in discrete mode.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21356,8 +23078,10 @@ public final class R {
      */
     public static final int Slider_tickColorActive=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tickColorInactive}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the slider's tick marks for the inactive portion of the track. Only used when
+     * the slider is in discrete mode.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21367,8 +23091,9 @@ public final class R {
      */
     public static final int Slider_tickColorInactive=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackColor}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of the track.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21378,8 +23103,9 @@ public final class R {
      */
     public static final int Slider_trackColor=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackColorActive}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of active portion of the track.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21389,8 +23115,9 @@ public final class R {
      */
     public static final int Slider_trackColorActive=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackColorInactive}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The color of inactive portion of the track.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21400,8 +23127,9 @@ public final class R {
      */
     public static final int Slider_trackColorInactive=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackHeight}
-     * attribute's value can be found in the {@link #Slider} array.
+     * <p>
+     * @attr description
+     * The height of the track.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21419,9 +23147,9 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.fyp.appmaker:snackbarButtonStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarStyle com.fyp.appmaker:snackbarStyle}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Snackbar_snackbarTextViewStyle com.fyp.appmaker:snackbarTextViewStyle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarButtonStyle com.fyp.appmaker:snackbarButtonStyle}</code></td><td>Style to use for action button within a Snackbar in this theme.</td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarStyle com.fyp.appmaker:snackbarStyle}</code></td><td>Style to use for Snackbars in this theme.</td></tr>
+     * <tr><td><code>{@link #Snackbar_snackbarTextViewStyle com.fyp.appmaker:snackbarTextViewStyle}</code></td><td>Style to use for message text within a Snackbar in this theme.</td></tr>
      * </table>
      * @see #Snackbar_snackbarButtonStyle
      * @see #Snackbar_snackbarStyle
@@ -21431,8 +23159,9 @@ public final class R {
       0x7f03023b, 0x7f03023c, 0x7f03023d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#snackbarButtonStyle}
-     * attribute's value can be found in the {@link #Snackbar} array.
+     * <p>
+     * @attr description
+     * Style to use for action button within a Snackbar in this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21443,8 +23172,9 @@ public final class R {
      */
     public static final int Snackbar_snackbarButtonStyle=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#snackbarStyle}
-     * attribute's value can be found in the {@link #Snackbar} array.
+     * <p>
+     * @attr description
+     * Style to use for Snackbars in this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21455,8 +23185,9 @@ public final class R {
      */
     public static final int Snackbar_snackbarStyle=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#snackbarTextViewStyle}
-     * attribute's value can be found in the {@link #Snackbar} array.
+     * <p>
+     * @attr description
+     * Style to use for message text within a Snackbar in this theme.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21474,12 +23205,13 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #SnackbarLayout_android_maxWidth android:maxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_actionTextColorAlpha com.fyp.appmaker:actionTextColorAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_animationMode com.fyp.appmaker:animationMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_backgroundOverlayColorAlpha com.fyp.appmaker:backgroundOverlayColorAlpha}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SnackbarLayout_elevation com.fyp.appmaker:elevation}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_actionTextColorAlpha com.fyp.appmaker:actionTextColorAlpha}</code></td><td>Alpha level for the action button text, to allow for adjusting the lightness or darkness of
+     * the theme color used for Snackbar text buttons (e.g., colorPrimary).</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_animationMode com.fyp.appmaker:animationMode}</code></td><td>Sets the enter and exit animations for a Snackbar.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_backgroundOverlayColorAlpha com.fyp.appmaker:backgroundOverlayColorAlpha}</code></td><td>Alpha level for the color that is overlaid on top of the background color.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #SnackbarLayout_elevation com.fyp.appmaker:elevation}</code></td><td>Elevation for the action bar itself</td></tr>
      * <tr><td><code>{@link #SnackbarLayout_maxActionInlineWidth com.fyp.appmaker:maxActionInlineWidth}</code></td><td></td></tr>
      * </table>
      * @see #SnackbarLayout_android_maxWidth
@@ -21509,8 +23241,10 @@ public final class R {
      */
     public static final int SnackbarLayout_android_maxWidth=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#actionTextColorAlpha}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Alpha level for the action button text, to allow for adjusting the lightness or darkness of
+     * the theme color used for Snackbar text buttons (e.g., colorPrimary).
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -21518,8 +23252,9 @@ public final class R {
      */
     public static final int SnackbarLayout_actionTextColorAlpha=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#animationMode}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Sets the enter and exit animations for a Snackbar.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21527,16 +23262,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>fade</td><td>1</td><td></td></tr>
-     * <tr><td>slide</td><td>0</td><td></td></tr>
+     * <tr><td>fade</td><td>1</td><td>Mode that corresponds to the fade in and out animations.</td></tr>
+     * <tr><td>slide</td><td>0</td><td>Mode that corresponds to the slide in and out animations.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:animationMode
      */
     public static final int SnackbarLayout_animationMode=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundOverlayColorAlpha}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Alpha level for the color that is overlaid on top of the background color. Ignored if
+     * backgroundTint is set.
      *
      * <p>May be a floating point value, such as "<code>1.2</code>".
      *
@@ -21544,8 +23281,10 @@ public final class R {
      */
     public static final int SnackbarLayout_backgroundOverlayColorAlpha=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Background tint used by the Snackbar background drawable. Accepts a ColorStateList or
+     * ColorInt.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21555,8 +23294,9 @@ public final class R {
      */
     public static final int SnackbarLayout_backgroundTint=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Background tint mode used by the Snackbar background drawable.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21564,20 +23304,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:backgroundTintMode
      */
     public static final int SnackbarLayout_backgroundTintMode=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#elevation}
-     * attribute's value can be found in the {@link #SnackbarLayout} array.
+     * <p>
+     * @attr description
+     * Elevation for the action bar itself
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21612,7 +23358,8 @@ public final class R {
      * <tr><td><code>{@link #Spinner_android_popupBackground android:popupBackground}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_prompt android:prompt}</code></td><td></td></tr>
      * <tr><td><code>{@link #Spinner_android_dropDownWidth android:dropDownWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Spinner_popupTheme com.fyp.appmaker:popupTheme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Spinner_popupTheme com.fyp.appmaker:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
      * </table>
      * @see #Spinner_android_entries
      * @see #Spinner_android_popupBackground
@@ -21625,8 +23372,9 @@ public final class R {
       0x7f03020e
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#entries}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Reference to an array resource that will populate the Spinner.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21637,8 +23385,9 @@ public final class R {
      */
     public static final int Spinner_android_entries=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#popupBackground}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Background drawable to use for the dropdown in spinnerMode="dropdown".
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21652,8 +23401,9 @@ public final class R {
      */
     public static final int Spinner_android_popupBackground=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#prompt}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * The prompt to display when the spinner's dialog is shown.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21664,8 +23414,9 @@ public final class R {
      */
     public static final int Spinner_android_prompt=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dropDownWidth}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Width of the dropdown in spinnerMode="dropdown".
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21687,8 +23438,9 @@ public final class R {
      */
     public static final int Spinner_android_dropDownWidth=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #Spinner} array.
+     * <p>
+     * @attr description
+     * Theme to use for the drop-down or dialog popup window.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21724,8 +23476,11 @@ public final class R {
       0x0101030c, 0x0101030d
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#dither}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Enables or disables dithering of the bitmap if the bitmap does not have the
+     * same pixel configuration as the screen (for instance: a ARGB 8888 bitmap with
+     * an RGB 565 screen).
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21734,8 +23489,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_dither=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#visible}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Indicates whether the drawable should be initially visible.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21744,8 +23500,14 @@ public final class R {
      */
     public static final int StateListDrawable_android_visible=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#variablePadding}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * If true, allows the drawable's padding to change based on the
+     * current state that is selected.  If false, the padding will
+     * stay the same (based on the maximum padding of all the states).
+     * Enabling this feature requires that the owner of the drawable
+     * deal with performing layout when the state changes, which is
+     * often not supported.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21754,8 +23516,12 @@ public final class R {
      */
     public static final int StateListDrawable_android_variablePadding=2;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#constantSize}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * If true, the drawable's reported internal size will remain
+     * constant as the state changes; the size is the maximum of all
+     * of the states.  If false, the size will vary based on the
+     * current state.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21764,8 +23530,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_constantSize=3;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enterFadeDuration}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade in a new state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -21773,8 +23540,9 @@ public final class R {
      */
     public static final int StateListDrawable_android_enterFadeDuration=4;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#exitFadeDuration}
-     * attribute's value can be found in the {@link #StateListDrawable} array.
+     * <p>
+     * @attr description
+     * Amount of time (in milliseconds) to fade out an old state drawable.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -21796,8 +23564,10 @@ public final class R {
       0x01010199
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#drawable}
-     * attribute's value can be found in the {@link #StateListDrawableItem} array.
+     * <p>
+     * @attr description
+     * Reference to a drawable resource to use for the state. If not
+     * given, the drawable must be defined by the first child tag.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21817,17 +23587,17 @@ public final class R {
      * <tr><td><code>{@link #SwitchCompat_android_textOn android:textOn}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_textOff android:textOff}</code></td><td></td></tr>
      * <tr><td><code>{@link #SwitchCompat_android_thumb android:thumb}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_showText com.fyp.appmaker:showText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_splitTrack com.fyp.appmaker:splitTrack}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.fyp.appmaker:switchMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchPadding com.fyp.appmaker:switchPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.fyp.appmaker:switchTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.fyp.appmaker:thumbTextPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTint com.fyp.appmaker:thumbTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.fyp.appmaker:thumbTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_track com.fyp.appmaker:track}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTint com.fyp.appmaker:trackTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.fyp.appmaker:trackTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #SwitchCompat_showText com.fyp.appmaker:showText}</code></td><td>Whether to draw on/off text.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_splitTrack com.fyp.appmaker:splitTrack}</code></td><td>Whether to split the track and leave a gap for the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchMinWidth com.fyp.appmaker:switchMinWidth}</code></td><td>Minimum width for the switch component</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchPadding com.fyp.appmaker:switchPadding}</code></td><td>Minimum space between the switch and caption text</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_switchTextAppearance com.fyp.appmaker:switchTextAppearance}</code></td><td>TextAppearance style for text displayed on the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTextPadding com.fyp.appmaker:thumbTextPadding}</code></td><td>Amount of padding on either side of text within the switch thumb.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTint com.fyp.appmaker:thumbTint}</code></td><td>Tint to apply to the thumb drawable.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_thumbTintMode com.fyp.appmaker:thumbTintMode}</code></td><td>Blending mode used to apply the thumb tint.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_track com.fyp.appmaker:track}</code></td><td>Drawable to use as the "track" that the switch thumb slides within.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTint com.fyp.appmaker:trackTint}</code></td><td>Tint to apply to the track.</td></tr>
+     * <tr><td><code>{@link #SwitchCompat_trackTintMode com.fyp.appmaker:trackTintMode}</code></td><td>Blending mode used to apply the track tint.</td></tr>
      * </table>
      * @see #SwitchCompat_android_textOn
      * @see #SwitchCompat_android_textOff
@@ -21851,8 +23621,9 @@ public final class R {
       0x7f0302c3, 0x7f0302c4
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textOn}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Text to use when the switch is in the checked/"on" state.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -21861,8 +23632,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOn=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textOff}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Text to use when the switch is in the unchecked/"off" state.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -21871,8 +23643,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_textOff=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#thumb}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as the "thumb" that switches back and forth.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21883,8 +23656,9 @@ public final class R {
      */
     public static final int SwitchCompat_android_thumb=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#showText}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Whether to draw on/off text.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21893,8 +23667,9 @@ public final class R {
      */
     public static final int SwitchCompat_showText=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#splitTrack}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Whether to split the track and leave a gap for the thumb drawable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -21903,8 +23678,9 @@ public final class R {
      */
     public static final int SwitchCompat_splitTrack=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#switchMinWidth}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Minimum width for the switch component
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21916,8 +23692,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchMinWidth=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#switchPadding}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Minimum space between the switch and caption text
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21929,8 +23706,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchPadding=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#switchTextAppearance}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * TextAppearance style for text displayed on the switch thumb.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21941,8 +23719,9 @@ public final class R {
      */
     public static final int SwitchCompat_switchTextAppearance=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbTextPadding}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Amount of padding on either side of text within the switch thumb.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -21954,8 +23733,9 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTextPadding=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbTint}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the thumb drawable.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -21965,8 +23745,9 @@ public final class R {
      */
     public static final int SwitchCompat_thumbTint=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#thumbTintMode}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the thumb tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -21974,20 +23755,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:thumbTintMode
      */
     public static final int SwitchCompat_thumbTintMode=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#track}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Drawable to use as the "track" that the switch thumb slides within.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -21998,8 +23785,9 @@ public final class R {
      */
     public static final int SwitchCompat_track=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackTint}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the track.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22009,8 +23797,9 @@ public final class R {
      */
     public static final int SwitchCompat_trackTint=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#trackTintMode}
-     * attribute's value can be found in the {@link #SwitchCompat} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the track tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22018,12 +23807,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and drawable color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:trackTintMode
@@ -22044,8 +23838,12 @@ public final class R {
       0x7f0302c8
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#useMaterialThemeColors}
-     * attribute's value can be found in the {@link #SwitchMaterial} array.
+     * <p>
+     * @attr description
+     * When set to true, SwitchMaterial will tint itself according to
+     * Material Theme colors. When set to false, Material Theme colors will
+     * be ignored. This value should be set to false when using custom drawables
+     * that should not be tinted. This value is ignored if a buttonTint is set.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22072,8 +23870,9 @@ public final class R {
       0x01010002, 0x010100f2, 0x0101014f
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#icon}
-     * attribute's value can be found in the {@link #TabItem} array.
+     * <p>
+     * @attr description
+     * Icon to display in the tab.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22084,8 +23883,9 @@ public final class R {
      */
     public static final int TabItem_android_icon=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout}
-     * attribute's value can be found in the {@link #TabItem} array.
+     * <p>
+     * @attr description
+     * A reference to a layout resource to be displayed in the tab.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22096,8 +23896,9 @@ public final class R {
      */
     public static final int TabItem_android_layout=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#text}
-     * attribute's value can be found in the {@link #TabItem} array.
+     * <p>
+     * @attr description
+     * Text to display in the tab.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22112,31 +23913,36 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
-     * <tr><td><code>{@link #TabLayout_tabBackground com.fyp.appmaker:tabBackground}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabContentStart com.fyp.appmaker:tabContentStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabGravity com.fyp.appmaker:tabGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTint com.fyp.appmaker:tabIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.fyp.appmaker:tabIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicator com.fyp.appmaker:tabIndicator}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.fyp.appmaker:tabIndicatorAnimationDuration}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.fyp.appmaker:tabIndicatorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.fyp.appmaker:tabIndicatorFullWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.fyp.appmaker:tabIndicatorGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.fyp.appmaker:tabIndicatorHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.fyp.appmaker:tabInlineLabel}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.fyp.appmaker:tabMaxWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMinWidth com.fyp.appmaker:tabMinWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabMode com.fyp.appmaker:tabMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPadding com.fyp.appmaker:tabPadding}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.fyp.appmaker:tabPaddingBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.fyp.appmaker:tabPaddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.fyp.appmaker:tabPaddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.fyp.appmaker:tabPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabRippleColor com.fyp.appmaker:tabRippleColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.fyp.appmaker:tabSelectedTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.fyp.appmaker:tabTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabTextColor com.fyp.appmaker:tabTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.fyp.appmaker:tabUnboundedRipple}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TabLayout_tabBackground com.fyp.appmaker:tabBackground}</code></td><td>Reference to a background to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabContentStart com.fyp.appmaker:tabContentStart}</code></td><td>Position in the Y axis from the starting edge that tabs should be positioned from.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabGravity com.fyp.appmaker:tabGravity}</code></td><td>Gravity constant for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTint com.fyp.appmaker:tabIconTint}</code></td><td>Tint to apply to tab icons, if present.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIconTintMode com.fyp.appmaker:tabIconTintMode}</code></td><td>Blending mode to apply to tab icons.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicator com.fyp.appmaker:tabIndicator}</code></td><td>Reference to a drawable to use as selection indicator for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorAnimationDuration com.fyp.appmaker:tabIndicatorAnimationDuration}</code></td><td>Duration in milliseconds for the animation of the selection indicator from one tab item
+     * to another.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorColor com.fyp.appmaker:tabIndicatorColor}</code></td><td>Color of the indicator used to show the currently selected tab.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorFullWidth com.fyp.appmaker:tabIndicatorFullWidth}</code></td><td>Whether the selection indicator width should fill the full width of the tab item,
+     * or if it should be fitted to the content of the tab text label.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorGravity com.fyp.appmaker:tabIndicatorGravity}</code></td><td>Gravity constant for tab selection indicator.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabIndicatorHeight com.fyp.appmaker:tabIndicatorHeight}</code></td><td>{@deprecated Instead, set the intrinsic size of the custom drawable provided to the
+     * tabIndicator attribute in order to change the indicator height.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabInlineLabel com.fyp.appmaker:tabInlineLabel}</code></td><td>Whether to display tab labels horizontally inline with icons, or underneath icons.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMaxWidth com.fyp.appmaker:tabMaxWidth}</code></td><td>The maximum width for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMinWidth com.fyp.appmaker:tabMinWidth}</code></td><td>The minimum width for tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabMode com.fyp.appmaker:tabMode}</code></td><td>The behavior mode for the Tabs in this layout</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPadding com.fyp.appmaker:tabPadding}</code></td><td>The preferred padding along all edges of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingBottom com.fyp.appmaker:tabPaddingBottom}</code></td><td>The preferred padding along the bottom edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingEnd com.fyp.appmaker:tabPaddingEnd}</code></td><td>The preferred padding along the end edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingStart com.fyp.appmaker:tabPaddingStart}</code></td><td>The preferred padding along the start edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabPaddingTop com.fyp.appmaker:tabPaddingTop}</code></td><td>The preferred padding along the top edge of tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabRippleColor com.fyp.appmaker:tabRippleColor}</code></td><td>Ripple color for the tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabSelectedTextColor com.fyp.appmaker:tabSelectedTextColor}</code></td><td>{@deprecated Instead, provide a ColorStateList to the tabTextColor attribute with a
+     * selected color set.}</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextAppearance com.fyp.appmaker:tabTextAppearance}</code></td><td>A reference to a TextAppearance style to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabTextColor com.fyp.appmaker:tabTextColor}</code></td><td>The default text color to be applied to tabs.</td></tr>
+     * <tr><td><code>{@link #TabLayout_tabUnboundedRipple com.fyp.appmaker:tabUnboundedRipple}</code></td><td>Whether to use unbounded ripple effect for tabs, or if ripple should instead be bound to
+     * tab item bounds.</td></tr>
      * </table>
      * @see #TabLayout_tabBackground
      * @see #TabLayout_tabContentStart
@@ -22164,6 +23970,7 @@ public final class R {
      * @see #TabLayout_tabTextColor
      * @see #TabLayout_tabUnboundedRipple
      */
+    @Deprecated
     public static final int[] TabLayout={
       0x7f030264, 0x7f030265, 0x7f030266, 0x7f030267, 
       0x7f030268, 0x7f030269, 0x7f03026a, 0x7f03026b, 
@@ -22174,8 +23981,9 @@ public final class R {
       0x7f03027d
     };
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabBackground}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Reference to a background to be applied to tabs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22186,8 +23994,9 @@ public final class R {
      */
     public static final int TabLayout_tabBackground=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabContentStart}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Position in the Y axis from the starting edge that tabs should be positioned from.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22199,8 +24008,9 @@ public final class R {
      */
     public static final int TabLayout_tabContentStart=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabGravity}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Gravity constant for tabs.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22216,8 +24026,9 @@ public final class R {
      */
     public static final int TabLayout_tabGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIconTint}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Tint to apply to tab icons, if present. This can be a color state list or a color.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22227,8 +24038,9 @@ public final class R {
      */
     public static final int TabLayout_tabIconTint=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIconTintMode}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Blending mode to apply to tab icons.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22248,8 +24060,10 @@ public final class R {
      */
     public static final int TabLayout_tabIconTintMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicator}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Reference to a drawable to use as selection indicator for tabs. If this attribute is not
+     * specified, indicator defaults to a line along the bottom of the tab.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22260,8 +24074,10 @@ public final class R {
      */
     public static final int TabLayout_tabIndicator=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicatorAnimationDuration}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Duration in milliseconds for the animation of the selection indicator from one tab item
+     * to another.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -22269,8 +24085,9 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorAnimationDuration=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicatorColor}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Color of the indicator used to show the currently selected tab.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22280,8 +24097,11 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorColor=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicatorFullWidth}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Whether the selection indicator width should fill the full width of the tab item,
+     * or if it should be fitted to the content of the tab text label. If no text label is
+     * present, it will be set to the width of the icon or to a minimum width of 24dp.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22290,8 +24110,9 @@ public final class R {
      */
     public static final int TabLayout_tabIndicatorFullWidth=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicatorGravity}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Gravity constant for tab selection indicator.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22299,18 +24120,21 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>0</td><td></td></tr>
-     * <tr><td>center</td><td>1</td><td></td></tr>
-     * <tr><td>stretch</td><td>3</td><td></td></tr>
-     * <tr><td>top</td><td>2</td><td></td></tr>
+     * <tr><td>bottom</td><td>0</td><td>Align indicator to the bottom of this tab layout.</td></tr>
+     * <tr><td>center</td><td>1</td><td>Align indicator along the center of this tab layout.</td></tr>
+     * <tr><td>stretch</td><td>3</td><td>Stretch indicator to match the height and width of a tab item in this layout.</td></tr>
+     * <tr><td>top</td><td>2</td><td>Align indicator to the top of this tab layout.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:tabIndicatorGravity
      */
     public static final int TabLayout_tabIndicatorGravity=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabIndicatorHeight}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * {@deprecated Instead, set the intrinsic size of the custom drawable provided to the
+     * tabIndicator attribute in order to change the indicator height. For example, this can be
+     * done by setting the <size> property in a <shape> resource.}
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22320,10 +24144,12 @@ public final class R {
      *
      * @attr name com.fyp.appmaker:tabIndicatorHeight
      */
+    @Deprecated
     public static final int TabLayout_tabIndicatorHeight=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabInlineLabel}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Whether to display tab labels horizontally inline with icons, or underneath icons.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22332,8 +24158,9 @@ public final class R {
      */
     public static final int TabLayout_tabInlineLabel=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabMaxWidth}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The maximum width for tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22345,8 +24172,9 @@ public final class R {
      */
     public static final int TabLayout_tabMaxWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabMinWidth}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The minimum width for tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22358,8 +24186,9 @@ public final class R {
      */
     public static final int TabLayout_tabMinWidth=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabMode}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The behavior mode for the Tabs in this layout
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22376,8 +24205,9 @@ public final class R {
      */
     public static final int TabLayout_tabMode=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabPadding}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The preferred padding along all edges of tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22389,8 +24219,9 @@ public final class R {
      */
     public static final int TabLayout_tabPadding=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabPaddingBottom}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the bottom edge of tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22402,8 +24233,9 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingBottom=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabPaddingEnd}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the end edge of tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22415,8 +24247,9 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingEnd=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabPaddingStart}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the start edge of tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22428,8 +24261,9 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingStart=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabPaddingTop}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The preferred padding along the top edge of tabs.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22441,8 +24275,10 @@ public final class R {
      */
     public static final int TabLayout_tabPaddingTop=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabRippleColor}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Ripple color for the tabs. This may be a color state list, if the desired ripple color
+     * should be stateful.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22452,8 +24288,10 @@ public final class R {
      */
     public static final int TabLayout_tabRippleColor=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabSelectedTextColor}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * {@deprecated Instead, provide a ColorStateList to the tabTextColor attribute with a
+     * selected color set.}
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22461,10 +24299,12 @@ public final class R {
      *
      * @attr name com.fyp.appmaker:tabSelectedTextColor
      */
+    @Deprecated
     public static final int TabLayout_tabSelectedTextColor=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabTextAppearance}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * A reference to a TextAppearance style to be applied to tabs.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22475,8 +24315,9 @@ public final class R {
      */
     public static final int TabLayout_tabTextAppearance=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabTextColor}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * The default text color to be applied to tabs.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22486,8 +24327,10 @@ public final class R {
      */
     public static final int TabLayout_tabTextColor=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#tabUnboundedRipple}
-     * attribute's value can be found in the {@link #TabLayout} array.
+     * <p>
+     * @attr description
+     * Whether to use unbounded ripple effect for tabs, or if ripple should instead be bound to
+     * tab item bounds.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22514,10 +24357,11 @@ public final class R {
      * <tr><td><code>{@link #TextAppearance_android_shadowRadius android:shadowRadius}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_fontFamily android:fontFamily}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextAppearance_android_textFontWeight android:textFontWeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontFamily com.fyp.appmaker:fontFamily}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textAllCaps com.fyp.appmaker:textAllCaps}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextAppearance_textLocale com.fyp.appmaker:textLocale}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontFamily com.fyp.appmaker:fontFamily}</code></td><td>The attribute for the font family.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_fontVariationSettings com.fyp.appmaker:fontVariationSettings}</code></td><td>The variation settings to be applied to the font.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textAllCaps com.fyp.appmaker:textAllCaps}</code></td><td>Present the text in ALL CAPS.</td></tr>
+     * <tr><td><code>{@link #TextAppearance_textLocale com.fyp.appmaker:textLocale}</code></td><td>Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN".</td></tr>
      * </table>
      * @see #TextAppearance_android_textSize
      * @see #TextAppearance_android_typeface
@@ -22695,8 +24539,9 @@ public final class R {
      */
     public static final int TextAppearance_android_textFontWeight=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontFamily}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * The attribute for the font family.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22705,8 +24550,9 @@ public final class R {
      */
     public static final int TextAppearance_fontFamily=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#fontVariationSettings}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * OpenType font variation settings, available aftear api 26.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22715,8 +24561,9 @@ public final class R {
      */
     public static final int TextAppearance_fontVariationSettings=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textAllCaps}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * Present the text in ALL CAPS. This may use a small-caps form when available.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22729,8 +24576,13 @@ public final class R {
      */
     public static final int TextAppearance_textAllCaps=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#textLocale}
-     * attribute's value can be found in the {@link #TextAppearance} array.
+     * <p>
+     * @attr description
+     * Set the textLocale by a comma-separated language tag string,
+     * for example "ja-JP,zh-CN". This attribute only takes effect on API 21 and above.
+     * Before API 24, only the first language tag is used. Starting from API 24,
+     * the string will be converted into a {@link android.os.LocaleList} and then used by
+     * {@link android.widget.TextView}
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22748,65 +24600,69 @@ public final class R {
      * <tr><td><code>{@link #TextInputLayout_android_enabled android:enabled}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_textColorHint android:textColorHint}</code></td><td></td></tr>
      * <tr><td><code>{@link #TextInputLayout_android_hint android:hint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.fyp.appmaker:boxBackgroundColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.fyp.appmaker:boxBackgroundMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.fyp.appmaker:boxCollapsedPaddingTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.fyp.appmaker:boxCornerRadiusBottomEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.fyp.appmaker:boxCornerRadiusBottomStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.fyp.appmaker:boxCornerRadiusTopEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.fyp.appmaker:boxCornerRadiusTopStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.fyp.appmaker:boxStrokeColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeErrorColor com.fyp.appmaker:boxStrokeErrorColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.fyp.appmaker:boxStrokeWidth}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidthFocused com.fyp.appmaker:boxStrokeWidthFocused}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.fyp.appmaker:counterEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.fyp.appmaker:counterMaxLength}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.fyp.appmaker:counterOverflowTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextColor com.fyp.appmaker:counterOverflowTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.fyp.appmaker:counterTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_counterTextColor com.fyp.appmaker:counterTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconCheckable com.fyp.appmaker:endIconCheckable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconContentDescription com.fyp.appmaker:endIconContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconDrawable com.fyp.appmaker:endIconDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconMode com.fyp.appmaker:endIconMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconTint com.fyp.appmaker:endIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_endIconTintMode com.fyp.appmaker:endIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorContentDescription com.fyp.appmaker:errorContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.fyp.appmaker:errorEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconDrawable com.fyp.appmaker:errorIconDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconTint com.fyp.appmaker:errorIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorIconTintMode com.fyp.appmaker:errorIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.fyp.appmaker:errorTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_errorTextColor com.fyp.appmaker:errorTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperText com.fyp.appmaker:helperText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.fyp.appmaker:helperTextEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.fyp.appmaker:helperTextTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_helperTextTextColor com.fyp.appmaker:helperTextTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.fyp.appmaker:hintAnimationEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.fyp.appmaker:hintEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.fyp.appmaker:hintTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_hintTextColor com.fyp.appmaker:hintTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.fyp.appmaker:passwordToggleContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.fyp.appmaker:passwordToggleDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.fyp.appmaker:passwordToggleEnabled}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.fyp.appmaker:passwordToggleTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.fyp.appmaker:passwordToggleTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_placeholderText com.fyp.appmaker:placeholderText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_placeholderTextAppearance com.fyp.appmaker:placeholderTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_placeholderTextColor com.fyp.appmaker:placeholderTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_prefixText com.fyp.appmaker:prefixText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_prefixTextAppearance com.fyp.appmaker:prefixTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_prefixTextColor com.fyp.appmaker:prefixTextColor}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconCheckable com.fyp.appmaker:startIconCheckable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconContentDescription com.fyp.appmaker:startIconContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconDrawable com.fyp.appmaker:startIconDrawable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconTint com.fyp.appmaker:startIconTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_startIconTintMode com.fyp.appmaker:startIconTintMode}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_suffixText com.fyp.appmaker:suffixText}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_suffixTextAppearance com.fyp.appmaker:suffixTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #TextInputLayout_suffixTextColor com.fyp.appmaker:suffixTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundColor com.fyp.appmaker:boxBackgroundColor}</code></td><td>The color to use for the box's background color when in filled box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxBackgroundMode com.fyp.appmaker:boxBackgroundMode}</code></td><td>Whether the text input area should be drawn as a filled box, an outline box, or not as a box.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCollapsedPaddingTop com.fyp.appmaker:boxCollapsedPaddingTop}</code></td><td>Value to use for the EditText's collapsed top padding in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomEnd com.fyp.appmaker:boxCornerRadiusBottomEnd}</code></td><td>The value to use for the box's bottom end corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusBottomStart com.fyp.appmaker:boxCornerRadiusBottomStart}</code></td><td>The value to use for the box's bottom start corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopEnd com.fyp.appmaker:boxCornerRadiusTopEnd}</code></td><td>The value to use for the box's top end corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxCornerRadiusTopStart com.fyp.appmaker:boxCornerRadiusTopStart}</code></td><td>The value to use for the box's top start corner radius when in box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeColor com.fyp.appmaker:boxStrokeColor}</code></td><td>The color to use for the box's stroke when in outline box mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeErrorColor com.fyp.appmaker:boxStrokeErrorColor}</code></td><td>The color to use for the box's stroke in outline box mode when an error
+     * is being displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidth com.fyp.appmaker:boxStrokeWidth}</code></td><td>The value to use for the box's stroke when in outline box mode, or for the underline stroke
+     * in filled mode.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_boxStrokeWidthFocused com.fyp.appmaker:boxStrokeWidthFocused}</code></td><td>The value to use for the focused box's stroke when in outline box mode, or for the focused
+     * underline stroke in filled mode..</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterEnabled com.fyp.appmaker:counterEnabled}</code></td><td>Whether the layout is laid out as if the character counter will be displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterMaxLength com.fyp.appmaker:counterMaxLength}</code></td><td>The max length to display in the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextAppearance com.fyp.appmaker:counterOverflowTextAppearance}</code></td><td>TextAppearance of the character counter when the text is longer than the max.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterOverflowTextColor com.fyp.appmaker:counterOverflowTextColor}</code></td><td>Text color of the character counter when the text is longer than the max.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextAppearance com.fyp.appmaker:counterTextAppearance}</code></td><td>TextAppearance of the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_counterTextColor com.fyp.appmaker:counterTextColor}</code></td><td>Text color of the character counter.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconCheckable com.fyp.appmaker:endIconCheckable}</code></td><td>Whether the end icon is checkable.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconContentDescription com.fyp.appmaker:endIconContentDescription}</code></td><td>Text to set as the content description for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconDrawable com.fyp.appmaker:endIconDrawable}</code></td><td>Drawable to use for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconMode com.fyp.appmaker:endIconMode}</code></td><td>The end icon mode of the TextInputLayout.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconTint com.fyp.appmaker:endIconTint}</code></td><td>Tint color to use for the end icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_endIconTintMode com.fyp.appmaker:endIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorContentDescription com.fyp.appmaker:errorContentDescription}</code></td><td>Text to set as the content description for the error view.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorEnabled com.fyp.appmaker:errorEnabled}</code></td><td>Whether the layout is laid out as if an error will be displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconDrawable com.fyp.appmaker:errorIconDrawable}</code></td><td>End icon to be shown when an error is displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconTint com.fyp.appmaker:errorIconTint}</code></td><td>Tint color to use for the error icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorIconTintMode com.fyp.appmaker:errorIconTintMode}</code></td><td>Blending mode used to apply the error icon tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextAppearance com.fyp.appmaker:errorTextAppearance}</code></td><td>TextAppearance of any error message displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_errorTextColor com.fyp.appmaker:errorTextColor}</code></td><td>Text color for any error message displayed.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperText com.fyp.appmaker:helperText}</code></td><td>The text to display as helper text underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextEnabled com.fyp.appmaker:helperTextEnabled}</code></td><td>Whether the layout's helper text functionality is enabled.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextAppearance com.fyp.appmaker:helperTextTextAppearance}</code></td><td>TextAppearance of the helper text displayed underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_helperTextTextColor com.fyp.appmaker:helperTextTextColor}</code></td><td>Text color of the helper text displayed underneath the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintAnimationEnabled com.fyp.appmaker:hintAnimationEnabled}</code></td><td>Whether to animate hint state changes.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintEnabled com.fyp.appmaker:hintEnabled}</code></td><td>Whether the layout's floating label functionality is enabled.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextAppearance com.fyp.appmaker:hintTextAppearance}</code></td><td>TextAppearance of the hint in the collapsed floating label.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_hintTextColor com.fyp.appmaker:hintTextColor}</code></td><td>Text color of the hint in the collapsed floating label.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleContentDescription com.fyp.appmaker:passwordToggleContentDescription}</code></td><td>Text to set as the content description for the password input visibility toggle.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleDrawable com.fyp.appmaker:passwordToggleDrawable}</code></td><td>Drawable to use as the password input visibility toggle icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleEnabled com.fyp.appmaker:passwordToggleEnabled}</code></td><td>Whether the view will display a toggle when the EditText has a password.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTint com.fyp.appmaker:passwordToggleTint}</code></td><td>Icon to use for the password input visibility toggle
+     * Deprecated.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_passwordToggleTintMode com.fyp.appmaker:passwordToggleTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_placeholderText com.fyp.appmaker:placeholderText}</code></td><td>The text to display as placeholder text in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_placeholderTextAppearance com.fyp.appmaker:placeholderTextAppearance}</code></td><td>TextAppearance of the placeholder text displayed in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_placeholderTextColor com.fyp.appmaker:placeholderTextColor}</code></td><td>Text color of the placeholder text displayed in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_prefixText com.fyp.appmaker:prefixText}</code></td><td>The text to display as prefix text in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_prefixTextAppearance com.fyp.appmaker:prefixTextAppearance}</code></td><td>TextAppearance of the prefix text displayed in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_prefixTextColor com.fyp.appmaker:prefixTextColor}</code></td><td>Text color of the prefix text displayed in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_shapeAppearance com.fyp.appmaker:shapeAppearance}</code></td><td>Shape appearance style reference to be used to construct a ShapeAppearanceModel.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_shapeAppearanceOverlay com.fyp.appmaker:shapeAppearanceOverlay}</code></td><td>Shape appearance overlay style reference to be used to modify the shapeAppearance.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconCheckable com.fyp.appmaker:startIconCheckable}</code></td><td>Whether the start icon is checkable.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconContentDescription com.fyp.appmaker:startIconContentDescription}</code></td><td>Text to set as the content description for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconDrawable com.fyp.appmaker:startIconDrawable}</code></td><td>Drawable to use for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconTint com.fyp.appmaker:startIconTint}</code></td><td>Tint color to use for the start icon.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_startIconTintMode com.fyp.appmaker:startIconTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_suffixText com.fyp.appmaker:suffixText}</code></td><td>The text to display as suffix text in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_suffixTextAppearance com.fyp.appmaker:suffixTextAppearance}</code></td><td>TextAppearance of the suffix text displayed in the text input area.</td></tr>
+     * <tr><td><code>{@link #TextInputLayout_suffixTextColor com.fyp.appmaker:suffixTextColor}</code></td><td>Text color of the suffix text displayed in the text input area.</td></tr>
      * </table>
      * @see #TextInputLayout_android_enabled
      * @see #TextInputLayout_android_textColorHint
@@ -22890,8 +24746,9 @@ public final class R {
       0x7f03025d, 0x7f03025e
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#enabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the layout is enabled
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -22900,8 +24757,10 @@ public final class R {
      */
     public static final int TextInputLayout_android_enabled=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textColorHint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The text color for the hint when the text field is not activated (such
+     * as for the resting and disabled states).
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -22915,8 +24774,9 @@ public final class R {
      */
     public static final int TextInputLayout_android_textColorHint=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#hint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The hint to display in the floating label.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -22925,8 +24785,11 @@ public final class R {
      */
     public static final int TextInputLayout_android_hint=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxBackgroundColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The color to use for the box's background color when in filled box mode.
+     * If a non-stateful color resource is specified, default colors will be used for the hover
+     * and disabled states.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -22936,8 +24799,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxBackgroundColor=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxBackgroundMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the text input area should be drawn as a filled box, an outline box, or not as a box.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -22945,17 +24809,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>filled</td><td>1</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>outline</td><td>2</td><td></td></tr>
+     * <tr><td>filled</td><td>1</td><td>Filled box mode for the text input box.</td></tr>
+     * <tr><td>none</td><td>0</td><td>Specifies that there should be no box set on the text input area.</td></tr>
+     * <tr><td>outline</td><td>2</td><td>Outline box mode for the text input box.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:boxBackgroundMode
      */
     public static final int TextInputLayout_boxBackgroundMode=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxCollapsedPaddingTop}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Value to use for the EditText's collapsed top padding in box mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22967,8 +24832,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxCollapsedPaddingTop=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxCornerRadiusBottomEnd}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the box's bottom end corner radius when in box mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22980,8 +24846,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusBottomEnd=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxCornerRadiusBottomStart}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the box's bottom start corner radius when in box mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -22993,8 +24860,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusBottomStart=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxCornerRadiusTopEnd}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the box's top end corner radius when in box mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23006,8 +24874,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusTopEnd=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxCornerRadiusTopStart}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the box's top start corner radius when in box mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23019,8 +24888,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxCornerRadiusTopStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxStrokeColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The color to use for the box's stroke when in outline box mode.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23030,8 +24900,11 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeColor=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxStrokeErrorColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The color to use for the box's stroke in outline box mode when an error
+     * is being displayed. If not set, it defaults to errorTextColor if on
+     * error state, or to counterOverflowTextColor if on overflow state.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23041,8 +24914,10 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeErrorColor=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxStrokeWidth}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the box's stroke when in outline box mode, or for the underline stroke
+     * in filled mode.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23054,8 +24929,10 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeWidth=12;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#boxStrokeWidthFocused}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The value to use for the focused box's stroke when in outline box mode, or for the focused
+     * underline stroke in filled mode..
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23067,8 +24944,9 @@ public final class R {
      */
     public static final int TextInputLayout_boxStrokeWidthFocused=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the layout is laid out as if the character counter will be displayed.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23077,8 +24955,9 @@ public final class R {
      */
     public static final int TextInputLayout_counterEnabled=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterMaxLength}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The max length to display in the character counter.
      *
      * <p>May be an integer value, such as "<code>100</code>".
      *
@@ -23086,8 +24965,9 @@ public final class R {
      */
     public static final int TextInputLayout_counterMaxLength=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterOverflowTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the character counter when the text is longer than the max.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23098,8 +24978,10 @@ public final class R {
      */
     public static final int TextInputLayout_counterOverflowTextAppearance=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterOverflowTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the character counter when the text is longer than the max.
+     * If set, this takes precedence over counterOverflowTextAppearance.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23110,8 +24992,9 @@ public final class R {
      */
     public static final int TextInputLayout_counterOverflowTextColor=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the character counter.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23122,8 +25005,10 @@ public final class R {
      */
     public static final int TextInputLayout_counterTextAppearance=18;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#counterTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the character counter.
+     * If set, this takes precedence over counterTextAppearance.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23134,8 +25019,9 @@ public final class R {
      */
     public static final int TextInputLayout_counterTextColor=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconCheckable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the end icon is checkable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23144,8 +25030,9 @@ public final class R {
      */
     public static final int TextInputLayout_endIconCheckable=20;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconContentDescription}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the end icon.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23154,8 +25041,9 @@ public final class R {
      */
     public static final int TextInputLayout_endIconContentDescription=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconDrawable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the end icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23166,8 +25054,10 @@ public final class R {
      */
     public static final int TextInputLayout_endIconDrawable=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The end icon mode of the TextInputLayout. It will display one of the end icons detailed
+     * below, or no end icon.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23175,19 +25065,20 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>clear_text</td><td>2</td><td></td></tr>
-     * <tr><td>custom</td><td>ffffffff</td><td></td></tr>
-     * <tr><td>dropdown_menu</td><td>3</td><td></td></tr>
-     * <tr><td>none</td><td>0</td><td></td></tr>
-     * <tr><td>password_toggle</td><td>1</td><td></td></tr>
+     * <tr><td>clear_text</td><td>2</td><td>The view will display a clear text button while the EditText contains input.</td></tr>
+     * <tr><td>custom</td><td>ffffffff</td><td>The view will display a custom icon specified by the user.</td></tr>
+     * <tr><td>dropdown_menu</td><td>3</td><td>The view will display a toggle that displays/hides a dropdown menu.</td></tr>
+     * <tr><td>none</td><td>0</td><td>No end icon.</td></tr>
+     * <tr><td>password_toggle</td><td>1</td><td>The view will display a toggle when the EditText has a password.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:endIconMode
      */
     public static final int TextInputLayout_endIconMode=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconTint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Tint color to use for the end icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23197,8 +25088,9 @@ public final class R {
      */
     public static final int TextInputLayout_endIconTint=24;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#endIconTintMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23206,19 +25098,26 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:endIconTintMode
      */
     public static final int TextInputLayout_endIconTintMode=25;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorContentDescription}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the error view.
+     * Should be set when the error message has special characters that a
+     * screen reader is not able to announce properly.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23227,8 +25126,9 @@ public final class R {
      */
     public static final int TextInputLayout_errorContentDescription=26;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the layout is laid out as if an error will be displayed.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23237,8 +25137,9 @@ public final class R {
      */
     public static final int TextInputLayout_errorEnabled=27;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorIconDrawable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * End icon to be shown when an error is displayed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23249,8 +25150,9 @@ public final class R {
      */
     public static final int TextInputLayout_errorIconDrawable=28;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorIconTint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Tint color to use for the error icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23261,8 +25163,9 @@ public final class R {
      */
     public static final int TextInputLayout_errorIconTint=29;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorIconTintMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the error icon tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23270,19 +25173,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:errorIconTintMode
      */
     public static final int TextInputLayout_errorIconTintMode=30;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of any error message displayed.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23293,8 +25201,10 @@ public final class R {
      */
     public static final int TextInputLayout_errorTextAppearance=31;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#errorTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color for any error message displayed.
+     * If set, this takes precedence over errorTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23304,8 +25214,9 @@ public final class R {
      */
     public static final int TextInputLayout_errorTextColor=32;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#helperText}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The text to display as helper text underneath the text input area.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23314,8 +25225,9 @@ public final class R {
      */
     public static final int TextInputLayout_helperText=33;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#helperTextEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the layout's helper text functionality is enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23324,8 +25236,9 @@ public final class R {
      */
     public static final int TextInputLayout_helperTextEnabled=34;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#helperTextTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the helper text displayed underneath the text input area.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23336,8 +25249,10 @@ public final class R {
      */
     public static final int TextInputLayout_helperTextTextAppearance=35;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#helperTextTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the helper text displayed underneath the text input area.
+     * If set, this takes precedence over helperTextTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23347,8 +25262,9 @@ public final class R {
      */
     public static final int TextInputLayout_helperTextTextColor=36;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hintAnimationEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether to animate hint state changes.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23357,8 +25273,9 @@ public final class R {
      */
     public static final int TextInputLayout_hintAnimationEnabled=37;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hintEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the layout's floating label functionality is enabled.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23367,8 +25284,9 @@ public final class R {
      */
     public static final int TextInputLayout_hintEnabled=38;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hintTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the hint in the collapsed floating label.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23379,8 +25297,10 @@ public final class R {
      */
     public static final int TextInputLayout_hintTextAppearance=39;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#hintTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the hint in the collapsed floating label.
+     * If set, this takes precedence over hintTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23390,8 +25310,10 @@ public final class R {
      */
     public static final int TextInputLayout_hintTextColor=40;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#passwordToggleContentDescription}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the password input visibility toggle.
+     * Deprecated. Use endIconContentDescription instead.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23400,8 +25322,10 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleContentDescription=41;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#passwordToggleDrawable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to use as the password input visibility toggle icon.
+     * Deprecated. Use endIconDrawable instead.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23412,8 +25336,10 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleDrawable=42;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#passwordToggleEnabled}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the view will display a toggle when the EditText has a password.
+     * Deprecated. The view's end icon should be specified via endIconMode instead.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23422,8 +25348,10 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleEnabled=43;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#passwordToggleTint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Icon to use for the password input visibility toggle
+     * Deprecated. Use endIconTint instead.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23433,8 +25361,10 @@ public final class R {
      */
     public static final int TextInputLayout_passwordToggleTint=44;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#passwordToggleTintMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
+     * Deprecated. Use endIconTintMode instead.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23442,19 +25372,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:passwordToggleTintMode
      */
     public static final int TextInputLayout_passwordToggleTintMode=45;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#placeholderText}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The text to display as placeholder text in the text input area.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23463,8 +25398,9 @@ public final class R {
      */
     public static final int TextInputLayout_placeholderText=46;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#placeholderTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the placeholder text displayed in the text input area.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23475,8 +25411,10 @@ public final class R {
      */
     public static final int TextInputLayout_placeholderTextAppearance=47;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#placeholderTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the placeholder text displayed in the text input area.
+     * If set, this takes precedence over placeholderTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23486,8 +25424,9 @@ public final class R {
      */
     public static final int TextInputLayout_placeholderTextColor=48;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#prefixText}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The text to display as prefix text in the text input area.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23496,8 +25435,9 @@ public final class R {
      */
     public static final int TextInputLayout_prefixText=49;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#prefixTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the prefix text displayed in the text input area.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23508,8 +25448,10 @@ public final class R {
      */
     public static final int TextInputLayout_prefixTextAppearance=50;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#prefixTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the prefix text displayed in the text input area.
+     * If set, this takes precedence over prefixTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23519,8 +25461,10 @@ public final class R {
      */
     public static final int TextInputLayout_prefixTextColor=51;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Shape appearance style reference for TextInputLayout. Attribute declaration is in the Shape
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23531,8 +25475,11 @@ public final class R {
      */
     public static final int TextInputLayout_shapeAppearance=52;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#shapeAppearanceOverlay}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Shape appearance overlay style reference for TextInputLayout. To be used to augment
+     * attributes declared in the shapeAppearance. Attribute declaration is in the Shape
+     * package.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23543,8 +25490,9 @@ public final class R {
      */
     public static final int TextInputLayout_shapeAppearanceOverlay=53;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#startIconCheckable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Whether the start icon is checkable.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23553,8 +25501,9 @@ public final class R {
      */
     public static final int TextInputLayout_startIconCheckable=54;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#startIconContentDescription}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the start icon.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23563,8 +25512,9 @@ public final class R {
      */
     public static final int TextInputLayout_startIconContentDescription=55;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#startIconDrawable}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Drawable to use for the start icon.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23575,8 +25525,9 @@ public final class R {
      */
     public static final int TextInputLayout_startIconDrawable=56;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#startIconTint}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Tint color to use for the start icon.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23586,8 +25537,9 @@ public final class R {
      */
     public static final int TextInputLayout_startIconTint=57;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#startIconTintMode}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -23595,19 +25547,24 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:startIconTintMode
      */
     public static final int TextInputLayout_startIconTintMode=58;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#suffixText}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * The text to display as suffix text in the text input area.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23616,8 +25573,9 @@ public final class R {
      */
     public static final int TextInputLayout_suffixText=59;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#suffixTextAppearance}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * TextAppearance of the suffix text displayed in the text input area.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23628,8 +25586,10 @@ public final class R {
      */
     public static final int TextInputLayout_suffixTextAppearance=60;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#suffixTextColor}
-     * attribute's value can be found in the {@link #TextInputLayout} array.
+     * <p>
+     * @attr description
+     * Text color of the suffix text displayed in the text input area.
+     * If set, this takes precedence over suffixTextAppearance.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -23646,8 +25606,11 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ThemeEnforcement_android_textAppearance android:textAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.fyp.appmaker:enforceMaterialTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.fyp.appmaker:enforceTextAppearance}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceMaterialTheme com.fyp.appmaker:enforceMaterialTheme}</code></td><td>Internal flag used to denote that a style uses new attributes defined by
+     * Theme.MaterialComponents, and that the component should check via ThemeEnforcement that the
+     * client's app theme inherits from Theme.MaterialComponents.</td></tr>
+     * <tr><td><code>{@link #ThemeEnforcement_enforceTextAppearance com.fyp.appmaker:enforceTextAppearance}</code></td><td>Internal flag used to denote that a style requires that the textAppearance attribute is
+     * specified and evaluates to a valid text appearance.</td></tr>
      * </table>
      * @see #ThemeEnforcement_android_textAppearance
      * @see #ThemeEnforcement_enforceMaterialTheme
@@ -23657,8 +25620,9 @@ public final class R {
       0x01010034, 0x7f030108, 0x7f030109
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#textAppearance}
-     * attribute's value can be found in the {@link #ThemeEnforcement} array.
+     * <p>
+     * @attr description
+     * Attribute used to check that a component has a TextAppearance specified on it.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23669,8 +25633,15 @@ public final class R {
      */
     public static final int ThemeEnforcement_android_textAppearance=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#enforceMaterialTheme}
-     * attribute's value can be found in the {@link #ThemeEnforcement} array.
+     * <p>
+     * @attr description
+     * Internal flag used to denote that a style uses new attributes defined by
+     * Theme.MaterialComponents, and that the component should check via ThemeEnforcement that the
+     * client's app theme inherits from Theme.MaterialComponents.
+     * Not all usages of new attributes are problematic in the context of a legacy app theme. You
+     * should only use this flag if a particular usage is known to cause a visual glitch or crash.
+     * For example, tinting a vector drawable with a non-existent theme attribute is known to
+     * crash on pre-21 devices.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23679,8 +25650,10 @@ public final class R {
      */
     public static final int ThemeEnforcement_enforceMaterialTheme=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#enforceTextAppearance}
-     * attribute's value can be found in the {@link #ThemeEnforcement} array.
+     * <p>
+     * @attr description
+     * Internal flag used to denote that a style requires that the textAppearance attribute is
+     * specified and evaluates to a valid text appearance.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -23698,33 +25671,40 @@ public final class R {
      * <tr><td><code>{@link #Toolbar_android_gravity android:gravity}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #Toolbar_buttonGravity com.fyp.appmaker:buttonGravity}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.fyp.appmaker:collapseContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_collapseIcon com.fyp.appmaker:collapseIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.fyp.appmaker:contentInsetEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.fyp.appmaker:contentInsetEndWithActions}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.fyp.appmaker:contentInsetLeft}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetRight com.fyp.appmaker:contentInsetRight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStart com.fyp.appmaker:contentInsetStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.fyp.appmaker:contentInsetStartWithNavigation}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logo com.fyp.appmaker:logo}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_logoDescription com.fyp.appmaker:logoDescription}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseContentDescription com.fyp.appmaker:collapseContentDescription}</code></td><td>Text to set as the content description for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_collapseIcon com.fyp.appmaker:collapseIcon}</code></td><td>Icon drawable to use for the collapse button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEnd com.fyp.appmaker:contentInsetEnd}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetEndWithActions com.fyp.appmaker:contentInsetEndWithActions}</code></td><td>Minimum inset for content views within a bar when actions from a menu
+     * are present.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetLeft com.fyp.appmaker:contentInsetLeft}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetRight com.fyp.appmaker:contentInsetRight}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStart com.fyp.appmaker:contentInsetStart}</code></td><td>Minimum inset for content views within a bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_contentInsetStartWithNavigation com.fyp.appmaker:contentInsetStartWithNavigation}</code></td><td>Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logo com.fyp.appmaker:logo}</code></td><td>Specifies the drawable used for the application logo.</td></tr>
+     * <tr><td><code>{@link #Toolbar_logoDescription com.fyp.appmaker:logoDescription}</code></td><td>A content description string to describe the appearance of the
+     * associated logo image.</td></tr>
      * <tr><td><code>{@link #Toolbar_maxButtonHeight com.fyp.appmaker:maxButtonHeight}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_menu com.fyp.appmaker:menu}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.fyp.appmaker:navigationContentDescription}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_navigationIcon com.fyp.appmaker:navigationIcon}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_popupTheme com.fyp.appmaker:popupTheme}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitle com.fyp.appmaker:subtitle}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_menu com.fyp.appmaker:menu}</code></td><td>Menu resource to inflate to be shown in the toolbar</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationContentDescription com.fyp.appmaker:navigationContentDescription}</code></td><td>Text to set as the content description for the navigation button
+     * located at the start of the toolbar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_navigationIcon com.fyp.appmaker:navigationIcon}</code></td><td>Icon drawable to use for the navigation button located at
+     * the start of the toolbar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_popupTheme com.fyp.appmaker:popupTheme}</code></td><td>Reference to a theme that should be used to inflate popups
+     * shown by widgets in the action bar.</td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitle com.fyp.appmaker:subtitle}</code></td><td>Specifies subtitle text used for navigationMode="normal"</td></tr>
      * <tr><td><code>{@link #Toolbar_subtitleTextAppearance com.fyp.appmaker:subtitleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.fyp.appmaker:subtitleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_subtitleTextColor com.fyp.appmaker:subtitleTextColor}</code></td><td>A color to apply to the subtitle string.</td></tr>
      * <tr><td><code>{@link #Toolbar_title com.fyp.appmaker:title}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargin com.fyp.appmaker:titleMargin}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.fyp.appmaker:titleMarginBottom}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.fyp.appmaker:titleMarginEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginStart com.fyp.appmaker:titleMarginStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMarginTop com.fyp.appmaker:titleMarginTop}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleMargins com.fyp.appmaker:titleMargins}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargin com.fyp.appmaker:titleMargin}</code></td><td>Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginBottom com.fyp.appmaker:titleMarginBottom}</code></td><td>Specifies extra space on the bottom side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginEnd com.fyp.appmaker:titleMarginEnd}</code></td><td>Specifies extra space on the end side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginStart com.fyp.appmaker:titleMarginStart}</code></td><td>Specifies extra space on the start side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMarginTop com.fyp.appmaker:titleMarginTop}</code></td><td>Specifies extra space on the top side of the toolbar's title.</td></tr>
+     * <tr><td><code>{@link #Toolbar_titleMargins com.fyp.appmaker:titleMargins}</code></td><td>{@deprecated Use titleMargin}</td></tr>
      * <tr><td><code>{@link #Toolbar_titleTextAppearance com.fyp.appmaker:titleTextAppearance}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Toolbar_titleTextColor com.fyp.appmaker:titleTextColor}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Toolbar_titleTextColor com.fyp.appmaker:titleTextColor}</code></td><td>A color to apply to the title string.</td></tr>
      * </table>
      * @see #Toolbar_android_gravity
      * @see #Toolbar_android_minHeight
@@ -23757,6 +25737,7 @@ public final class R {
      * @see #Toolbar_titleTextAppearance
      * @see #Toolbar_titleTextColor
      */
+    @Deprecated
     public static final int[] Toolbar={
       0x010100af, 0x01010140, 0x7f030068, 0x7f03009e, 
       0x7f03009f, 0x7f0300be, 0x7f0300bf, 0x7f0300c0, 
@@ -23819,17 +25800,18 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>bottom</td><td>50</td><td></td></tr>
-     * <tr><td>center_vertical</td><td>10</td><td></td></tr>
-     * <tr><td>top</td><td>30</td><td></td></tr>
+     * <tr><td>bottom</td><td>50</td><td>Push object to the bottom of its container, not changing its size.</td></tr>
+     * <tr><td>center_vertical</td><td>10</td><td>Place object in the vertical center of its container, not changing its size.</td></tr>
+     * <tr><td>top</td><td>30</td><td>Push object to the top of its container, not changing its size.</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:buttonGravity
      */
     public static final int Toolbar_buttonGravity=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#collapseContentDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the collapse button.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23838,8 +25820,9 @@ public final class R {
      */
     public static final int Toolbar_collapseContentDescription=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#collapseIcon}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Icon drawable to use for the collapse button.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23850,8 +25833,10 @@ public final class R {
      */
     public static final int Toolbar_collapseIcon=4;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetEnd}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23863,8 +25848,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEnd=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetEndWithActions}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when actions from a menu
+     * are present. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23876,8 +25863,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetEndWithActions=6;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetLeft}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23889,8 +25878,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetLeft=7;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetRight}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23902,8 +25893,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetRight=8;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetStart}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar. Navigation buttons and
+     * menu views are excepted. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23915,8 +25908,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStart=9;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#contentInsetStartWithNavigation}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Minimum inset for content views within a bar when a navigation button
+     * is present, such as the Up button. Only valid for some themes and configurations.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -23928,8 +25923,10 @@ public final class R {
      */
     public static final int Toolbar_contentInsetStartWithNavigation=10;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#logo}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Drawable to set as the logo that appears at the starting side of
+     * the Toolbar, just after the navigation button.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23940,8 +25937,10 @@ public final class R {
      */
     public static final int Toolbar_logo=11;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#logoDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A content description string to describe the appearance of the
+     * associated logo image.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23963,8 +25962,9 @@ public final class R {
      */
     public static final int Toolbar_maxButtonHeight=13;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#menu}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Menu resource to inflate to be shown in the toolbar
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23975,8 +25975,10 @@ public final class R {
      */
     public static final int Toolbar_menu=14;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#navigationContentDescription}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Text to set as the content description for the navigation button
+     * located at the start of the toolbar.
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -23985,8 +25987,10 @@ public final class R {
      */
     public static final int Toolbar_navigationContentDescription=15;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#navigationIcon}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Icon drawable to use for the navigation button located at
+     * the start of the toolbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -23997,8 +26001,10 @@ public final class R {
      */
     public static final int Toolbar_navigationIcon=16;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#popupTheme}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Reference to a theme that should be used to inflate popups
+     * shown by widgets in the toolbar.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24009,8 +26015,9 @@ public final class R {
      */
     public static final int Toolbar_popupTheme=17;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subtitle}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies subtitle text used for navigationMode="normal"
      *
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
@@ -24031,8 +26038,9 @@ public final class R {
      */
     public static final int Toolbar_subtitleTextAppearance=19;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#subtitleTextColor}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A color to apply to the subtitle string.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24052,8 +26060,10 @@ public final class R {
      */
     public static final int Toolbar_title=21;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMargin}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the left, start, right and end sides
+     * of the toolbar's title. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24065,8 +26075,11 @@ public final class R {
      */
     public static final int Toolbar_titleMargin=22;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMarginBottom}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the bottom side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24078,8 +26091,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginBottom=23;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMarginEnd}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the end side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24091,8 +26107,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginEnd=24;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMarginStart}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the start side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24104,8 +26123,11 @@ public final class R {
      */
     public static final int Toolbar_titleMarginStart=25;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMarginTop}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * Specifies extra space on the top side of the toolbar's title.
+     * If both this attribute and titleMargin are specified, then this
+     * attribute takes precedence. Margin values should be positive.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24117,8 +26139,9 @@ public final class R {
      */
     public static final int Toolbar_titleMarginTop=26;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleMargins}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * {@deprecated Use titleMargin}
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24128,6 +26151,7 @@ public final class R {
      *
      * @attr name com.fyp.appmaker:titleMargins
      */
+    @Deprecated
     public static final int Toolbar_titleMargins=27;
     /**
      * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleTextAppearance}
@@ -24142,8 +26166,9 @@ public final class R {
      */
     public static final int Toolbar_titleTextAppearance=28;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#titleTextColor}
-     * attribute's value can be found in the {@link #Toolbar} array.
+     * <p>
+     * @attr description
+     * A color to apply to the title string.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24165,7 +26190,7 @@ public final class R {
      * <tr><td><code>{@link #Tooltip_android_minWidth android:minWidth}</code></td><td></td></tr>
      * <tr><td><code>{@link #Tooltip_android_minHeight android:minHeight}</code></td><td></td></tr>
      * <tr><td><code>{@link #Tooltip_android_text android:text}</code></td><td></td></tr>
-     * <tr><td><code>{@link #Tooltip_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
+     * <tr><td><code>{@link #Tooltip_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
      * </table>
      * @see #Tooltip_android_textAppearance
      * @see #Tooltip_android_padding
@@ -24254,8 +26279,9 @@ public final class R {
      */
     public static final int Tooltip_android_text=5;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #Tooltip} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24273,9 +26299,9 @@ public final class R {
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #View_android_theme android:theme}</code></td><td></td></tr>
      * <tr><td><code>{@link #View_android_focusable android:focusable}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingEnd com.fyp.appmaker:paddingEnd}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_paddingStart com.fyp.appmaker:paddingStart}</code></td><td></td></tr>
-     * <tr><td><code>{@link #View_theme com.fyp.appmaker:theme}</code></td><td></td></tr>
+     * <tr><td><code>{@link #View_paddingEnd com.fyp.appmaker:paddingEnd}</code></td><td>Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_paddingStart com.fyp.appmaker:paddingStart}</code></td><td>Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.</td></tr>
+     * <tr><td><code>{@link #View_theme com.fyp.appmaker:theme}</code></td><td>Deprecated.</td></tr>
      * </table>
      * @see #View_android_theme
      * @see #View_android_focusable
@@ -24288,8 +26314,11 @@ public final class R {
       0x7f03029b
     };
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#theme}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Specifies a theme override for a view. When a theme override is set, the
+     * view will be inflated using a {@link android.content.Context} themed with
+     * the specified resource.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24300,8 +26329,14 @@ public final class R {
      */
     public static final int View_android_theme=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#focusable}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Boolean that controls whether a view can take focus.  By default the user can not
+     * move focus to a view; by setting this attribute to true the view is
+     * allowed to take focus.  This value does not impact the behavior of
+     * directly calling {@link android.view.View#requestFocus}, which will
+     * always request focus regardless of this view.  It only impacts where
+     * focus navigation will try to move focus.
      *
      * <p>May be a boolean value, such as "<code>true</code>" or
      * "<code>false</code>".
@@ -24318,8 +26353,9 @@ public final class R {
      */
     public static final int View_android_focusable=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingEnd}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Sets the padding, in pixels, of the end edge; see {@link android.R.attr#padding}.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24331,8 +26367,9 @@ public final class R {
      */
     public static final int View_paddingEnd=2;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#paddingStart}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Sets the padding, in pixels, of the start edge; see {@link android.R.attr#padding}.
      *
      * <p>May be a dimension value, which is a floating point number appended with a
      * unit such as "<code>14.5sp</code>".
@@ -24344,8 +26381,9 @@ public final class R {
      */
     public static final int View_paddingStart=3;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#theme}
-     * attribute's value can be found in the {@link #View} array.
+     * <p>
+     * @attr description
+     * Deprecated.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24363,8 +26401,8 @@ public final class R {
      * <colgroup align="left" />
      * <tr><th>Attribute</th><th>Description</th></tr>
      * <tr><td><code>{@link #ViewBackgroundHelper_android_background android:background}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td></td></tr>
-     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td></td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTint com.fyp.appmaker:backgroundTint}</code></td><td>Tint to apply to the background.</td></tr>
+     * <tr><td><code>{@link #ViewBackgroundHelper_backgroundTintMode com.fyp.appmaker:backgroundTintMode}</code></td><td>Blending mode used to apply the background tint.</td></tr>
      * </table>
      * @see #ViewBackgroundHelper_android_background
      * @see #ViewBackgroundHelper_backgroundTint
@@ -24389,8 +26427,9 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_android_background=0;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTint}
-     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
+     * <p>
+     * @attr description
+     * Tint to apply to the background.
      *
      * <p>May be a color value, in the form of "<code>#<i>rgb</i></code>",
      * "<code>#<i>argb</i></code>", "<code>#<i>rrggbb</i></code>", or
@@ -24400,8 +26439,9 @@ public final class R {
      */
     public static final int ViewBackgroundHelper_backgroundTint=1;
     /**
-     * <p>This symbol is the offset where the {@link com.fyp.appmaker.R.attr#backgroundTintMode}
-     * attribute's value can be found in the {@link #ViewBackgroundHelper} array.
+     * <p>
+     * @attr description
+     * Blending mode used to apply the background tint.
      *
      * <p>Must be one of the following constant values.</p>
      * <table>
@@ -24409,12 +26449,17 @@ public final class R {
      * <colgroup align="left" />
      * <colgroup align="left" />
      * <tr><th>Constant</th><th>Value</th><th>Description</th></tr>
-     * <tr><td>add</td><td>10</td><td></td></tr>
-     * <tr><td>multiply</td><td>e</td><td></td></tr>
-     * <tr><td>screen</td><td>f</td><td></td></tr>
-     * <tr><td>src_atop</td><td>9</td><td></td></tr>
-     * <tr><td>src_in</td><td>5</td><td></td></tr>
-     * <tr><td>src_over</td><td>3</td><td></td></tr>
+     * <tr><td>add</td><td>10</td><td>Combines the tint and icon color and alpha channels, clamping the
+     * result to valid color values. Saturate(S + D)</td></tr>
+     * <tr><td>multiply</td><td>e</td><td>Multiplies the color and alpha channels of the drawable with those of
+     * the tint. [Sa * Da, Sc * Dc]</td></tr>
+     * <tr><td>screen</td><td>f</td><td>[Sa + Da - Sa * Da, Sc + Dc - Sc * Dc]</td></tr>
+     * <tr><td>src_atop</td><td>9</td><td>The tint is drawn above the drawable, but with the drawable’s alpha
+     * channel masking the result. [Da, Sc * Da + (1 - Sa) * Dc]</td></tr>
+     * <tr><td>src_in</td><td>5</td><td>The tint is masked by the alpha channel of the drawable. The drawable’s
+     * color channels are thrown out. [Sa * Da, Sc * Da]</td></tr>
+     * <tr><td>src_over</td><td>3</td><td>The tint is drawn on top of the drawable.
+     * [Sa + (1 - Sa)*Da, Rc = Sc + (1 - Sa)*Dc]</td></tr>
      * </table>
      *
      * @attr name com.fyp.appmaker:backgroundTintMode
@@ -24482,8 +26527,11 @@ public final class R {
      */
     public static final int ViewStubCompat_android_id=0;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#layout}
-     * attribute's value can be found in the {@link #ViewStubCompat} array.
+     * <p>
+     * @attr description
+     * Supply an identifier for the layout resource to inflate when the ViewStub
+     * becomes visible or when forced to do so. The layout resource must be a
+     * valid reference to a layout.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
@@ -24494,8 +26542,9 @@ public final class R {
      */
     public static final int ViewStubCompat_android_layout=1;
     /**
-     * <p>This symbol is the offset where the {@link android.R.attr#inflatedId}
-     * attribute's value can be found in the {@link #ViewStubCompat} array.
+     * <p>
+     * @attr description
+     * Overrides the id of the inflated View with this value.
      *
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme

@@ -34,8 +34,11 @@ public class FirebaseDb extends AppCompatActivity {
 
     public void addAppDetails(AppDetailsModel appDetailsModel)
     {
+        utilitiesClass=new UtilitiesClass();
         mDatabase=FirebaseDatabase.getInstance().
-                getReference("appDetails").child(utilitiesClass.loadIDFromPrefs());
+                getReference("appDetails").child(utilitiesClass.loadIDFromPrefs(this));
+        appDetailsModel.setId(mDatabase.push().getKey());
+        appDetailsModel.setUserId(utilitiesClass.loadIDFromPrefs(this));
     }
 
 

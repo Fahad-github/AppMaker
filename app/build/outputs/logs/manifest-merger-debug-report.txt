@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
 MERGED from [androidx.databinding:databinding-adapters:3.4.1] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\d5e1cb33c2c32d3985abc29e783d6fe1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.4.1] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\02a2ca933dea842dcb3d60ac3386a630\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\e7db88e196512bbee43da989bee5d514\AndroidManifest.xml:17:1-22:12
@@ -63,25 +63,29 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\hibap\.gradl
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\9e32bbc531b44c14dd10b878ad86d6c7\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\7f4babba761be07f73b06513683e0083\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\7861cdfe06ccdf16480c5ae645d66f5a\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
-INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
+INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
 		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-35:12
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:1-37:12
 		INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:6:5-79
+	android:name
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:6:22-77
 application
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:5:5-33:19
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:7:5-35:19
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\2d8c647dceb29d1dd3d00e90c236fda3\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\2d8c647dceb29d1dd3d00e90c236fda3\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\0af8ddf7a8066fbcf2c85086b9667964\AndroidManifest.xml:9:5-20
@@ -113,71 +117,71 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\hi
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] C:\Users\hibap\.gradle\caches\transforms-2\files-2.1\dfe1fd3f19c7809793d5ad1581ed4286\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:12:9-35
 	android:label
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:10:9-41
 	android:roundIcon
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:11:9-54
 	android:icon
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:9:9-43
 	android:allowBackup
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:11:9-40
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:13:9-40
 activity#com.fyp.appmaker.Functionality.Template1new
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:12:9-73
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:14:9-73
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:12:19-61
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:14:19-61
 activity#com.fyp.appmaker.Functionality.Template2
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:13:9-61
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:15:9-61
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:13:19-58
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:15:19-58
 activity#com.fyp.appmaker.Functionality.Template1
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:14:9-17:59
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:16:9-19:59
 	android:label
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:16:13-61
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:18:13-61
 	android:theme
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:17:13-56
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:15:13-52
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:17:13-52
 activity#com.fyp.appmaker.Functionality.ChooseTemplate
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:18:9-66
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:20:9-66
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:18:19-63
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:20:19-63
 activity#com.fyp.appmaker.Functionality.UserMainScreen
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:19:9-22:59
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:21:9-24:59
 	android:label
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:21:13-68
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:23:13-68
 	android:theme
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:22:13-56
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:24:13-56
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:20:13-57
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:22:13-57
 activity#com.fyp.appmaker.Authenticaiton.SignUpActivity
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:23:9-67
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:25:9-67
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:23:19-64
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:25:19-64
 activity#com.fyp.appmaker.Authenticaiton.LoginActivity
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:24:9-66
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:26:9-66
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:24:19-63
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:26:19-63
 activity#com.fyp.appmaker.Splash.SplashActivity
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:25:9-31:20
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:27:9-33:20
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:25:19-56
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:27:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:26:13-30:29
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:28:13-32:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:27:17-69
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:29:17-69
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:27:25-66
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:29:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:29:17-77
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:31:17-77
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:29:27-74
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:31:27-74
 activity#com.fyp.appmaker.MainActivity
-ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:32:9-50
+ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:34:9-50
 	android:name
-		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:32:19-47
+		ADDED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml:34:19-47
 uses-sdk
 INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\hibap\AndroidStudioProjects\App Maker 4\AppMaker\app\src\main\AndroidManifest.xml
