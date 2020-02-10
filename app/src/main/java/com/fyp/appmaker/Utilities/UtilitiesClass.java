@@ -9,7 +9,15 @@ public class UtilitiesClass extends AppCompatActivity {
 
     String myPrefs = "MyPrefs";
     SharedPreferences sharedPreferences;
+    private Context context;
 
+    public UtilitiesClass(Context context)
+    {
+        this.context=context;
+    }
+
+    public UtilitiesClass() {
+    }
 
     public void saveToPrefs(String userId,String email,String password) {
         sharedPreferences = getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
@@ -26,7 +34,7 @@ public class UtilitiesClass extends AppCompatActivity {
         return email;
     }
 
-    public String loadIDFromPrefs(Context context) {
+    public String loadIDFromPrefs() {
         sharedPreferences= context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("userId", "");
         return userId;

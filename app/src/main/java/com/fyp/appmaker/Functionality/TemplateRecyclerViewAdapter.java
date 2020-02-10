@@ -67,7 +67,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
     {
         this.context=context;
         this.list=list;
-        utilities=new UtilitiesClass();
+        utilities=new UtilitiesClass(context);
         mCallback = (CallbackInterface) context;
 
 
@@ -100,7 +100,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                 builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDb firebaseDb=new FirebaseDb();
+                        FirebaseDb firebaseDb=new FirebaseDb(context);
                         firebaseDb.addAppDetails(new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
                                 dialogBinding.creatorsNameEditText.getText().toString(),imagefile,dialogBinding.appDescEditText.getText().toString()));
 

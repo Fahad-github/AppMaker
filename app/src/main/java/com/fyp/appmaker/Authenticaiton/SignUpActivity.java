@@ -5,6 +5,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
@@ -38,7 +39,7 @@ public class SignUpActivity extends UtilitiesClass implements View.OnClickListen
     String userId;
     String name, email, pass, confirmPass;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
-    FirebaseDb db = new FirebaseDb();
+    FirebaseDb db = new FirebaseDb(this);
 
 
     String termsAndCconditions = "Introduction\n" +
@@ -84,6 +85,15 @@ public class SignUpActivity extends UtilitiesClass implements View.OnClickListen
             "\n" +
             "Governing Law & Jurisdiction\n" +
             "These Terms will be governed by and interpreted in accordance with the laws of the State of Country, and you submit to the non-exclusive jurisdiction of the state and federal courts located in Country for the resolution of any disputes.";
+
+    public SignUpActivity()
+    {
+
+    }
+
+    public SignUpActivity(Context context) {
+        super(context);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

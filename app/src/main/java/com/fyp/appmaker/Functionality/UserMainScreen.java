@@ -1,5 +1,6 @@
 package com.fyp.appmaker.Functionality;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -33,6 +34,14 @@ public class UserMainScreen extends UtilitiesClass
 
     private ListView domainsListView;
     private ArrayList<String> domains;
+
+    public UserMainScreen() {
+    }
+
+    public UserMainScreen(Context context) {
+        super(context);
+    }
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

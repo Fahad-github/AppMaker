@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +30,15 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
 
     private FirebaseDb db;
 
+    public LoginActivity()
+    {
+
+    }
+
+    public LoginActivity(Context context) {
+        super(context);
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,7 +46,7 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
         loginBinding = DataBindingUtil.setContentView(this, R.layout.activity_login_activitiy);
         initListeners();
 
-        db = new FirebaseDb();
+        db = new FirebaseDb(this);
     }
 
     private void initListeners() {
