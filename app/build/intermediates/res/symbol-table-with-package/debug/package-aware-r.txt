@@ -658,6 +658,7 @@ attr suffixText
 attr suffixTextAppearance
 attr suffixTextColor
 attr suggestionRowLayout
+attr supportsAlpha
 attr switchMinWidth
 attr switchPadding
 attr switchStyle
@@ -1080,6 +1081,10 @@ dimen abc_text_size_title_material_toolbar
 dimen action_bar_size
 dimen activity_horizontal_margin
 dimen activity_vertical_margin
+dimen ambilwarna_hsvHeight
+dimen ambilwarna_hsvWidth
+dimen ambilwarna_hueWidth
+dimen ambilwarna_spacer
 dimen appcompat_dialog_background_inset
 dimen cardview_compat_inset_shadow
 dimen cardview_default_elevation
@@ -1437,6 +1442,13 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ambilwarna_alphacheckered
+drawable ambilwarna_alphacheckered_tiled
+drawable ambilwarna_arrow_down
+drawable ambilwarna_arrow_right
+drawable ambilwarna_cursor
+drawable ambilwarna_hue
+drawable ambilwarna_target
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -1476,16 +1488,20 @@ drawable design_snackbar_background
 drawable envelope
 drawable googleg_disabled_color_18
 drawable googleg_standard_color_18
+drawable gradient
 drawable ic_account_circle_black_24dp
+drawable ic_add_black_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
+drawable ic_color_lens_pink_24dp
 drawable ic_edit_black_24dp
 drawable ic_image_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_list_black_24dp
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
 drawable ic_menu_camera
@@ -1494,6 +1510,7 @@ drawable ic_menu_manage
 drawable ic_menu_send
 drawable ic_menu_share
 drawable ic_menu_slideshow
+drawable ic_mode_edit_black_24dp
 drawable ic_mtrl_checked_circle
 drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
@@ -1522,6 +1539,7 @@ drawable notification_template_icon_bg
 drawable notification_template_icon_low_bg
 drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
+drawable rounded_button
 drawable side_nav_bar
 drawable test_custom_background
 drawable tooltip_frame_dark
@@ -1594,12 +1612,26 @@ id add
 id addIconRelativeLayout
 id addIconTextView
 id addIconTextViewLayout
+id addMenu
 id adjust_height
 id adjust_width
 id agreeTV
 id alertTitle
 id all
 id always
+id ambilwarna_alphaCheckered
+id ambilwarna_alphaCursor
+id ambilwarna_cursor
+id ambilwarna_dialogView
+id ambilwarna_newColor
+id ambilwarna_oldColor
+id ambilwarna_overlay
+id ambilwarna_pref_widget_box
+id ambilwarna_state
+id ambilwarna_target
+id ambilwarna_viewContainer
+id ambilwarna_viewHue
+id ambilwarna_viewSatBri
 id appDesc
 id appDescEditText
 id appLogo
@@ -1614,6 +1646,7 @@ id bottom
 id buttonPanel
 id cancel_action
 id cancel_button
+id categories
 id center
 id center_horizontal
 id center_vertical
@@ -1660,6 +1693,8 @@ id disableHome
 id domainsListView
 id drawer_layout
 id dropdown_menu
+id editGradient
+id editGradientDialogLayout
 id edit_query
 id emailET
 id emailEditText
@@ -1680,11 +1715,13 @@ id filled
 id fitToContents
 id fixed
 id forever
+id frgamentContainer
 id ghost_view
 id ghost_view_holder
 id gone
 id group_divider
 id groups
+id headerTitle
 id hideable
 id home
 id homeAsUp
@@ -1701,6 +1738,7 @@ id italic
 id item_touch_helper_previous_elevation
 id labeled
 id largeLabel
+id layoutList
 id left
 id light
 id line1
@@ -1745,6 +1783,7 @@ id mtrl_picker_text_input_range_end
 id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id multiply
+id myAppIcon
 id nameET
 id nameLayout
 id nav_controller_view_tag
@@ -1758,6 +1797,7 @@ id nav_tools
 id nav_view
 id navigation_header_container
 id never
+id noOfColorsEditText
 id noScroll
 id none
 id normal
@@ -1765,6 +1805,7 @@ id notification_background
 id notification_main_column
 id notification_main_column_container
 id off
+id okayButton
 id on
 id onAttachStateChangeListener
 id onDateChanged
@@ -1783,6 +1824,7 @@ id password_toggle
 id peekHeight
 id percent
 id pin
+id profile
 id progress_circular
 id progress_horizontal
 id radio
@@ -1798,6 +1840,7 @@ id scroll
 id scrollIndicatorDown
 id scrollIndicatorUp
 id scrollView
+id scrollView2
 id scrollable
 id search_badge
 id search_bar
@@ -1845,6 +1888,9 @@ id tag_screen_reader_focusable
 id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
+id template1DrawerLayout
+id template1ToolBar
+id template1_new_nav_view
 id templateImage
 id templateListLinearLayout
 id templateName
@@ -1968,9 +2014,12 @@ layout activity_template1new
 layout activity_template2
 layout activity_user_main_screen
 layout add_app_details_dialog
+layout ambilwarna_dialog
+layout ambilwarna_pref_widget
 layout app_bar_template1
 layout app_bar_user_main_screen
 layout content_template1
+layout content_template1new_main
 layout content_user_main_screen
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -1988,6 +2037,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout edit_gradient_dialog
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title
@@ -2037,6 +2087,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout template1new_navheader
 layout template_list_row
 layout test_action_chip
 layout test_design_checkbox
@@ -2053,6 +2104,7 @@ layout text_view_without_line_height
 menu activity_template1_drawer
 menu activity_user_main_screen_drawer
 menu template1
+menu template1new_menu
 menu user_main_screen
 mipmap ic_launcher
 mipmap ic_launcher_round
@@ -2086,12 +2138,14 @@ string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
 string action_settings
+string add_menu
 string app_description
 string app_icon
 string app_name
 string app_name_text
 string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
+string categories
 string character_counter_content_description
 string character_counter_overflowed_content_description
 string character_counter_pattern
@@ -2181,9 +2235,12 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string profile
 string project_id
 string search_menu_title
 string status_bar_notification_info_overflow
+string temp1_nav_drawer_close
+string temp1_nav_drawer_open
 string title_activity_template1
 string title_activity_user_main_screen
 style AlertDialog_AppCompat
@@ -2885,6 +2942,7 @@ styleable ActionMode background backgroundSplit closeItemLayout height subtitleT
 styleable ActivityChooserView expandActivityOverflowButtonDrawable initialActivityCount
 styleable ActivityNavigator android_name action data dataPattern
 styleable AlertDialog android_layout buttonIconDimen buttonPanelSideLayout listItemLayout listLayout multiChoiceItemLayout showTitle singleChoiceItemLayout
+styleable AmbilWarnaPreference supportsAlpha
 styleable AnimatedStateListDrawableCompat android_dither android_visible android_variablePadding android_constantSize android_enterFadeDuration android_exitFadeDuration
 styleable AnimatedStateListDrawableItem android_id android_drawable
 styleable AnimatedStateListDrawableTransition android_drawable android_toId android_fromId android_reversible

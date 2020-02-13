@@ -19,6 +19,7 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -83,7 +84,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
     }
 
     @Override
-    public void onBindViewHolder(@NonNull TemplateRVViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final TemplateRVViewHolder holder, int position) {
         holder.imageView.setImageResource(list.get(position).getImage().intValue());
         holder.textView.setText(list.get(position).getName());
         holder.templateListLinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -92,7 +93,6 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                 LayoutInflater inflater=LayoutInflater.from(context);
 //                View view1=inflater.inflate(R.layout.add_app_details_dialog,null);
 //                dialogBinding= DataBindingUtil.setContentView((Activity) context,R.layout.add_app_details_dialog);
-
                 dialogBinding.insertIconButton.setOnClickListener(this);
                 AlertDialog.Builder builder=new AlertDialog.Builder(context);
                 builder.setView(dialogBinding.getRoot());
@@ -103,6 +103,9 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                         FirebaseDb firebaseDb=new FirebaseDb(context);
                         firebaseDb.addAppDetails(new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
                                 dialogBinding.creatorsNameEditText.getText().toString(),imagefile,dialogBinding.appDescEditText.getText().toString()));
+                        Toast.makeText(context, "New app details saved", Toast.LENGTH_SHORT).show();
+                        Intent intent=new Intent(context,Template1new.class);
+                        context.startActivity(intent);
 
                     }
                 });

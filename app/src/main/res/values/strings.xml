@@ -7,7 +7,6 @@
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="action_settings">Settings</string>
-
     <string name="menu_home">Home</string>
     <string name="menu_gallery">Gallery</string>
     <string name="menu_slideshow">Slideshow</string>
@@ -19,4 +18,9 @@
     <string name="app_description">App Description</string>
     <string name="creator_s_name">Creator\'s Name</string>
     <string name="app_icon">App Icon</string>
+    <string name="add_menu">Add menu</string>
+    <string name="categories">Categories</string>
+    <string name="profile">Profile</string>
+    <string name="temp1_nav_drawer_open">Open Navigation Drawer</string>
+    <string name="temp1_nav_drawer_close">Close Navigation Drawer</string>
 </resources>
