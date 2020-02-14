@@ -152,6 +152,8 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                             if (colorsList.size()==1)
                             {
                                 header.setBackgroundColor(colorsList.get(0).intValue());
+                                colorsList=new ArrayList<>();
+                                defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
                             }else
                             {
                                 View view2=LayoutInflater.from(Template1new.this).inflate(R.layout.gradient_details_dialog,null);
@@ -178,6 +180,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 //                                            gd.setGradientCenter(0.5f,.5f);
                                             EditText centerX,centerY;
                                             parent.removeAllViews();
+                                            parent.clearFocus();
                                             switch (position)
                                             {
                                                 case 0:
@@ -208,20 +211,28 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                                         break;
                                                                     case 1:
                                                                         gd.setOrientation(GradientDrawable.Orientation.LEFT_RIGHT);
+                                                                        break;
                                                                     case 2:
                                                                         gd.setOrientation(GradientDrawable.Orientation.BL_TR);
+                                                                        break;
                                                                     case 3:
                                                                         gd.setOrientation(GradientDrawable.Orientation.BOTTOM_TOP);
+                                                                        break;
                                                                     case 4:
                                                                         gd.setOrientation(GradientDrawable.Orientation.BR_TL);
+                                                                        break;
                                                                     case 5:
                                                                         gd.setOrientation(GradientDrawable.Orientation.RIGHT_LEFT);
+                                                                        break;
                                                                     case 6:
                                                                         gd.setOrientation(GradientDrawable.Orientation.TL_BR);
+                                                                        break;
                                                                     case 7:
                                                                         gd.setOrientation(GradientDrawable.Orientation.TOP_BOTTOM);
+                                                                        break;
                                                                     case 8:
                                                                         gd.setOrientation(GradientDrawable.Orientation.TR_BL);
+                                                                        break;
                                                                 }
 //                                                        gd.setGradientRadius(Float.valueOf(getResources().getStringArray(R.array.gradient_angles)[position].replace("°","")));
                                                             }
@@ -238,7 +249,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerX.setTag("linearCenterX");
                                                     centerX.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerX.setHint("Center X (Between 0-1)");
-                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER);
                                                     centerX.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(centerX);
                                                     centerY=new EditText(Template1new.this);
@@ -246,7 +257,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerY.setTag("linearCenterY");
                                                     centerY.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerY.setHint("Center Y (Between 0-1)");
-                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER);
+                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER );
                                                     centerY.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(centerY);
                                                     break;
@@ -257,7 +268,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     radius.setId(View.generateViewId());
                                                     radius.setTag("radialRadius");
                                                     radius.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-                                                    radius.setHint("Center X (Between 0-1)");
+                                                    radius.setHint("Center Radius");
                                                     radius.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                                                     radius.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(radius);
@@ -275,7 +286,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     parent.addView(centerX);
                                                     centerY=new EditText(Template1new.this);
                                                     centerY.setId(View.generateViewId());
-                                                    centerX.setTag("sweepCenterY");
+                                                    centerY.setTag("sweepCenterY");
                                                     centerY.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerY.setHint("Center Y (Between 0-1)");
                                                     centerY.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
@@ -341,14 +352,14 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                 break;
                                         }
                                         header.setBackground(gd);
+                                        colorsList=new ArrayList<>();
+                                        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
                                     }
                                 });
                                 builder.setView(view2);
                                 builder.create();
                                 builder.show();
                             }
-                            colorsList=new ArrayList<>();
-                            defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
 //                            dialog.dismiss();
                         }
 
@@ -412,7 +423,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 
                     @Override
                     public void onOk(AmbilWarnaDialog dialog, int color) {
-                        colorsList.add(Integer.valueOf(color));
+                        colorsList.add(color);
                         defaultColor=color;
                         ViewGroup row= (ViewGroup) v.getParent();
                         row.getChildAt(0).setBackgroundColor(color);
