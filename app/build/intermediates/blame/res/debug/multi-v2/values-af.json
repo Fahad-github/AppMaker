@@ -1,27 +1,27 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-af\\values-af.xml",
+            "outputFile": "C:\\Users\\hiba.pervez\\Desktop\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-af\\values-af.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\ca1ac03ce6a8b460bf7787664b7d2216\\res\\values-af\\values.xml",
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\63a238dec6ca827efffd91476fb02f3c\\res\\values-af\\values-af.xml",
                     "from": {
-                        "startLines": "4",
-                        "startColumns": "0",
-                        "startOffsets": "247",
-                        "endColumns": "201",
-                        "endOffsets": "448"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,157",
+                        "endColumns": "101,116",
+                        "endOffsets": "152,269"
                     },
                     "to": {
-                        "startLines": "37",
-                        "startColumns": "4",
-                        "startOffsets": "3929",
-                        "endColumns": "201",
-                        "endOffsets": "4126"
+                        "startLines": "47,48",
+                        "startColumns": "4,4",
+                        "startOffsets": "5462,5564",
+                        "endColumns": "101,116",
+                        "endOffsets": "5559,5676"
                     }
                 },
                 {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\values-af\\values-af.xml",
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\40a69e1f993531e9141869ccd8e60049\\res\\values-af\\values-af.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -38,24 +38,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\dfe1fd3f19c7809793d5ad1581ed4286\\res\\values-af\\values-af.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "100",
-                        "endOffsets": "151"
-                    },
-                    "to": {
-                        "startLines": "50",
-                        "startColumns": "4",
-                        "startOffsets": "5761",
-                        "endColumns": "100",
-                        "endOffsets": "5857"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\f66d8fe6b23a89e5b6d51cf278192c22\\res\\values-af\\values.xml",
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\bc75506e91de46b29fd480780cbdaa1a\\res\\values-af\\values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",
@@ -72,20 +55,37 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\e7db88e196512bbee43da989bee5d514\\res\\values-af\\values-af.xml",
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\ebb6d9efb7c4e960c8a31ba803df5781\\res\\values-af\\values.xml",
                     "from": {
-                        "startLines": "2,3",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,157",
-                        "endColumns": "101,116",
-                        "endOffsets": "152,269"
+                        "startLines": "4",
+                        "startColumns": "0",
+                        "startOffsets": "247",
+                        "endColumns": "201",
+                        "endOffsets": "448"
                     },
                     "to": {
-                        "startLines": "47,48",
-                        "startColumns": "4,4",
-                        "startOffsets": "5462,5564",
-                        "endColumns": "101,116",
-                        "endOffsets": "5559,5676"
+                        "startLines": "37",
+                        "startColumns": "4",
+                        "startOffsets": "3929",
+                        "endColumns": "201",
+                        "endOffsets": "4126"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\e504d9cd863859a8fd443daf87c4763b\\res\\values-af\\values-af.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "100",
+                        "endOffsets": "151"
+                    },
+                    "to": {
+                        "startLines": "50",
+                        "startColumns": "4",
+                        "startOffsets": "5761",
+                        "endColumns": "100",
+                        "endOffsets": "5857"
                     }
                 }
             ]

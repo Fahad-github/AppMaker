@@ -50,6 +50,8 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array gradient_angles
+array gradient_types
 attr action
 attr actionBarDivider
 attr actionBarItemBackground
@@ -1719,6 +1721,9 @@ id frgamentContainer
 id ghost_view
 id ghost_view_holder
 id gone
+id gradientDetailsLayout
+id gradientDetailsList
+id gradientTypesSpinner
 id group_divider
 id groups
 id headerTitle
@@ -2038,6 +2043,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout edit_gradient_dialog
+layout gradient_details_dialog
 layout mtrl_alert_dialog
 layout mtrl_alert_dialog_actions
 layout mtrl_alert_dialog_title

@@ -23,4 +23,21 @@
     <string name="profile">Profile</string>
     <string name="temp1_nav_drawer_open">Open Navigation Drawer</string>
     <string name="temp1_nav_drawer_close">Close Navigation Drawer</string>
+    <string-array name="gradient_types">
+        <item>Gradient Types</item>
+        <item>Linear</item>
+        <item>Radial</item>
+        <item>Sweep</item>
+    </string-array>
+    <string-array name="gradient_angles">
+        <item>Gradient Angle</item>
+        <item>0°</item>
+        <item>45°</item>
+        <item>90°</item>
+        <item>135°</item>
+        <item>180°</item>
+        <item>225°</item>
+        <item>270°</item>
+        <item>315°</item>
+    </string-array>
 </resources>

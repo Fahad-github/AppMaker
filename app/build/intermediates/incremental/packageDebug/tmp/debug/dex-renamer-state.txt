@@ -1,4 +1,4 @@
-#Fri Feb 14 01:19:26 PKT 2020
-base.0=C\:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+#Fri Feb 14 17:44:56 PKT 2020
+base.0=C\:\\Users\\hiba.pervez\\Desktop\\AppMaker\\AppMaker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
 path.0=classes.dex
 renamed.0=classes.dex

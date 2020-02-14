@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\hibap\\AndroidStudioProjects\\App Maker 4\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
+            "outputFile": "C:\\Users\\hiba.pervez\\Desktop\\AppMaker\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-xlarge-land-v4\\values-xlarge-land-v4.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\09dc41abd4322ee252a0782ea0df4243\\res\\values-xlarge-land\\values-xlarge-land.xml",
+                    "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\add2bca93050b223084b43887056b29f\\res\\values-xlarge-land\\values-xlarge-land.xml",
                     "from": {
                         "startLines": "4,5",
                         "startColumns": "4,4",

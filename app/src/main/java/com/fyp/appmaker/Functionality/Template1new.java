@@ -1,5 +1,6 @@
 package com.fyp.appmaker.Functionality;
 
+import androidx.annotation.ArrayRes;
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.ActionBarDrawerToggle;
@@ -11,20 +12,26 @@ import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
+import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.text.InputType;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -43,8 +50,14 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     private  ActionBarDrawerToggle toggle;
     private int defaultColor;
     private List<Integer> colorsList;
+    private List<Integer> idList;
     private EditText chooseColorText;
     private LinearLayout parent;
+    private View header;
+    private boolean spinnerInitialized;
+    private boolean initialize=false;
+    private int gradientType=0;
+    private GradientDrawable gd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -64,7 +77,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 
          navigationView=findViewById(R.id.template1_new_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-        View header=navigationView.getHeaderView(0);
+        header=navigationView.getHeaderView(0);
         TextView textView=header.findViewById(R.id.headerTitle);
         textView.setText("My App");
         ImageView button=header.findViewById(R.id.addMenu);
@@ -102,7 +115,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    public void editGradient(View view)
+    public void editGradient(final View view)
     {
         final View view1= LayoutInflater.from(this).inflate(R.layout.edit_gradient_dialog,null);
         final EditText noOfcolorsEditText=view1.findViewById(R.id.noOfColorsEditText);
@@ -119,44 +132,249 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                 {
                     parent.removeAllViews();
                     int number=Integer.valueOf(noOfcolorsEditText.getText().toString());
-//                    parent.removeViews(1,parent.getChildCount()-1);
-//                    parent.removeAllViews();
                     for (int i=0;i<number;i++)
                     {
                         addLayouts();
                     }
-//                    openColorPicker();
-//                    ViewGroup viewGroup= (ViewGroup) v.getParent();
-//                    if (colorsList!=null && colorsList.size()>0)
-//                    {
-//                        viewGroup.getChildAt(0).setBackgroundColor(colorsList.get(colorsList.size()-1));
-//                    }
                 }
             }
         });
 
-
-//        noOfcolorsEditText.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-//            @Override
-//            public void onFocusChange(View v, boolean hasFocus) {
-//                if (!hasFocus)
-//                {
-//                    int number=Integer.valueOf(noOfcolorsEditText.getText().toString());
-//                    LinearLayout linearLayout=new LinearLayout(MainActivity.this);
-//                    linearLayout.setId(0);
-//                    linearLayout.setOrientation(LinearLayout.HORIZONTAL);
-//                    linearLayout.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
-//                    linearLayout.setBackgroundColor(getResources().getColor(R.color.black));
-//                    parent.addView(linearLayout);
-//                }
-//            }
-//        });
-
-        AlertDialog builder=new AlertDialog.Builder(this)
-                .setView(view1)
+        final AlertDialog.Builder builder=new AlertDialog.Builder(this);
+                builder.setView(view1)
                 .setTitle("Edit Header Background")
+                .setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        if (colorsList!=null && colorsList.size()>0)
+                        {
+                            if (colorsList.size()==1)
+                            {
+                                header.setBackgroundColor(colorsList.get(0).intValue());
+                            }else
+                            {
+                                View view2=LayoutInflater.from(Template1new.this).inflate(R.layout.gradient_details_dialog,null);
+                                Spinner spinner=view2.findViewById(R.id.gradientTypesSpinner);
+                                parent=view2.findViewById(R.id.gradientDetailsList);
+                                spinnerInitialized=false;
+                                spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                    @RequiresApi(api = Build.VERSION_CODES.JELLY_BEAN_MR1)
+                                    @Override
+                                    public void onItemSelected(AdapterView<?> parentView, View view, int position, long id) {
+                                        if (!spinnerInitialized)
+                                        {
+                                            spinnerInitialized=true;
+                                        }else
+                                        {
+                                            idList=new ArrayList<>();
+                                            int[] colors = convertToIntArray();
+                                            gd = new GradientDrawable(
+                                                    GradientDrawable.Orientation.TOP_BOTTOM, colors);
+
+//                                            gd.setGradientType(GradientDrawable.LINEAR_GRADIENT);
+//                                            gd.setGradientRadius(0);
+//                                            gd.setCornerRadius(0);
+//                                            gd.setGradientCenter(0.5f,.5f);
+                                            EditText centerX,centerY;
+                                            parent.removeAllViews();
+                                            switch (position)
+                                            {
+                                                case 0:
+                                                    break;
+                                                case 1:
+                                                    gradientType=1;
+                                                    gd.setGradientType(GradientDrawable.LINEAR_GRADIENT);
+                                                    Spinner angleSpinner=new Spinner(Template1new.this);
+                                                    angleSpinner.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    angleSpinner.setId(View.generateViewId());
+                                                    angleSpinner.setPadding(5,5,5,5);
+                                                    ArrayAdapter<String> spinnerArrayAdapter =
+                                                            new ArrayAdapter<String>(Template1new.this, android.R.layout.simple_spinner_dropdown_item,
+                                                                    getResources().getStringArray(R.array.gradient_angles));
+                                                    angleSpinner.setAdapter(spinnerArrayAdapter);
+
+                                                    angleSpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+                                                        @Override
+                                                        public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
+                                                            if (!initialize)
+                                                            {
+                                                                initialize=true;
+                                                            }else
+                                                            {
+                                                                switch (position)
+                                                                {
+                                                                    case 0:
+                                                                        break;
+                                                                    case 1:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.LEFT_RIGHT);
+                                                                    case 2:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.BL_TR);
+                                                                    case 3:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.BOTTOM_TOP);
+                                                                    case 4:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.BR_TL);
+                                                                    case 5:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.RIGHT_LEFT);
+                                                                    case 6:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.TL_BR);
+                                                                    case 7:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.TOP_BOTTOM);
+                                                                    case 8:
+                                                                        gd.setOrientation(GradientDrawable.Orientation.TR_BL);
+                                                                }
+//                                                        gd.setGradientRadius(Float.valueOf(getResources().getStringArray(R.array.gradient_angles)[position].replace("°","")));
+                                                            }
+                                                        }
+
+                                                        @Override
+                                                        public void onNothingSelected(AdapterView<?> parent) {
+
+                                                        }
+                                                    });
+                                                    parent.addView(angleSpinner);
+                                                    centerX=new EditText(Template1new.this);
+                                                    centerX.setId(View.generateViewId());
+                                                    centerX.setTag("linearCenterX");
+                                                    centerX.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    centerX.setHint("Center X (Between 0-1)");
+                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                                    centerX.setHintTextColor(getResources().getColor(R.color.black));
+                                                    parent.addView(centerX);
+                                                    centerY=new EditText(Template1new.this);
+                                                    centerY.setId(View.generateViewId());
+                                                    centerY.setTag("linearCenterY");
+                                                    centerY.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    centerY.setHint("Center Y (Between 0-1)");
+                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER);
+                                                    centerY.setHintTextColor(getResources().getColor(R.color.black));
+                                                    parent.addView(centerY);
+                                                    break;
+                                                case 2:
+                                                    gd.setGradientType(GradientDrawable.RADIAL_GRADIENT);
+                                                    gradientType=2;
+                                                    EditText radius=new EditText(Template1new.this);
+                                                    radius.setId(View.generateViewId());
+                                                    radius.setTag("radialRadius");
+                                                    radius.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    radius.setHint("Center X (Between 0-1)");
+                                                    radius.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                                    radius.setHintTextColor(getResources().getColor(R.color.black));
+                                                    parent.addView(radius);
+                                                    break;
+                                                case 3:
+                                                    gd.setGradientType(GradientDrawable.SWEEP_GRADIENT);
+                                                    gradientType=3;
+                                                    centerX=new EditText(Template1new.this);
+                                                    centerX.setId(View.generateViewId());
+                                                    centerX.setTag("sweepCenterX");
+                                                    centerX.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    centerX.setHint("Center X (Between 0-1)");
+                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                                    centerX.setHintTextColor(getResources().getColor(R.color.black));
+                                                    parent.addView(centerX);
+                                                    centerY=new EditText(Template1new.this);
+                                                    centerY.setId(View.generateViewId());
+                                                    centerX.setTag("sweepCenterY");
+                                                    centerY.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
+                                                    centerY.setHint("Center Y (Between 0-1)");
+                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
+                                                    centerY.setHintTextColor(getResources().getColor(R.color.black));
+                                                    parent.addView(centerY);
+                                                    break;
+                                            }
+
+                                        }
+                                    }
+
+                                    @Override
+                                    public void onNothingSelected(AdapterView<?> parent) {
+
+                                    }
+                                });
+//                                header.setBackground(gd);
+                                builder.setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        AlertDialog dialog1=AlertDialog.class.cast(dialog);
+                                        LinearLayout parentLayout=dialog1.findViewById(R.id.gradientDetailsList);
+                                        switch (gradientType)
+                                        {
+                                            case 1:
+                                                EditText centerX= null;
+                                                EditText centerY= null;
+                                                if (parentLayout != null) {
+                                                    centerX = parentLayout.findViewWithTag("linearCenterX");
+                                                    centerY = parentLayout.findViewWithTag("linearCenterY");
+                                                }
+                                                
+                                                Float x=Float.valueOf(centerX.getText().toString());
+                                                Float y=Float.valueOf(centerY.getText().toString());
+                                                try{
+                                                    gd.setGradientCenter(x,y);
+                                                }catch (NumberFormatException e)
+                                                {
+                                                    Toast.makeText(Template1new.this, "Invalid values", Toast.LENGTH_SHORT).show();
+                                                }
+                                                break;
+                                            case 2:
+                                                EditText radius=parentLayout.findViewWithTag("radialRadius");
+                                                try{
+                                                    Float r=Float.valueOf(radius.getText().toString());
+                                                    gd.setGradientRadius(r);
+                                                }catch (NumberFormatException e)
+                                                {
+                                                    Toast.makeText(Template1new.this, "Invalid Values", Toast.LENGTH_SHORT).show();
+                                                }
+                                                break;
+                                            case 3:
+                                                EditText sweepcenterX=parentLayout.findViewWithTag("sweepCenterX");
+                                                EditText sweepcenterY=parentLayout.findViewWithTag("sweepCenterY");
+                                                try{
+                                                    Float xSweep=Float.valueOf(sweepcenterX.getText().toString());
+                                                    Float ySweep=Float.valueOf(sweepcenterY.getText().toString());
+                                                    gd.setGradientCenter(xSweep,ySweep);
+                                                }catch (NumberFormatException e)
+                                                {
+                                                    Toast.makeText(Template1new.this, "Invalid Values", Toast.LENGTH_SHORT).show();
+                                                }
+                                                break;
+                                        }
+                                        header.setBackground(gd);
+                                    }
+                                });
+                                builder.setView(view2);
+                                builder.create();
+                                builder.show();
+                            }
+                            colorsList=new ArrayList<>();
+                            defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+//                            dialog.dismiss();
+                        }
+
+
+
+                    }
+                })
+                .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        colorsList=new ArrayList<>();
+                        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+                        dialog.dismiss();
+                    }
+                })
                 .create();
         builder.show();
+    }
+
+    private int[] convertToIntArray() {
+        int[] colors=new int[colorsList.size()];
+        for (int i=0;i<colorsList.size();i++)
+        {
+            colors[i]=colorsList.get(i).intValue();
+        }
+        return colors;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
