@@ -11,6 +11,9 @@ import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.GridLayoutManager;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
@@ -37,10 +40,12 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fyp.appmaker.Models.ItemsModel;
 import com.fyp.appmaker.R;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 import yuku.ambilwarna.AmbilWarnaDialog;
@@ -90,6 +95,17 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                 addMenu();
             }
         });
+
+        ArrayList<ItemsModel> list=new ArrayList<>();
+        for (int i=1; i<=20; i++)
+        {
+            list.add(new ItemsModel("","Sample Item "+i));
+        }
+        RecyclerView recyclerView=findViewById(R.id.template1_itemsRecyclerView);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        recyclerView.setAdapter(new Template1ItemListAdapter(this,list));
+
+
 
     }
 

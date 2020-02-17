@@ -272,6 +272,10 @@
         "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\40a69e1f993531e9141869ccd8e60049\\res\\drawable-hdpi-v4\\abc_spinner_mtrl_am_alpha.9.png"
     },
     {
+        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_app_item_sample.jpg.flat",
+        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\drawable\\app_item_sample.jpg"
+    },
+    {
         "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\anim_mtrl_bottom_sheet_slide_out.xml.flat",
         "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\0301e2243ce21e65e572d96cce8b8b87\\res\\anim\\mtrl_bottom_sheet_slide_out.xml"
     },
@@ -1538,6 +1542,10 @@
     {
         "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable_abc_ic_clear_material.xml.flat",
         "source": "C:\\Users\\hiba.pervez\\.gradle\\caches\\transforms-2\\files-2.1\\40a69e1f993531e9141869ccd8e60049\\res\\drawable\\abc_ic_clear_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\layout_template1_grid_cell.xml.flat",
+        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\template1_grid_cell.xml"
     },
     {
         "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v23_abc_control_background_material.xml.flat",
