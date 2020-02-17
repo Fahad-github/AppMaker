@@ -24,6 +24,8 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -58,6 +60,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     private boolean initialize=false;
     private int gradientType=0;
     private GradientDrawable gd;
+    private int focus=-1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -156,7 +159,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                 defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
                             }else
                             {
-                                View view2=LayoutInflater.from(Template1new.this).inflate(R.layout.gradient_details_dialog,null);
+                                final View view2=LayoutInflater.from(Template1new.this).inflate(R.layout.gradient_details_dialog,null);
                                 Spinner spinner=view2.findViewById(R.id.gradientTypesSpinner);
                                 parent=view2.findViewById(R.id.gradientDetailsList);
                                 spinnerInitialized=false;
@@ -178,7 +181,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 //                                            gd.setGradientRadius(0);
 //                                            gd.setCornerRadius(0);
 //                                            gd.setGradientCenter(0.5f,.5f);
-                                            EditText centerX,centerY;
+                                            final EditText centerX,centerY;
                                             parent.removeAllViews();
                                             parent.clearFocus();
                                             switch (position)
@@ -249,7 +252,20 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerX.setTag("linearCenterX");
                                                     centerX.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerX.setHint("Center X (Between 0-1)");
-                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER);
+
+                                                    centerX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+                                                        @Override
+                                                        public void onFocusChange(View v, boolean hasFocus) {
+                                                            if ((focus==0 || focus==-1) && hasFocus) {
+                                                                focus = 1;
+                                                                centerX.requestFocus();
+                                                                InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
+                                                                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+                                                            }
+
+                                                        }
+                                                    });
+//                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER);
                                                     centerX.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(centerX);
                                                     centerY=new EditText(Template1new.this);
@@ -319,10 +335,13 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerY = parentLayout.findViewWithTag("linearCenterY");
                                                 }
                                                 
-                                                Float x=Float.valueOf(centerX.getText().toString());
-                                                Float y=Float.valueOf(centerY.getText().toString());
+
                                                 try{
+                                                    Float x=Float.valueOf(centerX.getText().toString());
+                                                    Float y=Float.valueOf(centerY.getText().toString());
                                                     gd.setGradientCenter(x,y);
+                                                    InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
+                                                    imm.hideSoftInputFromWindow(centerX.getWindowToken(), 0);
                                                 }catch (NumberFormatException e)
                                                 {
                                                     Toast.makeText(Template1new.this, "Invalid values", Toast.LENGTH_SHORT).show();
@@ -351,13 +370,17 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                 }
                                                 break;
                                         }
+                                        focus=0;
+                                        InputMethodManager imm = (InputMethodManager)getSystemService(Template1new.INPUT_METHOD_SERVICE);
+                                        imm.hideSoftInputFromWindow(view2.getWindowToken(), 0);
                                         header.setBackground(gd);
                                         colorsList=new ArrayList<>();
                                         defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
                                     }
                                 });
                                 builder.setView(view2);
-                                builder.create();
+//                                builder.create().getWindow().clearFlags( WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+//                                builder.create().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
                                 builder.show();
                             }
 //                            dialog.dismiss();
