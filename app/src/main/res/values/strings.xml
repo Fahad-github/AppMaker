@@ -23,6 +23,8 @@
     <string name="profile">Profile</string>
     <string name="temp1_nav_drawer_open">Open Navigation Drawer</string>
     <string name="temp1_nav_drawer_close">Close Navigation Drawer</string>
+    <string name="colour">Background Colour</string>
+    <string name="items_corner_radius">Items Corner Radius</string>
     <string-array name="gradient_types">
         <item>Gradient Types</item>
         <item>Linear</item>

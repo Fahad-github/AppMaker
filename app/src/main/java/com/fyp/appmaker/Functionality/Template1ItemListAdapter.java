@@ -9,6 +9,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fyp.appmaker.Models.ItemsModel;
@@ -37,6 +38,9 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
     @Override
     public void onBindViewHolder(@NonNull Template1Viewholder holder, int position) {
         holder.textView.setText(list.get(position).getItemTitle());
+        holder.cardView.setRadius(30);
+        holder.cardView.setCardElevation(10);
+        holder.cardView.setMaxCardElevation(20);
     }
 
     @Override
@@ -48,6 +52,7 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
     {
         ImageView imageView;
         TextView textView;
+        CardView cardView;
 
         public Template1Viewholder(@NonNull View itemView) {
             super(itemView);
@@ -55,6 +60,7 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
             itemView.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT,700));
             imageView.setLayoutParams(new LinearLayout.LayoutParams(500,500));
             textView=itemView.findViewById(R.id.itemTitle);
+            cardView=itemView.findViewById(R.id.template1_list_cardview);
         }
     }
 }

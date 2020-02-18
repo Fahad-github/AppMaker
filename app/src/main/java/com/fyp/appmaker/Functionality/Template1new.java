@@ -7,14 +7,17 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.ContextCompat;
 import androidx.core.view.GravityCompat;
 import androidx.core.view.ViewCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.app.Dialog;
 import android.content.DialogInterface;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.GradientDrawable;
@@ -66,6 +69,10 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     private int gradientType=0;
     private GradientDrawable gd;
     private int focus=-1;
+    private RecyclerView recyclerView;
+    private boolean gridView=false;
+    private ImageView layoutChangeButton;
+    private CardView listCardView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -76,12 +83,15 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         setSupportActionBar(toolbar);
 
         colorsList=new ArrayList<>();
-        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+        setDefaultColor();
 
         drawerLayout=findViewById(R.id.template1DrawerLayout);
         toggle=new ActionBarDrawerToggle(this,drawerLayout,toolbar,R.string.temp1_nav_drawer_open,R.string.temp1_nav_drawer_close);
         drawerLayout.addDrawerListener(toggle);
         toggle.syncState();
+
+        layoutChangeButton=findViewById(R.id.editListLayoutButton);
+
 
          navigationView=findViewById(R.id.template1_new_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
@@ -101,12 +111,19 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         {
             list.add(new ItemsModel("","Sample Item "+i));
         }
-        RecyclerView recyclerView=findViewById(R.id.template1_itemsRecyclerView);
+
+//        DividerItemDecoration decoration=new DividerItemDecoration(this,DividerItemDecoration.VERTICAL);
+//        decoration.setDrawable(ContextCompat.getDrawable(getBaseContext(),R.drawable.divider));
+
+        recyclerView=findViewById(R.id.template1_itemsRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new Template1ItemListAdapter(this,list));
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
+        recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL));
+    }
 
-
-
+    private void setDefaultColor() {
+        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
     }
 
     @Override public void onBackPressed() {
@@ -127,9 +144,6 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
             case R.id.profile:
                 Toast.makeText(this, "Profile clicked", Toast.LENGTH_SHORT).show();
                 break;
-//            case R.id.addMenu:
-//                addMenu();
-//                break;
         }
         return true;
     }
@@ -172,7 +186,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                             {
                                 header.setBackgroundColor(colorsList.get(0).intValue());
                                 colorsList=new ArrayList<>();
-                                defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+                                setDefaultColor();
                             }else
                             {
                                 final View view2=LayoutInflater.from(Template1new.this).inflate(R.layout.gradient_details_dialog,null);
@@ -266,21 +280,25 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerX=new EditText(Template1new.this);
                                                     centerX.setId(View.generateViewId());
                                                     centerX.setTag("linearCenterX");
+                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                                                     centerX.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerX.setHint("Center X (Between 0-1)");
 
-                                                    centerX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                                                        @Override
-                                                        public void onFocusChange(View v, boolean hasFocus) {
-                                                            if ((focus==0 || focus==-1) && hasFocus) {
-                                                                focus = 1;
-                                                                centerX.requestFocus();
-                                                                InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
-                                                                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
-                                                            }
-
-                                                        }
-                                                    });
+//                                                    centerX.setOnFocusChangeListener(new View.OnFocusChangeListener() {
+//                                                        @Override
+//                                                        public void onFocusChange(View v, boolean hasFocus) {
+//                                                            if ((focus==0 || focus==-1) && hasFocus) {
+//                                                                focus = 1;
+//                                                                centerX.requestFocus();
+//                                                                InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
+//                                                                imm.toggleSoftInput(InputMethodManager.SHOW_FORCED, 0);
+//                                                            }
+//
+//                                                        }
+//                                                    });
+//                                                    centerX.setClickable(true);
+//                                                    centerX.setFocusable(true);
+//                                                    centerX.setFocusableInTouchMode(true);
 //                                                    centerX.setInputType(InputType.TYPE_CLASS_NUMBER);
                                                     centerX.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(centerX);
@@ -289,7 +307,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerY.setTag("linearCenterY");
                                                     centerY.setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT));
                                                     centerY.setHint("Center Y (Between 0-1)");
-                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER );
+                                                    centerY.setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_FLAG_DECIMAL);
                                                     centerY.setHintTextColor(getResources().getColor(R.color.black));
                                                     parent.addView(centerY);
                                                     break;
@@ -350,14 +368,14 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                                     centerX = parentLayout.findViewWithTag("linearCenterX");
                                                     centerY = parentLayout.findViewWithTag("linearCenterY");
                                                 }
-                                                
 
+//                                                InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
+//                                                imm.hideSoftInputFromWindow(centerX.getWindowToken(), 0);
                                                 try{
                                                     Float x=Float.valueOf(centerX.getText().toString());
                                                     Float y=Float.valueOf(centerY.getText().toString());
                                                     gd.setGradientCenter(x,y);
-                                                    InputMethodManager imm = (InputMethodManager) getSystemService(Template1new.INPUT_METHOD_SERVICE);
-                                                    imm.hideSoftInputFromWindow(centerX.getWindowToken(), 0);
+
                                                 }catch (NumberFormatException e)
                                                 {
                                                     Toast.makeText(Template1new.this, "Invalid values", Toast.LENGTH_SHORT).show();
@@ -391,13 +409,16 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                         imm.hideSoftInputFromWindow(view2.getWindowToken(), 0);
                                         header.setBackground(gd);
                                         colorsList=new ArrayList<>();
-                                        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+                                        setDefaultColor();
                                     }
                                 });
                                 builder.setView(view2);
 //                                builder.create().getWindow().clearFlags( WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE |WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
 //                                builder.create().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
-                                builder.show();
+                                Dialog dialog1=builder.create();
+                                dialog1.show();
+                                dialog1.getWindow().clearFlags(WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE|WindowManager.LayoutParams.FLAG_ALT_FOCUSABLE_IM);
+
                             }
 //                            dialog.dismiss();
                         }
@@ -410,7 +431,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
                         colorsList=new ArrayList<>();
-                        defaultColor= ContextCompat.getColor(Template1new.this,R.color.colorPrimary);
+                        setDefaultColor();
                         dialog.dismiss();
                     }
                 })
@@ -453,28 +474,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         colorPickerButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(final View v) {
-//                openColorPicker();
-                AmbilWarnaDialog colorPicker=new AmbilWarnaDialog(Template1new.this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
-                    @Override
-                    public void onCancel(AmbilWarnaDialog dialog) {
-
-                    }
-
-                    @Override
-                    public void onOk(AmbilWarnaDialog dialog, int color) {
-                        colorsList.add(color);
-                        defaultColor=color;
-                        ViewGroup row= (ViewGroup) v.getParent();
-                        row.getChildAt(0).setBackgroundColor(color);
-                        EditText text= (EditText) row.getChildAt(0);
-                        text.setText("Color Added");
-                    }
-                });
-                colorPicker.show();
-
-//                        v..setText("Color Added");
-//                        chooseColorText.setBackgroundColor(colorsList.get(colorsList.size()-1));
-
+                openColorPicker2(v);
             }
         });
 
@@ -482,6 +482,26 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         linearLayout.getChildAt(linearLayout.getChildCount()-1).setLayoutParams(new LinearLayout.LayoutParams(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT,8));
         parent.addView(linearLayout);
         Log.e("here", "onClick: " );
+    }
+
+    private void openColorPicker2(final View v) {
+        AmbilWarnaDialog colorPicker=new AmbilWarnaDialog(Template1new.this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
+            @Override
+            public void onCancel(AmbilWarnaDialog dialog) {
+
+            }
+
+            @Override
+            public void onOk(AmbilWarnaDialog dialog, int color) {
+                colorsList.add(color);
+                defaultColor=color;
+                ViewGroup row= (ViewGroup) v.getParent();
+                row.getChildAt(0).setBackgroundColor(color);
+                EditText text= (EditText) row.getChildAt(0);
+                text.setText("Color Added");
+            }
+        });
+        colorPicker.show();
     }
 
     private void addMenu() {
@@ -496,28 +516,66 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         menu.add("New menu item");
     }
 
-    private void openColorPicker() {
-        AmbilWarnaDialog colorPicker=new AmbilWarnaDialog(Template1new.this, defaultColor, new AmbilWarnaDialog.OnAmbilWarnaListener() {
-            @Override
-            public void onCancel(AmbilWarnaDialog dialog) {
-
-            }
-
-            @Override
-            public void onOk(AmbilWarnaDialog dialog, int color) {
-                colorsList.add(Integer.valueOf(color));
-                defaultColor=color;
-            }
-        });
-        colorPicker.show();
+    public void addColor(View view)
+    {
+        openColorPicker2(view);
     }
 
-//    private void addMenu() {
-//        Menu menu=navigationView.getMenu();
-//        menu.add("Categories").setVisible(true);
-////        menu.getItem(R.id.profile).setVisible(true);
-////        menu.findItem(R.id.profile).setVisible(true);
-////        navigationView.getMenu().clear(); //clear old inflated items.
-////        navigationView.inflateMenu(R.menu.template1new_menu);
-//    }
+    public void editLayout(View view)
+    {
+        switch (view.getId())
+        {
+            case R.id.editListLayoutButton:
+                if (!gridView)
+                {
+                    gridView=true;
+                    layoutChangeButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_linear_list_black_24dp));
+                    recyclerView.setLayoutManager(new GridLayoutManager(this,2));
+                }else
+                {
+                    gridView=false;
+                    layoutChangeButton.setImageDrawable(getResources().getDrawable(R.drawable.ic_grid_black_24dp));
+                    recyclerView.setLayoutManager(new LinearLayoutManager(this));
+                }
+                break;
+            case R.id.editItemLayoutButton:
+                View view1=LayoutInflater.from(this).inflate(R.layout.edit_cardview_dialog,null);
+                final EditText radiusEditText=view1.findViewById(R.id.cornerRadiusEditText);
+                final EditText elevationEditText=view1.findViewById(R.id.elevationEditText);
+                final EditText maxElevationEditText=view1.findViewById(R.id.maxElevationEditText);
+
+
+                AlertDialog.Builder builder=new AlertDialog.Builder(this);
+                builder.setView(view1)
+                        .setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
+                            @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                try{
+                                    Float radius=Float.valueOf(radiusEditText.getText().toString());
+                                    Float elevation=Float.valueOf(elevationEditText.getText().toString());
+                                    Float maxElevation=Float.valueOf(maxElevationEditText.getText().toString());
+                                    listCardView=findViewById(R.id.template1_list_cardview);
+                                    listCardView.setRadius(radius);
+                                    listCardView.setCardElevation(elevation);
+                                    listCardView.setMaxCardElevation(maxElevation);
+                                }catch (NumberFormatException e)
+                                {
+                                    Toast.makeText(Template1new.this, "Invalid input", Toast.LENGTH_SHORT).show();
+                                }
+                            }
+                        })
+                        .setNegativeButton("CANCEL", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                dialog.dismiss();
+                            }
+                        });
+                Dialog dialog=builder.create();
+                dialog.show();
+                break;
+        }
+
+
+    }
 }

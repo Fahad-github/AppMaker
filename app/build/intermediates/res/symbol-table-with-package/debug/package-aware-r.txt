@@ -1499,11 +1499,13 @@ drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_color_lens_pink_24dp
 drawable ic_edit_black_24dp
+drawable ic_grid_black_24dp
 drawable ic_image_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
 drawable ic_keyboard_arrow_right_black_24dp
 drawable ic_launcher_background
 drawable ic_launcher_foreground
+drawable ic_linear_list_black_24dp
 drawable ic_list_black_24dp
 drawable ic_menu_arrow_down_black_24dp
 drawable ic_menu_arrow_up_black_24dp
@@ -1673,6 +1675,7 @@ id container
 id content
 id contentPanel
 id coordinator
+id cornerRadiusEditText
 id createAccountButton
 id creatorsName
 id creatorsNameEditText
@@ -1698,7 +1701,10 @@ id drawer_layout
 id dropdown_menu
 id editGradient
 id editGradientDialogLayout
+id editItemLayoutButton
+id editListLayoutButton
 id edit_query
+id elevationEditText
 id emailET
 id emailEditText
 id emailLayout
@@ -1759,6 +1765,7 @@ id logout
 id mainLogo
 id mainRelative
 id masked
+id maxElevationEditText
 id media_actions
 id message
 id middle
@@ -1898,6 +1905,7 @@ id tag_unhandled_key_listeners
 id template1DrawerLayout
 id template1ToolBar
 id template1_itemsRecyclerView
+id template1_list_cardview
 id template1_new_nav_view
 id template1_scrollview
 id templateImage
@@ -2046,6 +2054,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout edit_cardview_dialog
 layout edit_gradient_dialog
 layout gradient_details_dialog
 layout mtrl_alert_dialog
@@ -2162,6 +2171,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string chip_text
 string clear_text_end_icon_content_description
+string colour
 string common_google_play_services_enable_button
 string common_google_play_services_enable_text
 string common_google_play_services_enable_title
@@ -2194,6 +2204,7 @@ string google_crash_reporting_api_key
 string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
+string items_corner_radius
 string menu_gallery
 string menu_home
 string menu_send
