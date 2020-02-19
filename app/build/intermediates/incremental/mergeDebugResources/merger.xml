@@ -5751,7 +5751,7 @@
         <item>225°</item>
         <item>270°</item>
         <item>315°</item>
-    </string-array><string name="colour">Background Colour</string><string name="items_corner_radius">Items Corner Radius</string></file><file path="C:\Users\hiba.pervez\Desktop\New folder (2)\AppMaker\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    </string-array><string name="colour">Item Card Background Colour</string><string name="items_corner_radius">Items Corner Radius</string><string name="list_background_color">List Background Color</string></file><file path="C:\Users\hiba.pervez\Desktop\New folder (2)\AppMaker\app\src\main\res\values\styles.xml" qualifiers=""><style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
         
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>

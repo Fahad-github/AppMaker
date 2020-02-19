@@ -9,6 +9,11 @@ public class AppDetailsModel {
     String icon;
     String appDesc;
 
+    public AppDetailsModel()
+    {
+
+    }
+
     public AppDetailsModel(String id, String userId, String appName, String creatorName, String icon, String appDesc) {
         this.id = id;
         this.userId = userId;

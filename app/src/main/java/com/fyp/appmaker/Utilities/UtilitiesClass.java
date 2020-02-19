@@ -14,6 +14,7 @@ public class UtilitiesClass extends AppCompatActivity {
     public UtilitiesClass(Context context)
     {
         this.context=context;
+
     }
 
     public UtilitiesClass() {
@@ -28,20 +29,34 @@ public class UtilitiesClass extends AppCompatActivity {
         editor.commit();
     }
 
+    public void saveAppId(String appId)
+    {
+        sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+        SharedPreferences.Editor editor=sharedPreferences.edit();
+        editor.putString("appId",appId);
+        editor.commit();
+    }
+
     public String loadEmailFromPrefs() {
-        sharedPreferences= getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String email = sharedPreferences.getString("email", "");
         return email;
     }
 
     public String loadIDFromPrefs() {
-        sharedPreferences= context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("userId", "");
         return userId;
     }
 
+    public String loadappIDFromPrefs() {
+        sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
+        String userId = sharedPreferences.getString("appId", "");
+        return userId;
+    }
+
     public void deleteFromPrefs(){
-        sharedPreferences=getSharedPreferences(myPrefs,MODE_PRIVATE);
+        sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         sharedPreferences.edit().clear().commit();
     }
 

@@ -2205,6 +2205,7 @@ string google_storage_bucket
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description
 string items_corner_radius
+string list_background_color
 string menu_gallery
 string menu_home
 string menu_send

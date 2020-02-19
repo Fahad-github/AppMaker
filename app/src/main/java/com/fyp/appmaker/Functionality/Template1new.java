@@ -43,8 +43,10 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Models.ItemsModel;
 import com.fyp.appmaker.R;
+import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -53,7 +55,7 @@ import java.util.List;
 
 import yuku.ambilwarna.AmbilWarnaDialog;
 
-public class Template1new extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class Template1new extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, FirebaseDb.FirebaseCallBack {
 
     private DrawerLayout drawerLayout;
     private NavigationView navigationView;
@@ -73,6 +75,11 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     private boolean gridView=false;
     private ImageView layoutChangeButton;
     private CardView listCardView;
+    private Template1ItemListAdapter adapter;
+    private UtilitiesClass utilitiesClass;
+    private FirebaseDb firebaseDb;
+    private TextView textView;
+    private ImageView imageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -82,6 +89,8 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar=findViewById(R.id.template1ToolBar);
         setSupportActionBar(toolbar);
 
+        utilitiesClass=new UtilitiesClass(this);
+        firebaseDb=new FirebaseDb(this);
         colorsList=new ArrayList<>();
         setDefaultColor();
 
@@ -93,11 +102,14 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         layoutChangeButton=findViewById(R.id.editListLayoutButton);
 
 
-         navigationView=findViewById(R.id.template1_new_nav_view);
+        navigationView=findViewById(R.id.template1_new_nav_view);
         navigationView.setNavigationItemSelectedListener(this);
         header=navigationView.getHeaderView(0);
-        TextView textView=header.findViewById(R.id.headerTitle);
-        textView.setText("My App");
+        textView=header.findViewById(R.id.headerTitle);
+        imageView=header.findViewById(R.id.myAppIcon);
+        firebaseDb.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(),this);
+//        textView.setText(firebaseDb.getAppName(utilitiesClass.loadappIDFromPrefs()));
+
         ImageView button=header.findViewById(R.id.addMenu);
         button.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -117,9 +129,12 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 
         recyclerView=findViewById(R.id.template1_itemsRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        recyclerView.setAdapter(new Template1ItemListAdapter(this,list));
+        adapter=new Template1ItemListAdapter(this,list);
+        recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL));
+
+
     }
 
     private void setDefaultColor() {
@@ -555,10 +570,16 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                                     Float radius=Float.valueOf(radiusEditText.getText().toString());
                                     Float elevation=Float.valueOf(elevationEditText.getText().toString());
                                     Float maxElevation=Float.valueOf(maxElevationEditText.getText().toString());
-                                    listCardView=findViewById(R.id.template1_list_cardview);
-                                    listCardView.setRadius(radius);
-                                    listCardView.setCardElevation(elevation);
-                                    listCardView.setMaxCardElevation(maxElevation);
+//                                    listCardView=findViewById(R.id.template1_list_cardview);
+//                                    listCardView.setRadius(radius);
+//                                    listCardView.setCardElevation(elevation);
+//                                    listCardView.setMaxCardElevation(maxElevation);
+//                                    adapter.setCardviewAttributes(0,0,0);
+                                    adapter.updateEditCardview(true,colorsList.get(0),radius,elevation,maxElevation);
+                                    recyclerView.setBackgroundColor(colorsList.get(1));
+                                    colorsList=new ArrayList<>();
+                                    setDefaultColor();
+//                                    adapter.notifyDataSetChanged();
                                 }catch (NumberFormatException e)
                                 {
                                     Toast.makeText(Template1new.this, "Invalid input", Toast.LENGTH_SHORT).show();
@@ -576,6 +597,13 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
                 break;
         }
 
+
+    }
+
+
+    @Override
+    public void LoadAppName(String name, String icon) {
+        textView.setText(name);
 
     }
 }

@@ -10,6 +10,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
+import androidx.core.content.ContextCompat;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fyp.appmaker.Models.ItemsModel;
@@ -21,6 +22,12 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
 
     Context context;
     ArrayList<ItemsModel> list;
+    ViewGroup parent;
+    boolean editCardview=false;
+    float radius;
+    float elevation;
+    float maxElevation;
+    int cardColor;
 
     public Template1ItemListAdapter(@NonNull Context context, ArrayList<ItemsModel> list) {
         this.context=context;
@@ -30,6 +37,7 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
     @NonNull
     @Override
     public Template1Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+        this.parent=parent;
         LayoutInflater inflater=LayoutInflater.from(context);
         View view=inflater.inflate(R.layout.template1_grid_cell,parent,false);
         return new Template1Viewholder(view);
@@ -37,11 +45,37 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
 
     @Override
     public void onBindViewHolder(@NonNull Template1Viewholder holder, int position) {
-        holder.textView.setText(list.get(position).getItemTitle());
-        holder.cardView.setRadius(30);
-        holder.cardView.setCardElevation(10);
-        holder.cardView.setMaxCardElevation(20);
+        if (editCardview)
+        {
+            holder.cardView.setRadius(this.radius);
+            holder.cardView.setCardElevation(this.elevation);
+            holder.cardView.setMaxCardElevation(this.maxElevation);
+            holder.cardView.setCardBackgroundColor(this.cardColor);
+            holder.textView.setText(list.get(position).getItemTitle());
+//            editCardview=false;
+        }else
+        {
+            holder.textView.setText(list.get(position).getItemTitle());
+        }
+
     }
+
+    void updateEditCardview(boolean x,int color, float radius, float elevation,float maxElevation)
+    {
+        editCardview=x;
+        this.cardColor=color;
+        this.radius=radius;
+        this.elevation=elevation;
+        this.maxElevation=maxElevation;
+        notifyDataSetChanged();
+    }
+
+//    void setCardviewAttributes(float radius, float elevation,float maxElevation)
+//    {
+//        holder.cardView.setRadius(30);
+//        holder.cardView.setCardElevation(8);
+//        holder.cardView.setMaxCardElevation(20);
+//    }
 
     @Override
     public int getItemCount() {
