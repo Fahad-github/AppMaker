@@ -11,6 +11,7 @@ anim abc_slide_out_bottom
 anim abc_slide_out_top
 anim abc_tooltip_enter
 anim abc_tooltip_exit
+anim bottom_to_center
 anim btn_checkbox_to_checked_box_inner_merged_animation
 anim btn_checkbox_to_checked_box_outer_merged_animation
 anim btn_checkbox_to_checked_icon_null_animation
@@ -23,10 +24,17 @@ anim btn_radio_to_off_mtrl_ring_outer_path_animation
 anim btn_radio_to_on_mtrl_dot_group_animation
 anim btn_radio_to_on_mtrl_ring_outer_animation
 anim btn_radio_to_on_mtrl_ring_outer_path_animation
+anim center_to_bottom
+anim center_to_left
+anim center_to_top
+anim centre_to_right
 anim design_bottom_sheet_slide_in
 anim design_bottom_sheet_slide_out
 anim design_snackbar_in
 anim design_snackbar_out
+anim fade_in
+anim fadeout
+anim left_to_centre
 anim mtrl_bottom_sheet_slide_in
 anim mtrl_bottom_sheet_slide_out
 anim mtrl_card_lowers_interpolator
@@ -34,6 +42,10 @@ anim nav_default_enter_anim
 anim nav_default_exit_anim
 anim nav_default_pop_enter_anim
 anim nav_default_pop_exit_anim
+anim right_to_centre
+anim rotate
+anim scale
+anim top_to_center
 anim zoom_in
 animator design_appbar_state_list_animator
 animator design_fab_hide_motion_spec
@@ -50,6 +62,7 @@ animator mtrl_fab_hide_motion_spec
 animator mtrl_fab_show_motion_spec
 animator mtrl_fab_transformation_sheet_collapse_spec
 animator mtrl_fab_transformation_sheet_expand_spec
+array anim_types
 array gradient_angles
 array gradient_types
 attr action
@@ -1617,7 +1630,9 @@ id add
 id addIconRelativeLayout
 id addIconTextView
 id addIconTextViewLayout
+id addLogoInSplash
 id addMenu
+id addNameInSplash
 id adjust_height
 id adjust_width
 id agreeTV
@@ -1637,6 +1652,7 @@ id ambilwarna_target
 id ambilwarna_viewContainer
 id ambilwarna_viewHue
 id ambilwarna_viewSatBri
+id anim_type_spinner
 id appDesc
 id appDescEditText
 id appLogo
@@ -1950,6 +1966,8 @@ id uniform
 id unlabeled
 id up
 id useLogo
+id userAppLogo
+id userAppSplashLayout
 id view1
 id view2
 id viewRelative
@@ -2029,12 +2047,14 @@ layout activity_splash
 layout activity_template1
 layout activity_template1new
 layout activity_template2
+layout activity_user_app__splash_screen
 layout activity_user_main_screen
 layout add_app_details_dialog
 layout ambilwarna_dialog
 layout ambilwarna_pref_widget
 layout app_bar_template1
 layout app_bar_user_main_screen
+layout choose_splash_anim_dialog
 layout content_template1
 layout content_template1new_main
 layout content_user_main_screen

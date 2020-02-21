@@ -14,14 +14,19 @@ import android.provider.MediaStore;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
@@ -70,8 +75,6 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
         this.list=list;
         utilities=new UtilitiesClass(context);
         mCallback = (CallbackInterface) context;
-
-
     }
 
     @NonNull
@@ -94,18 +97,49 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
 //                View view1=inflater.inflate(R.layout.add_app_details_dialog,null);
 //                dialogBinding= DataBindingUtil.setContentView((Activity) context,R.layout.add_app_details_dialog);
                 dialogBinding.insertIconButton.setOnClickListener(this);
-                AlertDialog.Builder builder=new AlertDialog.Builder(context);
+                final AlertDialog.Builder builder=new AlertDialog.Builder(context);
                 builder.setView(dialogBinding.getRoot());
                 builder.setTitle("App Details");
                 builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
+                    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDb firebaseDb=new FirebaseDb(context);
                         firebaseDb.addAppDetails(new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
                                 dialogBinding.creatorsNameEditText.getText().toString(),imagefile,dialogBinding.appDescEditText.getText().toString()));
                         Toast.makeText(context, "New app details saved", Toast.LENGTH_SHORT).show();
-                        Intent intent=new Intent(context,Template1new.class);
-                        context.startActivity(intent);
+
+                        View view1=LayoutInflater.from(context).inflate(R.layout.choose_splash_anim_dialog,null);
+
+                        final CheckBox addName=view1.findViewById(R.id.addNameInSplash);
+
+                        final Spinner animTypeSpinner=view1.findViewById(R.id.anim_type_spinner);
+                        builder.setView(view1);
+                        builder.setTitle("Splash Screen");
+                        builder.setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent1=new Intent(context,UserApp_SplashScreen.class);
+                                if (addName.isChecked())
+                                {
+                                    intent1.putExtra("addName",true);
+                                }
+                                intent1.putExtra("animType",String.valueOf(animTypeSpinner.getSelectedItem()));
+                                context.startActivity(intent1);
+                                ((Activity)context).finish();
+                            }
+                        });
+                        builder.setNegativeButton("SKIP", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                Intent intent1=new Intent(context,Template1new.class);
+                                context.startActivity(intent1);
+                            }
+                        });
+                        Dialog dialog=builder.create();
+                        dialog.show();
+//                        Intent intent=new Intent(context,UserApp_SplashScreen.class);
+//                        context.startActivity(intent);
 
                     }
                 });

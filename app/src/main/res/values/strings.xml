@@ -43,4 +43,15 @@
         <item>270°</item>
         <item>315°</item>
     </string-array>
+    <string-array name="anim_types">
+        <item>Fade In</item>
+        <item>Fade Out</item>
+        <item>Fade In > Fade Out</item>
+        <item>Rotate > Scale</item>
+        <item>Fade In > Rotate > Scale</item>
+        <item>Left to Right</item>
+        <item>Right to Left</item>
+        <item>Top to Bottom</item>
+        <item>Bottom to Top</item>
+    </string-array>
 </resources>

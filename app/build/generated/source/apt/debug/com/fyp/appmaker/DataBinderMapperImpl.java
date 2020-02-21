@@ -10,6 +10,7 @@ import com.fyp.appmaker.databinding.ActivityLoginActivitiyBindingImpl;
 import com.fyp.appmaker.databinding.ActivitySignUpBindingImpl;
 import com.fyp.appmaker.databinding.ActivitySplashBindingImpl;
 import com.fyp.appmaker.databinding.AddAppDetailsDialogBindingImpl;
+import com.fyp.appmaker.databinding.ChooseSplashAnimDialogBindingImpl;
 import java.lang.IllegalArgumentException;
 import java.lang.Integer;
 import java.lang.Object;
@@ -29,13 +30,16 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ADDAPPDETAILSDIALOG = 4;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(4);
+  private static final int LAYOUT_CHOOSESPLASHANIMDIALOG = 5;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(5);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_login_activitiy, LAYOUT_ACTIVITYLOGINACTIVITIY);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_sign_up, LAYOUT_ACTIVITYSIGNUP);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.add_app_details_dialog, LAYOUT_ADDAPPDETAILSDIALOG);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.choose_splash_anim_dialog, LAYOUT_CHOOSESPLASHANIMDIALOG);
   }
 
   @Override
@@ -70,6 +74,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new AddAppDetailsDialogBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for add_app_details_dialog is invalid. Received: " + tag);
+        }
+        case  LAYOUT_CHOOSESPLASHANIMDIALOG: {
+          if ("layout/choose_splash_anim_dialog_0".equals(tag)) {
+            return new ChooseSplashAnimDialogBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for choose_splash_anim_dialog is invalid. Received: " + tag);
         }
       }
     }
@@ -124,13 +134,14 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(4);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(5);
 
     static {
       sKeys.put("layout/activity_login_activitiy_0", com.fyp.appmaker.R.layout.activity_login_activitiy);
       sKeys.put("layout/activity_sign_up_0", com.fyp.appmaker.R.layout.activity_sign_up);
       sKeys.put("layout/activity_splash_0", com.fyp.appmaker.R.layout.activity_splash);
       sKeys.put("layout/add_app_details_dialog_0", com.fyp.appmaker.R.layout.add_app_details_dialog);
+      sKeys.put("layout/choose_splash_anim_dialog_0", com.fyp.appmaker.R.layout.choose_splash_anim_dialog);
     }
   }
 }

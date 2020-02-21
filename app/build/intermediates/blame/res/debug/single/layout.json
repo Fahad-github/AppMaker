@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\choose_splash_anim_dialog.xml",
+        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\choose_splash_anim_dialog.xml"
+    },
+    {
         "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
         "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\activity_splash.xml"
     },
