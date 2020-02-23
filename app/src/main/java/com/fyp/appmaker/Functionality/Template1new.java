@@ -107,7 +107,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         header=navigationView.getHeaderView(0);
         textView=header.findViewById(R.id.headerTitle);
         imageView=header.findViewById(R.id.myAppIcon);
-        firebaseDb.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(),this);
+        firebaseDb.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(this),this);
 //        textView.setText(firebaseDb.getAppName(utilitiesClass.loadappIDFromPrefs()));
 
         ImageView button=header.findViewById(R.id.addMenu);

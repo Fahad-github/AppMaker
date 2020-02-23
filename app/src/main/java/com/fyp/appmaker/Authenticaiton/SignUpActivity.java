@@ -39,7 +39,7 @@ public class SignUpActivity extends UtilitiesClass implements View.OnClickListen
     String userId;
     String name, email, pass, confirmPass;
     DatabaseReference mDatabase = FirebaseDatabase.getInstance().getReference("users");
-    FirebaseDb db = new FirebaseDb(this);
+    FirebaseDb db;
 
 
     String termsAndCconditions = "Introduction\n" +
@@ -99,6 +99,7 @@ public class SignUpActivity extends UtilitiesClass implements View.OnClickListen
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         signUpBinding = DataBindingUtil.setContentView(this, R.layout.activity_sign_up);
+        db = new FirebaseDb(this);
         initListeners();
 
     }

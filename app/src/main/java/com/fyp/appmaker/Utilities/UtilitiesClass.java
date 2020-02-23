@@ -20,7 +20,7 @@ public class UtilitiesClass extends AppCompatActivity {
     public UtilitiesClass() {
     }
 
-    public void saveToPrefs(String userId,String email,String password) {
+    public void saveToPrefs(Context context,String userId,String email,String password) {
         sharedPreferences = getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
         editor.putString("userId", userId);
@@ -29,7 +29,7 @@ public class UtilitiesClass extends AppCompatActivity {
         editor.commit();
     }
 
-    public void saveAppId(String appId)
+    public void saveAppId(Context context,String appId)
     {
         sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         SharedPreferences.Editor editor=sharedPreferences.edit();
@@ -37,25 +37,25 @@ public class UtilitiesClass extends AppCompatActivity {
         editor.commit();
     }
 
-    public String loadEmailFromPrefs() {
+    public String loadEmailFromPrefs(Context context) {
         sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String email = sharedPreferences.getString("email", "");
         return email;
     }
 
-    public String loadIDFromPrefs() {
+    public String loadIDFromPrefs(Context context) {
         sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("userId", "");
         return userId;
     }
 
-    public String loadappIDFromPrefs() {
+    public String loadappIDFromPrefs(Context context) {
         sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         String userId = sharedPreferences.getString("appId", "");
         return userId;
     }
 
-    public void deleteFromPrefs(){
+    public void deleteFromPrefs(Context context){
         sharedPreferences = context.getSharedPreferences(myPrefs, Context.MODE_PRIVATE);
         sharedPreferences.edit().clear().commit();
     }

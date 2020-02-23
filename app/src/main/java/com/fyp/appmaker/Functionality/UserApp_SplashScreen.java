@@ -38,7 +38,7 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
         parent=findViewById(R.id.userAppSplashLayout);
         icon=findViewById(R.id.userAppLogo);
 
-        db.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(),this);
+        db.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(this),this);
 
         Intent intent1=getIntent();
         if (intent1.getBooleanExtra("addName",false))

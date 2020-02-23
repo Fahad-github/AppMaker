@@ -1,22 +1,22 @@
 [
     {
-        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\choose_splash_anim_dialog.xml",
-        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\choose_splash_anim_dialog.xml"
+        "merged": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
+        "source": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
-        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
-        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\activity_splash.xml"
+        "merged": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_app_details_dialog.xml",
+        "source": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\src\\main\\res\\layout\\add_app_details_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_sign_up.xml",
-        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
+        "merged": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_activitiy.xml",
+        "source": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\src\\main\\res\\layout\\activity_login_activitiy.xml"
     },
     {
-        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_app_details_dialog.xml",
-        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\add_app_details_dialog.xml"
+        "merged": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\choose_splash_anim_dialog.xml",
+        "source": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\src\\main\\res\\layout\\choose_splash_anim_dialog.xml"
     },
     {
-        "merged": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_login_activitiy.xml",
-        "source": "C:\\Users\\hiba.pervez\\Desktop\\New folder (2)\\AppMaker\\app\\src\\main\\res\\layout\\activity_login_activitiy.xml"
+        "merged": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_splash.xml",
+        "source": "C:\\Users\\hibap\\Desktop\\app maker 23rd feb\\AppMaker\\app\\src\\main\\res\\layout\\activity_splash.xml"
     }
 ]

@@ -89,7 +89,7 @@ public class LoginActivity extends UtilitiesClass implements View.OnClickListene
 
                         if (user.getEmail().equals(email) && user.getPassword().equals(password)) {
                             loginAllowed = true;
-                            saveToPrefs(user.getId(),email, password);
+                            saveToPrefs(LoginActivity.this,user.getId(),email, password);
                             loginBinding.loadingBar.setVisibility(View.INVISIBLE);
                             Toast.makeText(LoginActivity.this, "Login Successful", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(LoginActivity.this, UserMainScreen.class));

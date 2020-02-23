@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:id="@+id/editGradientDialogLayout"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/noOfColorsEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:hint="No. of colors "
+            android:textColorHint="@color/black"/>
+
+        <Button
+            android:id="@+id/okayButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proceed"
+            android:layout_gravity="center"/>
+        <LinearLayout
+            android:id="@+id/layoutList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<!--            <LinearLayout-->
+<!--                android:id="@+id/colorPickerLayout"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:orientation="horizontal">-->
+<!--                <EditText-->
+<!--                    android:id="@+id/colorEditText"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="1.4"-->
+<!--                    android:inputType="none"-->
+<!--                    android:text="Choose color" />-->
+<!--                <ImageView-->
+<!--                    android:id="@+id/colorPickerButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="match_parent"-->
+<!--                    android:layout_weight="8"-->
+<!--                    android:onClick="openColorPicker"-->
+<!--                    android:background="@drawable/ic_color_lens_pink_24dp" />-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -38,7 +38,7 @@ public class FirebaseDb extends AppCompatActivity {
         utilitiesClass=new UtilitiesClass(context);
         mDatabaseUser = FirebaseDatabase.getInstance().getReference("users");
         mDatabaseAppDetails=FirebaseDatabase.getInstance().
-                getReference("appDetails").child(utilitiesClass.loadIDFromPrefs());
+                getReference("appDetails").child(utilitiesClass.loadIDFromPrefs(context));
     }
 
     public void addUser(UserModel user) {
@@ -48,12 +48,12 @@ public class FirebaseDb extends AppCompatActivity {
 
     }
 
-    public void addAppDetails(AppDetailsModel appDetailsModel)
+    public void addAppDetails(Context context,AppDetailsModel appDetailsModel)
     {
         String id=mDatabaseAppDetails.push().getKey();
-        utilitiesClass.saveAppId(id);
+        utilitiesClass.saveAppId(context,id);
         appDetailsModel.setId(id);
-        appDetailsModel.setUserId(utilitiesClass.loadIDFromPrefs());
+        appDetailsModel.setUserId(utilitiesClass.loadIDFromPrefs(context));
         mDatabaseAppDetails.child(id).setValue(appDetailsModel);
     }
 

@@ -105,7 +105,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
                         FirebaseDb firebaseDb=new FirebaseDb(context);
-                        firebaseDb.addAppDetails(new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
+                        firebaseDb.addAppDetails(context,new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
                                 dialogBinding.creatorsNameEditText.getText().toString(),imagefile,dialogBinding.appDescEditText.getText().toString()));
                         Toast.makeText(context, "New app details saved", Toast.LENGTH_SHORT).show();
 

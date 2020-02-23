@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+                                                              
+                                                       
+     
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:tag="layout/add_app_details_dialog_0" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--  <EditText
+                  android:id="@+id/appNameEditText"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginHorizontal="34dp"
+                  android:layout_marginTop="38dp"
+                  android:hint="@string/app_name_text"
+                  android:textColorHint="@color/grey"
+                  android:inputType="text"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="parent"
+                  />
+
+              <EditText
+                  android:id="@+id/creatorsNameEditText"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginHorizontal="34dp"
+                  android:layout_marginTop="12dp"
+                  android:inputType="text"
+                  android:hint="@string/creator_s_name"
+                  android:textColorHint="@color/grey"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="parent"
+                  />
+
+              <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:layout_marginHorizontal="34dp"
+                  android:layout_marginTop="12dp">
+
+                  <EditText
+                      android:id="@+id/addIconText"
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:textColorHint="@color/grey"
+                      android:layout_weight="2"
+                      android:enabled="false"
+                      android:hint="@string/app_icon"/>
+                  <ImageButton
+                      android:id="@+id/addIconButton"
+                      android:layout_width="match_parent"
+                      android:layout_weight="8"
+                      android:layout_height="match_parent"
+                      android:background="@color/colorPrimary"
+                      android:src="@drawable/ic_image_black_24dp"/>
+              </LinearLayout>
+
+              <EditText
+                  android:id="@+id/appDescEditText"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginHorizontal="34dp"
+                  android:layout_marginTop="12dp"
+                  android:inputType="textMultiLine"
+                  android:layout_marginBottom="48dp"
+                  android:hint="@string/app_description"
+                  android:textColorHint="@color/grey"
+                  app:layout_constraintLeft_toLeftOf="parent"
+                  app:layout_constraintRight_toRightOf="parent"
+                  app:layout_constraintTop_toBottomOf="parent"
+                  />-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/appName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="34dp"
+                android:layout_marginTop="48dp"
+                android:textColorHint="@color/grey"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/mainBlue"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/app_name_text"
+                    android:inputType="text"
+                    android:textColor="@color/mainBlue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/creatorsName"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginHorizontal="34dp"
+                android:textColorHint="@color/grey"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/mainBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/creatorsNameEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/creator_s_name"
+                    android:inputType="text"
+                    android:textColor="@color/mainBlue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:id="@+id/addIconRelativeLayout"
+                android:layout_marginHorizontal="34dp"
+                android:layout_marginTop="12dp"
+                >
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/addIconTextViewLayout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="3"
+                    android:textColorHint="@color/grey"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/mainBlue">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/addIconTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="@string/app_icon"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:textColor="@color/mainBlue" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <ImageButton
+                    android:id="@+id/insertIconButton"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorPrimary"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_image_black_24dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/appDesc"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="34dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="48dp"
+                android:textColorHint="@color/grey"
+                app:boxBackgroundColor="@color/white"
+                app:boxStrokeColor="@color/mainBlue">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/appDescEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:hint="@string/app_description"
+                    android:inputType="textMultiLine"
+                    android:textColor="@color/mainBlue" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+         

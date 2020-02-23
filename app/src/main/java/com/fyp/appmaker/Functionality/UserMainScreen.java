@@ -123,7 +123,7 @@ public class UserMainScreen extends UtilitiesClass
         if (id == R.id.yourAccount) {
             // Handle the camera action
         } else if (id == R.id.logout) {
-            deleteFromPrefs();
+            deleteFromPrefs(this);
             startActivity(new Intent(UserMainScreen.this, LoginActivity.class));
             finish();
         }
