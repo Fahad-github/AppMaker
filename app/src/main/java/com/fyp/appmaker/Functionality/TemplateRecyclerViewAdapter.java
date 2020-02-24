@@ -39,6 +39,8 @@ import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.AddAppDetailsDialogBinding;
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
+import com.google.android.material.dialog.MaterialDialogs;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textfield.TextInputLayout;
 import com.google.firebase.database.DatabaseReference;
@@ -87,7 +89,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
     }
 
     @Override
-    public void onBindViewHolder(@NonNull final TemplateRVViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final TemplateRVViewHolder holder, final int position) {
         holder.imageView.setImageResource(list.get(position).getImage().intValue());
         holder.textView.setText(list.get(position).getName());
         holder.templateListLinearLayout.setOnClickListener(new View.OnClickListener() {
@@ -97,7 +99,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
 //                View view1=inflater.inflate(R.layout.add_app_details_dialog,null);
 //                dialogBinding= DataBindingUtil.setContentView((Activity) context,R.layout.add_app_details_dialog);
                 dialogBinding.insertIconButton.setOnClickListener(this);
-                final AlertDialog.Builder builder=new AlertDialog.Builder(context);
+                final MaterialAlertDialogBuilder builder=new MaterialAlertDialogBuilder(context);
                 builder.setView(dialogBinding.getRoot());
                 builder.setTitle("App Details");
                 builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
@@ -125,6 +127,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                                     intent1.putExtra("addName",true);
                                 }
                                 intent1.putExtra("animType",String.valueOf(animTypeSpinner.getSelectedItem()));
+                                intent1.putExtra("templateNo",position);
                                 context.startActivity(intent1);
                                 ((Activity)context).finish();
                             }
@@ -161,7 +164,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
 
 //                builder.show();
 
-                AlertDialog dialog=builder.create();
+                Dialog dialog=builder.create();
                 dialog.show();
 
             }

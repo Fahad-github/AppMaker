@@ -44,6 +44,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fyp.appmaker.Firebase.FirebaseDb;
+import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.Models.ItemsModel;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
@@ -129,7 +130,7 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
 
         recyclerView=findViewById(R.id.template1_itemsRecyclerView);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter=new Template1ItemListAdapter(this,list);
+        adapter=new Template1ItemListAdapter(this,list,"item");
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
         recyclerView.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.HORIZONTAL));
@@ -604,6 +605,11 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     @Override
     public void LoadAppName(String name, String icon) {
         textView.setText(name);
+
+    }
+
+    @Override
+    public void LoadAppDetails(ArrayList<AppDetailsModel> arrayList) {
 
     }
 }

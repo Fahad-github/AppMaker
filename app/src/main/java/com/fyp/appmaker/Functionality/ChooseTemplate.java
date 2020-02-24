@@ -65,10 +65,11 @@ public class ChooseTemplate extends AppCompatActivity implements TemplateRecycle
         setContentView(R.layout.activity_choose_template);
 
         list=new ArrayList<>();
-        for (int i=1;i<=10;i++)
-        {
-            list.add(new TemplateListModel(Integer.valueOf(R.drawable.logoapp),"Sample "+i));
-        }
+
+        list.add(new TemplateListModel(Integer.valueOf(R.drawable.logoapp),"E-Store 1"));
+        list.add(new TemplateListModel(Integer.valueOf(R.drawable.logoapp),"E-Store 2"));
+
+
 
         recyclerView=findViewById(R.id.templatesRecyclerView);
         LinearLayoutManager linearLayoutManager=new LinearLayoutManager(this);

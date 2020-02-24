@@ -1,17 +1,10 @@
 package com.fyp.appmaker.Firebase;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.text.TextUtils;
-import android.util.Log;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.fyp.appmaker.Authenticaiton.SignUpActivity;
-import com.fyp.appmaker.Functionality.Template1new;
-import com.fyp.appmaker.Functionality.TemplateRecyclerViewAdapter;
 import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.Models.UserModel;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
@@ -20,6 +13,8 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class FirebaseDb extends AppCompatActivity {
 
@@ -30,6 +25,8 @@ public class FirebaseDb extends AppCompatActivity {
     public interface FirebaseCallBack
     {
         void LoadAppName(String name,String icon);
+        void LoadAppDetails(ArrayList<AppDetailsModel> arrayList);
+
     }
 
     public FirebaseDb(Context context)
@@ -70,6 +67,29 @@ public class FirebaseDb extends AppCompatActivity {
                 }
             }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+
+            }
+        });
+    }
+
+
+    public void getUserAppDetails( final FirebaseCallBack callBack)
+    {
+        mDatabaseAppDetails.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                ArrayList<AppDetailsModel> arrayList = new ArrayList<>();
+                for (DataSnapshot dataSnapshot1 : dataSnapshot.getChildren()) {
+                    if (dataSnapshot1 != null) {
+                        AppDetailsModel app = dataSnapshot1.getValue(AppDetailsModel.class);
+                        arrayList.add(app);
+
+                    }
+                }
+                callBack.LoadAppDetails(arrayList);
+            }
             @Override
             public void onCancelled(@NonNull DatabaseError databaseError) {
 

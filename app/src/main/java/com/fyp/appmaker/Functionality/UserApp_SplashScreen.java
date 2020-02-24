@@ -15,8 +15,11 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.fyp.appmaker.Firebase.FirebaseDb;
+import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
+
+import java.util.ArrayList;
 
 public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseDb.FirebaseCallBack {
 
@@ -56,7 +59,15 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
         }
 
         String type=intent1.getStringExtra("animType");
-        final Intent intent11=new Intent(this, Template1new.class);
+        int templateNo=intent1.getIntExtra("templateNo",-1);
+        final Intent intent11;
+        if(templateNo==0){
+            intent11 = new Intent(this,Template1new.class);
+        }else{
+            intent11 = new Intent(this,Template2.class);
+        }
+
+       // final Intent intent11=new Intent(this, Template1new.class);
         Thread thread1,thread2,thread3;
 
         switch (type)
@@ -392,6 +403,11 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
 
     @Override
     public void LoadAppName(String name, String icon) {
+
+    }
+
+    @Override
+    public void LoadAppDetails(ArrayList<AppDetailsModel> arrayList) {
 
     }
 }

@@ -12,6 +12,7 @@ import androidx.appcompat.app.ActionBarDrawerToggle;
 
 import android.view.MenuItem;
 
+import com.fyp.appmaker.UserAccount.AccountActivity;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.google.android.material.navigation.NavigationView;
 
@@ -122,6 +123,8 @@ public class UserMainScreen extends UtilitiesClass
 
         if (id == R.id.yourAccount) {
             // Handle the camera action
+            startActivity(new Intent(this, AccountActivity.class));
+
         } else if (id == R.id.logout) {
             deleteFromPrefs(this);
             startActivity(new Intent(UserMainScreen.this, LoginActivity.class));
