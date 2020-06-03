@@ -1,16 +1,21 @@
 package com.fyp.appmaker.Functionality;
 
+import android.content.ContentResolver;
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.net.Uri;
+import android.provider.MediaStore;
+import android.util.Base64;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
-import androidx.core.content.ContextCompat;
+
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.fyp.appmaker.Models.AppDetailsModel;
@@ -29,18 +34,30 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
     float radius;
     float elevation;
     float maxElevation;
+    byte[] bytes;
+    Bitmap bitmap;
     String type;
     int cardColor;
+
+
+
 
     public Template1ItemListAdapter(@NonNull Context context, ArrayList<ItemsModel> list,String type) {
         this.context=context;
         this.list=list;
         this.type=type;
     }
-    public Template1ItemListAdapter(@NonNull Context context,String type, ArrayList<AppDetailsModel> list) {
+    public Template1ItemListAdapter(@NonNull Context context,String type, ArrayList<AppDetailsModel> list,OnItemDetailsClicked onClick) {
         this.context=context;
         this.arrayList=list;
         this.type=type;
+        this.onClick=onClick;
+    }
+
+    private OnItemDetailsClicked onClick;
+
+    public interface OnItemDetailsClicked{
+        void OnItemDetailsClicked(int position);
     }
 
     @NonNull
@@ -53,7 +70,7 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Template1Viewholder holder, int position) {
+    public void onBindViewHolder(@NonNull Template1Viewholder holder, final int position) {
 
        if (type.equals("item")){
 
@@ -64,13 +81,29 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
                holder.cardView.setMaxCardElevation(this.maxElevation);
                holder.cardView.setCardBackgroundColor(this.cardColor);
                holder.textView.setText(list.get(position).getItemTitle());
+               holder.cardView.setOnClickListener(new View.OnClickListener() {
+                   @Override
+                   public void onClick(View view) {
+                       onClick.OnItemDetailsClicked(position);
+                   }
+               });
 //            editCardview=false;
            }else
            {
                holder.textView.setText(list.get(position).getItemTitle());
+
            }
        }else{
            holder.textView.setText(arrayList.get(position).getAppName());
+           bytes = Base64.decode(arrayList.get(position).getIcon(),Base64.DEFAULT);
+           bitmap = BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+           holder.imageView.setImageBitmap(bitmap);
+           holder.imageView.setOnClickListener(new View.OnClickListener() {
+               @Override
+               public void onClick(View view) {
+                   onClick.OnItemDetailsClicked(position);
+               }
+           });
        }
 
     }
@@ -118,4 +151,6 @@ public class Template1ItemListAdapter extends RecyclerView.Adapter<Template1Item
             cardView=itemView.findViewById(R.id.template1_list_cardview);
         }
     }
+
+
 }

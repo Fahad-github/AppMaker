@@ -20,6 +20,10 @@
         "source": "C:\\FYP\\AppMaker\\app\\src\\main\\res\\layout\\activity_sign_up.xml"
     },
     {
+        "merged": "C:\\FYP\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_tab_dialog.xml",
+        "source": "C:\\FYP\\AppMaker\\app\\src\\main\\res\\layout\\add_tab_dialog.xml"
+    },
+    {
         "merged": "C:\\FYP\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\choose_splash_anim_dialog.xml",
         "source": "C:\\FYP\\AppMaker\\app\\src\\main\\res\\layout\\choose_splash_anim_dialog.xml"
     },

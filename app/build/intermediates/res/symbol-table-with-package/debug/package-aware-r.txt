@@ -871,6 +871,7 @@ color common_google_signin_btn_text_light_disabled
 color common_google_signin_btn_text_light_focused
 color common_google_signin_btn_text_light_pressed
 color common_google_signin_btn_tint
+color custom
 color design_bottom_navigation_shadow_color
 color design_box_stroke_color
 color design_dark_default_color_background
@@ -1492,6 +1493,7 @@ drawable app_item_sample
 drawable avd_hide_password
 drawable avd_show_password
 drawable background
+drawable backgroundcurved
 drawable btn_checkbox_checked_mtrl
 drawable btn_checkbox_checked_to_unchecked_mtrl_animation
 drawable btn_checkbox_unchecked_mtrl
@@ -1522,6 +1524,7 @@ drawable common_google_signin_btn_text_light
 drawable common_google_signin_btn_text_light_focused
 drawable common_google_signin_btn_text_light_normal
 drawable common_google_signin_btn_text_light_normal_background
+drawable curvedboxasset
 drawable design_bottom_navigation_item_background
 drawable design_fab_background
 drawable design_ic_visibility
@@ -1536,11 +1539,14 @@ drawable heart_filled
 drawable heart_unfilled
 drawable ic_account_circle_black_24dp
 drawable ic_add_black_24dp
+drawable ic_add_circle_outline_pink_24dp
 drawable ic_arrow_back_black_24dp
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_color_lens_pink_24dp
 drawable ic_edit_black_24dp
+drawable ic_edit_pink_24dp
+drawable ic_first_page_black_24dp
 drawable ic_grid_black_24dp
 drawable ic_image_black_24dp
 drawable ic_keyboard_arrow_left_black_24dp
@@ -1563,6 +1569,7 @@ drawable ic_mtrl_chip_checked_black
 drawable ic_mtrl_chip_checked_circle
 drawable ic_mtrl_chip_close_circle
 drawable ic_navigate_before_black_24dp
+drawable ic_shopping_cart_black_24dp
 drawable logo
 drawable logoapp
 drawable more
@@ -1592,6 +1599,8 @@ drawable paint
 drawable plus
 drawable rounded_button
 drawable side_nav_bar
+drawable template_one_combined
+drawable template_two_combined
 drawable test_custom_background
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -1720,11 +1729,13 @@ id chip1
 id chip2
 id chip3
 id chip_group
+id chooseDomainTV
 id chronometer
 id clear_text
 id clip_horizontal
 id clip_vertical
 id collapseActionView
+id colorEditor
 id color_indicator
 id confirmPassET
 id confirmPassLayout
@@ -1735,6 +1746,7 @@ id contentPanel
 id coordinator
 id cornerRadiusEditText
 id createAccountButton
+id createYourOwnAppTv
 id creatorsName
 id creatorsNameEditText
 id custom
@@ -1791,6 +1803,7 @@ id gone
 id gradientDetailsLayout
 id gradientDetailsList
 id gradientTypesSpinner
+id gridLayout
 id group_divider
 id groups
 id headerTitle
@@ -1815,6 +1828,7 @@ id invisible
 id italic
 id item1
 id item2
+id item3
 id itemImage
 id itemTitle
 id item_touch_helper_previous_elevation
@@ -1871,6 +1885,7 @@ id multiply
 id myAppIcon
 id nameET
 id nameLayout
+id navAppImage
 id navAppTitle
 id nav_controller_view_tag
 id nav_gallery
@@ -1905,6 +1920,7 @@ id outline
 id packed
 id parallax
 id parent
+id parentConstraint
 id parentPanel
 id parent_matrix
 id passLayout
@@ -1928,6 +1944,7 @@ id productPrice1
 id productPrice2
 id productPrice3
 id productPrice4
+id productsTextView
 id profile
 id progress_circular
 id progress_horizontal

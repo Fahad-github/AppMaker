@@ -5,6 +5,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -13,13 +14,14 @@ import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Functionality.Template1ItemListAdapter;
 import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.Models.ItemsModel;
+import com.fyp.appmaker.ProductDetails.ProductDetailsActivity;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.ActivityAccountBinding;
 
 import java.util.ArrayList;
 
-public class AccountActivity extends UtilitiesClass implements FirebaseDb.FirebaseCallBack {
+public class AccountActivity extends UtilitiesClass implements FirebaseDb.FirebaseCallBack,Template1ItemListAdapter.OnItemDetailsClicked {
 
     ActivityAccountBinding binding;
     ArrayList<ItemsModel> arrayListItem;
@@ -68,7 +70,7 @@ public class AccountActivity extends UtilitiesClass implements FirebaseDb.Fireba
 
     private void setRecyclerView() {
         binding.appViewRecycler.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new Template1ItemListAdapter(this, "app", list);
+        adapter = new Template1ItemListAdapter(this, "app", list,this);
         binding.appViewRecycler.setAdapter(adapter);
     }
 
@@ -82,7 +84,7 @@ public class AccountActivity extends UtilitiesClass implements FirebaseDb.Fireba
     public void LoadAppDetails(ArrayList<AppDetailsModel> arrayList) {
         this.list = arrayList;
         creatorName = list.get(0).getCreatorName();
-        binding.textViewCreatorName.setText(creatorName);
+        binding.textViewCreatorName.setText("Creator Name: "+creatorName);
         binding.textViewAppCreated.setText("Apps Created: " + String.valueOf(list.size()));
         binding.textViewUserKey.setText(list.get(0).getUserId());
 
@@ -92,4 +94,8 @@ public class AccountActivity extends UtilitiesClass implements FirebaseDb.Fireba
     }
 
 
+    @Override
+    public void OnItemDetailsClicked(int position) {
+
+    }
 }

@@ -66,8 +66,9 @@ public class ChooseTemplate extends AppCompatActivity implements TemplateRecycle
 
         list=new ArrayList<>();
 
-        list.add(new TemplateListModel(Integer.valueOf(R.drawable.logoapp),"E-Store 1"));
-        list.add(new TemplateListModel(Integer.valueOf(R.drawable.logoapp),"E-Store 2"));
+        list.add(new TemplateListModel(R.drawable.template_one_combined,"E-Store 1"));
+        list.add(new TemplateListModel(R.drawable.template_two_combined,"E-Store 2"));
+        
 
 
 

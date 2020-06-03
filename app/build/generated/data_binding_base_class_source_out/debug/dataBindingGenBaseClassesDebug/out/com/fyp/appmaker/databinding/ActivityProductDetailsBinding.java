@@ -3,7 +3,6 @@ package com.fyp.appmaker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
 import android.widget.RelativeLayout;
@@ -13,6 +12,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.widget.AppCompatImageView;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
+import com.google.android.material.button.MaterialButton;
 import java.lang.Deprecated;
 import java.lang.Object;
 
@@ -24,10 +24,10 @@ public abstract class ActivityProductDetailsBinding extends ViewDataBinding {
   public final ImageView backButton;
 
   @NonNull
-  public final Button buyNowButton;
+  public final MaterialButton buyNowButton;
 
   @NonNull
-  public final Button extraLarge;
+  public final MaterialButton extraLarge;
 
   @NonNull
   public final RelativeLayout footer;
@@ -36,10 +36,10 @@ public abstract class ActivityProductDetailsBinding extends ViewDataBinding {
   public final ImageView heartImage;
 
   @NonNull
-  public final Button large;
+  public final MaterialButton large;
 
   @NonNull
-  public final Button medium;
+  public final MaterialButton medium;
 
   @NonNull
   public final TextView productDescription;
@@ -63,14 +63,15 @@ public abstract class ActivityProductDetailsBinding extends ViewDataBinding {
   public final RelativeLayout sizesLayout;
 
   @NonNull
-  public final Button small;
+  public final MaterialButton small;
 
   protected ActivityProductDetailsBinding(Object _bindingComponent, View _root,
       int _localFieldCount, AppCompatImageView addToCartButton, ImageView backButton,
-      Button buyNowButton, Button extraLarge, RelativeLayout footer, ImageView heartImage,
-      Button large, Button medium, TextView productDescription, ImageView productImage,
-      TextView productName, TextView productPrice, RatingBar ratingBar,
-      RelativeLayout relativeLayout, RelativeLayout sizesLayout, Button small) {
+      MaterialButton buyNowButton, MaterialButton extraLarge, RelativeLayout footer,
+      ImageView heartImage, MaterialButton large, MaterialButton medium,
+      TextView productDescription, ImageView productImage, TextView productName,
+      TextView productPrice, RatingBar ratingBar, RelativeLayout relativeLayout,
+      RelativeLayout sizesLayout, MaterialButton small) {
     super(_bindingComponent, _root, _localFieldCount);
     this.addToCartButton = addToCartButton;
     this.backButton = backButton;

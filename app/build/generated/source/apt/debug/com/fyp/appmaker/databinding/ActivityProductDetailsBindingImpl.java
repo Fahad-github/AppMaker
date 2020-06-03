@@ -46,12 +46,12 @@ public class ActivityProductDetailsBindingImpl extends ActivityProductDetailsBin
         super(bindingComponent, root, 0
             , (androidx.appcompat.widget.AppCompatImageView) bindings[5]
             , (android.widget.ImageView) bindings[2]
-            , (android.widget.Button) bindings[4]
-            , (android.widget.Button) bindings[11]
+            , (com.google.android.material.button.MaterialButton) bindings[4]
+            , (com.google.android.material.button.MaterialButton) bindings[11]
             , (android.widget.RelativeLayout) bindings[3]
             , (android.widget.ImageView) bindings[12]
-            , (android.widget.Button) bindings[10]
-            , (android.widget.Button) bindings[9]
+            , (com.google.android.material.button.MaterialButton) bindings[10]
+            , (com.google.android.material.button.MaterialButton) bindings[9]
             , (android.widget.TextView) bindings[15]
             , (android.widget.ImageView) bindings[6]
             , (android.widget.TextView) bindings[14]
@@ -59,7 +59,7 @@ public class ActivityProductDetailsBindingImpl extends ActivityProductDetailsBin
             , (android.widget.RatingBar) bindings[16]
             , (android.widget.RelativeLayout) bindings[1]
             , (android.widget.RelativeLayout) bindings[7]
-            , (android.widget.Button) bindings[8]
+            , (com.google.android.material.button.MaterialButton) bindings[8]
             );
         this.mboundView0 = (androidx.constraintlayout.widget.ConstraintLayout) bindings[0];
         this.mboundView0.setTag(null);

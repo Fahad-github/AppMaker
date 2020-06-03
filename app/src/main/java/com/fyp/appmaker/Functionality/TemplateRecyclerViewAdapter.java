@@ -27,120 +27,126 @@ import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.fyp.appmaker.Authenticaiton.LoginActivity;
 import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Models.AppDetailsModel;
 import com.fyp.appmaker.Models.TemplateListModel;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.AddAppDetailsDialogBinding;
-import com.google.android.material.button.MaterialButton;
+
 import com.google.android.material.dialog.MaterialAlertDialogBuilder;
-import com.google.android.material.dialog.MaterialDialogs;
-import com.google.android.material.textfield.TextInputEditText;
-import com.google.android.material.textfield.TextInputLayout;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
 
 import java.util.ArrayList;
-import java.util.List;
-
-import static androidx.core.app.ActivityCompat.requestPermissions;
-import static androidx.core.app.ActivityCompat.startActivityForResult;
 
 public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRecyclerViewAdapter.TemplateRVViewHolder> {
 
 
     private ArrayList<TemplateListModel> list;
     private Context context;
-    static String imagefile="";
+    static String imagefile = "";
     static AddAppDetailsDialogBinding dialogBinding;
 
     public static UtilitiesClass utilities;
     private CallbackInterface mCallback;
+    MaterialAlertDialogBuilder builder;
 
 
-    public  interface CallbackInterface
-    {
+    public interface CallbackInterface {
         void handleImageInsertion();
     }
 
 
-
-    public TemplateRecyclerViewAdapter(Context context,ArrayList<TemplateListModel> list)
-    {
-        this.context=context;
-        this.list=list;
-        utilities=new UtilitiesClass(context);
+    public TemplateRecyclerViewAdapter(Context context, ArrayList<TemplateListModel> list) {
+        this.context = context;
+        this.list = list;
+        utilities = new UtilitiesClass(context);
         mCallback = (CallbackInterface) context;
     }
 
     @NonNull
     @Override
     public TemplateRVViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        LayoutInflater inflater=LayoutInflater.from(context);
-        View view=inflater.inflate(R.layout.template_list_row,parent,false);
-        dialogBinding=DataBindingUtil.inflate(inflater,R.layout.add_app_details_dialog,parent,false);
-        return new TemplateRVViewHolder(view,this.context);
+        LayoutInflater inflater = LayoutInflater.from(context);
+        View view = inflater.inflate(R.layout.template_list_row, parent, false);
+        return new TemplateRVViewHolder(view, this.context);
     }
 
     @Override
     public void onBindViewHolder(@NonNull final TemplateRVViewHolder holder, final int position) {
+
         holder.imageView.setImageResource(list.get(position).getImage().intValue());
         holder.textView.setText(list.get(position).getName());
         holder.templateListLinearLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                LayoutInflater inflater=LayoutInflater.from(context);
-//                View view1=inflater.inflate(R.layout.add_app_details_dialog,null);
-//                dialogBinding= DataBindingUtil.setContentView((Activity) context,R.layout.add_app_details_dialog);
+
+                dialogBinding = DataBindingUtil.inflate(LayoutInflater.from(context), R.layout.add_app_details_dialog, null, false);
                 dialogBinding.insertIconButton.setOnClickListener(this);
-                final MaterialAlertDialogBuilder builder=new MaterialAlertDialogBuilder(context);
+                builder = new MaterialAlertDialogBuilder(context);
                 builder.setView(dialogBinding.getRoot());
                 builder.setTitle("App Details");
                 builder.setPositiveButton("Okay", new DialogInterface.OnClickListener() {
                     @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i) {
-                        FirebaseDb firebaseDb=new FirebaseDb(context);
-                        firebaseDb.addAppDetails(context,new AppDetailsModel("","",dialogBinding.appNameEditText.getText().toString(),
-                                dialogBinding.creatorsNameEditText.getText().toString(),imagefile,dialogBinding.appDescEditText.getText().toString()));
-                        Toast.makeText(context, "New app details saved", Toast.LENGTH_SHORT).show();
+                        if (!dialogBinding.appNameEditText.getText().toString().isEmpty()) {
+                            if (!dialogBinding.addIconTextView.getText().toString().isEmpty()) {
 
-                        View view1=LayoutInflater.from(context).inflate(R.layout.choose_splash_anim_dialog,null);
+                                FirebaseDb firebaseDb = new FirebaseDb(context);
+                                firebaseDb.addAppDetails(context, new AppDetailsModel("", "",
+                                        dialogBinding.appNameEditText.getText().toString(),
+                                        dialogBinding.creatorsNameEditText.getText().toString(),
+                                        imagefile,
+                                        dialogBinding.appDescEditText.getText().toString()));
+                                Toast.makeText(context, "New app details saved", Toast.LENGTH_SHORT).show();
 
-                        final CheckBox addName=view1.findViewById(R.id.addNameInSplash);
+                                View view1 = LayoutInflater.from(context).inflate(R.layout.choose_splash_anim_dialog, null, false);
 
-                        final Spinner animTypeSpinner=view1.findViewById(R.id.anim_type_spinner);
-                        builder.setView(view1);
-                        builder.setTitle("Splash Screen");
-                        builder.setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent1=new Intent(context,UserApp_SplashScreen.class);
-                                if (addName.isChecked())
-                                {
-                                    intent1.putExtra("addName",true);
-                                }
-                                intent1.putExtra("animType",String.valueOf(animTypeSpinner.getSelectedItem()));
-                                intent1.putExtra("templateNo",position);
-                                context.startActivity(intent1);
-                                ((Activity)context).finish();
+                                final CheckBox addName = view1.findViewById(R.id.addNameInSplash);
+
+                                final Spinner animTypeSpinner = view1.findViewById(R.id.anim_type_spinner);
+                                builder.setView(view1);
+                                builder.setTitle("Splash Screen");
+                                builder.setPositiveButton("OKAY", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+                                        Intent intent1 = new Intent(context, UserApp_SplashScreen.class);
+                                        if (addName.isChecked()) {
+                                            intent1.putExtra("addName", true);
+                                        }
+                                        intent1.putExtra("animType", String.valueOf(animTypeSpinner.getSelectedItem()));
+                                        intent1.putExtra("templateNo", String.valueOf(position));
+                                        context.startActivity(intent1);
+                                        ((Activity) context).finish();
+                                    }
+                                });
+                                builder.setNegativeButton("SKIP", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialog, int which) {
+
+                                        if (position==0) {
+                                            context.startActivity(new Intent(context, Template1new.class));
+                                        }else{
+                                            context.startActivity(new Intent(context,Template2.class));
+                                        }
+
+                                    }
+                                });
+                                Dialog dialog = builder.create();
+                                dialog.show();
+
+
+                            } else {
+                                Toast.makeText(context, "App Icon required", Toast.LENGTH_SHORT).show();
                             }
-                        });
-                        builder.setNegativeButton("SKIP", new DialogInterface.OnClickListener() {
-                            @Override
-                            public void onClick(DialogInterface dialog, int which) {
-                                Intent intent1=new Intent(context,Template1new.class);
-                                context.startActivity(intent1);
-                            }
-                        });
-                        Dialog dialog=builder.create();
-                        dialog.show();
+                        } else {
+                            Toast.makeText(context, "App Name required", Toast.LENGTH_SHORT).show();
+                        }
+
+
 //                        Intent intent=new Intent(context,UserApp_SplashScreen.class);
 //                        context.startActivity(intent);
 
@@ -156,7 +162,7 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
                 dialogBinding.insertIconButton.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        if(mCallback != null){
+                        if (mCallback != null) {
                             mCallback.handleImageInsertion();
                         }
                     }
@@ -164,20 +170,22 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
 
 //                builder.show();
 
-                Dialog dialog=builder.create();
+                Dialog dialog = builder.create();
                 dialog.show();
 
             }
         });
     }
 
+
+
     @Override
     public int getItemCount() {
         return list.size();
     }
 
-    public static class TemplateRVViewHolder extends RecyclerView.ViewHolder{
-//        static AddAppDetailsDialogBinding dialogBinding;
+    public static class TemplateRVViewHolder extends RecyclerView.ViewHolder {
+        //        static AddAppDetailsDialogBinding dialogBinding;
 //        private CallbackInterface mCallback;
         ImageView imageView;
         LinearLayout templateListLinearLayout;
@@ -185,16 +193,16 @@ public class TemplateRecyclerViewAdapter extends RecyclerView.Adapter<TemplateRe
         Context context;
 //        static String imagefile="";
 
-//        public  interface CallbackInterface
+        //        public  interface CallbackInterface
 //        {
 //            void handleImageInsertion();
 //        }
-        public TemplateRVViewHolder(@NonNull View itemView,Context context) {
+        public TemplateRVViewHolder(@NonNull View itemView, Context context) {
             super(itemView);
-            this.context=context;
-            imageView=itemView.findViewById(R.id.templateImage);
-            textView=itemView.findViewById(R.id.templateName);
-            templateListLinearLayout=itemView.findViewById(R.id.templateListLinearLayout);
+            this.context = context;
+            imageView = itemView.findViewById(R.id.templateImage);
+            textView = itemView.findViewById(R.id.templateName);
+            templateListLinearLayout = itemView.findViewById(R.id.templateListLinearLayout);
 //            itemView.setOnClickListener(this);
 //            mCallback = (CallbackInterface) context;
 

@@ -13,6 +13,7 @@ import com.fyp.appmaker.databinding.ActivitySignUpBindingImpl;
 import com.fyp.appmaker.databinding.ActivitySplashBindingImpl;
 import com.fyp.appmaker.databinding.ActivityTemplate2BindingImpl;
 import com.fyp.appmaker.databinding.AddAppDetailsDialogBindingImpl;
+import com.fyp.appmaker.databinding.AddTabDialogBindingImpl;
 import com.fyp.appmaker.databinding.AppBarTemplate2BindingImpl;
 import com.fyp.appmaker.databinding.ChooseSplashAnimDialogBindingImpl;
 import com.fyp.appmaker.databinding.FragmentTemplate2BindingImpl;
@@ -41,13 +42,15 @@ public class DataBinderMapperImpl extends DataBinderMapper {
 
   private static final int LAYOUT_ADDAPPDETAILSDIALOG = 7;
 
-  private static final int LAYOUT_APPBARTEMPLATE2 = 8;
+  private static final int LAYOUT_ADDTABDIALOG = 8;
 
-  private static final int LAYOUT_CHOOSESPLASHANIMDIALOG = 9;
+  private static final int LAYOUT_APPBARTEMPLATE2 = 9;
 
-  private static final int LAYOUT_FRAGMENTTEMPLATE2 = 10;
+  private static final int LAYOUT_CHOOSESPLASHANIMDIALOG = 10;
 
-  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(10);
+  private static final int LAYOUT_FRAGMENTTEMPLATE2 = 11;
+
+  private static final SparseIntArray INTERNAL_LAYOUT_ID_LOOKUP = new SparseIntArray(11);
 
   static {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_account, LAYOUT_ACTIVITYACCOUNT);
@@ -57,6 +60,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_splash, LAYOUT_ACTIVITYSPLASH);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.activity_template2, LAYOUT_ACTIVITYTEMPLATE2);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.add_app_details_dialog, LAYOUT_ADDAPPDETAILSDIALOG);
+    INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.add_tab_dialog, LAYOUT_ADDTABDIALOG);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.app_bar_template2, LAYOUT_APPBARTEMPLATE2);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.choose_splash_anim_dialog, LAYOUT_CHOOSESPLASHANIMDIALOG);
     INTERNAL_LAYOUT_ID_LOOKUP.put(com.fyp.appmaker.R.layout.fragment_template2, LAYOUT_FRAGMENTTEMPLATE2);
@@ -112,6 +116,12 @@ public class DataBinderMapperImpl extends DataBinderMapper {
             return new AddAppDetailsDialogBindingImpl(component, view);
           }
           throw new IllegalArgumentException("The tag for add_app_details_dialog is invalid. Received: " + tag);
+        }
+        case  LAYOUT_ADDTABDIALOG: {
+          if ("layout/add_tab_dialog_0".equals(tag)) {
+            return new AddTabDialogBindingImpl(component, view);
+          }
+          throw new IllegalArgumentException("The tag for add_tab_dialog is invalid. Received: " + tag);
         }
         case  LAYOUT_APPBARTEMPLATE2: {
           if ("layout/app_bar_template2_0".equals(tag)) {
@@ -184,7 +194,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
   }
 
   private static class InnerLayoutIdLookup {
-    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(10);
+    static final HashMap<String, Integer> sKeys = new HashMap<String, Integer>(11);
 
     static {
       sKeys.put("layout/activity_account_0", com.fyp.appmaker.R.layout.activity_account);
@@ -194,6 +204,7 @@ public class DataBinderMapperImpl extends DataBinderMapper {
       sKeys.put("layout/activity_splash_0", com.fyp.appmaker.R.layout.activity_splash);
       sKeys.put("layout/activity_template2_0", com.fyp.appmaker.R.layout.activity_template2);
       sKeys.put("layout/add_app_details_dialog_0", com.fyp.appmaker.R.layout.add_app_details_dialog);
+      sKeys.put("layout/add_tab_dialog_0", com.fyp.appmaker.R.layout.add_tab_dialog);
       sKeys.put("layout/app_bar_template2_0", com.fyp.appmaker.R.layout.app_bar_template2);
       sKeys.put("layout/choose_splash_anim_dialog_0", com.fyp.appmaker.R.layout.choose_splash_anim_dialog);
       sKeys.put("layout/fragment_template2_0", com.fyp.appmaker.R.layout.fragment_template2);

@@ -3,17 +3,25 @@ package com.fyp.appmaker.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.GridLayout;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import java.lang.Deprecated;
 import java.lang.Object;
 
 public abstract class FragmentTemplate2Binding extends ViewDataBinding {
+  @NonNull
+  public final ImageView colorEditor;
+
+  @NonNull
+  public final GridLayout gridLayout;
+
   @NonNull
   public final ImageView image1;
 
@@ -39,6 +47,9 @@ public abstract class FragmentTemplate2Binding extends ViewDataBinding {
   public final RelativeLayout number4;
 
   @NonNull
+  public final ConstraintLayout parentConstraint;
+
+  @NonNull
   public final TextView productName1;
 
   @NonNull
@@ -62,13 +73,19 @@ public abstract class FragmentTemplate2Binding extends ViewDataBinding {
   @NonNull
   public final TextView productPrice4;
 
+  @NonNull
+  public final TextView productsTextView;
+
   protected FragmentTemplate2Binding(Object _bindingComponent, View _root, int _localFieldCount,
-      ImageView image1, ImageView image2, ImageView image3, ImageView image4,
-      RelativeLayout number1, RelativeLayout number2, RelativeLayout number3,
-      RelativeLayout number4, TextView productName1, TextView productName2, TextView productName3,
-      TextView productName4, TextView productPrice1, TextView productPrice2, TextView productPrice3,
-      TextView productPrice4) {
+      ImageView colorEditor, GridLayout gridLayout, ImageView image1, ImageView image2,
+      ImageView image3, ImageView image4, RelativeLayout number1, RelativeLayout number2,
+      RelativeLayout number3, RelativeLayout number4, ConstraintLayout parentConstraint,
+      TextView productName1, TextView productName2, TextView productName3, TextView productName4,
+      TextView productPrice1, TextView productPrice2, TextView productPrice3,
+      TextView productPrice4, TextView productsTextView) {
     super(_bindingComponent, _root, _localFieldCount);
+    this.colorEditor = colorEditor;
+    this.gridLayout = gridLayout;
     this.image1 = image1;
     this.image2 = image2;
     this.image3 = image3;
@@ -77,6 +94,7 @@ public abstract class FragmentTemplate2Binding extends ViewDataBinding {
     this.number2 = number2;
     this.number3 = number3;
     this.number4 = number4;
+    this.parentConstraint = parentConstraint;
     this.productName1 = productName1;
     this.productName2 = productName2;
     this.productName3 = productName3;
@@ -85,6 +103,7 @@ public abstract class FragmentTemplate2Binding extends ViewDataBinding {
     this.productPrice2 = productPrice2;
     this.productPrice3 = productPrice3;
     this.productPrice4 = productPrice4;
+    this.productsTextView = productsTextView;
   }
 
   @NonNull

@@ -1,7 +1,11 @@
 package com.fyp.appmaker.Functionality;
 
+import android.animation.ObjectAnimator;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageInfo;
+import android.content.pm.PackageManager;
+import android.content.pm.Signature;
 import android.os.Bundle;
 
 import com.fyp.appmaker.Authenticaiton.LoginActivity;
@@ -10,6 +14,8 @@ import com.fyp.appmaker.R;
 import androidx.core.view.GravityCompat;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 
+import android.util.Base64;
+import android.util.Log;
 import android.view.MenuItem;
 
 import com.fyp.appmaker.UserAccount.AccountActivity;
@@ -23,11 +29,15 @@ import androidx.appcompat.widget.Toolbar;
 
 import android.view.Menu;
 import android.view.View;
+import android.view.animation.AccelerateDecelerateInterpolator;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 
 public class UserMainScreen extends UtilitiesClass
@@ -35,7 +45,7 @@ public class UserMainScreen extends UtilitiesClass
 
     private ListView domainsListView;
     private ArrayList<String> domains;
-
+    ObjectAnimator objectAnimator;
     public UserMainScreen() {
     }
 
@@ -51,11 +61,12 @@ public class UserMainScreen extends UtilitiesClass
         setSupportActionBar(toolbar);
 
         domains=new ArrayList<>();
-        domains.add("Business");
         domains.add("Online Store");
+        domains.add("Business");
         domains.add("Blog");
         domains.add("Restaurants");
         domains.add("Events");
+        domains.add(" ");
 
         domainsListView =findViewById(R.id.domainsListView);
         ArrayAdapter<String> adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,domains);
@@ -69,17 +80,27 @@ public class UserMainScreen extends UtilitiesClass
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
 
+        objectAnimator = ObjectAnimator.ofFloat(domainsListView,"translationY",0f,50f);
+        objectAnimator.setDuration(1000);
+        objectAnimator.setInterpolator(new AccelerateDecelerateInterpolator());
+        objectAnimator.start();
         domainsListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                Intent intent=new Intent(UserMainScreen.this,ChooseTemplate.class);
-                intent.putExtra("domain",domains.get(i));
-                startActivity(intent);
+                if (domains.get(i).equals("Online Store")) {
+                    Intent intent = new Intent(UserMainScreen.this, ChooseTemplate.class);
+                    intent.putExtra("domain", domains.get(i));
+                    startActivity(intent);
+                }else{
+                    Toast.makeText(UserMainScreen.this, "Templates not available now", Toast.LENGTH_SHORT).show();
+                }
             }
         });
 
 
+
     }
+    
 
     @Override
     public void onBackPressed() {

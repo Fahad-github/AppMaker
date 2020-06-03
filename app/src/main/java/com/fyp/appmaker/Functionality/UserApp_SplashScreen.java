@@ -30,6 +30,7 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
     ImageView icon;
     FirebaseDb db;
     UtilitiesClass utilitiesClass;
+    Intent intent11;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,9 +60,9 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
         }
 
         String type=intent1.getStringExtra("animType");
-        int templateNo=intent1.getIntExtra("templateNo",-1);
-        final Intent intent11;
-        if(templateNo==0){
+        String templateNo=intent1.getStringExtra("templateNo");
+
+        if(templateNo.equals("0")){
             intent11 = new Intent(this,Template1new.class);
         }else{
             intent11 = new Intent(this,Template2.class);
@@ -70,8 +71,10 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
        // final Intent intent11=new Intent(this, Template1new.class);
         Thread thread1,thread2,thread3;
 
+
         switch (type)
         {
+
             case "Fade In":
                 x= AnimationUtils.loadAnimation(this,R.anim.fade_in);
                 parent.startAnimation(x);

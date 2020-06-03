@@ -4,16 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/parentConstraint"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:context=".Fragments.Template2Fragment">
 
         <TextView
+            android:id="@+id/productsTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            android:text="Products: "
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Products"
             android:textSize="22sp"
             android:layout_marginTop="4dp"
             android:layout_marginLeft="4dp"
@@ -22,13 +25,14 @@
         </TextView>
 
         <GridLayout
+            android:id="@+id/gridLayout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:useDefaultMargins="true"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            app:layout_constraintTop_toBottomOf="@id/productsTextView">
 
             <RelativeLayout
                 android:id="@+id/number1"
@@ -38,9 +42,9 @@
 
                 <ImageView
                     android:id="@+id/image1"
-                    android:layout_width="75dp"
+                    android:layout_width="150dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_height="130dp"
+                    android:layout_height="160dp"
                     android:padding="8dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/app_item_sample">
@@ -78,9 +82,9 @@
 
                 <ImageView
                     android:id="@+id/image2"
-                    android:layout_width="75dp"
+                    android:layout_width="150dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_height="130dp"
+                    android:layout_height="160dp"
                     android:scaleType="fitCenter"
                     android:padding="8dp"
                     android:src="@drawable/app_item_sample">
@@ -119,9 +123,9 @@
 
                 <ImageView
                     android:id="@+id/image3"
-                    android:layout_width="75dp"
+                    android:layout_width="150dp"
                     android:layout_centerHorizontal="true"
-                    android:layout_height="130dp"
+                    android:layout_height="160dp"
                     android:padding="8dp"
                     android:scaleType="fitCenter"
                     android:src="@drawable/app_item_sample">
@@ -159,8 +163,8 @@
 
                 <ImageView
                     android:id="@+id/image4"
-                    android:layout_width="75dp"
-                    android:layout_height="130dp"
+                    android:layout_width="150dp"
+                    android:layout_height="160dp"
                     android:layout_centerHorizontal="true"
                     android:scaleType="fitCenter"
                     android:padding="8dp"
@@ -193,6 +197,17 @@
 
         </GridLayout>
 
+        <ImageView
+            android:id="@+id/colorEditor"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginRight="4dp"
+            android:src="@drawable/ic_mode_edit_black_24dp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

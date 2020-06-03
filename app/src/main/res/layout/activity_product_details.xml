@@ -47,25 +47,27 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent">
 
-            <Button
+            <com.google.android.material.button.MaterialButton
                 android:id="@+id/buyNowButton"
                 android:layout_width="wrap_content"
-                android:text="Buy Now"
-                android:backgroundTint="#29C903"
-                android:textAllCaps="false"
+                android:layout_height="42dp"
                 android:layout_centerInParent="true"
                 android:layout_toLeftOf="@+id/addToCartButton"
-                android:layout_height="42dp">
-            </Button>
+                android:backgroundTint="#29C903"
+                android:text="Buy Now"
+                android:textAllCaps="false">
+
+            </com.google.android.material.button.MaterialButton>
 
             <androidx.appcompat.widget.AppCompatImageView
                 android:id="@+id/addToCartButton"
                 android:layout_width="wrap_content"
-                android:src="@drawable/cart"
-                android:layout_marginLeft="8dp"
+                android:layout_height="match_parent"
                 android:layout_alignParentRight="true"
-                android:textAllCaps="false"
-                android:layout_height="match_parent">
+                android:layout_marginLeft="8dp"
+                android:src="@drawable/cart"
+                android:textAllCaps="false">
+
             </androidx.appcompat.widget.AppCompatImageView>
 
 
@@ -106,16 +108,18 @@
                     app:layout_constraintRight_toRightOf="parent"
                     app:layout_constraintTop_toBottomOf="@id/productImage">
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/small"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:backgroundTint="@color/grey"
                         android:text="S"
-                        android:textSize="16dp"
-                        android:textStyle="bold"></Button>
+                        android:textSize="12sp"
+                        android:textStyle="bold">
 
-                    <Button
+                    </com.google.android.material.button.MaterialButton>
+
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/medium"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -123,12 +127,12 @@
                         android:layout_toRightOf="@+id/small"
                         android:backgroundTint="@color/grey"
                         android:text="M"
-                        android:textSize="15dp"
+                        android:textSize="12sp"
                         android:textStyle="bold">
 
-                    </Button>
+                    </com.google.android.material.button.MaterialButton>
 
-                    <Button
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/large"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -136,10 +140,12 @@
                         android:layout_toRightOf="@+id/medium"
                         android:backgroundTint="@color/grey"
                         android:text="L"
-                        android:textSize="15dp"
-                        android:textStyle="bold"></Button>
+                        android:textSize="12sp"
+                        android:textStyle="bold">
 
-                    <Button
+                    </com.google.android.material.button.MaterialButton>
+
+                    <com.google.android.material.button.MaterialButton
                         android:id="@+id/extraLarge"
                         android:layout_width="50dp"
                         android:layout_height="50dp"
@@ -147,8 +153,10 @@
                         android:layout_toRightOf="@+id/large"
                         android:backgroundTint="@color/grey"
                         android:text="XL"
-                        android:textSize="15dp"
-                        android:textStyle="bold"></Button>
+                        android:textSize="12sp"
+                        android:textStyle="bold">
+
+                    </com.google.android.material.button.MaterialButton>
 
 
                 </RelativeLayout>
@@ -157,12 +165,11 @@
                     android:id="@+id/heartImage"
                     android:layout_width="30dp"
                     android:layout_height="30dp"
-                    app:layout_constraintRight_toRightOf="parent"
                     android:layout_marginTop="8dp"
                     android:layout_marginRight="8dp"
-                    app:layout_constraintTop_toBottomOf="@id/productImage"
-                    android:src="@drawable/heart_unfilled">
-                </ImageView>
+                    android:src="@drawable/heart_unfilled"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/productImage"></ImageView>
 
                 <TextView
                     android:id="@+id/productPrice"
