@@ -42,29 +42,6 @@
 
         </com.google.android.material.tabs.TabLayout>
 
-        <!--        <ImageView-->
-        <!--            android:id="@+id/chooseColorButton"-->
-        <!--            android:layout_width="40dp"-->
-        <!--            android:layout_height="40dp"-->
-        <!--            android:layout_marginBottom="8dp"-->
-        <!--            android:layout_marginLeft="8dp"-->
-        <!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-        <!--            android:src="@drawable/color_wheel"-->
-        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
-        <!--            app:layout_constraintBottom_toTopOf="@id/tabLayout"/>-->
-
-
-        <!--        <ImageView-->
-        <!--            android:id="@+id/addTabButton"-->
-        <!--            android:layout_width="40dp"-->
-        <!--            android:layout_height="40dp"-->
-        <!--            android:layout_marginRight="8dp"-->
-        <!--            android:layout_marginBottom="8dp"-->
-        <!--            android:background="?attr/selectableItemBackgroundBorderless"-->
-        <!--            android:src="@drawable/more"-->
-        <!--            app:layout_constraintBottom_toTopOf="@id/tabLayout"-->
-        <!--            app:layout_constraintRight_toRightOf="parent" />-->
-
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/viewPager"

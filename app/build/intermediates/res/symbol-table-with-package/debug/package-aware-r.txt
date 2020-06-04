@@ -1541,6 +1541,7 @@ drawable ic_account_circle_black_24dp
 drawable ic_add_black_24dp
 drawable ic_add_circle_outline_pink_24dp
 drawable ic_arrow_back_black_24dp
+drawable ic_baseline_check_24
 drawable ic_calendar_black_24dp
 drawable ic_clear_black_24dp
 drawable ic_color_lens_pink_24dp
@@ -1746,6 +1747,7 @@ id contentPanel
 id coordinator
 id cornerRadiusEditText
 id createAccountButton
+id createApkButton
 id createYourOwnAppTv
 id creatorsName
 id creatorsNameEditText
@@ -1803,7 +1805,6 @@ id gone
 id gradientDetailsLayout
 id gradientDetailsList
 id gradientTypesSpinner
-id gridLayout
 id group_divider
 id groups
 id headerTitle
@@ -1816,10 +1817,6 @@ id icon_group
 id icon_only
 id ifRoom
 id image
-id image1
-id image2
-id image3
-id image4
 id imageView
 id image_preview
 id info
@@ -1906,10 +1903,6 @@ id normal
 id notification_background
 id notification_main_column
 id notification_main_column_container
-id number1
-id number2
-id number3
-id number4
 id off
 id okayButton
 id on
@@ -1935,17 +1928,10 @@ id pin
 id productDescription
 id productImage
 id productName
-id productName1
-id productName2
-id productName3
-id productName4
 id productPrice
-id productPrice1
-id productPrice2
-id productPrice3
-id productPrice4
 id productsTextView
 id profile
+id progressBarHolder
 id progress_circular
 id progress_horizontal
 id radio
@@ -2027,6 +2013,7 @@ id template1_new_nav_view
 id template1_scrollview
 id template2Drawer
 id template2NavigationDrawer
+id template2Recycler
 id templateImage
 id templateListLinearLayout
 id templateName

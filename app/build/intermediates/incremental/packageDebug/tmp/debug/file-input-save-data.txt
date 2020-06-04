@@ -1,7 +1,0 @@
-#Internal package file, do not edit.
-#Sun Feb 23 23:17:00 PKT 2020
-0.baseType=DIRECTORY
-0.base=C\:\\FYP\\AppMaker\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
-0.path=classes.dex
-0.set=DEX
-count=1

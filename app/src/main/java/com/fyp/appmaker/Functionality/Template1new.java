@@ -19,6 +19,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.app.Dialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -26,6 +27,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.drawable.GradientDrawable;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.text.InputType;
 import android.util.Base64;
 import android.util.Log;
@@ -53,6 +55,8 @@ import com.fyp.appmaker.ProductDetails.ProductDetailsActivity;
 import com.fyp.appmaker.R;
 import com.fyp.appmaker.Utilities.UtilitiesClass;
 import com.fyp.appmaker.databinding.AddTabDialogBinding;
+import com.google.android.material.button.MaterialButton;
+import com.google.android.material.dialog.MaterialAlertDialogBuilder;
 import com.google.android.material.navigation.NavigationView;
 
 import java.util.ArrayList;
@@ -91,6 +95,9 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
     private byte[] bytes;
     private Bitmap bitmap;
     private int themeColor = android.R.color.darker_gray;
+    private MaterialButton apkButton;
+    private MaterialAlertDialogBuilder alertDialogBuilder;
+    ProgressDialog progressDialog;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -143,6 +150,43 @@ public class Template1new extends AppCompatActivity implements NavigationView.On
         recyclerView.setAdapter(adapter);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.HORIZONTAL));
+
+        alertDialogBuilder = new MaterialAlertDialogBuilder(this);
+        apkButton = findViewById(R.id.createApkButton);
+        progressDialog = new ProgressDialog(this);
+        apkButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                alertDialogBuilder
+                        .setTitle("Apk Creation")
+                        .setMessage("Are you done customizing the template?")
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialogInterface, int i) {
+                                createApk();
+                            }
+                        }).setNegativeButton("No", null)
+                        .show();
+            }
+        });
+    }
+
+    void createApk(){
+
+        Toast.makeText(this, "Wait while your APK is being processed", Toast.LENGTH_SHORT).show();
+
+        progressDialog.setTitle("APK Creation");
+        progressDialog.setMessage("Creating your APK...");
+        progressDialog.show();
+
+        new Handler().postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                progressDialog.dismiss();
+                Toast.makeText(Template1new.this, "Your APK is created", Toast.LENGTH_SHORT).show();
+            }
+        }, 5000);
+
 
 
     }

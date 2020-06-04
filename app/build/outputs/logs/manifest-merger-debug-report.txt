@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
 MERGED from [androidx.databinding:databinding-adapters:3.4.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\d71b30f8e7acc464723cb950e0b027ca\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.databinding:databinding-runtime:3.4.1] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\9e20c1cc0286c6bd5ebe4dc7e89b7342\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\fd49529c6f506fe624b0ecbd7a2fd114\AndroidManifest.xml:17:1-22:12
@@ -65,20 +65,20 @@ MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\DELL\.gradle
 MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\0279ece139df85f493ab37ff7828e5d0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.annotation:annotation-experimental:1.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\b8fd654ff1366849a641362a202efa7a\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.firebase:firebase-database-collection:17.0.0] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\26ddd1ff3f3f1af9feea27259dad378d\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
-INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
+INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
 	package
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-42:12
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:1-45:12
 		INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:2:11-69
@@ -87,7 +87,7 @@ ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:5:5-80
 	android:name
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:5:22-77
 application
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:7:5-40:19
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:7:5-43:19
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\631bc2c99610720c998e1b0e83bafcc1\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.2.0-alpha03] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\631bc2c99610720c998e1b0e83bafcc1\AndroidManifest.xml:22:5-20
 MERGED from [com.github.QuadFlask:colorpicker:0.0.15] C:\Users\DELL\.gradle\caches\transforms-2\files-2.1\f0e2b6d9b9f3a884519be51df265ab40\AndroidManifest.xml:11:5-20
@@ -145,61 +145,61 @@ ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:16:9-72
 	android:name
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:16:19-69
 activity#com.fyp.appmaker.Functionality.Template1new
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:17:9-19:59
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:17:9-26:20
 	android:theme
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:19:13-56
 	android:name
 		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:18:13-55
-activity#com.fyp.appmaker.Functionality.Template2
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:20:9-61
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:20:19-58
-activity#com.fyp.appmaker.Functionality.Template1
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:21:9-24:59
-	android:label
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:23:13-61
-	android:theme
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:24:13-56
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:22:13-52
-activity#com.fyp.appmaker.Functionality.ChooseTemplate
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:25:9-66
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:25:19-63
-activity#com.fyp.appmaker.Functionality.UserMainScreen
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:26:9-29:59
-	android:label
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:28:13-68
-	android:theme
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:29:13-56
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:27:13-57
-activity#com.fyp.appmaker.Authenticaiton.SignUpActivity
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:30:9-67
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:30:19-64
-activity#com.fyp.appmaker.Authenticaiton.LoginActivity
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:31:9-66
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:31:19-63
-activity#com.fyp.appmaker.Splash.SplashActivity
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:32:9-38:20
-	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:32:19-56
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:33:13-37:29
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:21:13-25:29
 action#android.intent.action.MAIN
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:34:17-69
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:22:17-69
 	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:34:25-66
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:22:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:36:17-77
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:24:17-77
 	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:36:27-74
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:24:27-74
+activity#com.fyp.appmaker.Functionality.Template2
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:27:9-61
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:27:19-58
+activity#com.fyp.appmaker.Functionality.Template1
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:28:9-31:59
+	android:label
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:30:13-61
+	android:theme
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:31:13-56
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:29:13-52
+activity#com.fyp.appmaker.Functionality.ChooseTemplate
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:32:9-66
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:32:19-63
+activity#com.fyp.appmaker.Functionality.UserMainScreen
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:33:9-36:59
+	android:label
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:35:13-68
+	android:theme
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:36:13-56
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:34:13-57
+activity#com.fyp.appmaker.Authenticaiton.SignUpActivity
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:37:9-67
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:37:19-64
+activity#com.fyp.appmaker.Authenticaiton.LoginActivity
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:38:9-66
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:38:19-63
+activity#com.fyp.appmaker.Splash.SplashActivity
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:39:9-41:20
+	android:name
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:39:19-56
 activity#com.fyp.appmaker.MainActivity
-ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:39:9-50
+ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:42:9-50
 	android:name
-		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:39:19-47
+		ADDED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml:42:19-47
 uses-sdk
 INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\FYP\AppMaker\app\src\main\AndroidManifest.xml
