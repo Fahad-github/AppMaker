@@ -2062,6 +2062,7 @@ id unlabeled
 id up
 id useLogo
 id userAppLogo
+id userAppName
 id userAppSplashLayout
 id view1
 id view2

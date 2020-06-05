@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\FYP\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
+            "outputFile": "C:\\Users\\hibap\\Desktop\\app\\AppMaker\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v16\\values-v16.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6d2bfc97c82d7a6ebc96b133829643fe\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\6a0d4ab6ef75288405fc398fdd908289\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\DELL\\.gradle\\caches\\transforms-2\\files-2.1\\6ed6fdfab2a982b74126b4200ec48cce\\res\\values-v16\\values-v16.xml",
+                    "source": "C:\\Users\\hibap\\.gradle\\caches\\transforms-2\\files-2.1\\dfe1fd3f19c7809793d5ad1581ed4286\\res\\values-v16\\values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

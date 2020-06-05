@@ -7867,18 +7867,19 @@ public final class R {
     public static final int up=0x7f0901c6;
     public static final int useLogo=0x7f0901c7;
     public static final int userAppLogo=0x7f0901c8;
-    public static final int userAppSplashLayout=0x7f0901c9;
-    public static final int view1=0x7f0901ca;
-    public static final int view2=0x7f0901cb;
-    public static final int viewPager=0x7f0901cc;
-    public static final int viewRelative=0x7f0901cd;
-    public static final int view_offset_helper=0x7f0901ce;
-    public static final int visible=0x7f0901cf;
-    public static final int wide=0x7f0901d0;
-    public static final int withText=0x7f0901d1;
-    public static final int wrap=0x7f0901d2;
-    public static final int wrap_content=0x7f0901d3;
-    public static final int yourAccount=0x7f0901d4;
+    public static final int userAppName=0x7f0901c9;
+    public static final int userAppSplashLayout=0x7f0901ca;
+    public static final int view1=0x7f0901cb;
+    public static final int view2=0x7f0901cc;
+    public static final int viewPager=0x7f0901cd;
+    public static final int viewRelative=0x7f0901ce;
+    public static final int view_offset_helper=0x7f0901cf;
+    public static final int visible=0x7f0901d0;
+    public static final int wide=0x7f0901d1;
+    public static final int withText=0x7f0901d2;
+    public static final int wrap=0x7f0901d3;
+    public static final int wrap_content=0x7f0901d4;
+    public static final int yourAccount=0x7f0901d5;
   }
   public static final class integer {
     public static final int abc_config_activityDefaultDur=0x7f0a0000;

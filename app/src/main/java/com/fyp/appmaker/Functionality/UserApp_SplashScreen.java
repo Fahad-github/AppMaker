@@ -3,16 +3,16 @@ package com.fyp.appmaker.Functionality;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
-import android.graphics.Typeface;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.util.Base64;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.fyp.appmaker.Firebase.FirebaseDb;
 import com.fyp.appmaker.Models.AppDetailsModel;
@@ -27,9 +27,11 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
     boolean addName=false;
     LinearLayout parent;
     Animation x = null;
-    ImageView icon;
+    ImageView appIcon;
+    TextView appName;
     FirebaseDb db;
     UtilitiesClass utilitiesClass;
+    Intent intent1;
     Intent intent11;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,26 +42,15 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
         utilitiesClass=new UtilitiesClass(this);
 
         parent=findViewById(R.id.userAppSplashLayout);
-        icon=findViewById(R.id.userAppLogo);
+        appIcon =findViewById(R.id.userAppLogo);
+        appName=findViewById(R.id.userAppName);
 
         db.getAppNameIcon(utilitiesClass.loadappIDFromPrefs(this),this);
 
-        Intent intent1=getIntent();
-        if (intent1.getBooleanExtra("addName",false))
-        {
-            TextView name=new TextView(this);
-            name.setText("My App");
-            name.setTextColor(getResources().getColor(R.color.black));
-            name.setTextSize(22);
+        intent1=getIntent();
 
-            name.setTypeface(Typeface.create("cursive",Typeface.NORMAL));
 
-            name.setTypeface(name.getTypeface(), Typeface.BOLD);
-            name.setGravity(Gravity.CENTER);
-            parent.addView(name);
-        }
 
-        String type=intent1.getStringExtra("animType");
         String templateNo=intent1.getStringExtra("templateNo");
 
         if(templateNo.equals("0")){
@@ -69,9 +60,18 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
         }
 
        // final Intent intent11=new Intent(this, Template1new.class);
-        Thread thread1,thread2,thread3;
 
 
+
+
+
+    }
+
+    private void startAnim() {
+        Thread thread1;
+        Thread thread2;
+        Thread thread3;
+        String type=intent1.getStringExtra("animType");
         switch (type)
         {
 
@@ -399,14 +399,32 @@ public class UserApp_SplashScreen extends AppCompatActivity implements FirebaseD
                 thread2.start();
                 break;
         }
-
-
-
     }
 
     @Override
     public void LoadAppName(String name, String icon) {
 
+
+        if (intent1.getBooleanExtra("addName",false))
+        {
+            appName.setText(name);
+            appName.setVisibility(View.VISIBLE);
+//            TextView nameTv=new TextView(this);
+//            nameTv.setText(name);
+//            nameTv.setTextColor(getResources().getColor(R.color.black));
+//            nameTv.setTextSize(22);
+//
+//            nameTv.setTypeface(Typeface.create("cursive",Typeface.NORMAL));
+//
+//            nameTv.setTypeface(nameTv.getTypeface(), Typeface.BOLD);
+//            nameTv.setGravity(Gravity.CENTER);
+//            parent.addView(nameTv);
+        }
+        byte[] bytes= Base64.decode(icon,Base64.DEFAULT);
+        Bitmap bitmap= BitmapFactory.decodeByteArray(bytes,0,bytes.length);
+        appIcon.setImageBitmap(bitmap);
+
+        startAnim();
     }
 
     @Override
